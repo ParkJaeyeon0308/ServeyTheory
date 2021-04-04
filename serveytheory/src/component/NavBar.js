@@ -4,31 +4,31 @@ import * as AiIcons from "react-icons/ai";
 import {Link} from 'react-router-dom';
 import {SidebarData} from './SidebarData';
 import './NavBar.css';
+import { IconContext } from 'react-icons';
 
-function NavBar () {
-    const [sidebar, setSidebar] = useState(false);
+function NavBar() {
+  const [sidebar, setSidebar] = useState(false);
 
-    const showSidebar = () => setSidebar(!sidebar);
-    return (
-        <>
-            {/* <div className='navBar'>
-                <Link to="#" className='menu-bars'>
-                    <FaIcons.FaBars onClick={showSidebar}/>
-                </Link>
-            </div> */}
-            <div className='navbar'>
+  const showSidebar = () => setSidebar(!sidebar);
+
+  return (
+    <>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <div className='navbar'>
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
           <div className='navbar-text'>
+          {/* <Link to='#' className='GoHome'> */}
           <h1>설문학개론</h1>
+          {/* </Link> */}
           </div>
         </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                 <ul className='nav-menu-items' onClick={showSidebar}>
                     <li className="navbar-toggle">
                         <Link to="#" className="menu-bars">
-                            <AiIcons.AiOutlineCloseCircle/>
+                            <AiIcons.AiOutlineCloseCircle color="#ffffff"/>
                         </Link>
                     </li>
                     {SidebarData.map((item, index)=>{
@@ -43,6 +43,7 @@ function NavBar () {
                     })}
                 </ul>
             </nav>
+            </IconContext.Provider>
         </>
     );
 }
