@@ -14,7 +14,7 @@ export const SidebarData = [
     },
     {
         title: 'Login/Logout',
-        path:'/log',
+        path:'/login_logout',
         icon:<BiIcons.BiLogIn/>,
         cName: 'menu-text'
     },

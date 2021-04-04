@@ -1,18 +1,25 @@
-.navbar{
+/* 화면에 바로 보이는 긴 가로 메뉴바 */
+  .navbar{
     background-color: rgb(16, 47, 87);
     height: 80px;
     display: flex;
     justify-content: start;
     align-items: center;
 }
-
-.menu-bars{
+/* 햄버거 버튼 위치 */
+  .menu-bars{
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
 }
-
-.nav-menu{
+.navbar-text{
+    margin-left: 80%;
+    color: aliceblue;
+    display: flex;
+    padding: 15px 0;
+}
+  /* 햄버거 버튼 누르면 나오는 메뉴바 */
+  .nav-menu{
     background-color: rgb(16, 47, 87);
     width: 250px;
     height: 100vh;
@@ -20,16 +27,16 @@
     justify-content: center;
     position: fixed;
     top: 0;
-    /* left: -100%; */
+    left: -100%;
     transition: 850ms;
 }
-
-.nav-menu.active{
+  
+  .nav-menu.active{
     left: 0;
     transition: 350ms;
 }
 
-.nav-text{
+  .nav-text{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -37,8 +44,8 @@
     list-style: none;
     height: 60px;
 }
-
-.nav-text a{
+  
+  .nav-text a{
     text-decoration: none;
     color: #f5f5f5;
     font-size: 18px;
@@ -49,16 +56,16 @@
     padding: 0 16px;
     border-radius: 4px;
 }
-
-.nav-text a:hover{
+  
+  .nav-text a:hover{
     background-color: aliceblue;
 }
-
-.nav-menu-items{
+  
+  .nav-menu-items{
     width: 100%;
 }
-
-.navbar-toggle{
+  /* x버튼 누르는 곳 배경 색깔 */
+  .navbar-toggle{
     background-color: rgb(16, 47, 87);
     width: 100%;
     height: 80px;
@@ -68,5 +75,5 @@
 }
 
 span{
-    
+    margin-left: 16px;
 }
