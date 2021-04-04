@@ -18,9 +18,9 @@ function NavBar() {
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-          <div className='navbar-text'>
+          <div className='navbar-img'>
           {/* <Link to='#' className='GoHome'> */}
-          <h1>설문학개론</h1>
+          <img src="/images/설문학개론.png"/>
           {/* </Link> */}
           </div>
         </div>
