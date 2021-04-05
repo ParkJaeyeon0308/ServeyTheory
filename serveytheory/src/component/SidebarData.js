@@ -1,8 +1,4 @@
 import React from 'react'
-// import * as AiIcons from "react-icons/ai";
-// import * as BiIcons from "react-icons/bi";
-// import * as BsIcons from "react-icons/bs";
-// import * as IoIcons from "react-icons/io";
 
 export const SidebarData = [
     {
@@ -25,21 +21,21 @@ export const SidebarData = [
     },
     {
         title: '계정설정',
-        path:'/account',
+        cName:'fixnav-text'
         // icon:<IoIcons.IoIosPerson color="#ffffff"/>,
-        cName: 'nav-text',
         // ↑이부분을 이상한걸 써서 link 가 이상해진거임
-        subNav:[
-            {
-                title:'암호변경',
-                path:'/account/password',
-                cName: 'nav-text'
-            },
-            {
-                title:'회원탈퇴',
-                path:'/account/quit_account',
-                cName: 'nav-text'
-            }
-        ]
-    }
+    
+    },
+    {
+        title: '암호변경',
+        path:'/Pass_change',
+        // icon:<BsIcons.BsFillGridFill color="#ffffff"/>,
+        cName: 'mini-nav-text'
+    },
+    {
+        title: '회원탈퇴',
+        path:'/quit_account',
+        // icon:<BsIcons.BsFillGridFill color="#ffffff"/>,
+        cName: 'mini-nav-text'
+    },
 ];

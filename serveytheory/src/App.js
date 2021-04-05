@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Login_Logout from './pages/Login_Logout';
 import Result from './pages/Result';
 import Account from './pages/Account';
+import PassChange from './pages/PassChange';
+import QuitAccount from './pages/QuitAccount';
 
 
 // 여기서 페이지 이동을 담당
@@ -19,6 +21,8 @@ function App() {
           <Route path='/login_logout' component={Login_Logout} />
           <Route path='/result' component={Result} />
           <Route path='/account' component={Account} />
+          <Route path='/pass_change' component={PassChange} />
+          <Route path='/quit_account' component={QuitAccount} />
       </Switch>
       </Router>
     </>
