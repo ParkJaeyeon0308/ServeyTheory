@@ -13,6 +13,7 @@ function NavBar() {
 
   return (
     <>
+    <div className="all">
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
           <Link to='#' className='menu-bars'>
@@ -44,6 +45,7 @@ function NavBar() {
                 </ul>
             </nav>
             </IconContext.Provider>
+            </div>
         </>
     );
 }

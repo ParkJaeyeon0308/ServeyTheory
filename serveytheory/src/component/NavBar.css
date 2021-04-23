@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 /* 화면에 바로 보이는 긴 가로 메뉴바 */
+.all{
+  width: 100vw;
+}
   .navbar{
     background-color: rgb(16, 47, 87);
+    width: 100vw;
     height: 80px;
     display: flex;
     justify-content: start;
@@ -18,9 +22,9 @@
     background: none;
 }
 /* 가로메뉴바 글씨 */
-.navbar-img{
+/* .navbar-img{
   float: right;
-}
+} */
   /* 햄버거 버튼 누르면 나오는 메뉴바 */
   .nav-menu{
     background-color: rgb(16, 47, 87);
@@ -33,6 +37,7 @@
     left: -100%;
     transition: 850ms;
     text-decoration: none;
+    z-index: 1;
 }
   
   .nav-menu.active{

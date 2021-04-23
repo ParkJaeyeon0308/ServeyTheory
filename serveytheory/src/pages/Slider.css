@@ -1,0 +1,9 @@
+.slide{
+    flex:1;
+    align-Items:'center';
+    width: 100vw;
+}
+
+.slide_container{
+    left: 50%;
+}
