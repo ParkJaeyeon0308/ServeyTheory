@@ -16,6 +16,7 @@ export default class Home extends Component {
       slidesToScroll: 1, //1장씩 넘기는거
     };
     return (
+      <div className="container">
         <Slider {...settings} className="slide">
           <div>
           <img src="/images/지브리.png" style={{ height:700}}/>
@@ -36,6 +37,7 @@ export default class Home extends Component {
           <img src="/images/스코틀랜드 격자.jpg" style={{height:700}}/>
           </div>
         </Slider>
+        </div>
     );
   }
 }

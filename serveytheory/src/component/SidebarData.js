@@ -9,7 +9,7 @@ export const SidebarData = [
     },
     {
         title: '로그인/로그아웃',
-        path:'/login_logout',
+        path:'/login',
         // icon:<BiIcons.BiLogIn color="#ffffff"/>,
         cName: 'nav-text'
     },

@@ -1,9 +1,9 @@
-.slide{
-    flex:1;
-    align-Items:'center';
-    width: 100vw;
+.container{
+    width: 100%;
 }
-
-.slide_container{
-    left: 50%;
+.slide{
+    flex:auto;
+    align-Items:'center';
+    width: 100%;
+    /* margin: 0; */
 }
