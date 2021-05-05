@@ -129,3 +129,13 @@
     justify-content: start;
     align-items: center;
 }
+.logo{
+
+}
+
+
+@media ( max-width: 530px ) {
+  .logo{
+    display: none;
+  }
+}

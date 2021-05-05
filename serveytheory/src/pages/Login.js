@@ -27,6 +27,7 @@ responseFail = (err) => {
 }
     render(){ 
   return (
+    <div className="body"> 
     <center>
     <Container fluid>
   <Row>
@@ -40,17 +41,21 @@ responseFail = (err) => {
                     onSuccess={this.responseGoogle}
                     onFailure={this.responseFail}
                 />
+                <h6>or your account</h6>
        <input type="id" id="inputid" className="form-control" placeholder="ID" name="id" style={{marginBottom:20}} onChange={this.handleChange}/>
        <input type="password" id="inputPhone" className="form-control" placeholder="비밀번호" name="phone" style={{marginBottom:20}} onChange={this.handleChange}/>
        {/* <Link to="./SignUp">  */}
      <button className="btn btn-lg btn-block" type="button" style={{backgroundColor:"#fffadd", color:"#102f57"}} onClick={this.handleOnClick}> 로그인 </button>
     {/* </Link> */}
-    </center>
-   </div></Col>
-   <Col className="row2"></Col>
+    <h6 className="signup">no have account?</h6>
+    </center></div>
+</Col>
+   <Col className="row2"><center>
+   <button className="btn btn-lg btn-block" type="button" className="signupBtn" style={{backgroundColor:"#102f57", color:"#fffadd"}} onClick={this.handleOnClick}> 회원가입 </button>
+   </center></Col>
   </Row>
-</Container></center>
-  );
+</Container></center></div>
+ );
 }
 }
 

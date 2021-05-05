@@ -20,7 +20,7 @@ function NavBar() {
           </Link>
           <div className='navbar-img'>
           {/* <Link to='#' className='GoHome'> */}
-          <img src="/images/설문학개론.png"/>
+          <img  className="logo" src="/images/설문학개론.png"/>
           {/* </Link> */}
           </div>
         </div>
