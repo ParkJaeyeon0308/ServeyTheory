@@ -16,11 +16,12 @@ function App() {
   return (
     
     <>
+    {/* <Login/> */}
     <Router>
       <NavBar/>
       <Switch>
       <Route path='/' exact component={Home} />
-          <Route path='/login' component={Login} />
+      <Route path='/login' exact component={Login} />
           <Route path='/signup' component={SignUp} />
           <Route path='/result' component={Result} />
           <Route path='/account' component={Account} />
