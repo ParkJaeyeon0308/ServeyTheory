@@ -45,13 +45,17 @@ responseFail = (err) => {
        <input type="id" id="inputid" className="form-control" placeholder="ID" name="id" style={{marginBottom:20}} onChange={this.handleChange}/>
        <input type="password" id="inputPhone" className="form-control" placeholder="비밀번호" name="phone" style={{marginBottom:20}} onChange={this.handleChange}/>
        {/* <Link to="./SignUp">  */}
-     <button className="btn btn-lg btn-block" type="button" style={{backgroundColor:"#fffadd", color:"#102f57"}} onClick={this.handleOnClick}> 로그인 </button>
+     <button className="btn btn-lg btn-block" type="button" style={{backgroundColor:"#fffadd", color:"#102f57", padding:15, fontSize:20}} onClick={this.handleOnClick}> 로그인 </button>
     {/* </Link> */}
     <h6 className="signup">no have account?</h6>
     </center></div>
 </Col>
    <Col className="row2"><center>
-   <button className="btn btn-lg btn-block" type="button" className="signupBtn" style={{backgroundColor:"#102f57", color:"#fffadd"}} onClick={this.handleOnClick}> 회원가입 </button>
+     <div className="texts">
+     <h5>계정이 없으신가요?</h5>
+     <h5>지금 바로 회원가입 하세요!</h5></div>
+     <Link to="./SignUp">
+   <button className="btn btn-lg btn-block" type="button" className="signupBtn" style={{backgroundColor:"#102f57", color:"white", fontSize:20}} onClick={this.handleOnClick}> 회원가입 </button></Link>
    </center></Col>
   </Row>
 </Container></center></div>
