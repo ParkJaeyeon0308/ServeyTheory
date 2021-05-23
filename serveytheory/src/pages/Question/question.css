@@ -1,0 +1,35 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* n% 진행 중 */
+.progress_text {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    text-align: left;
+    font-size: 1em;
+    color: rgb(24, 70, 83);
+}
+
+.question_text {
+    margin-top: 2.5rem;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+#image {
+    width: 28rem;
+    height: 16rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}

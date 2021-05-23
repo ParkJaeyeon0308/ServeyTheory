@@ -4,7 +4,7 @@ import { GoogleLogin } from 'react-google-login';
 import { Container,Row,Col } from 'react-bootstrap';
 import './Login.css';
 
-
+// 커밋 테스트
 const clientId = "600385616873-9ibcau1rto6jhqmrk8he88hh9tslhhj0.apps.googleusercontent.com"
 
 class Login extends Component{ 

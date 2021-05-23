@@ -1,31 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 /* 화면에 바로 보이는 긴 가로 메뉴바 */
-  .navbar{
-    background-color: rgb(16, 47, 87);
+.navbar {
+    background-color: rgb(24, 88, 105);
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: start;
     /* align-items: center; */
     text-decoration: none;
-    margin: 0; 
+    margin: 0;
 }
 .navbar-img{
   
 }
 
-
 /* 햄버거 버튼 위치 */
-  .menu-bars{
+.menu-bars {
     position: relative;
     margin-left: 10px;
     font-size: 2rem;
     background: none;
 }
 
-  /* 햄버거 버튼 누르면 나오는 메뉴바 */
-  .nav-menu{
-    background-color: rgb(16, 47, 87);
+/* 햄버거 버튼 누르면 나오는 메뉴바 */
+.nav-menu {
+    background-color: rgb(24, 88, 105);
     width: 22%;
     height: 100vh;
     display: flex;
@@ -37,13 +36,13 @@
     text-decoration: none;
     z-index: 1;
 }
-  
-  .nav-menu.active{
+
+.nav-menu.active {
     left: 0;
     transition: 350ms;
 }
 
-  .nav-text{
+.nav-text {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -51,8 +50,8 @@
     list-style: none;
     height: 60px;
 }
-  
-  .nav-text a{
+
+.nav-text a {
     text-decoration: none;
     /* 링크 밑줄 지워주는거 */
     color: #f5f5f5;
@@ -66,15 +65,15 @@
     padding: 0 16px;
     border-radius: 5px;
 }
-  
-  .nav-text a:hover{
+
+.nav-text a:hover {
     color: #f5f5f5;
     text-decoration: none;
-    background-color: rgb(112, 139, 173);
+    background-color: rgb(24, 70, 83);
 }
 
-.mini-nav-text a{
-  text-decoration: none;
+.mini-nav-text a {
+    text-decoration: none;
     /* 링크 밑줄 지워주는거 */
     color: #f5f5f5;
     font-size: 18px;
@@ -88,17 +87,17 @@
     border-radius: 5px;
 }
 
-.mini-nav-text a:hover{
-  color: #f5f5f5;
-  text-decoration: none;
-  margin-left: 10%;
-  background-color: rgb(111, 122, 136);
+.mini-nav-text a:hover {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin-left: 10%;
+    background-color: rgb(24, 70, 83);
 }
-  
-  .nav-menu-items{
+
+.nav-menu-items {
     width: 100%;
 }
-.fixnav-text{
+.fixnav-text {
     display: flex;
     justify-content: start;
     margin-left: 10%;
@@ -108,8 +107,8 @@
     list-style: none;
     height: 40px;
 }
-.fixnav-text a{
-  text-decoration: none;
+.fixnav-text a {
+    text-decoration: none;
     /* 링크 밑줄 지워주는거 */
     color: #f5f5f5;
     font-size: 25px;
@@ -121,15 +120,15 @@
     border-radius: 5px;
 }
 
-.fixnav-text a:hover{
-  color: #f5f5f5;
-  text-decoration: none;
-  background:none;
+.fixnav-text a:hover {
+    color: #f5f5f5;
+    text-decoration: none;
+    background: none;
 }
 
-  /* x버튼 누르는 곳 배경 색깔 */
-  .navbar-toggle{
-    background-color: rgb(16, 47, 87);
+/* x버튼 누르는 곳 배경 색깔 */
+.navbar-toggle {
+    background-color: rgb(24, 88, 105);
     margin-left: 15px;
     width: 100%;
     height: 80px;
@@ -137,10 +136,14 @@
     justify-content: start;
     align-items: center;
 }
+<<<<<<< HEAD
+=======
+.logo {
+}
+>>>>>>> 16fe305f7e287c8e025a1428c652bbf41b2e746c
 
-
-@media ( max-width: 530px ) {
-  .logo{
-    display: none;
-  }
+@media (max-width: 530px) {
+    .logo {
+        display: none;
+    }
 }
