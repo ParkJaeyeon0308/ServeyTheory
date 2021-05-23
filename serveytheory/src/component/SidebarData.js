@@ -14,8 +14,8 @@ export const SidebarData = [
         cName: "nav-text"
     },
     {
-        title: "내 설문 몰아보기",
-        path: "/result",
+        title: "내 결과 모아보기",
+        path: "/collect",
         // icon:<BsIcons.BsFillGridFill color="#ffffff"/>,
         cName: "nav-text"
     },

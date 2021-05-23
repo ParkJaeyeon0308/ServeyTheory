@@ -10,6 +10,7 @@ import QuitAccount from "./pages/QuitAccount";
 import SignUp from "./pages/SignUp";
 
 import Question from "./pages/Question/question";
+import Collect from "./pages/Collect/collect";
 import Result from "./pages/Result/result";
 import Developer_intro from "./pages/Developer_intro/developer_intro";
 
@@ -30,6 +31,7 @@ function App() {
 
                     <Route path="/question" component={Question} />
                     <Route path="/result" component={Result} />
+                    <Route path="/collect" component={Collect} />
                     <Route
                         path="/developer_intro"
                         component={Developer_intro}
