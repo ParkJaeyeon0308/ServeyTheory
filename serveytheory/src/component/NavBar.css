@@ -138,11 +138,8 @@
     justify-content: start;
     align-items: center;
 }
-<<<<<<< HEAD
-=======
 .logo {
 }
->>>>>>> 16fe305f7e287c8e025a1428c652bbf41b2e746c
 
 @media (max-width: 530px) {
     .logo {
