@@ -32,6 +32,7 @@
     transition: 850ms;
     text-decoration: none;
     z-index: 1;
+    font-size: 1em;
 }
 
 .nav-menu.active {
@@ -53,7 +54,8 @@
     /* 링크 밑줄 지워주는거 */
     color: #f5f5f5;
     margin-left: 10%;
-    font-size: 25px;
+    font-size: 1.5em;
+    line-height: 1.3em;
     width: 75%;
     margin-top: 25%;
     height: 100%;
@@ -73,7 +75,7 @@
     text-decoration: none;
     /* 링크 밑줄 지워주는거 */
     color: #f5f5f5;
-    font-size: 18px;
+    font-size: 1.2em;
     margin-top: 5%;
     width: 55%;
     margin-left: 10%;
@@ -108,7 +110,7 @@
     text-decoration: none;
     /* 링크 밑줄 지워주는거 */
     color: #f5f5f5;
-    font-size: 25px;
+    font-size: 1.4em;
     width: 75%;
     height: 100%;
     display: flex;
