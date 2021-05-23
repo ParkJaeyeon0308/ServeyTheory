@@ -38,11 +38,6 @@ export const SidebarData = [
         cName: "mini-nav-text"
     },
     {
-        title: "설문하기",
-        path: "/question",
-        cName: "nav-text"
-    },
-    {
         title: "Developer Intro.",
         path: "/developer_intro",
         cName: "nav-text"
