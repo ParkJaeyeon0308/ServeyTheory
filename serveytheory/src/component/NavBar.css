@@ -10,6 +10,9 @@
     text-decoration: none;
     margin: 0;
 }
+.navbar-img{
+  
+}
 
 /* 햄버거 버튼 위치 */
 .menu-bars {
@@ -135,8 +138,11 @@
     justify-content: start;
     align-items: center;
 }
+<<<<<<< HEAD
+=======
 .logo {
 }
+>>>>>>> 16fe305f7e287c8e025a1428c652bbf41b2e746c
 
 @media (max-width: 530px) {
     .logo {
