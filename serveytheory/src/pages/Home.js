@@ -8,7 +8,6 @@ export default class Home extends Component {
   render() {
     const settings = {
       dots: true, //넘겨지는 점 보여지게
-      // initialSlide: 0,
       infinite: true, //계속 활용할 수 있는걸로
       autoplay: true,
       autoplaySpeed: 5000,
