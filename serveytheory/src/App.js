@@ -9,7 +9,8 @@ import PassChange from "./pages/PassChange";
 import QuitAccount from "./pages/QuitAccount";
 import SignUp from "./pages/SignUp";
 
-import Question from "./pages/Question/question";
+import Question2 from "./pages/Question/question_2";
+import Question3 from "./pages/Question/question_3";
 import Collect from "./pages/Collect/collect";
 import Result from "./pages/Result/result";
 import Developer_intro from "./pages/Developer_intro/developer_intro";
@@ -29,7 +30,8 @@ function App() {
                     <Route path="/pass_change" component={PassChange} />
                     <Route path="/quit_account" component={QuitAccount} />
 
-                    <Route path="/question" component={Question} />
+                    <Route path="/question2" component={Question2} />
+                    <Route path="/question3" component={Question3} />
                     <Route path="/result" component={Result} />
                     <Route path="/collect" component={Collect} />
                     <Route

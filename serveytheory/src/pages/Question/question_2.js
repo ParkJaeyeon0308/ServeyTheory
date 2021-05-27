@@ -21,9 +21,14 @@ function question() {
                 </div>
             </div>
             <div className="buttons">
-                <Button>{text.btn1}</Button>
+                <Button onClick={() => console.log("클릭 이벤트 처리")}>
+                    {text.btn1}
+                </Button>
                 <br />
-                <Button>{text.btn2}</Button>
+
+                <Button onClick={() => console.log("클릭 이벤트 처리")}>
+                    {text.btn2}
+                </Button>
             </div>
         </div>
     );

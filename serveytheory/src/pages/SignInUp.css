@@ -1,31 +1,31 @@
-.body{
+.body {
     height: 100%;
     z-index: -1;
     background-color: rgb(16, 47, 87);
 }
-.footer{
+.footer {
     z-index: -1;
     background-color: rgb(16, 47, 87);
 }
-.input{
+.input {
     width: 70%;
     height: 400px;
 }
-.texts{
+.texts {
     color: rgb(16, 47, 87);
     margin-top: 20%;
 }
 
-.containerLogin{
-    flex:auto;
+.containerLogin {
+    flex: auto;
     width: 70%;
     border-radius: 10%;
 }
-.signup{
+.signup {
     display: none;
 }
-.row1{
-    flex:auto;
+.row1 {
+    flex: auto;
     margin-top: 10%;
     margin-left: 20%;
     /* box-shadow:  5px 7px 7px rgb(182, 182, 182), -5px 7px 7px rgb(182, 182, 182); */
@@ -34,8 +34,8 @@
     border-bottom-left-radius: 2%;
     margin-bottom: 10%;
 }
-.row2{
-    flex:auto;
+.row2 {
+    flex: auto;
     margin-top: 10%;
     margin-right: 20%;
     /* box-shadow:  -5px 7px 7px rgb(182, 182, 182), -5px 7px 7px rgb(182, 182, 182); */
@@ -45,42 +45,41 @@
     margin-bottom: 10%;
 }
 
-.googleLogin{
-    flex:auto;
+.googleLogin {
+    flex: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
-    size : 10em;
+    size: 10em;
     display: flex;
     /* flex-flow: column wrap; */
 }
-.text2{
+.text2 {
     margin-bottom: 10px;
 }
-.text1{
+.text1 {
     margin-top: 15%;
 }
-.signupBtn{
+.signupBtn {
     margin-top: 3%;
     width: 40%;
     padding: 2%;
 }
-@media ( max-width: 550px ) {
-    .row2{
+@media (max-width: 550px) {
+    .row2 {
         display: none;
     }
-    .signup{
+    .signup {
         margin-top: 10px;
         display: inline;
     }
-    .row1{
+    .row1 {
         margin-left: 0;
         border-top-right-radius: 2%;
         border-bottom-right-radius: 2%;
     }
-    .col{
+    .col {
         margin-left: 20px;
         margin-right: 20px;
     }
 }
-
