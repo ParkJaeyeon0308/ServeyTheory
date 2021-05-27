@@ -14,9 +14,11 @@
 }
 
 .test_result {
+    margin-top: 2rem;
+
     text-align: center;
     font-size: 2em;
-    margin-top: 2rem;
+    color: rgb(24, 70, 83);
 }
 
 .container .box {
