@@ -2,19 +2,22 @@ $button: rgb(249, 181, 169); // 주석 선언
 
 .Button {
     display: inline-flex;
-    color: white;
-    font-weight: bold;
+
     outline: none;
     border-radius: 20px;
     border: none;
     cursor: pointer;
 
-    // height: 3rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+
+    height: auto;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-left: 15rem;
     padding-right: 15rem;
-    font-size: 1rem;
     margin: 0.5rem;
 
     background: $button; // 주석 사용
