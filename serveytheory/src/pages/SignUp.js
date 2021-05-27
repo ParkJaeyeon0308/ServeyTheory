@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom'
-import './SignInUp.css';
+import { InputGroup, FormControl,Button } from 'react-bootstrap';
+import './SignUp.css';
 
 const clientId = "OAuth Web Client ID";
 
@@ -17,17 +18,29 @@ class SignUp extends Component{
     handleOnClick = (e) => { 
         console.log(this.state.id, this.state.nick, this.state.pw); 
     }; render(){ 
-        return ( 
-        <div className="input">
-            <center>
-        <h2 className="LoginHeader"> 회원가입 </h2></center>
-         <input type="id" id="inputid" className="form-control" placeholder="ID" name="id" style={{marginBottom:20}} onChange={this.handleChange}/>
-         <input type="nickname" id="inputNick" className="form-control" placeholder="닉네임" name="nickname" style={{marginBottom:20}} onChange={this.handleChange}/>
-          <input type="password" id="inputPhone" className="form-control" placeholder="비밀번호" name="phone" style={{marginBottom:20}} onChange={this.handleChange}/>
-            <Link to="./Login">
-           <button className="btn btn-lg btn-block" type="button" style={{backgroundColor:"#fffadd", color:"#102f57"}} onClick={this.handleOnClick}> 회원가입 </button> 
-           </Link>
-           </div>
+        return (
+        <center>
+        <div id="body">
+        <h1 className="LoginHeader"> 회원가입 </h1>
+        <br></br>
+        <InputGroup className="mb-3" id="inputs">
+        <FormControl
+        style={{fontSize:25}}
+          placeholder="닉네임"
+          aria-label="닉네임"
+          aria-describedby="basic-addon2"
+        />
+        <InputGroup.Append>
+          <Button variant="outline-secondary" id="button">중복체크</Button>
+        </InputGroup.Append>
+      </InputGroup>
+      <input type="id" id="inputid" className="form-control" placeholder="ID" name="id" id="id_inputs" onChange={this.handleChange}/>
+      <input type="password" id="inputPW" className="form-control" placeholder="비밀번호" name="PW" id="pw_inputs"  onChange={this.handleChange}/>
+      <input type="password" id="inputPWcheck" className="form-control" placeholder="비밀번호 확인" name="PW_check" id="pw_inputs"  onChange={this.handleChange}/>
+      <Link to="./Login">
+        <button className="btn btn-lg btn-block" type="button" id="buttons" onClick={this.handleOnClick}> 회원가입 </button></Link>
+        </div>
+      </center>
            ); 
         }; 
     } export default SignUp;

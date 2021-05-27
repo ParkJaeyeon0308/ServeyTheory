@@ -1,0 +1,36 @@
+#body{
+    background-color: white;
+    border-color: rgb(249, 181, 169);
+    width: 50%;
+    padding: 3%;
+    margin-top: 10%;
+    padding-bottom: 1%;
+}
+#inputs{
+    width: 70%;
+}
+#button{
+    background-color: rgb(249, 181, 169);
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+#id_inputs{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 70%;
+    font-size: 25px;
+}
+#pw_inputs{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 70%;
+    font-size: 25px;
+}
+#buttons{
+    background-color: rgb(249, 181, 169);
+    color: white;
+    width: 70%;
+    font-size: 25px;
+    margin-bottom: 5%;
+}

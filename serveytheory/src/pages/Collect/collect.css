@@ -1,0 +1,48 @@
+* {
+    list-style: none;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.test_result {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2rem;
+}
+
+.container .box {
+    width: 60rem;
+    height: auto;
+    margin-top: 1rem;
+    background-color: rgb(200, 202, 204);
+    border-radius: 20px 20px 20px 20px;
+    border: 0.6rem solid rgb(24, 88, 105);
+
+    text-align: left;
+}
+
+.container .box ul {
+    font-size: 1.3em;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.container .box li {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+    padding: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+}
