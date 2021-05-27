@@ -7,18 +7,38 @@
 }
 
 .type {
-    margin-top: 5rem;
     width: 60rem;
     flex-shrink: 0;
-    margin-bottom: 3rem;
+
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+
     font-size: 2em;
     text-align: center;
+    color: rgb(24, 70, 83);
 }
 
-.context {
+.type-img {
     width: 20rem;
-    flex-grow: 1;
+    height: 15rem;
+    border-radius: 5rem;
+
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-bottom: 2rem;
+}
+
+/* 타입 설명 */
+.sub_context {
+    width: 25rem;
+    height: auto;
+
+    background-color: rgb(240, 240, 240);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+
     font-size: 1em;
-    line-height: 1.5em;
-    text-align: center;
+    line-height: 2em;
+    text-align: justify;
 }
