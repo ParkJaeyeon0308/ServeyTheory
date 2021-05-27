@@ -9,11 +9,15 @@ import Account from "./pages/Account";
 import PassChange from "./pages/PassChange";
 import QuitAccount from "./pages/QuitAccount";
 import SignUp from "./pages/SignUp";
-import customAxios from "./customAxios";
-import Question from "./pages/Question/question";
+
+import Question2 from "./pages/Question/question_2";
+import Question3 from "./pages/Question/question_3";
 import Collect from "./pages/Collect/collect";
 import Result from "./pages/Result/result";
 import Developer_intro from "./pages/Developer_intro/developer_intro";
+
+import Axios from "axios";
+import customAxios from "./customAxios";
 
 // 여기서 페이지 이동을 담당
 function App() {
@@ -33,10 +37,10 @@ function App() {
     return (
         <>
             {/* <div className="App">
-      <header className="App-header">
-        이 기기의 IP주소는 {ip}입니다.
-      </header>
-    </div> */}
+                    <header className="App-header">
+                    이 기기의 IP주소는 {ip}입니다.
+                    </header>
+                </div> */}
             <Router>
                 <NavBar />
                 <Switch>
@@ -47,8 +51,11 @@ function App() {
                     <Route path="/account" component={Account} />
                     <Route path="/pass_change" component={PassChange} />
                     <Route path="/quit_account" component={QuitAccount} />
+
+                    <Route path="/question2" component={Question2} />
+                    <Route path="/question3" component={Question3} />
+                    <Route path="/result" component={Result} />
                     <Route path="/collect" component={Collect} />
-                    <Route path="/question" component={Question} />
                     <Route
                         path="/developer_intro"
                         component={Developer_intro}
