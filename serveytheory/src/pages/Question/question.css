@@ -11,6 +11,7 @@
     position: absolute;
     margin-top: 1rem;
     margin-left: 4rem;
+
     text-align: left;
     font-size: 1em;
     color: rgb(24, 70, 83);
@@ -18,7 +19,8 @@
 
 .question_text {
     margin-top: 2.5rem;
-    font-size: 2.2em;
+
+    font-size: 1.9em;
     text-align: center;
 }
 
@@ -27,9 +29,11 @@
     height: 16rem;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
+
     text-align: center;
 }
 
 .buttons {
     text-align: center;
+    width: 100%;
 }
