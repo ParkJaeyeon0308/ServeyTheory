@@ -12,12 +12,14 @@ export default class Home extends Component {
         function showBox() {
             jQuery(".more_btn").hide();
             jQuery(".box2").show();
+            jQuery(".box3").show();
             jQuery(".close_btn").show();
         }
 
         function hideBox() {
             jQuery(".close_btn").hide();
             jQuery(".box2").hide();
+            jQuery(".box3").hide();
             jQuery(".more_btn").show();
         }
 
@@ -66,6 +68,7 @@ export default class Home extends Component {
                         />
                     </div>
                 </Slider>
+                <div className="text">원하는 테스트를 골라 시작해보세요!</div>
                 <div className="box1"></div>
                 <div className="box1"></div>
                 <div className="box1"></div>
@@ -78,8 +81,8 @@ export default class Home extends Component {
                 <div className="box2"></div>
 
                 {/* 빈 박스 */}
-                <div className="box2"></div>
-                <div className="box2"></div>
+                <div className="box3"></div>
+                <div className="box3"></div>
                 <button type="button" className="more_btn" onClick={showBox}>
                     더보기
                 </button>
