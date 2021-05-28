@@ -1,0 +1,92 @@
+html,
+body {
+    background-color: rgb(249, 181, 169);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+/* container의 background-color 지정 */
+.container-fluid {
+    background-color: rgb(249, 181, 169);
+}
+
+/* 왼쪽 화면 */
+.row1 {
+    flex: auto;
+    margin-top: 10%;
+    margin-left: 20%;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+    margin-bottom: 10%;
+}
+
+/* LOGIN */
+.text1 {
+    margin-top: 15%;
+}
+
+.input {
+    width: 70%;
+    height: 400px;
+}
+
+/* 구글 로그인 버튼 */
+.googleLogin {
+    flex: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    size: 10em;
+    display: flex;
+}
+
+/* 계정이 없을 경우 - no have account? */
+.signup {
+    display: none;
+}
+
+/* 오른쪽 화면 */
+.row2 {
+    flex: auto;
+    margin-top: 10%;
+    margin-right: 20%;
+    background-color: rgb(24, 88, 105);
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    margin-bottom: 10%;
+}
+
+/* 오른쪽 화면 텍스트 */
+.texts {
+    color: white;
+    margin-top: 9rem;
+}
+
+@media (max-width: 550px) {
+    .row2 {
+        display: none;
+    }
+    .signup {
+        margin-top: 10px;
+        display: inline;
+    }
+    .row1 {
+        margin-left: 0;
+        border-top-right-radius: 2%;
+        border-bottom-right-radius: 2%;
+    }
+    .col {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

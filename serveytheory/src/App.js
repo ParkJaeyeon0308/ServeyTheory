@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import NavBar from "./component/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
+import Login from "./pages/Login/login";
 import Account from "./pages/Account";
 import PassChange from "./pages/PassChange";
 import QuitAccount from "./pages/QuitAccount";
-import SignUp from "./pages/SignUp";
+import SignUp from "./pages/SignUp/signup";
 
 import Question2 from "./pages/Question/question_2";
 import Question3 from "./pages/Question/question_3";
