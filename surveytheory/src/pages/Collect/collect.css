@@ -50,3 +50,9 @@ article table tr:hover {
     color: rgb(24, 70, 83);
     cursor: pointer;
 }
+
+@media (min-width: 1920px) {
+    .test_result {
+        margin-top: 10rem;
+    }
+}

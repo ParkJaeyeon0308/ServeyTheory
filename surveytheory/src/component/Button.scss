@@ -27,3 +27,10 @@ $btn_color: rgb(255, 230, 171); // 주석 선언
         background: lighten($btn_color, 5%); // 색상 5% 밝게
     }
 }
+
+@media (min-width: 1920px) {
+    .Button {
+        font-size: 1.3em;
+        width: 35rem;
+    }
+}

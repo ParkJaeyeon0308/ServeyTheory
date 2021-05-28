@@ -8,7 +8,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 2em;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .developer_intro_text_subtext {
@@ -59,4 +59,21 @@
     font-weight: bold;
     font-size: 1em;
     color: black;
+}
+
+@media (min-width: 1920px) {
+    .developer_intro_text {
+        margin-top: 7rem;
+        font-size: 2.5em;
+    }
+
+    .developer_intro_text_subtext {
+        font-size: 1.2em;
+    }
+
+    .member {
+        width: 20rem;
+        height: 28rem;
+        margin-top: 3rem;
+    }
 }
