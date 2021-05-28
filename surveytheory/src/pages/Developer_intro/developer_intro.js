@@ -11,7 +11,7 @@ function Developer_intro() {
             <div className="container">
                 <a href="https://github.com/ParkJaeyeon0308">
                     <div class="member">
-                        <img src="../images/member/맹수연.jpg" />
+                        <img src="../images/member/박재연.jpg" />
                         <div class="info">
                             <span id="mem_info">뉴미디어웹솔루션과 박재연</span>
                             <br />
