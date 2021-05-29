@@ -1,31 +1,29 @@
-$button: rgb(249, 181, 169); // 주석 선언
+$btn_color: rgb(255, 230, 171); // 주석 선언
 
 .Button {
-    display: inline-flex;
+    display: block;
 
     outline: none;
-    border-radius: 20px;
+    border-radius: 2rem;
     border: none;
     cursor: pointer;
 
-    color: white;
+    color: rgb(24, 70, 83);
     font-weight: bold;
     text-align: center;
     font-size: 1rem;
 
-    height: auto;
+    width: 30rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-    margin: 0.5rem;
+    margin: 0px auto;
 
-    background: $button; // 주석 사용
+    background: $btn_color; // 주석 사용
     &:hover {
-        background: darken($button, 15%); // 색상 15% 어둡게
+        background: darken($btn_color, 15%); // 색상 15% 어둡게
     }
 
     &:active {
-        background: lighten($button, 5%); // 색상 5% 밝게
+        background: lighten($btn_color, 5%); // 색상 5% 밝게
     }
 }

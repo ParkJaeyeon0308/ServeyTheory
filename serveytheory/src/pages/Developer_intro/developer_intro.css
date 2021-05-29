@@ -36,17 +36,15 @@
     width: 18rem;
     height: 25rem;
 
-    background-color: rgb(255, 255, 255);
-
-    border-radius: 50px 50px 50px 50px;
-    border: 0.3rem solid rgb(249, 181, 169);
+    background-color: rgb(250, 245, 233);
+    border-radius: 40px 40px 40px 40px;
     margin: 1.2rem;
 }
 
 .member img {
     width: 100%;
-    padding: 1rem;
-    border-radius: 50px 50px 50px 50px;
+    padding: 1.5rem;
+    border-radius: 40px 40px 40px 40px;
 }
 
 .member .info {

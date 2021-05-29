@@ -42,7 +42,7 @@ class Login extends Component {
                                         onSuccess={this.responseGoogle}
                                         onFailure={this.responseFail}
                                     />
-                                    <h6>or your account</h6>
+                                    <h6 className="account">or your account</h6>
                                     <input
                                         type="id"
                                         id="inputid"
@@ -65,24 +65,27 @@ class Login extends Component {
                                         className="btn btn-lg btn-block"
                                         type="button"
                                         style={{
-                                            backgroundColor: "rgb(24, 88, 105)",
-                                            color: "white",
-                                            fontSize: "1.3rem",
+                                            backgroundColor:
+                                                "rgb(255, 230, 171)",
+                                            color: "rgb(24, 70, 83)",
+                                            fontSize: "1.1rem",
                                             padding: "1rem",
-                                            marginTop: "2.5rem"
+                                            marginTop: "2rem"
                                         }}
                                         onClick={this.handleOnClick}
                                     >
                                         {" "}
                                         로그인{" "}
                                     </button>
-                                    <h6 className="signup">no have account?</h6>
+                                    <h6 className="no_have_account">
+                                        no have account?
+                                    </h6>
                                 </div>
                             </Col>
                             <Col className="row2">
                                 <div className="texts">
-                                    <h5>계정이 없으신가요?</h5>
-                                    <h5>지금 바로 회원가입 하세요!</h5>
+                                    <p>계정이 없으신가요?</p>
+                                    <p>지금 바로 회원가입 하세요!</p>
                                 </div>
                                 <Link to="./SignUp">
                                     <button
@@ -90,9 +93,9 @@ class Login extends Component {
                                         type="button"
                                         style={{
                                             backgroundColor: "white",
-                                            color: "rgb(24, 88, 105)",
-                                            fontSize: "1.3rem",
-                                            marginTop: "3rem",
+                                            color: "rgb(24, 70, 83)",
+                                            fontSize: "1.1em",
+                                            marginTop: "2rem",
                                             width: "20rem",
                                             padding: "1rem"
                                         }}

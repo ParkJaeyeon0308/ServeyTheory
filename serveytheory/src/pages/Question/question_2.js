@@ -13,7 +13,7 @@ class question extends React.Component {
         return (
             <div className="Question">
                 <p className="progress_text">{progress}% 진행 중</p>
-                <p className="question_text">Q. {question_title}</p>
+                <p className="question_text">{question_title}</p>
                 <div className="container">
                     <div>
                         <img id="image" src="../images/지브리.png" />
@@ -37,7 +37,7 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title:
-        "붕어빵이 먹고싶어서 사러나가려고 한다. 당신이 선택한 가게는?",
+        "Q1. 붕어빵이 먹고싶어서 사러나가려고 한다. 당신이 선택한 가게는?",
     btn1: "집이랑 가까운 곳",
     btn2: "내가 좋아하는 슈크림 붕어빵이 있는 곳",
     progress: 0

@@ -15,7 +15,7 @@
 
 /* 상단에 위치한 "테스트 결과" */
 .test_result {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
 
     text-align: center;
     font-size: 2em;
@@ -24,12 +24,12 @@
 
 /* 테스트 결과가 들어갈 테이블 */
 article {
-    background-color: rgb(249, 181, 169);
+    /* background-color: rgb(249, 181, 169); */
     width: 60rem;
     height: auto;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     border-radius: 20px 20px 20px 20px;
-    border: 0.6rem solid rgb(24, 88, 105);
+    /* border: 0.6rem solid rgb(24, 88, 105); */
 
     color: #000000;
     font-size: 1.2rem;
@@ -42,8 +42,8 @@ article table {
 }
 
 article table tr {
-    background-color: rgb(245, 245, 245);
-    border: 1.2rem solid rgb(249, 181, 169);
+    background-color: rgb(239, 234, 215);
+    border: 1.2rem solid rgb(255, 255, 255);
 }
 
 article table th,
@@ -53,8 +53,8 @@ article table td {
 }
 
 article table tr:hover {
-    background-color: rgb(24, 88, 105);
-    color: #ffffff;
+    background-color: rgb(255, 230, 171);
+    color: black;
     cursor: pointer;
 }
 
