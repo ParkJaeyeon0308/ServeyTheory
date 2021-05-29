@@ -3,7 +3,7 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import NavBar from "./component/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/home";
 import Login from "./pages/Login/login";
 import Account from "./pages/Account";
 import PassChange from "./pages/PassChange";

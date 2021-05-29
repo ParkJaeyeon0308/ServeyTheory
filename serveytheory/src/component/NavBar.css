@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 /* 화면에 바로 보이는 긴 가로 메뉴바 */
 .navbar {
     background-color: rgb(113, 157, 138);
@@ -130,9 +129,9 @@
 /* x버튼 누르는 곳 배경 색깔 */
 .navbar-toggle {
     background-color: rgb(113, 157, 138);
-    margin-left: 15px;
-    width: 100%;
-    height: 80px;
+    margin-left: 1rem;
+    width: 90%;
+    height: 5rem;
     display: flex;
     justify-content: start;
     align-items: center;
