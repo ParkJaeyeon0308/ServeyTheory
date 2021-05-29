@@ -24,7 +24,7 @@ class collect extends React.Component {
                             <table>
                                 <tr
                                     onClick={() =>
-                                        console.log("클릭 이벤트 처리")
+                                        this.props.history.push("/result")
                                     }
                                 >
                                     <th>
@@ -36,7 +36,7 @@ class collect extends React.Component {
 
                                 <tr
                                     onClick={() =>
-                                        console.log("클릭 이벤트 처리")
+                                        this.props.history.push("/result")
                                     }
                                 >
                                     <th>
@@ -48,7 +48,7 @@ class collect extends React.Component {
 
                                 <tr
                                     onClick={() =>
-                                        console.log("클릭 이벤트 처리")
+                                        this.props.history.push("/result")
                                     }
                                 >
                                     <th>
@@ -60,7 +60,7 @@ class collect extends React.Component {
 
                                 <tr
                                     onClick={() =>
-                                        console.log("클릭 이벤트 처리")
+                                        this.props.history.push("/result")
                                     }
                                 >
                                     <th>
