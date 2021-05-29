@@ -1,15 +1,24 @@
-.container {
+/* .container {
     width: 100%;
     align-items: center;
     align-content: center;
     align-self: center;
+} */
+.container {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 1rem;
 }
-
-.container .images {
+/* .container .images {
     width: 45rem;
     height: 25rem;
     margin: 0px auto;
-}
+} */
 
 .slide {
     flex: auto;
