@@ -17,7 +17,7 @@ export default class Home extends Component {
         return (
             <div className="container">
                 <Slider {...settings} className="slide">
-                    <div>
+                    <div className="images">
                         <img src="/images/지브리.png" />
                     </div>
                     <div>
