@@ -13,27 +13,49 @@
     flex: auto;
     width: 100%;
     align-items: center;
+    margin-top: 3rem;
+}
+
+/* 원하는 테스트를 골라 시작해보세요! */
+.text {
+    width: 100%;
+    font-size: 1.3em;
+    color: rgb(24, 70, 83);
+    text-align: center;
+
+    margin-top: 6rem;
 }
 
 .container .box1,
-.container .box2 {
+.container .box2,
+.container .box3 {
     width: 20rem;
     height: 15rem;
     background-color: black;
 
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.container .box1:hover,
+.container .box2:hover {
+    background-color: rgba(255, 215, 121, 0.5);
 }
 
 .container .box2 {
     display: none;
 }
 
-.container .box2:nth-child(12),
-.container .box2:nth-child(13) {
+.container .box2:nth-child(13),
+.container .box2:nth-child(14) {
     background-color: white;
     margin-bottom: 4rem;
+}
+
+.container .box3 {
+    display: none;
+    background-color: white;
 }
 
 .more_btn {
@@ -62,4 +84,10 @@
 .more_btn:hover,
 .close_btn:hover {
     background-color: rgb(255, 215, 121);
+}
+
+@media (min-width: 1920px) {
+    .text {
+        font-size: 1.5em;
+    }
 }

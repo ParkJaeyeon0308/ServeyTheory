@@ -74,26 +74,18 @@
 .texts {
     color: rgb(24, 70, 83);
     font-size: 1.15em;
-    line-height: 1.1rem;
+    line-height: 1.5rem;
 
     margin-top: 9rem;
 }
 
-@media (max-width: 550px) {
+@media (min-width: 1920px) {
+    .row1,
     .row2 {
-        display: none;
+        margin-top: 15rem;
     }
-    .signup {
-        margin-top: 10px;
-        display: inline;
-    }
-    .row1 {
-        margin-left: 0;
-        border-top-right-radius: 2%;
-        border-bottom-right-radius: 2%;
-    }
-    .col {
-        margin-left: 20px;
-        margin-right: 20px;
+
+    .texts {
+        font-size: 1.4em;
     }
 }
