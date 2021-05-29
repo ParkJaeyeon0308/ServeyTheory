@@ -18,22 +18,18 @@
 }
 
 .question_text {
-    margin-top: 2.5rem;
-
-    font-size: 1.9em;
+    color: rgb(24, 70, 83);
+    font-size: 1.7em;
     text-align: center;
+
+    margin-top: 2.5rem;
 }
 
 #image {
-    width: 28rem;
-    height: 16rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
+    width: 22rem;
+    height: 13rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 
     text-align: center;
-}
-
-.buttons {
-    text-align: center;
-    width: 100%;
 }

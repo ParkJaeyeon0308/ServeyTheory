@@ -23,61 +23,58 @@ class SignUp extends Component {
     render() {
         return (
             <div className="signup">
-                <div className="container">
-                    <h1 className="LoginHeader"> 회원가입 </h1>
-                    <br></br>
-                    <InputGroup className="mb-3" id="inputs">
-                        <FormControl
-                            style={{ fontSize: 25 }}
-                            placeholder="닉네임"
-                            aria-label="닉네임"
-                            aria-describedby="basic-addon2"
-                        />
-                        <InputGroup.Append>
-                            <Button variant="outline-secondary" id="button">
-                                중복체크
-                            </Button>
-                        </InputGroup.Append>
-                    </InputGroup>
-                    <input
-                        type="id"
-                        id="inputid"
-                        className="form-control"
-                        placeholder="ID"
-                        name="id"
-                        id="id_inputs"
-                        onChange={this.handleChange}
+                <div className="join">회원가입</div>
+                <InputGroup className="mb-3" id="nick_input">
+                    <FormControl
+                        style={{ fontSize: "1.1em" }}
+                        placeholder="닉네임"
+                        aria-label="닉네임"
+                        aria-describedby="basic-addon2"
                     />
-                    <input
-                        type="password"
-                        id="inputPW"
-                        className="form-control"
-                        placeholder="비밀번호"
-                        name="PW"
-                        id="pw_inputs"
-                        onChange={this.handleChange}
-                    />
-                    <input
-                        type="password"
-                        id="inputPWcheck"
-                        className="form-control"
-                        placeholder="비밀번호 확인"
-                        name="PW_check"
-                        id="pw_inputs"
-                        onChange={this.handleChange}
-                    />
-                    <Link to="./Login">
-                        <button
-                            className="btn btn-lg btn-block"
-                            type="button"
-                            id="buttons"
-                            onClick={this.handleOnClick}
-                        >
-                            {" "}
-                            회원가입{" "}
-                        </button>
-                    </Link>
-                </div>
+                    <InputGroup.Append>
+                        <Button variant="outline-secondary" id="btn1">
+                            중복체크
+                        </Button>
+                    </InputGroup.Append>
+                </InputGroup>
+                <input
+                    type="text"
+                    id="inputid"
+                    className="form-control"
+                    placeholder="ID"
+                    name="id"
+                    id="id_inputs"
+                    onChange={this.handleChange}
+                />
+                <input
+                    type="text"
+                    id="inputPW"
+                    className="form-control"
+                    placeholder="비밀번호"
+                    name="PW"
+                    id="pw_inputs"
+                    onChange={this.handleChange}
+                />
+                <input
+                    type="text"
+                    id="inputPWcheck"
+                    className="form-control"
+                    placeholder="비밀번호 확인"
+                    name="PW_check"
+                    id="pw_inputs"
+                    onChange={this.handleChange}
+                />
+                <Link to="./Login">
+                    <button
+                        className="btn btn-lg btn-block"
+                        type="submit"
+                        id="btn2"
+                        onClick={this.handleOnClick}
+                    >
+                        {" "}
+                        회원가입{" "}
+                    </button>
+                </Link>
             </div>
         );
     }

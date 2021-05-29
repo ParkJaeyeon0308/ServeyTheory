@@ -1,37 +1,32 @@
-body {
-    background-color: rgb(249, 181, 169);
-}
-
-.container {
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    margin-top: 1rem;
-}
-
-/* container의 background-color 지정 */
-.container-fluid {
-    background-color: rgb(249, 181, 169);
+.login div {
+    /* 세로 scroll bar 제거*/
+    overflow-y: hidden;
 }
 
 /* 왼쪽 화면 */
 .row1 {
     flex: auto;
-    margin-top: 10%;
-    margin-left: 20%;
+    margin-top: 3.5rem;
+    margin-left: 17rem;
+    margin-bottom: 5rem;
+
     background-color: rgb(255, 255, 255);
+    box-shadow: 1.5rem 1.5rem rgba(255, 230, 171, 0.5);
+
+    border-top: 0.1rem solid rgba(255, 230, 171, 0.5);
+    border-left: 0.1rem solid rgba(255, 230, 171, 0.5);
+    border-bottom: 0.1rem solid rgba(255, 230, 171, 0.5);
     border-top-left-radius: 2%;
     border-bottom-left-radius: 2%;
-    margin-bottom: 10%;
+
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 /* LOGIN */
 .text1 {
-    margin-top: 15%;
+    margin-top: 3.2rem;
+    color: rgb(24, 70, 83);
 }
 
 .input {
@@ -41,33 +36,46 @@ body {
 
 /* 구글 로그인 버튼 */
 .googleLogin {
+    display: flex;
     flex: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
-    size: 10em;
-    display: flex;
+    size: 10rem;
+}
+
+.account {
+    color: rgb(231, 194, 108);
 }
 
 /* 계정이 없을 경우 - no have account? */
-.signup {
+.no_have_account {
     display: none;
+    color: rgb(231, 194, 108);
+    margin-top: 1.2rem;
 }
 
 /* 오른쪽 화면 */
 .row2 {
     flex: auto;
-    margin-top: 10%;
-    margin-right: 20%;
-    background-color: rgb(24, 88, 105);
+    margin-top: 3.5rem;
+    margin-right: 17rem;
+
+    background-color: rgb(255, 230, 171);
+    box-shadow: 1.5rem 1.5rem rgba(255, 230, 171, 0.5);
     border-top-right-radius: 2%;
     border-bottom-right-radius: 2%;
-    margin-bottom: 10%;
+
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 /* 오른쪽 화면 텍스트 */
 .texts {
-    color: white;
+    color: rgb(24, 70, 83);
+    font-size: 1.15em;
+    line-height: 1.1rem;
+
     margin-top: 9rem;
 }
 
