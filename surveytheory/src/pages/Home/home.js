@@ -1,13 +1,26 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./slider.css";
 
+import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
+
 export default class Home extends Component {
     render() {
+        function showBox() {
+            jQuery(".more_btn").hide();
+            jQuery(".box2").show();
+            jQuery(".close_btn").show();
+        }
+
+        function hideBox() {
+            jQuery(".close_btn").hide();
+            jQuery(".box2").hide();
+            jQuery(".more_btn").show();
+        }
+
         // img style settings
         const img_style = {
             width: "30rem",
@@ -53,25 +66,26 @@ export default class Home extends Component {
                         />
                     </div>
                 </Slider>
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
+                <div className="box1"></div>
+                <div className="box1"></div>
+                <div className="box1"></div>
+                <div className="box1"></div>
+                <div className="box1"></div>
+                <div className="box1"></div>
+                <div className="box2"></div>
+                <div className="box2"></div>
+                <div className="box2"></div>
+                <div className="box2"></div>
 
                 {/* 빈 박스 */}
-                <div className="box"></div>
-                <div className="box"></div>
-                <Link to="./SignUp">
-                    <button type="button" className="more">
-                        더보기
-                    </button>
-                </Link>
+                <div className="box2"></div>
+                <div className="box2"></div>
+                <button type="button" className="more_btn" onClick={showBox}>
+                    더보기
+                </button>
+                <button type="button" className="close_btn" onClick={hideBox}>
+                    닫기
+                </button>
             </div>
         );
     }
