@@ -25,8 +25,8 @@ export default class Home extends Component {
 
         // img style settings
         const img_style = {
-            width: "30rem",
-            height: "20rem",
+            width: "100rem",
+            height: "36rem",
             margin: "0 auto"
         };
 
