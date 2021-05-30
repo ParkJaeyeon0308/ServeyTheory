@@ -2,7 +2,7 @@
 .navbar {
     background-color: rgb(113, 157, 138);
     width: 100%;
-    height: 120px;
+    height: 80px;
     display: flex;
     justify-content: start;
     /* align-items: center; */
@@ -15,14 +15,14 @@
 /* 햄버거 버튼 위치 */
 .menu-bars {
     position: relative;
-    margin-left: 15px;
-    font-size: 3rem;
+    margin-left: 10px;
+    font-size: 2rem;
     background: none;
 }
 
 /* 햄버거 버튼 누르면 나오는 메뉴바 */
 .nav-menu {
-    background-color: rgb(90, 124, 109);
+    background-color: rgb(113, 157, 138);
     width: 22%;
     height: 100vh;
     display: flex;
@@ -69,7 +69,7 @@
 .nav-text a:hover {
     color: #f5f5f5;
     text-decoration: none;
-    background-color: rgb(70, 102, 88);
+    background-color: rgb(80, 117, 101);
 }
 
 .mini-nav-text a {
@@ -91,7 +91,7 @@
     color: #f5f5f5;
     text-decoration: none;
     margin-left: 10%;
-    background-color: rgb(70, 102, 88);
+    background-color: rgb(80, 117, 101);
 }
 
 .nav-menu-items {
@@ -128,7 +128,7 @@
 
 /* x버튼 누르는 곳 배경 색깔 */
 .navbar-toggle {
-    background-color: rgb(90, 124, 109);
+    background-color: rgb(113, 157, 138);
     margin-left: 1rem;
     width: 90%;
     height: 5rem;
@@ -136,13 +136,23 @@
     justify-content: start;
     align-items: center;
 }
-.logo {
-    width: 18rem;
-    margin-right: 20px;
-}
 
 @media (max-width: 530px) {
     .logo {
         display: none;
+    }
+}
+
+@media (min-width: 1920px) {
+    .navbar {
+        height: 120px;
+    }
+    .menu-bars {
+        margin-left: 15px;
+        font-size: 3rem;
+    }
+    .logo {
+        width: 18rem;
+        margin-right: 20px;
     }
 }

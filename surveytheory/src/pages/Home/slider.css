@@ -64,11 +64,6 @@
     margin-bottom: 4rem;
 }
 
-.container .box2,
-.container .box3 {
-    display: none;
-}
-
 .container .box3 {
     width: 20rem;
     height: 15rem;
@@ -112,8 +107,8 @@
     width: 10px;
 } 
 .container::webkit-scrollbar-thumb {
-     background-color: #2f3542;
-     border-radius: 10px;
+    background-color: #2f3542;
+    border-radius: 10px;
     }
 .container::webkit-scrollbar-track {
     background-color: grey;
@@ -126,8 +121,21 @@
         font-size: 1.7em;
     }
 
+    .container .box1,
+    .container .box2,
+    .container .box3 {
+        width: 21rem;
+        height: 15rem;
+    }
+
+    .more_btn,
+    .close_btn {
+        font-size: 1.6em;
+        padding: 2rem 3.5rem;
+    }
+
     .test_title {
-        font-size: 1.25em;
+        font-size: 1.4em;
         margin-top: 6.2rem;
     }
 }
