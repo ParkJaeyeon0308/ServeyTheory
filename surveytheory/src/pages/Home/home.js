@@ -72,46 +72,62 @@ export default class Home extends Component {
                 <div
                     className="box1"
                     onClick={() => this.props.history.push("/question2")}
-                ></div>
+                >
+                    <div className="test_title">웹, 앱 뭐가 더 잘 맞을까?</div>
+                </div>
                 <div
                     className="box1"
                     onClick={() => this.props.history.push("/question2")}
-                ></div>
+                >
+                    <div className="test_title">
+                        3개월 프로젝트가 주어졌을때
+                        <br />
+                        내가 해낼 수 있는 기간은?
+                    </div>
+                </div>
                 <div
                     className="box1"
                     onClick={() => this.props.history.push("/question2")}
-                ></div>
+                >
+                    <div className="test_title">정신학년 테스트</div>
+                </div>
                 <div
                     className="box1"
                     onClick={() => this.props.history.push("/question2")}
-                ></div>
+                >
+                    <div className="test_title">직장 mbti 테스트</div>
+                </div>
                 <div
                     className="box1"
                     onClick={() => this.props.history.push("/question2")}
-                ></div>
+                >
+                    <div className="test_title">
+                        나는 몇년차 개발자의 마인드일까?
+                    </div>
+                </div>
                 <div
                     className="box1"
                     onClick={() => this.props.history.push("/question2")}
-                ></div>
+                >
+                    <div className="test_title">나와 어울리는 과는?</div>
+                </div>
                 <div
-                    className="box1"
+                    className="box2"
                     onClick={() => this.props.history.push("/question2")}
-                ></div>
+                >
+                    <div className="test_title">
+                        내가 잘할 것 같은
+                        <br /> 프로그래밍 언어는?
+                    </div>
+                </div>
                 <div
-                    className="box1"
+                    className="box2"
                     onClick={() => this.props.history.push("/question2")}
-                ></div>
-                <div
-                    className="box1"
-                    onClick={() => this.props.history.push("/question2")}
-                ></div>
-                <div
-                    className="box1"
-                    onClick={() => this.props.history.push("/question2")}
-                ></div>
+                >
+                    <div className="test_title">팀플에서 나의 포지션은?</div>
+                </div>
 
                 {/* 빈 박스 */}
-                <div className="box3"></div>
                 <div className="box3"></div>
                 <button type="button" className="more_btn" onClick={showBox}>
                     더보기

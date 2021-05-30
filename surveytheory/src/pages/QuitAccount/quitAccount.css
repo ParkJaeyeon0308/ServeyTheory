@@ -1,6 +1,6 @@
-.pass_change {
+.quit_account {
     height: 100%;
-    margin-top: 5rem;
+    margin-top: 8rem;
 
     display: flex;
     flex-flow: column wrap;
@@ -10,20 +10,20 @@
     align-self: center;
 }
 
-/* 비밀번호 변경 */
+input:focus {
+    outline: 1rem solid rgb(255, 230, 171);
+}
+
+/* 회원탈퇴 */
 .account {
     font-size: 1.8em;
     color: rgb(24, 70, 83);
     margin-bottom: 2rem;
 }
 
-input:focus {
-    outline: 1rem solid rgb(255, 230, 171);
-}
-
 @media (min-width: 1920px) {
-    .pass_change {
-        margin-top: 13rem;
+    .quit_account {
+        margin-top: 14rem;
     }
 
     .account {

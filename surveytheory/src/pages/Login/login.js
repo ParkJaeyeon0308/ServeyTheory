@@ -42,7 +42,9 @@ class Login extends Component {
                                         onSuccess={this.responseGoogle}
                                         onFailure={this.responseFail}
                                     />
-                                    <h6 className="account">or your account</h6>
+                                    <div className="account_text">
+                                        or your account
+                                    </div>
                                     <input
                                         type="id"
                                         id="inputid"
@@ -77,9 +79,9 @@ class Login extends Component {
                                         {" "}
                                         로그인{" "}
                                     </button>
-                                    <h6 className="no_have_account">
+                                    <div className="no_have_account">
                                         no have account?
-                                    </h6>
+                                    </div>
                                 </div>
                             </Col>
                             <Col className="row2">
