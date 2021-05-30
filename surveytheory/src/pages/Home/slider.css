@@ -21,16 +21,30 @@
 /* 원하는 테스트를 골라 시작해보세요! */
 .text {
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: rgb(24, 70, 83);
     text-align: center;
 
     margin-top: 6rem;
 }
 
+/* 각 박스별 질문 타이틀 */
+.test_title {
+    display: none;
+    font-size: 1.15em;
+    text-align: center;
+    color: rgb(24, 70, 83);
+
+    margin-top: 6.4rem;
+}
+
+.container .box1:hover .test_title,
+.container .box2:hover .test_title {
+    display: block;
+}
+
 .container .box1,
-.container .box2,
-.container .box3 {
+.container .box2 {
     width: 20rem;
     height: 15rem;
     background-color: black;
@@ -38,16 +52,11 @@
     margin-top: 2.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    
 }
 
 .container .box1:hover,
 .container .box2:hover {
     background-color: rgba(255, 215, 121, 0.5);
-}
-
-.container .box2 {
-    display: none;
 }
 
 .container .box2:nth-child(13),
@@ -56,11 +65,22 @@
     margin-bottom: 4rem;
 }
 
+.container .box2,
 .container .box3 {
     display: none;
-    background-color: white;
 }
 
+.container .box3 {
+    width: 20rem;
+    height: 15rem;
+    background-color: white;
+
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* 더보기 버튼 */
 .more_btn {
     background-color: rgb(255, 230, 171);
     color: rgb(24, 70, 83);
@@ -72,6 +92,7 @@
     margin-bottom: 4rem;
 }
 
+/* 닫기 버튼 */
 .close_btn {
     display: none;
     background-color: rgb(255, 230, 171);
@@ -91,6 +112,11 @@
 
 @media (min-width: 1920px) {
     .text {
-        font-size: 1.5em;
+        font-size: 1.7em;
+    }
+
+    .test_title {
+        font-size: 1.25em;
+        margin-top: 6.2rem;
     }
 }
