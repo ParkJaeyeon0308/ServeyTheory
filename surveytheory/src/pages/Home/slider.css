@@ -108,6 +108,19 @@
     background-color: rgb(255, 215, 121);
 }
 
+/* .container::webkit-scrollbar {
+    width: 10px;
+} 
+.container::webkit-scrollbar-thumb {
+     background-color: #2f3542;
+     border-radius: 10px;
+    }
+.container::webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+} */
+
 @media (min-width: 1920px) {
     .text {
         font-size: 1.7em;
