@@ -27,7 +27,7 @@ export const SidebarData = [
     },
     {
         title: "암호변경",
-        path: "/Pass_change",
+        path: "/pass_change",
         // icon:<BsIcons.BsFillGridFill color="#ffffff"/>,
         cName: "mini-nav-text"
     },
