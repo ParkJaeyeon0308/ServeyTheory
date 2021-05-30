@@ -69,16 +69,46 @@ export default class Home extends Component {
                     </div>
                 </Slider>
                 <div className="text">원하는 테스트를 골라 시작해보세요!</div>
-                <div className="box1"></div>
-                <div className="box1"></div>
-                <div className="box1"></div>
-                <div className="box1"></div>
-                <div className="box1"></div>
-                <div className="box1"></div>
-                <div className="box2"></div>
-                <div className="box2"></div>
-                <div className="box2"></div>
-                <div className="box2"></div>
+                <div
+                    className="box1"
+                    onClick={() => this.props.history.push("/question2")}
+                ></div>
+                <div
+                    className="box1"
+                    onClick={() => this.props.history.push("/question2")}
+                ></div>
+                <div
+                    className="box1"
+                    onClick={() => this.props.history.push("/question2")}
+                ></div>
+                <div
+                    className="box1"
+                    onClick={() => this.props.history.push("/question2")}
+                ></div>
+                <div
+                    className="box1"
+                    onClick={() => this.props.history.push("/question2")}
+                ></div>
+                <div
+                    className="box1"
+                    onClick={() => this.props.history.push("/question2")}
+                ></div>
+                <div
+                    className="box1"
+                    onClick={() => this.props.history.push("/question2")}
+                ></div>
+                <div
+                    className="box1"
+                    onClick={() => this.props.history.push("/question2")}
+                ></div>
+                <div
+                    className="box1"
+                    onClick={() => this.props.history.push("/question2")}
+                ></div>
+                <div
+                    className="box1"
+                    onClick={() => this.props.history.push("/question2")}
+                ></div>
 
                 {/* 빈 박스 */}
                 <div className="box3"></div>
