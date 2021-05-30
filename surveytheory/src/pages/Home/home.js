@@ -101,18 +101,14 @@ export default class Home extends Component {
                     className="box1"
                     onClick={() => this.props.history.push("/question2")}
                 ></div>
-                <div
-                    className="box1"
-                    onClick={() => this.props.history.push("/question2")}
-                ></div>
-                <div
-                    className="box1"
-                    onClick={() => this.props.history.push("/question2")}
-                ></div>
 
                 {/* 빈 박스 */}
                 <div className="box3"></div>
                 <div className="box3"></div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
                 <button type="button" className="more_btn" onClick={showBox}>
                     더보기
                 </button>
