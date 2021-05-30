@@ -1,4 +1,3 @@
-  
 import React, { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,24 +9,10 @@ window.$ = window.jQuery = jQuery;
 
 export default class Home extends Component {
     render() {
-        function showBox() {
-            jQuery(".more_btn").hide();
-            jQuery(".box2").show();
-            jQuery(".box3").show();
-            jQuery(".close_btn").show();
-        }
-
-        function hideBox() {
-            jQuery(".close_btn").hide();
-            jQuery(".box2").hide();
-            jQuery(".box3").hide();
-            jQuery(".more_btn").show();
-        }
-
         // img style settings
         const img_style = {
-            width: "100rem",
-            height: "36rem",
+            width: "85rem",
+            height: "35rem",
             margin: "0 auto"
         };
 
@@ -103,7 +88,8 @@ export default class Home extends Component {
                     onClick={() => this.props.history.push("/question2")}
                 >
                     <div className="test_title">
-                        나는 몇년차 개발자의 마인드일까?
+                        나는 몇년차 개발자의
+                        <br /> 마인드일까?
                     </div>
                 </div>
                 <div
@@ -130,12 +116,6 @@ export default class Home extends Component {
 
                 {/* 빈 박스 */}
                 <div className="box3"></div>
-                <button type="button" className="more_btn" onClick={showBox}>
-                    더보기
-                </button>
-                <button type="button" className="close_btn" onClick={hideBox}>
-                    닫기
-                </button>
             </div>
         );
     }

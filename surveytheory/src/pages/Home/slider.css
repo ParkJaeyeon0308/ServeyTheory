@@ -64,11 +64,6 @@
     margin-bottom: 4rem;
 }
 
-.container .box2,
-.container .box3 {
-    display: none;
-}
-
 .container .box3 {
     width: 20rem;
     height: 15rem;
@@ -126,16 +121,11 @@
         font-size: 1.7em;
     }
 
-    .test_title {
-        font-size: 2em;
-        margin-top: 6.2rem;
-    }
-
     .container .box1,
     .container .box2,
     .container .box3 {
-        width: 25rem;
-        height: 20rem;
+        width: 21rem;
+        height: 15rem;
     }
 
     .more_btn,
@@ -145,6 +135,7 @@
     }
 
     .test_title {
-        font-size: 2em;
+        font-size: 1.4em;
+        margin-top: 6.2rem;
     }
 }
