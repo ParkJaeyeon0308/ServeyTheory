@@ -85,7 +85,7 @@ input:focus {
 @media (min-width: 1920px) {
     .row1,
     .row2 {
-        margin-top: 15rem;
+        margin-top: 12rem;
     }
 
     .account_text,
