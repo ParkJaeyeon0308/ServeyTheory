@@ -57,13 +57,13 @@ export default class Home extends Component {
                 <div className="text">원하는 테스트를 골라 시작해보세요!</div>
                 <div
                     className="box1"
-                    onClick={() => this.props.history.push("/question2")}
+                    onClick={() => this.props.history.push("/question1_1")}
                 >
                     <div className="test_title">웹, 앱 뭐가 더 잘 맞을까?</div>
                 </div>
                 <div
                     className="box1"
-                    onClick={() => this.props.history.push("/question2")}
+                    onClick={() => this.props.history.push("/question2_1")}
                 >
                     <div className="test_title">
                         3개월 프로젝트가 주어졌을때
@@ -73,19 +73,19 @@ export default class Home extends Component {
                 </div>
                 <div
                     className="box1"
-                    onClick={() => this.props.history.push("/question2")}
+                    onClick={() => this.props.history.push("/question3_1")}
                 >
                     <div className="test_title">정신학년 테스트</div>
                 </div>
                 <div
                     className="box1"
-                    onClick={() => this.props.history.push("/question2")}
+                    onClick={() => this.props.history.push("/question4_1")}
                 >
                     <div className="test_title">직장 mbti 테스트</div>
                 </div>
                 <div
                     className="box1"
-                    onClick={() => this.props.history.push("/question2")}
+                    onClick={() => this.props.history.push("/question5_1")}
                 >
                     <div className="test_title">
                         나는 몇년차 개발자의
@@ -94,13 +94,13 @@ export default class Home extends Component {
                 </div>
                 <div
                     className="box1"
-                    onClick={() => this.props.history.push("/question2")}
+                    onClick={() => this.props.history.push("/question6_1")}
                 >
                     <div className="test_title">나와 어울리는 과는?</div>
                 </div>
                 <div
                     className="box2"
-                    onClick={() => this.props.history.push("/question2")}
+                    onClick={() => this.props.history.push("/question7_1")}
                 >
                     <div className="test_title">
                         내가 잘할 것 같은
@@ -109,7 +109,7 @@ export default class Home extends Component {
                 </div>
                 <div
                     className="box2"
-                    onClick={() => this.props.history.push("/question2")}
+                    onClick={() => this.props.history.push("/question8_1")}
                 >
                     <div className="test_title">팀플에서 나의 포지션은?</div>
                 </div>

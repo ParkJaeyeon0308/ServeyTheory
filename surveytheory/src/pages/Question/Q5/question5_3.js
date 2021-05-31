@@ -36,9 +36,9 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title:
-        "Q1. 붕어빵이 먹고싶어서 사러나가려고 한다.<br/> 당신이 선택한 가게는?",
-    btn1: "집이랑 가까운 곳",
-    btn2: "내가 좋아하는 슈크림 붕어빵이 있는 곳"
+        "Q3. 내가 짠 코드에 문제가 있을 때 당신은?",
+    btn1: "컴퓨터에게 대화를 건다. ex) 넌 대체 왜 안되는거니?",
+    btn2: "침착하게 코드를 살핀다."
 };
 
 export default question;

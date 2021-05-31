@@ -10,8 +10,46 @@ import PassChange from "./pages/PassChange/passChange";
 import QuitAccount from "./pages/QuitAccount/quitAccount";
 import SignUp from "./pages/SignUp/signup";
 
-import Question2 from "./pages/Question/question_2";
-import Question3 from "./pages/Question/question_3";
+import Question1_1 from "./pages/Question/Q1/question1_1";
+import Question1_2 from "./pages/Question/Q1/question1_2";
+import Question1_3 from "./pages/Question/Q1/question1_3";
+import Question1_4 from "./pages/Question/Q1/question1_4";
+import Question1_5 from "./pages/Question/Q1/question1_5";
+import Question1_6 from "./pages/Question/Q1/question1_6";
+
+import Question2_1 from "./pages/Question/Q2/question2_1";
+import Question2_2 from "./pages/Question/Q2/question2_2";
+import Question2_3 from "./pages/Question/Q2/question2_3";
+import Question2_4 from "./pages/Question/Q2/question2_4";
+import Question2_5 from "./pages/Question/Q2/question2_5";
+import Question2_6 from "./pages/Question/Q2/question2_6";
+import Question2_7 from "./pages/Question/Q2/question2_7";
+
+import Question3_1 from "./pages/Question/Q3/question3_1";
+import Question3_2 from "./pages/Question/Q3/question3_2";
+import Question3_3 from "./pages/Question/Q3/question3_3";
+import Question3_4 from "./pages/Question/Q3/question3_4";
+import Question3_5 from "./pages/Question/Q3/question3_5";
+import Question3_6 from "./pages/Question/Q3/question3_6";
+import Question3_7 from "./pages/Question/Q3/question3_7";
+import Question3_8 from "./pages/Question/Q3/question3_8";
+
+import Question4_1 from "./pages/Question/Q4/question4_1";
+import Question4_2 from "./pages/Question/Q4/question4_2";
+import Question4_3 from "./pages/Question/Q4/question4_3";
+import Question4_4 from "./pages/Question/Q4/question4_4";
+import Question4_5 from "./pages/Question/Q4/question4_5";
+
+import Question5_1 from "./pages/Question/Q5/question5_1";
+import Question5_2 from "./pages/Question/Q5/question5_2";
+import Question5_3 from "./pages/Question/Q5/question5_3";
+import Question5_4 from "./pages/Question/Q5/question5_4";
+import Question5_5 from "./pages/Question/Q5/question5_5";
+import Question5_6 from "./pages/Question/Q5/question5_6";
+import Question5_7 from "./pages/Question/Q5/question5_7";
+import Question5_8 from "./pages/Question/Q5/question5_8";
+import Question5_9 from "./pages/Question/Q5/question5_9";
+
 import Collect from "./pages/Collect/collect";
 import Result from "./pages/Result/result";
 import Developer_intro from "./pages/Developer_intro/developer_intro";
@@ -52,8 +90,46 @@ function App() {
                     <Route path="/pass_change" component={PassChange} />
                     <Route path="/quit_account" component={QuitAccount} />
 
-                    <Route path="/question2" component={Question2} />
-                    <Route path="/question3" component={Question3} />
+                    <Route path="/question1_1" component={Question1_1} />
+                    <Route path="/question1_2" component={Question1_2} />
+                    <Route path="/question1_3" component={Question1_3} />
+                    <Route path="/question1_4" component={Question1_4} />
+                    <Route path="/question1_5" component={Question1_5} />
+                    <Route path="/question1_6" component={Question1_6} />
+
+                    <Route path="/question2_1" component={Question2_1} />
+                    <Route path="/question2_2" component={Question2_2} />
+                    <Route path="/question2_3" component={Question2_3} />
+                    <Route path="/question2_4" component={Question2_4} />
+                    <Route path="/question2_5" component={Question2_5} />
+                    <Route path="/question2_6" component={Question2_6} />
+                    <Route path="/question2_7" component={Question2_7} />
+
+                    <Route path="/question3_1" component={Question3_1} />
+                    <Route path="/question3_2" component={Question3_2} />
+                    <Route path="/question3_3" component={Question3_3} />
+                    <Route path="/question3_4" component={Question3_4} />
+                    <Route path="/question3_5" component={Question3_5} />
+                    <Route path="/question3_6" component={Question3_6} />
+                    <Route path="/question3_7" component={Question3_7} />
+                    <Route path="/question3_8" component={Question3_8} />
+
+                    <Route path="/question4_1" component={Question4_1} />
+                    <Route path="/question4_2" component={Question4_2} />
+                    <Route path="/question4_3" component={Question4_3} />
+                    <Route path="/question4_4" component={Question4_4} />
+                    <Route path="/question4_5" component={Question4_5} />
+
+                    <Route path="/question5_1" component={Question5_1} />
+                    <Route path="/question5_2" component={Question5_2} />
+                    <Route path="/question5_3" component={Question5_3} />
+                    <Route path="/question5_4" component={Question5_4} />
+                    <Route path="/question5_5" component={Question5_5} />
+                    <Route path="/question5_6" component={Question5_6} />
+                    <Route path="/question5_7" component={Question5_7} />
+                    <Route path="/question5_8" component={Question5_8} />
+                    <Route path="/question5_9" component={Question5_9} />
+
                     <Route path="/result" component={Result} />
                     <Route path="/collect" component={Collect} />
                     <Route
