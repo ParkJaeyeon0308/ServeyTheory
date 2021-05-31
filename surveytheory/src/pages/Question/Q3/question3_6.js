@@ -1,5 +1,5 @@
 import React from "react";
-import "./question.css";
+import "../question.css";
 import Button from "../../../component/Button";
 
 class question extends React.Component {
@@ -18,13 +18,29 @@ class question extends React.Component {
                         dangerouslySetInnerHTML={{ __html: question_title }}
                     ></div>
                     <div className="buttons">
-                        <Button onClick={() => console.log("클릭 이벤트 처리")}>
-                            {btn1}
+                        <Button
+                            onClick={() =>
+                                this.props.history.push("/question3_7")
+                            }
+                        >
+                            <div
+                                className="btn1"
+                                // html 형태로 렌더링 허용
+                                dangerouslySetInnerHTML={{ __html: btn1 }}
+                            ></div>
                         </Button>
                         <br />
 
-                        <Button onClick={() => console.log("클릭 이벤트 처리")}>
-                            {btn2}
+                        <Button
+                            onClick={() =>
+                                this.props.history.push("/question3_7")
+                            }
+                        >
+                            <div
+                                className="btn2"
+                                // html 형태로 렌더링 허용
+                                dangerouslySetInnerHTML={{ __html: btn2 }}
+                            ></div>
                         </Button>
                     </div>
                 </div>
@@ -35,10 +51,9 @@ class question extends React.Component {
 
 // 기본 props 값
 question.defaultProps = {
-    question_title:
-        "Q6. 당신이 생각하는 더 나은 밸런스는?",
+    question_title: "Q6. 당신이 생각하는 더 나은 밸런스는?",
     btn1: "일반과목 평균 50점, 전공과목 평균 90점 받기",
-    btn2: "일바과목과 전공과목 전체 평균 80점 받기"
+    btn2: "일반과목과 전공과목 전체 평균 80점 받기"
 };
 
 export default question;

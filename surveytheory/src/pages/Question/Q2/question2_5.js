@@ -1,5 +1,5 @@
 import React from "react";
-import "./question.css";
+import "../question.css";
 import Button from "../../../component/Button";
 
 class question extends React.Component {
@@ -18,13 +18,29 @@ class question extends React.Component {
                         dangerouslySetInnerHTML={{ __html: question_title }}
                     ></div>
                     <div className="buttons">
-                        <Button onClick={() => console.log("클릭 이벤트 처리")}>
-                            {btn1}
+                        <Button
+                            onClick={() =>
+                                this.props.history.push("/question2_6")
+                            }
+                        >
+                            <div
+                                className="btn1"
+                                // html 형태로 렌더링 허용
+                                dangerouslySetInnerHTML={{ __html: btn1 }}
+                            ></div>
                         </Button>
                         <br />
 
-                        <Button onClick={() => console.log("클릭 이벤트 처리")}>
-                            {btn2}
+                        <Button
+                            onClick={() =>
+                                this.props.history.push("/question2_6")
+                            }
+                        >
+                            <div
+                                className="btn2"
+                                // html 형태로 렌더링 허용
+                                dangerouslySetInnerHTML={{ __html: btn2 }}
+                            ></div>
                         </Button>
                     </div>
                 </div>
@@ -36,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title:
-        "Q5. 나 내일이 과제 마감인데 놀고싶어... 나랑 놀쟈.. </br>라고 하는 친구에게 당신은?",
-    btn1: "내일이 제출이다 이친구야!!! 빨리해!!!",
+        "Q5. 나 내일이 과제 마감인데 놀고싶어... <br/>나랑 놀쟈.. 라고 하는 친구에게 당신은?",
+    btn1: "내일이 제출이다 이 친구야!!! 빨리해!!!",
     btn2: "내일의 너에게 맡겨ㅎ.... 같이 논다"
 };
 

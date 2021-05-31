@@ -34,7 +34,7 @@
     font-size: 1.15em;
     text-align: center;
     color: rgb(24, 70, 83);
-    margin-top: 6.4rem;
+    margin-top: 6rem;
 }
 
 .container .box1:hover .test_title,
@@ -51,6 +51,8 @@
     margin-top: 2.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+
+    cursor: pointer;
 }
 
 .container .box1:hover,
