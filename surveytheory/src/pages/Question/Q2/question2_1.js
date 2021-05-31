@@ -1,5 +1,5 @@
 import React from "react";
-import "./question.css";
+import "../question.css";
 import Button from "../../../component/Button";
 
 class question extends React.Component {
@@ -18,13 +18,29 @@ class question extends React.Component {
                         dangerouslySetInnerHTML={{ __html: question_title }}
                     ></div>
                     <div className="buttons">
-                        <Button onClick={() => console.log("클릭 이벤트 처리")}>
-                            {btn1}
+                        <Button
+                            onClick={() =>
+                                this.props.history.push("/question2_2")
+                            }
+                        >
+                            <div
+                                className="btn1"
+                                // html 형태로 렌더링 허용
+                                dangerouslySetInnerHTML={{ __html: btn1 }}
+                            ></div>
                         </Button>
                         <br />
 
-                        <Button onClick={() => console.log("클릭 이벤트 처리")}>
-                            {btn2}
+                        <Button
+                            onClick={() =>
+                                this.props.history.push("/question2_2")
+                            }
+                        >
+                            <div
+                                className="btn2"
+                                // html 형태로 렌더링 허용
+                                dangerouslySetInnerHTML={{ __html: btn2 }}
+                            ></div>
                         </Button>
                     </div>
                 </div>
@@ -38,7 +54,7 @@ question.defaultProps = {
     question_title:
         "Q1. 다음주까지인 과제...<br/> 당신이라면 어떻게 하시겠습니까?",
     btn1: "오늘 끝내버리고 쉬자! 오늘한다",
-    btn2: "과제는 원래 미룰 수 있을 때까지 미루는 거시여~ 끝까지 미룬다"
+    btn2: "과제는 원래 미룰 수 있을 때까지 미루는 거시여~<br/> 끝까지 미룬다"
 };
 
 export default question;
