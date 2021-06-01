@@ -50,6 +50,35 @@ import Question5_7 from "./pages/Question/Q5/question5_7";
 import Question5_8 from "./pages/Question/Q5/question5_8";
 import Question5_9 from "./pages/Question/Q5/question5_9";
 
+import Question6_1 from "./pages/Question/Q6/question6_1";
+import Question6_2 from "./pages/Question/Q6/question6_2";
+import Question6_3 from "./pages/Question/Q6/question6_3";
+import Question6_4 from "./pages/Question/Q6/question6_4";
+import Question6_5 from "./pages/Question/Q6/question6_5";
+import Question6_6 from "./pages/Question/Q6/question6_6";
+
+import Question7_1 from "./pages/Question/Q7/question7_1";
+import Question7_2 from "./pages/Question/Q7/question7_2";
+import Question7_3 from "./pages/Question/Q7/question7_3";
+import Question7_4 from "./pages/Question/Q7/question7_4";
+import Question7_5 from "./pages/Question/Q7/question7_5";
+import Question7_6 from "./pages/Question/Q7/question7_6";
+
+import Question8_1 from "./pages/Question/Q8/question8_1";
+import Question8_2 from "./pages/Question/Q8/question8_2";
+import Question8_3 from "./pages/Question/Q8/question8_3";
+import Question8_4 from "./pages/Question/Q8/question8_4";
+import Question8_5 from "./pages/Question/Q8/question8_5";
+import Question8_6 from "./pages/Question/Q8/question8_6";
+
+import Question9_1 from "./pages/Question/Q9/question9_1";
+import Question9_2 from "./pages/Question/Q9/question9_2";
+import Question9_3 from "./pages/Question/Q9/question9_3";
+import Question9_4 from "./pages/Question/Q9/question9_4";
+import Question9_5 from "./pages/Question/Q9/question9_5";
+import Question9_6 from "./pages/Question/Q9/question9_6";
+
+
 import Collect from "./pages/Collect/collect";
 import Result from "./pages/Result/result";
 import Developer_intro from "./pages/Developer_intro/developer_intro";
@@ -129,6 +158,35 @@ function App() {
                     <Route path="/question5_7" component={Question5_7} />
                     <Route path="/question5_8" component={Question5_8} />
                     <Route path="/question5_9" component={Question5_9} />
+
+                    <Route path="/question6_1" component={Question6_1} />
+                    <Route path="/question6_2" component={Question6_2} />
+                    <Route path="/question6_3" component={Question6_3} />
+                    <Route path="/question6_4" component={Question6_4} />
+                    <Route path="/question6_5" component={Question6_5} />
+                    <Route path="/question6_6" component={Question6_6} />
+
+                    <Route path="/question7_1" component={Question7_1} />
+                    <Route path="/question7_2" component={Question7_2} />
+                    <Route path="/question7_3" component={Question7_3} />
+                    <Route path="/question7_4" component={Question7_4} />
+                    <Route path="/question7_5" component={Question7_5} />
+                    <Route path="/question7_6" component={Question7_6} />
+
+                    <Route path="/question8_1" component={Question8_1} />
+                    <Route path="/question8_2" component={Question8_2} />
+                    <Route path="/question8_3" component={Question8_3} />
+                    <Route path="/question8_4" component={Question8_4} />
+                    <Route path="/question8_5" component={Question8_5} />
+                    <Route path="/question8_6" component={Question8_6} />
+
+                    <Route path="/question9_1" component={Question9_1} />
+                    <Route path="/question9_2" component={Question9_2} />
+                    <Route path="/question9_3" component={Question9_3} />
+                    <Route path="/question9_4" component={Question9_4} />
+                    <Route path="/question9_5" component={Question9_5} />
+                    <Route path="/question9_6" component={Question9_6} />
+
 
                     <Route path="/result" component={Result} />
                     <Route path="/collect" component={Collect} />

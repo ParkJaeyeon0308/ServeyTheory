@@ -103,13 +103,20 @@ export default class Home extends Component {
                     onClick={() => this.props.history.push("/question7_1")}
                 >
                     <div className="test_title">
-                        내가 잘할 것 같은
-                        <br /> 프로그래밍 언어는?
+                    나와 어울리는 개발자 포지션은?
                     </div>
                 </div>
                 <div
                     className="box2"
                     onClick={() => this.props.history.push("/question8_1")}
+                >
+                    <div className="test_title">
+                        내가 잘할 것 같은
+                        <br /> 프로그래밍 언어는?</div>
+                </div>
+                <div
+                    className="box2"
+                    onClick={() => this.props.history.push("/question9_1")}
                 >
                     <div className="test_title">팀플에서 나의 포지션은?</div>
                 </div>
