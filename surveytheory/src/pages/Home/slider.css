@@ -37,13 +37,11 @@
     margin-top: 6rem;
 }
 
-.container .box1:hover .test_title,
-.container .box2:hover .test_title {
+.container .box:hover .test_title {
     display: block;
 }
 
-.container .box1,
-.container .box2 {
+.container .box {
     width: 20rem;
     height: 15rem;
     background-color: black;
@@ -55,25 +53,8 @@
     cursor: pointer;
 }
 
-.container .box1:hover,
-.container .box2:hover {
+.container .box:hover {
     background-color: rgba(255, 215, 121, 0.5);
-}
-
-.container .box2:nth-child(13),
-.container .box2:nth-child(14) {
-    background-color: white;
-    margin-bottom: 4rem;
-}
-
-.container .box3 {
-    width: 20rem;
-    height: 15rem;
-    background-color: white;
-
-    margin-top: 2.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 /* 더보기 버튼 */
@@ -123,8 +104,8 @@
         font-size: 1.7em;
     }
 
-    .container .box1,
-    .container .box2,
+    .container .box,
+    .container .box,
     .container .box3 {
         width: 21rem;
         height: 15rem;

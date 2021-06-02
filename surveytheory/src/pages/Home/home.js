@@ -13,7 +13,8 @@ export default class Home extends Component {
         const img_style = {
             width: "85rem",
             height: "35rem",
-            margin: "0 auto"
+            margin: "0 auto",
+            cursor: "pointer"
         };
 
         // slider settings
@@ -29,25 +30,61 @@ export default class Home extends Component {
         return (
             <div className="container">
                 <Slider {...settings} className="slide">
-                    <div>
+                    <div
+                        onClick={() => this.props.history.push("/question1_1")}
+                    >
                         <img src="/images/지브리.png" style={img_style} />
                     </div>
-                    <div>
+                    <div
+                        onClick={() => this.props.history.push("/question2_1")}
+                    >
                         <img
                             src="/images/스코틀랜드 격자.jpg"
                             style={img_style}
                         />
                     </div>
-                    <div>
+                    <div
+                        onClick={() => this.props.history.push("/question3_1")}
+                    >
                         <img src="/images/아가일 체크.jpg" style={img_style} />
                     </div>
-                    <div>
+                    <div
+                        onClick={() => this.props.history.push("/question4_1")}
+                    >
                         <img src="/images/보라하늘.png" style={img_style} />
                     </div>
-                    <div>
+                    <div
+                        onClick={() => this.props.history.push("/question5_1")}
+                    >
                         <img src="/images/노란 체크.jpg" style={img_style} />
                     </div>
-                    <div>
+                    <div
+                        onClick={() => this.props.history.push("/question6_1")}
+                    >
+                        <img
+                            src="/images/스코틀랜드 격자.jpg"
+                            style={img_style}
+                        />
+                    </div>
+                    <div
+                        onClick={() => this.props.history.push("/question7_1")}
+                    >
+                        <img
+                            src="/images/스코틀랜드 격자.jpg"
+                            style={img_style}
+                        />
+                    </div>
+                    <div
+                        onClick={() => this.props.history.push("/question8_1")}
+                    >
+                        <img
+                            src="/images/스코틀랜드 격자.jpg"
+                            style={img_style}
+                        />
+                    </div>
+                    <div
+                        onClick={() => this.props.history.push("/question9_1")}
+                    >
                         <img
                             src="/images/스코틀랜드 격자.jpg"
                             style={img_style}
@@ -56,13 +93,13 @@ export default class Home extends Component {
                 </Slider>
                 <div className="text">원하는 테스트를 골라 시작해보세요!</div>
                 <div
-                    className="box1"
+                    className="box"
                     onClick={() => this.props.history.push("/question1_1")}
                 >
                     <div className="test_title">웹, 앱 뭐가 더 잘 맞을까?</div>
                 </div>
                 <div
-                    className="box1"
+                    className="box"
                     onClick={() => this.props.history.push("/question2_1")}
                 >
                     <div className="test_title">
@@ -72,19 +109,19 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div
-                    className="box1"
+                    className="box"
                     onClick={() => this.props.history.push("/question3_1")}
                 >
                     <div className="test_title">정신학년 테스트</div>
                 </div>
                 <div
-                    className="box1"
+                    className="box"
                     onClick={() => this.props.history.push("/question4_1")}
                 >
                     <div className="test_title">직장 mbti 테스트</div>
                 </div>
                 <div
-                    className="box1"
+                    className="box"
                     onClick={() => this.props.history.push("/question5_1")}
                 >
                     <div className="test_title">
@@ -93,36 +130,34 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div
-                    className="box1"
+                    className="box"
                     onClick={() => this.props.history.push("/question6_1")}
                 >
                     <div className="test_title">나와 어울리는 과는?</div>
                 </div>
                 <div
-                    className="box2"
+                    className="box"
                     onClick={() => this.props.history.push("/question7_1")}
                 >
                     <div className="test_title">
-                    나와 어울리는 개발자 포지션은?
+                        나와 어울리는 개발자 포지션은?
                     </div>
                 </div>
                 <div
-                    className="box2"
+                    className="box"
                     onClick={() => this.props.history.push("/question8_1")}
                 >
                     <div className="test_title">
                         내가 잘할 것 같은
-                        <br /> 프로그래밍 언어는?</div>
+                        <br /> 프로그래밍 언어는?
+                    </div>
                 </div>
                 <div
-                    className="box2"
+                    className="box"
                     onClick={() => this.props.history.push("/question9_1")}
                 >
                     <div className="test_title">팀플에서 나의 포지션은?</div>
                 </div>
-
-                {/* 빈 박스 */}
-                <div className="box3"></div>
             </div>
         );
     }

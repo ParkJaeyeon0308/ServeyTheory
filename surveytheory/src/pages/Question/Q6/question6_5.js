@@ -12,16 +12,17 @@ class question extends React.Component {
         return (
             <div className="Question">
                 <div className="container">
-                <progress id="progressbar" value="83" max="100"></progress>
+                    <progress id="progressbar" value="83" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용
                         dangerouslySetInnerHTML={{ __html: question_title }}
                     ></div>
                     <div className="buttons">
-                        <Button onClick={() => 
-                            this.props.history.push("/question6_6")
-                        }
+                        <Button
+                            onClick={() =>
+                                this.props.history.push("/question6_6")
+                            }
                         >
                             <div
                                 className="btn1"
@@ -63,11 +64,10 @@ class question extends React.Component {
 
 // 기본 props 값
 question.defaultProps = {
-    question_title:
-    "Q5. 체크남방 어떻게 생각하시나요?",
+    question_title: "Q5. 체크남방 어떻게 생각하시나요?",
     btn1: "괜찮다, 상관없다",
     btn2: "어떤 체크? 파란색? 무슨 톤? 빨간색?",
-    btn3: "체크 제발 ;;.. plz"
+    btn3: "체크 제발 ;; plz..."
 };
 
 export default question;

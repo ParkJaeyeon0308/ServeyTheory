@@ -19,10 +19,7 @@ class question extends React.Component {
                         dangerouslySetInnerHTML={{ __html: question_title }}
                     ></div>
                     <div className="buttons">
-                        <Button onClick={() => 
-                            this.props.history.push("/")
-                        }
-                        >
+                        <Button onClick={() => this.props.history.push("/")}>
                             <div
                                 className="btn1"
                                 // html 형태로 렌더링 허용
@@ -31,11 +28,7 @@ class question extends React.Component {
                         </Button>
                         <br />
 
-                        <Button
-                            onClick={() =>
-                                this.props.history.push("/")
-                            }
-                        >
+                        <Button onClick={() => this.props.history.push("/")}>
                             <div
                                 className="btn2"
                                 // html 형태로 렌더링 허용
@@ -43,11 +36,7 @@ class question extends React.Component {
                             ></div>
                         </Button>
                         <br />
-                        <Button
-                            onClick={() =>
-                                this.props.history.push("/")
-                            }
-                        >
+                        <Button onClick={() => this.props.history.push("/")}>
                             <div
                                 className="btn3"
                                 // html 형태로 렌더링 허용
@@ -63,9 +52,8 @@ class question extends React.Component {
 
 // 기본 props 값
 question.defaultProps = {
-    question_title:
-    "Q6. 이런 과가 좋아 ~",
-    btn1: "어떤과랑 해도 상관없는 과가 좋아",
+    question_title: "Q6. 이런 과가 좋아 ~",
+    btn1: "어떤 과랑 해도 상관없는 과가 좋아",
     btn2: "내 것만 잘하면 되겠어",
     btn3: "내 영향이 컸음 좋겠다"
 };
