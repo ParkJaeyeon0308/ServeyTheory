@@ -20,9 +20,10 @@ class question extends React.Component {
                         dangerouslySetInnerHTML={{ __html: question_title }}
                     ></div>
                     <div className="buttons">
-                        <Button onClick={() => 
-                            this.props.history.push("/question9_6")
-                        }
+                        <Button
+                            onClick={() =>
+                                this.props.history.push("/question9_6")
+                            }
                         >
                             <div
                                 className="btn1"
@@ -77,9 +78,9 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title:
-        "Q5. 개발 후 발표를 준비할때 팀원들이 당신에게 부탁하는 것은?",
+        "Q5. 개발 후 발표를 준비할 때 팀원들이<br/> 당신에게 부탁하는 것은?",
     btn1: "코드 리뷰 또는 기획 설명의 부담감을 선사한다",
-    btn2: "각자 개발한 파트를 맡아 발표를 준비해달라고 부탁한다",
+    btn2: "각자 개발한 파트를 맡아 발표를 준비해 달라고 부탁한다",
     btn3: "생각보다 가벼운 부분을 부탁한다",
     btn4: "소감문을 잘 써두라고 한다"
 };

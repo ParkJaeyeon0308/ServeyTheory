@@ -11,7 +11,7 @@ class question extends React.Component {
         return (
             <div className="Question">
                 <div className="container">
-                <progress id="progressbar" value="51" max="100"></progress>
+                    <progress id="progressbar" value="51" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용
@@ -53,7 +53,7 @@ class question extends React.Component {
 question.defaultProps = {
     question_title: "Q3. 실행 속도는 어떻게 생각하나요?",
     btn1: "실행 속도는 상관없다. 에러만 안나면 좋다",
-    btn2: "느리면 코드 쓸 맛이 안난다"
+    btn2: "느리면 코드 쓸 맛이 안 난다"
 };
 
 export default question;

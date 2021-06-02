@@ -20,10 +20,7 @@ class question extends React.Component {
                         dangerouslySetInnerHTML={{ __html: question_title }}
                     ></div>
                     <div className="buttons">
-                        <Button onClick={() => 
-                            this.props.history.push("/")
-                        }
-                        >
+                        <Button onClick={() => this.props.history.push("/")}>
                             <div
                                 className="btn1"
                                 // html 형태로 렌더링 허용
@@ -32,11 +29,7 @@ class question extends React.Component {
                         </Button>
                         <br />
 
-                        <Button
-                            onClick={() =>
-                                this.props.history.push("/")
-                            }
-                        >
+                        <Button onClick={() => this.props.history.push("/")}>
                             <div
                                 className="btn2"
                                 // html 형태로 렌더링 허용
@@ -44,11 +37,7 @@ class question extends React.Component {
                             ></div>
                         </Button>
                         <br />
-                        <Button
-                            onClick={() =>
-                                this.props.history.push("/")
-                            }
-                        >
+                        <Button onClick={() => this.props.history.push("/")}>
                             <div
                                 className="btn3"
                                 // html 형태로 렌더링 허용
@@ -56,11 +45,7 @@ class question extends React.Component {
                             ></div>
                         </Button>
                         <br />
-                        <Button
-                            onClick={() =>
-                                this.props.history.push("/")
-                            }
-                        >
+                        <Button onClick={() => this.props.history.push("/")}>
                             <div
                                 className="btn4"
                                 // html 형태로 렌더링 허용
@@ -77,7 +62,7 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title:
-        "Q6. 개발 후 발표까지 끝났을때 팀원들이 당신에게 해주는 말은?",
+        "Q6. 개발 후 발표까지 끝났을 때 팀원들이 <br/> 당신에게 해주는 말은?",
     btn1: '"너 덕분에 더 빨리 끝낼 수 있었어! 발표까지 완벽했다"',
     btn2: '"진짜 수고 많았어! 이제 푹 쉬어!"',
     btn3: '"수고했다"',
