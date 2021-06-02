@@ -28,7 +28,7 @@ export default class Home extends Component {
             slidesToScroll: 1 //1장씩 넘기는거
         };
         return (
-            <div className="container">
+            <div className="home">
                 <Slider {...settings} className="slide">
                     <div
                         onClick={() => this.props.history.push("/question1_1")}
@@ -92,6 +92,7 @@ export default class Home extends Component {
                     </div>
                 </Slider>
                 <div className="text">원하는 테스트를 골라 시작해보세요!</div>
+
                 <div
                     className="box"
                     onClick={() => this.props.history.push("/question1_1")}
