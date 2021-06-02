@@ -11,8 +11,8 @@ export default class Home extends Component {
     render() {
         // img style settings
         const img_style = {
-            width: "85rem",
-            height: "35rem",
+            width: "105rem",
+            height: "40rem",
             margin: "0 auto",
             cursor: "pointer"
         };
@@ -159,6 +159,7 @@ export default class Home extends Component {
                 >
                     <div className="test_title">팀플에서 나의 포지션은?</div>
                 </div>
+                <div className="text">계속 설문을 만드는 중 입니다!</div>
             </div>
         );
     }
