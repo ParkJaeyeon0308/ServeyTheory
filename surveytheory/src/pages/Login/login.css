@@ -94,3 +94,9 @@ input:focus {
         font-size: 1.4em;
     }
 }
+
+/* @media ( min-width: 481px ) {
+    .row2{
+        display: none;
+    }
+} */
