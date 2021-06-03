@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useState } from "react";
 import "../question.css";
 import Button from "../../../component/Button";
@@ -7,21 +6,22 @@ class question extends React.Component {
     render() {
         const question_title = this.props.question_title;
         const btn1 = this.props.btn1;
+        const btn2 = this.props.btn2;
 
-        
         const [number, setNumber] = useState(1);
 
-  const increaseNumber = () => { // number의 값을 증가시키는 함수
-    setNumber(number + 1);
-    // setNumber(prevNumber => prevNumber + 1);
-    // 다음과 같이 현재 number의 값을 불러와서 증가 시켜주는 방법도 있습니다 :)
-  };
+        const increaseNumber = () => { // number의 값을 증가시키는 함수
+            setNumber(number + 1);
+            // setNumber(prevNumber => prevNumber + 1);
+            // 다음과 같이 현재 number의 값을 불러와서 증가 시켜주는 방법도 있습니다 :)
+          };
+        
+          const decreaseNumber = () => { // number의 값을 감소시키는 함수
+            setNumber(number - 1);
+            // setNumber(prevNumber => prevNumber - 1);
+            // 다음과 같이 현재 number의 값을 불러와서 감소 시켜주는 방법도 있습니다 :)
+          }
 
-  const decreaseNumber = () => { // number의 값을 감소시키는 함수
-    setNumber(number - 1);
-    // setNumber(prevNumber => prevNumber - 1);
-    // 다음과 같이 현재 number의 값을 불러와서 감소 시켜주는 방법도 있습니다 :)
-  }
     return (
             <div className="Question">
                 <div className="container">
