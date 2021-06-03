@@ -1,0 +1,58 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+/* 상단에 위치한 "테스트 결과" */
+.test_result {
+    margin-top: 3.5rem;
+
+    text-align: center;
+    font-size: 2em;
+    color: rgb(24, 70, 83);
+}
+
+/* 테스트 결과가 들어갈 테이블 */
+article {
+    width: 60rem;
+    height: auto;
+    border-radius: 20px 20px 20px 20px;
+
+    color: rgb(24, 70, 83);
+    font-size: 1.2rem;
+}
+
+article table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 1rem;
+}
+
+article table tr {
+    background-color: rgb(239, 234, 215);
+    border: 1.2rem solid rgb(255, 255, 255);
+}
+
+article table th,
+article table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+article table tr:hover {
+    background-color: rgb(255, 230, 171);
+    color: rgb(24, 70, 83);
+    cursor: pointer;
+}
+
+@media (min-width: 1920px) {
+    .test_result {
+        margin-top: 10rem;
+    }
+}

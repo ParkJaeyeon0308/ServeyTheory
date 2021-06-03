@@ -51,4 +51,3 @@ question.defaultProps = {
 };
 
 export default question;
-ㅇ

@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q5. 당신의 선택은?",
-    btn1: "나는 인터넷 없으면 저얼대 하루도 못 버텨!",
-    btn2: "난 하루정도는 잠자고 딩가딩가하면서 가능할듯 ㅎㅎ"
+    btn1: "나는 인터넷 없으면 저얼대 하루도 못 버텨!", // web
+    btn2: "난 하루정도는 잠자고 딩가딩가하면서 가능할듯 ㅎㅎ" // app
 };
 
 export default question;

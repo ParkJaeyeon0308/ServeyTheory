@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q6. 당신이 생각하는 더 나은 밸런스는?",
-    btn1: "일반과목 평균 50점, 전공과목 평균 90점 받기",
-    btn2: "일반과목과 전공과목 전체 평균 80점 받기"
+    btn1: "일반과목 평균 50점, 전공과목 평균 90점 받기", // 30
+    btn2: "일반과목과 전공과목 전체 평균 80점 받기" // 10
 };
 
 export default question;

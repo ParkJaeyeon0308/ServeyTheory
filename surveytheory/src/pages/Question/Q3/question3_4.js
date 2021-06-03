@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q4. 취업은?",
-    btn1: "성적순!",
-    btn2: "타이밍!"
+    btn1: "성적순!", // 10
+    btn2: "운과 타이밍!" // 20
 };
 
 export default question;

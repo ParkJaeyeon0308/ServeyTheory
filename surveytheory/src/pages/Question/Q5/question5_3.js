@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q3. 내가 짠 코드에 문제가 있을 때 당신은?",
-    btn1: "컴퓨터에게 대화를 건다. '넌 대체 왜 안되는거니?'",
-    btn2: "침착하게 코드를 살핀다."
+    btn1: "컴퓨터에게 대화를 건다. '넌 대체 왜 안되는거니?'", // 30
+    btn2: "침착하게 코드를 살핀다." // 10
 };
 
 export default question;

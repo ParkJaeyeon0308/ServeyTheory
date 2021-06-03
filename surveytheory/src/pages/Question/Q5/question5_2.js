@@ -53,8 +53,8 @@ class question extends React.Component {
 question.defaultProps = {
     question_title:
         "Q2. 마트가서 우유사고 만약 아보카도 있으면 6개 사와 ~<br/> 아보카도가 있었을 때 당신은?",
-    btn1: "우유와 아보카도 6개를 산다",
-    btn2: "우유를 6개 산다"
+    btn1: "우유와 아보카도 6개를 산다", // 10
+    btn2: "우유를 6개 산다" // 30
 };
 
 export default question;

@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q5. '!♥!!!' 하트의 위치는?",
-    btn1: "1",
-    btn2: "2"
+    btn1: "1", // 30
+    btn2: "2" // 10
 };
 
 export default question;

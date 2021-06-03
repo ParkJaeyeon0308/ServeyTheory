@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q2. 당신은 어떤 버튼을 누르실래요?",
-    btn1: "100 퍼센트로 30만원 받기!",
-    btn2: "50 퍼센트로 100만원 받기!"
+    btn1: "100 퍼센트로 30만원 받기!", //u
+    btn2: "50 퍼센트로 100만원 받기!" // d
 };
 
 export default question;

@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q3. 내가 더 자주 사용하는 것은?",
-    btn1: "노트북이나 데스크탑",
-    btn2: "휴대폰이나 아이패드"
+    btn1: "노트북이나 데스크탑", // web
+    btn2: "휴대폰이나 아이패드" // app
 };
 
 export default question;

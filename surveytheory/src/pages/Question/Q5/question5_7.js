@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q7. 별을 출력할 때 당신은?",
-    btn1: "for(int i = 1; i < 5; i++) for(int j...",
-    btn2: 'printf("*\\n")'
+    btn1: "for(int i = 1; i < 5; i++) for(int j...", // 10
+    btn2: 'printf("*\\n")' // 30
 };
 
 export default question;

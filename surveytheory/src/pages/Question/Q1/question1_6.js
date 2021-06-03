@@ -44,8 +44,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q6. 다음중 더 뿌듯한 상황은? </br> 친구에게 내가 만든~",
-    btn1: "웹사이트 링크를 주고 자랑했다.",
-    btn2: "앱스토어 링크를 주고 자랑했다."
+    btn1: "웹사이트 링크를 주고 자랑했다.", // web
+    btn2: "앱스토어 링크를 주고 자랑했다." // app
 };
 
 export default question;

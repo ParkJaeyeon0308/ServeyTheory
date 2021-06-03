@@ -44,8 +44,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q5. 나는 돈만 많이 주면 야근도 자주할 수 있다.",
-    btn1: "YES",
-    btn2: "NO"
+    btn1: "YES", // w
+    btn2: "NO" // y
 };
 
 export default question;

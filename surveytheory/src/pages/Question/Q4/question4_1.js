@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q1. 둘 중 당신의 선택은?",
-    btn1: "나는 평생 개발로 일을 하고싶어!",
-    btn2: "솔직히 개발이 잘 맞는거 같진 않아ㅠ"
+    btn1: "나는 평생 개발로 일을 하고싶어!", // a
+    btn2: "솔직히 개발이 잘 맞는거 같진 않아ㅠ" // g 
 };
 
 export default question;

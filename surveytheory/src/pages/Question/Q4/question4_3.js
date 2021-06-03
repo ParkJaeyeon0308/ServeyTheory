@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q3. 다음중 더 끌리는 단어는?",
-    btn1: "세련된",
-    btn2: "체계적인"
+    btn1: "세련된", // s
+    btn2: "체계적인" // j
 };
 
 export default question;

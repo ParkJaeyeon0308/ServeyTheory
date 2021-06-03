@@ -50,10 +50,10 @@ class question extends React.Component {
 }
 
 // 기본 props 값
-question.defaultProps = {
+question.defaultProps = { 
     question_title: "Q1. 나의 휴대폰은?",
-    btn1: "예쁜 디자인의 아이폰",
-    btn2: "실용성이 최고지! 그 외의 폰"
+    btn1: "예쁜 디자인의 아이폰", // web
+    btn2: "실용성이 최고지! 그 외의 폰" // app
 };
 
 export default question;

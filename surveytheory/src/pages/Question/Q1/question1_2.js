@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q2. 처음 'Hello World'를 html에서 출력해보았다.",
-    btn1: "YES",
-    btn2: "NO"
+    btn1: "YES", // web
+    btn2: "NO" // app
 };
 
 export default question;

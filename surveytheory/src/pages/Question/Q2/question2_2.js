@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q2. 나는 mbti 끝자리가...",
-    btn1: "j이다.",
-    btn2: "p이다. / 모른다 + 기억이 안난다."
+    btn1: "j이다.", // 20
+    btn2: "p이다. / 모른다 + 기억이 안난다." // 10
 };
 
 export default question;

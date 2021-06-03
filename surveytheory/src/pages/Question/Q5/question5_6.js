@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q6. 다음중 더 불안한 것은?",
-    btn1: "에러가 날 때",
-    btn2: "에러가 안날 때"
+    btn1: "에러가 날 때", // 10
+    btn2: "에러가 안날 때" // 30
 };
 
 export default question;

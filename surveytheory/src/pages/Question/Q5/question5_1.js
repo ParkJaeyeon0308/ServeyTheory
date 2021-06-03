@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q1. 1023이라는 숫자가 왠지 모르게 불편하다.",
-    btn1: "YES",
-    btn2: "NO"
+    btn1: "YES", // 30
+    btn2: "NO" // 10
 };
 
 export default question;

@@ -44,8 +44,9 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q9. !테스트를 해주셔서 정말 감사하지 않습니다 ㅎㅎ?",
-    btn1: "뭐야? 왜 저래?",
-    btn2: "당근이죠 ㅎㅎ"
+    btn1: "뭐야? 왜 저래?", // 10
+    btn2: "당근이죠 ㅎㅎ" // 30
+    // 90 - 150 : 151 - 210 : 211 - 270
 };
 
 export default question;

@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q4. 당신은 어느쪽에 더 소질이 있으세요?",
-    btn1: "나는 개발을 잘 하는 편이다.",
-    btn2: "나는 OA 마스터~"
+    btn1: "나는 개발을 잘 하는 편이다.", // g
+    btn2: "나는 OA 마스터~" // a
 };
 
 export default question;

@@ -53,8 +53,8 @@ class question extends React.Component {
 question.defaultProps = {
     question_title:
         "Q4. 유튜브 알고리즘이 나를 이끈다...<br/> 하지만 과제 마감은 이틀 뒤! 당신은?",
-    btn1: "으어어... 알고리즘에.. 서서히.. 이끌린다아..",
-    btn2: "이틀뒤면 얼마 안남았잖아???<br/> 큰일이다..ㅠㅠ 바로 과제를 시작한다"
+    btn1: "으어어... 알고리즘에.. 서서히.. 이끌린다아..", // 10
+    btn2: "이틀뒤면 얼마 안남았잖아???<br/> 큰일이다..ㅠㅠ 바로 과제를 시작한다" // 30
 };
 
 export default question;

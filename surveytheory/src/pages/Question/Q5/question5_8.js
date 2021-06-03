@@ -52,8 +52,8 @@ class question extends React.Component {
 // 기본 props 값
 question.defaultProps = {
     question_title: "Q8. 당신이 선호하는 IDE의 색은?",
-    btn1: "#000000",
-    btn2: "#FFFFFF"
+    btn1: "#000000", // 30
+    btn2: "#FFFFFF" // 10
 };
 
 export default question;
