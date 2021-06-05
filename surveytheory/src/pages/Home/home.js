@@ -31,7 +31,7 @@ export default class Home extends Component {
             <div className="home">
                 <Slider {...settings} className="slide">
                     <div
-                        onClick={() => this.props.history.push("/question1_1")}
+                        onClick={() => this.props.history.push("/Question1_1")}
                     >
                         <img src="/images/지브리.png" style={img_style} />
                     </div>
@@ -95,7 +95,7 @@ export default class Home extends Component {
 
                 <div
                     className="box"
-                    onClick={() => this.props.history.push("/question1_1")}
+                    onClick={() => this.props.history.push("/Question1_1")}
                 >
                     <div className="test_title">웹, 앱 뭐가 더 잘 맞을까?</div>
                 </div>
