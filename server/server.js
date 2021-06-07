@@ -56,6 +56,80 @@ app.post("/data", (req, res) => {
 
 app.post("/login", (req, res) => {
     const user_id = req.body.inText;
+    const user_pw = req.body.inText1;
+    console.log("user_id: " + user_id + " / user_pw: " + user_pw)
+    connection.query("SELECT count(*) as count FROM member_tb WHERE user_id = ? and user_pw = ?", [user_id, user_pw],
+    function(err, rows, fields){
+        if (err){
+            console.log("데이터 가져오기 실패");
+        } else {
+            console.log(rows[0]);
+            res.send(rows[0]);
+        }
+    })
+
+})
+
+app.post("/change1", (req, res) => {
+    const user_id = req.body.inText;
+    const user_pw = req.body.inText1;
+    console.log("user_id: " + user_id + " / user_pw: " + user_pw)
+    connection.query("SELECT count(*) as count FROM member_tb WHERE user_id = ? and user_pw = ?", [user_id, user_pw],
+    function(err, rows, fields){
+        if (err){
+            console.log("데이터 가져오기 실패");
+        } else {
+            console.log(rows[0]);
+            res.send(rows[0]);
+        }
+    })
+
+})
+
+
+app.post("/change2", (req, res) => {
+    const user_id = req.body.inText;
+    const user_pw1 = req.body.inText2;
+    console.log( "user_id: " + user_id + " / user_pw1: " +  user_pw1);
+    connection.query("UPDATE member_tb SET user_pw = ? WHERE user_id = ?", [user_pw1, user_id], 
+    function(err, rows, fields){
+        if (err){
+            console.log("비번변경 실패");
+        } else {
+            console.log("비번변경 성공")
+        }
+    })
+})
+
+app.post("/withdraw", (req, res) => {
+    const user_id = req.body.inText;
+    const user_pw = req.body.inText1;
+    console.log("user_id: " + user_id + " / user_pw: " + user_pw)
+    connection.query("SELECT count(*) as count FROM member_tb WHERE user_id = ? and user_pw = ?", [user_id, user_pw],
+    function(err, rows, fields){
+        if (err){
+            console.log("데이터 가져오기 실패");
+        } else {
+            console.log(rows[0]);
+            res.send(rows[0]);
+        }
+    })
+
+})
+
+// delete from member_tb where user_id = '2';
+app.post("/withdraw2", (req, res) => {
+    const user_id = req.body.inText;
+    const user_pw = req.body.inText1;
+    console.log( "user_id: " + user_id + " / user_pw: " +  user_pw);
+    connection.query("UPDATE member_tb SET user_pw = ? WHERE user_id = ?", [user_pw, user_id], 
+    function(err, rows, fields){
+        if (err){
+            console.log("회원탈퇴 실패");
+        } else {
+            console.log("회원탈퇴 성공")
+        }
+    })
 })
 
 app.listen(port, () => {

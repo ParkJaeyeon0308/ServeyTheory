@@ -11,7 +11,7 @@ class question extends React.Component {
         return (
             <div className="Question">
                 <div className="container">
-                    <progress id="progressbar" value="34" max="100"></progress>
+                    <progress id="progressbar" value="17" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용
@@ -20,7 +20,7 @@ class question extends React.Component {
                     <div className="buttons">
                         <Button
                             onClick={() =>
-                                this.props.history.push("/question1_3")
+                                this.props.history.push("/question1_2")
                             }
                         >
                             <div
@@ -33,7 +33,7 @@ class question extends React.Component {
 
                         <Button
                             onClick={() =>
-                                this.props.history.push("/question1_3")
+                                this.props.history.push("/question1_2")
                             }
                         >
                             <div

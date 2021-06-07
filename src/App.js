@@ -10,7 +10,7 @@ import PassChange from "./pages/PassChange/passChange";
 import QuitAccount from "./pages/QuitAccount/quitAccount";
 import SignUp from "./pages/SignUp/signup";
 
-import Question1_1 from "./pages/Question/Q1/Q1_1";
+import Question1_1 from "./pages/Question/Q1/question1_1";
 import Question1_2 from "./pages/Question/Q1/question1_2";
 import Question1_3 from "./pages/Question/Q1/question1_3";
 import Question1_4 from "./pages/Question/Q1/question1_4";
@@ -114,7 +114,7 @@ function App() {
                     <Route path="/pass_change" component={PassChange} />
                     <Route path="/quit_account" component={QuitAccount} />
 
-                    <Route path="/Q1_1" component={Question1_1} />
+                    <Route path="/question1_1" component={Question1_1} />
                     <Route path="/question1_2" component={Question1_2} />
                     <Route path="/question1_3" component={Question1_3} />
                     <Route path="/question1_4" component={Question1_4} />

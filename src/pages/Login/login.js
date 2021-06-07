@@ -1,3 +1,4 @@
+// 세션
 import React, { Component } from "react";
 import { Link } from "react-router-dom"; //****
 import { GoogleLogin } from "react-google-login";
@@ -8,19 +9,15 @@ import "./login.css";
 const clientId =
     "600385616873-9ibcau1rto6jhqmrk8he88hh9tslhhj0.apps.googleusercontent.com";
 
-export default class Login extends Component {
-
-    state = {
-        id: "",
-        pw: ""
-    }
-
+export default class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             id: "",
+            pw: "",
             name: "",
-            provider: ""
+            provider: "",
+            data: ""
         };
     }
 
@@ -32,11 +29,10 @@ export default class Login extends Component {
 
     onclick = () => {
         const textbox = {
-          inText: this.state.text,
-          inText1: this.state.pw,
-          inText2: this.state.nick
-        };
-        fetch("http://localhost:3001/text", {
+            inText: this.state.id,
+            inText1: this.state.pw
+          };
+        fetch("http://localhost:3001/login", {
           method: "post", //통신방법
           headers: {
             "content-type": "application/json",
@@ -46,13 +42,22 @@ export default class Login extends Component {
           .then((res) => res.json())
           .then((json) => {
             console.log(json);
-            this.setState({
-              text: json.text,
-              pw: json.pw,
-              nick: json.nick
-            });
+            if(json.count == '1'){ // count는 db에서 출력되는 컬럼명
+                this.setState({
+                    data: '로그인 성공! (메인화면이동)',
+                })
+                this.props.history.push('./')
+            } else { // 중복되는 행의 개수가 0이면
+                this.setState({
+                    data: '아이디와 비밀번호가 일치하지 않습니다.',
+                })
+            }
           });
       };
+
+    handleOnClick = (e) => {
+        console.log(this.state.id, this.state.pw);
+    };
 
     // Google Login
     responseGoogle = (res) => {
@@ -100,6 +105,7 @@ export default class Login extends Component {
                                         style={{ marginBottom: 20 }}
                                         onChange={this.handleChange}
                                     />
+
                                     <button
                                         className="btn btn-lg btn-block"
                                         type="button"
@@ -111,11 +117,13 @@ export default class Login extends Component {
                                             padding: "1rem",
                                             marginTop: "2rem"
                                         }}
-                                        onClick={this.handleOnClick}
+                                        onClick={this.onclick}
                                     >
                                         {" "}
                                         로그인{" "}
                                     </button>
+
+                                  <h4>{this.state.data}</h4>
                                     <div className="no_have_account">
                                         no have account?
                                     </div>
@@ -138,6 +146,7 @@ export default class Login extends Component {
                                             width: "20rem",
                                             padding: "1rem"
                                         }}
+                                        onClick={this.handleOnClick}
                                     >
                                         {" "}
                                         회원가입{" "}
@@ -151,4 +160,3 @@ export default class Login extends Component {
         );
     }
 }
-
