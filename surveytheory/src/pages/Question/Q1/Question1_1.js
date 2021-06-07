@@ -3,20 +3,13 @@ import "../question.css";
 import Button from "../../../component/Button";
 import { Link } from "react-router-dom"; 
 
-const number = 0;
-
+export let number1 = {count1:0};
+export let number2 = {count2:0};
 function Question1_1(){
-        const [number, setNumber] = useState(0);
-
-        const onIncrease = () => {
-            setNumber(number + 1);
-            console.log(number + 1);
-        }
-
-        const onDecrease = () => {
-            setNumber(number - 1);
-            console.log(number - 1);
-        }
+    const onIncrease = () => {number1.count1++
+    console.log(number1)};
+    const onDecrease = () => {number2.count2++
+        console.log(number2)};
         const question_title = "Q1. 나의 휴대폰은?";
         const btn1 ="예쁜 디자인의 아이폰";
         const btn2 = "실용성이 최고지! 그 외의 폰";

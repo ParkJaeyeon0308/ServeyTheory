@@ -1,20 +1,17 @@
 import React, { useState, ReactDom } from "react";
 import "../question.css";
 import Button from "../../../component/Button";
+import "./Question1_1";
 import { Link } from "react-router-dom"; 
+import {number1, number2} from "./Question1_1";
+
 
 function Question1_2(){
-        const [number, setNumber] = useState(0);
-
-        const onIncrease = () => {
-            setNumber(number + 1);
-            console.log(number + 1);
-        }
-
-        const onDecrease = () => {
-            setNumber(number - 1);
-            console.log(number - 1);
-        }
+    //0으로 초기값 설정
+    const onIncrease = () => {number1.count1++
+        console.log(number1)};
+        const onDecrease = () => {number2.count2++
+            console.log(number2)};
         const question_title = "Q2. 처음 'Hello World'를 html에서 출력해보았다.";
         const btn1 ="YES";
         const btn2 = "NO";
@@ -48,12 +45,4 @@ function Question1_2(){
         );
     };
 export default Question1_2;
-
-
-// 기본 props 값
-//question.defaultProps = {
-  //  question_title: "Q2. 처음 'Hello World'를 html에서 출력해보았다.",
-    //btn1: "YES",
-    //btn2: "NO"
-//};
 
