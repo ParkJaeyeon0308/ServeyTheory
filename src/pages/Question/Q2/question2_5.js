@@ -11,7 +11,7 @@ class question extends React.Component {
         return (
             <div className="Question">
                 <div className="container">
-                    <progress id="progressbar" value="70" max="100"></progress>
+                    <progress id="progressbar" value="10" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용
@@ -53,8 +53,8 @@ class question extends React.Component {
 question.defaultProps = {
     question_title:
         "Q5. 나 내일이 과제 마감인데 놀고싶어... <br/>나랑 놀쟈.. 라고 하는 친구에게 당신은?",
-    btn1: "내일이 제출이다 이 친구야!!! 빨리해!!!", // 20
-    btn2: "내일의 너에게 맡겨ㅎ.... 같이 논다" // 10
+    btn1: "내일이 제출이다 이 친구야!!! 빨리해!!!",
+    btn2: "내일의 너에게 맡겨ㅎ.... 같이 논다"
 };
 
 export default question;
