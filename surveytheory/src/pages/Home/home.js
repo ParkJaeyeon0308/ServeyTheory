@@ -23,7 +23,7 @@ export default class Home extends Component {
             arrows: true,
             infinite: true, //계속 활용할 수 있는걸로
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 3000,
             slidesToShow: 1, // 장수
             slidesToScroll: 1 //1장씩 넘기는거
         };

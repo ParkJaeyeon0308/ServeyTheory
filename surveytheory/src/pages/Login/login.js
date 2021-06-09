@@ -1,4 +1,3 @@
-// 세션
 import React, { Component } from "react";
 import { Link } from "react-router-dom"; //****
 import { GoogleLogin } from "react-google-login";
@@ -46,7 +45,8 @@ export default class Login extends React.Component {
                 this.setState({
                     data: '로그인 성공! (메인화면이동)',
                 })
-                this.props.history.push('./')
+                alert('로그인에 성공하셨습니다.')
+                this.props.history.push('./');
             } else { // 중복되는 행의 개수가 0이면
                 this.setState({
                     data: '아이디와 비밀번호가 일치하지 않습니다.',

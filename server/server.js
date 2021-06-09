@@ -8,7 +8,7 @@ const mysql = require("mysql"); // << 새로 추가된 부분
 var connection = mysql.createConnection({
   /// 새로 추가된 부분
   host: "localhost",
-  user: "root", // mysql에 아이디를 넣는다.
+  user: "root", // mysql의 아이디를 넣는다.
   password: "mysql", // mysql의 비밀번호를 넣는다.
   database: "survey", //위에서 만든 데이터베이스의 이름을 넣는다.
 });
