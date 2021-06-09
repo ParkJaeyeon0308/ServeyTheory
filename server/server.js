@@ -117,12 +117,11 @@ app.post("/withdraw", (req, res) => {
 
 })
 
-// delete from member_tb where user_id = '2';
 app.post("/withdraw2", (req, res) => {
     const user_id = req.body.inText;
     const user_pw = req.body.inText1;
-    console.log( "user_id: " + user_id + " / user_pw: " +  user_pw);
-    connection.query("UPDATE member_tb SET user_pw = ? WHERE user_id = ?", [user_pw, user_id], 
+    console.log( "user_id: " + user_id);
+    connection.query("DELETE FROM member_tb WHERE user_id = ?", [user_id], 
     function(err, rows, fields){
         if (err){
             console.log("회원탈퇴 실패");
