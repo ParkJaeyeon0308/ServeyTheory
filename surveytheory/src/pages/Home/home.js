@@ -11,9 +11,8 @@ export default class Home extends Component {
     render() {
         // img style settings
         const img_style = {
-            width: "105rem",
-            height: "40rem",
-            margin: "0 auto",
+            width: "120rem",
+            height: "48rem",
             cursor: "pointer"
         };
 
