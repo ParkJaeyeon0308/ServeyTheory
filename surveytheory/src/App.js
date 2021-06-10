@@ -17,22 +17,22 @@ import Q1_4 from "./pages/Question/Q1/Question1_4";
 import Q1_5 from "./pages/Question/Q1/Question1_5";
 import Q1_6 from "./pages/Question/Q1/Question1_6";
 
-import Q2_1 from "./pages/Question/Q2/Question2_1";
-import Q2_2 from "./pages/Question/Q2/Question2_2";
-import Q2_3 from "./pages/Question/Q2/Question2_3";
-import Q2_4 from "./pages/Question/Q2/Question2_4";
-import Q2_5 from "./pages/Question/Q2/Question2_5";
-import Q2_6 from "./pages/Question/Q2/Question2_6";
-import Q2_7 from "./pages/Question/Q2/Question2_7";
+import Q2_1 from "./pages/Question/Q2/question2_1";
+import Q2_2 from "./pages/Question/Q2/question2_2";
+import Q2_3 from "./pages/Question/Q2/question2_3";
+import Q2_4 from "./pages/Question/Q2/question2_4";
+import Q2_5 from "./pages/Question/Q2/question2_5";
+import Q2_6 from "./pages/Question/Q2/question2_6";
+import Q2_7 from "./pages/Question/Q2/question2_7";
 
-import Q3_1 from "./pages/Question/Q3/Question3_1";
-import Q3_2 from "./pages/Question/Q3/Question3_2";
-import Q3_3 from "./pages/Question/Q3/Question3_3";
-import Q3_4 from "./pages/Question/Q3/Question3_4";
-import Q3_5 from "./pages/Question/Q3/Question3_5";
-import Q3_6 from "./pages/Question/Q3/Question3_6";
-import Q3_7 from "./pages/Question/Q3/Question3_7";
-import Q3_8 from "./pages/Question/Q3/Question3_8";
+import Q3_1 from "./pages/Question/Q3/question3_1";
+import Q3_2 from "./pages/Question/Q3/question3_2";
+import Q3_3 from "./pages/Question/Q3/question3_3";
+import Q3_4 from "./pages/Question/Q3/question3_4";
+import Q3_5 from "./pages/Question/Q3/question3_5";
+import Q3_6 from "./pages/Question/Q3/question3_6";
+import Q3_7 from "./pages/Question/Q3/question3_7";
+import Q3_8 from "./pages/Question/Q3/question3_8";
 
 import Question4_1 from "./pages/Question/Q4/question4_1";
 import Question4_2 from "./pages/Question/Q4/question4_2";
@@ -77,7 +77,6 @@ import Question9_3 from "./pages/Question/Q9/question9_3";
 import Question9_4 from "./pages/Question/Q9/question9_4";
 import Question9_5 from "./pages/Question/Q9/question9_5";
 import Question9_6 from "./pages/Question/Q9/question9_6";
-
 
 import Collect from "./pages/Collect/collect";
 import Result from "./pages/Result/result";
@@ -186,7 +185,6 @@ function App() {
                     <Route path="/question9_4" component={Question9_4} />
                     <Route path="/question9_5" component={Question9_5} />
                     <Route path="/question9_6" component={Question9_6} />
-
 
                     <Route path="/result" component={Result} />
                     <Route path="/collect" component={Collect} />

@@ -59,6 +59,10 @@
     background-color: rgba(255, 215, 121, 0.5);
 }
 
+.home .box #box1 {
+    background-image: url("/images/box-img/내가 잘 할 것같은 PG 언어는.png");
+}
+
 @media (min-width: 1920px) {
     .home .text {
         font-size: 0.9em;
