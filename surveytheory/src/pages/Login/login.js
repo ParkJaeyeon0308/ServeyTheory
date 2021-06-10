@@ -1,3 +1,4 @@
+// 세션
 import React, { Component } from "react";
 import { Link } from "react-router-dom"; //****
 import { GoogleLogin } from "react-google-login";
@@ -23,33 +24,32 @@ export default class Login extends React.Component {
     handleChange = (e) => {
         this.setState({
             [e.target.name]: e.target.value,
-          });
+          }); 
     };
 
     onclick = () => {
-        const textbox = {
+        const textbox = { 
             inText: this.state.id,
             inText1: this.state.pw
           };
-        fetch("http://localhost:3001/login", {
+        fetch("http://localhost:3001/login", { // server.js의 login 메소드 사용
           method: "post", //통신방법
           headers: {
             "content-type": "application/json",
           },
-          body: JSON.stringify(textbox)
+          body: JSON.stringify(textbox) // 위에 정의한 textbox
         })
           .then((res) => res.json())
           .then((json) => {
             console.log(json);
             if(json.count == '1'){ // count는 db에서 출력되는 컬럼명
-                this.setState({
-                    data: '로그인 성공! (메인화면이동)',
+                this.setState({ // 아이디와 비밀번호가 같은 행이 1이상 존재하면 로그인 성공
+                    data: '로그인 성공! (메인화면이동)', // 유효성 검사 메시지
                 })
-                alert('로그인에 성공하셨습니다.')
-                this.props.history.push('./');
+                this.props.history.push('./')
             } else { // 중복되는 행의 개수가 0이면
                 this.setState({
-                    data: '아이디와 비밀번호가 일치하지 않습니다.',
+                    data: '아이디와 비밀번호가 일치하지 않습니다.', // 유효성 검사 메시지
                 })
             }
           });
