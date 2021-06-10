@@ -1,52 +1,46 @@
-import React from "react";
+import React, { useState, ReactDom } from "react";
 import "../question.css";
 import Button from "../../../component/Button";
+import "./Question2_1";
+import { Link } from "react-router-dom";
+import { number1, number2 } from "./Question2_1";
 
-class question extends React.Component {
-    render() {
-        const question_title = this.props.question_title;
-        const btn1 = this.props.btn1;
-        const btn2 = this.props.btn2;
+function Question2_6() {
+    //0으로 초기값 설정
+    const onIncrease = () => {
+        number1.count1+20;
+        console.log(number1);
+    };
+    const onDecrease = () => {
+        number2.count2+10;
+        console.log(number2);
+    };
+    // 70 - 100 : 101 - 130 : 131 - 170
+    const question_title = "Q7. 나는 남들보다 구글링을 잘 하는 편이다.";
+    const btn1 = "YES"; //20
+    const btn2 = "NO"; //10
+    return (
+        <div className="Question">
+            <div className="container">
+                <progress id="progressbar" value="35" max="100"></progress>
+                <div
+                    className="question_title"
+                    // html 형태로 렌더링 허용
+                >
+                    {question_title}
+                </div>
 
-        return (
-            <div className="Question">
-                <div className="container">
-                    <progress id="progressbar" value="100" max="100"></progress>
-                    <div
-                        className="question_title"
-                        // html 형태로 렌더링 허용
-                        dangerouslySetInnerHTML={{ __html: question_title }}
-                    ></div>
-                    <div className="buttons">
-                        <Button onClick={() => this.props.history.push("/")}>
-                            <div
-                                className="btn1"
-                                // html 형태로 렌더링 허용
-                                dangerouslySetInnerHTML={{ __html: btn1 }}
-                            ></div>
-                        </Button>
-                        <br />
-
-                        <Button onClick={() => this.props.history.push("/")}>
-                            <div
-                                className="btn2"
-                                // html 형태로 렌더링 허용
-                                dangerouslySetInnerHTML={{ __html: btn2 }}
-                            ></div>
-                        </Button>
-                    </div>
+                <div className="buttons">
+                    <Link to="/">
+                        <Button onClick={() => onIncrease()}>{btn1}</Button>
+                    </Link>
+                    <br />
+                    <Link to="/">
+                        <Button onClick={() => onDecrease()}>{btn2}</Button>
+                    </Link>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
-
-// 기본 props 값
-question.defaultProps = {
-    question_title: "Q7. 나는 남들보다 구글링을 잘 하는 편이다.",
-    btn1: "YES", // 20
-    btn2: "NO" // 10
-    // 70 - 100 : 101 - 130 : 131 - 170
-};
-
-export default question;
+export default Question2_6;

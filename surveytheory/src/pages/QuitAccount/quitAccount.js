@@ -27,7 +27,7 @@ export default class QuitAccount extends React.Component {
           inText2: this.state.data
         };
 
-        fetch("http://localhost:3001/withdraw", {
+        fetch("http://localhost:3001/withdraw", { // server.js의 withdraw 메소드 ( 회원여부 확인 )
             method: "post", //통신방법
             headers: {
                 "content-type": "application/json",
@@ -37,8 +37,8 @@ export default class QuitAccount extends React.Component {
             .then((res) => res.json())
             .then((json) => {
                 console.log(json);
-                if(json.count == '1'){ // 아이디 비밀번호가 일치하면
-                        fetch("http://localhost:3001/withdraw2", {
+                if(json.count == '1'){ // 아이디 비밀번호가 일치하면 ( 일치하는 행이 1개이면 )
+                        fetch("http://localhost:3001/withdraw2", { // withdraw2 메소드 ( 회원정보 삭제 )
                         method: "post", //통신방법
                         headers: {
                             "content-type": "application/json",
@@ -53,14 +53,14 @@ export default class QuitAccount extends React.Component {
                                 pw: json.pw
                             })  
                         });
-                        this.setState({
-                            data: '회원탈퇴 성공.'
+                        this.setState({ 
+                            data: '회원탈퇴 성공.' // 유효성검사 메시지
                         })
                         alert('정상적으로 회원탈퇴 되셨습니다. 그동안 감사했습니다.')
                         this.props.history.push('./');
                 } else { // 일치하는 행이 하나도 없으면
                     this.setState({
-                        data: '아이디와 비밀번호가 일치하지 않습니다.'
+                        data: '아이디와 비밀번호가 일치하지 않습니다.'  // 유효성검사 메세지 
                     })
                 }
             });

@@ -17,13 +17,13 @@ import Q1_4 from "./pages/Question/Q1/Question1_4";
 import Q1_5 from "./pages/Question/Q1/Question1_5";
 import Q1_6 from "./pages/Question/Q1/Question1_6";
 
-import Q2_1 from "./pages/Question/Q2/question2_1";
-import Q2_2 from "./pages/Question/Q2/question2_2";
-import Q2_3 from "./pages/Question/Q2/question2_3";
-import Q2_4 from "./pages/Question/Q2/question2_4";
-import Q2_5 from "./pages/Question/Q2/question2_5";
-import Q2_6 from "./pages/Question/Q2/question2_6";
-import Q2_7 from "./pages/Question/Q2/question2_7";
+import Q2_1 from "./pages/Question/Q2/Question2_1";
+import Q2_2 from "./pages/Question/Q2/Question2_2";
+import Q2_3 from "./pages/Question/Q2/Question2_3";
+import Q2_4 from "./pages/Question/Q2/Question2_4";
+import Q2_5 from "./pages/Question/Q2/Question2_5";
+import Q2_6 from "./pages/Question/Q2/Question2_6";
+import Q2_7 from "./pages/Question/Q2/Question2_7";
 
 import Q3_1 from "./pages/Question/Q3/question3_1";
 import Q3_2 from "./pages/Question/Q3/question3_2";
@@ -155,13 +155,13 @@ function App() {
                     <Route path="/Question1_5" component={Q1_5} />
                     <Route path="/Question1_6" component={Q1_6} />
 
-                    <Route path="/question2_1" component={Q2_1} />
-                    <Route path="/question2_2" component={Q2_2} />
-                    <Route path="/question2_3" component={Q2_3} />
-                    <Route path="/question2_4" component={Q2_4} />
-                    <Route path="/question2_5" component={Q2_5} />
-                    <Route path="/question2_6" component={Q2_6} />
-                    <Route path="/question2_7" component={Q2_7} />
+                    <Route path="/Question2_1" component={Q2_1} />
+                    <Route path="/Question2_2" component={Q2_2} />
+                    <Route path="/Question2_3" component={Q2_3} />
+                    <Route path="/Question2_4" component={Q2_4} />
+                    <Route path="/Question2_5" component={Q2_5} />
+                    <Route path="/Question2_6" component={Q2_6} />
+                    <Route path="/Question2_7" component={Q2_7} />
 
                     <Route path="/question3_1" component={Q3_1} />
                     <Route path="/question3_2" component={Q3_2} />
