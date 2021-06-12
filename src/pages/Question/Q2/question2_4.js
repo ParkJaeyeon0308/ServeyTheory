@@ -11,13 +11,13 @@ function Question2_4() {
         number1.count1+=10;
         console.log(number1);
     };
+    // const onDecrease = () => {
+    //     number2.count2+=30;
+    //     number1.count1 + 10;
+    //     console.log(number1);
+    // };
     const onDecrease = () => {
-        number2.count2+=30;
-        number1.count1 + 10;
-        console.log(number1);
-    };
-    const onDecrease = () => {
-        number2.count2 + 30;
+        number2.count2 += 30;
         console.log(number2);
     };
     const question_title =

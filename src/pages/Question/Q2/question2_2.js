@@ -11,13 +11,13 @@ function Question2_2() {
         number1.count1+=20; //20
         console.log(number1);
     };
+    // const onDecrease = () => {
+    //     number2.count2+=10; //10
+    //     number1.count1 + 20; //20
+    //     console.log(number1);
+    // };
     const onDecrease = () => {
-        number2.count2+=10; //10
-        number1.count1 + 20; //20
-        console.log(number1);
-    };
-    const onDecrease = () => {
-        number2.count2 + 10; //10
+        number2.count2 += 10; //10
         console.log(number2);
     };
     const question_title = "Q2. 나는 mbti 끝자리가...";

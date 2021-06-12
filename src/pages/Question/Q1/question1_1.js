@@ -23,14 +23,14 @@ function Question1_1(){
                     >{question_title}</div>
 
                     <div className="buttons">
-                        <Link to="./Question1_2">
+                        <Link to="./question1_2">
                         <Button
                             onClick={() =>onIncrease() }
                         >
                             {btn1}
                         </Button></Link>
                         <br />
-                        <Link to="./Question1_2">
+                        <Link to="./question1_2">
                         <Button
                             onClick={() =>onDecrease()}
                         >
