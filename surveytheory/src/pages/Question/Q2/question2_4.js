@@ -13,11 +13,18 @@ function Question2_4() {
     };
     const onDecrease = () => {
         number2.count2+=30;
+        number1.count1 + 10;
+        console.log(number1);
+    };
+    const onDecrease = () => {
+        number2.count2 + 30;
         console.log(number2);
     };
-    const question_title = "Q4. 유튜브 알고리즘이 나를 이끈다...<br/> 하지만 과제 마감은 이틀 뒤! 당신은?";
+    const question_title =
+        "Q4. 유튜브 알고리즘이 나를 이끈다...<br/> 하지만 과제 마감은 이틀 뒤! 당신은?";
     const btn1 = "으어어... 알고리즘에.. 서서히.. 이끌린다아.."; //10
-    const btn2 = "이틀뒤면 얼마 안남았잖아???<br/> 큰일이다..ㅠㅠ 바로 과제를 시작한다"; //30
+    const btn2 =
+        "이틀뒤면 얼마 안남았잖아???<br/> 큰일이다..ㅠㅠ 바로 과제를 시작한다"; //30
     return (
         <div className="Question">
             <div className="container">

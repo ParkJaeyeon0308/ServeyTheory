@@ -5,7 +5,7 @@ import "./Question2_1";
 import { Link } from "react-router-dom";
 import { number1, number2 } from "./Question2_1";
 
-function Question2_6() {
+function Question2_7() {
     //0으로 초기값 설정
     const onIncrease = () => {
         number1.count1+=20;
@@ -43,4 +43,4 @@ function Question2_6() {
         </div>
     );
 }
-export default Question2_6;
+export default Question2_7;

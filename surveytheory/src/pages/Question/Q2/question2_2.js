@@ -13,11 +13,16 @@ function Question2_2() {
     };
     const onDecrease = () => {
         number2.count2+=10; //10
+        number1.count1 + 20; //20
+        console.log(number1);
+    };
+    const onDecrease = () => {
+        number2.count2 + 10; //10
         console.log(number2);
     };
     const question_title = "Q2. 나는 mbti 끝자리가...";
     const btn1 = "j이다"; //20
-    const btn2 = "p이다";//10
+    const btn2 = "p이다"; //10
     return (
         <div className="Question">
             <div className="container">

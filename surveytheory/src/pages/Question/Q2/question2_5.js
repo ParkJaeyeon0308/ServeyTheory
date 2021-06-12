@@ -8,14 +8,15 @@ import { number1, number2 } from "./Question2_1";
 function Question2_5() {
     //0으로 초기값 설정
     const onIncrease = () => {
-        number1.count1+=20;
+        number1.count1 + 20;
         console.log(number1);
     };
     const onDecrease = () => {
-        number2.count2+=10;
+        number2.count2 + 10;
         console.log(number2);
     };
-    const question_title = "Q5. 나 내일이 과제 마감인데 놀고싶어... <br/>나랑 놀쟈.. 라고 하는 친구에게 당신은?";
+    const question_title =
+        "Q5. 나 내일이 과제 마감인데 놀고싶어... <br/>나랑 놀쟈.. 라고 하는 친구에게 당신은?";
     const btn1 = "내일이 제출이다 이 친구야!!! 빨리해!!!"; //20
     const btn2 = "내일의 너에게 맡겨ㅎ.... 같이 논다"; //10
     return (

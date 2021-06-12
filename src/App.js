@@ -79,8 +79,39 @@ import Question9_5 from "./pages/Question/Q9/question9_5";
 import Question9_6 from "./pages/Question/Q9/question9_6";
 
 import Collect from "./pages/Collect/collect";
-import Result from "./pages/Result/result";
 import Developer_intro from "./pages/Developer_intro/developer_intro";
+
+import Result1_1 from "./pages/Result/Result1/result1_1";
+import Result1_2 from "./pages/Result/Result1/result1_2";
+
+import Result2_1 from "./pages/Result/Result2/result2_1";
+import Result2_2 from "./pages/Result/Result2/result2_2";
+import Result2_3 from "./pages/Result/Result2/result2_3";
+
+import Result3_1 from "./pages/Result/Result3/result3_1";
+import Result3_2 from "./pages/Result/Result3/result3_2";
+import Result3_3 from "./pages/Result/Result3/result3_3";
+
+import Result4_1 from "./pages/Result/Result4/result4_1";
+import Result4_2 from "./pages/Result/Result4/result4_2";
+import Result4_3 from "./pages/Result/Result4/result4_3";
+import Result4_4 from "./pages/Result/Result4/result4_4";
+import Result4_5 from "./pages/Result/Result4/result4_5";
+import Result4_6 from "./pages/Result/Result4/result4_6";
+import Result4_7 from "./pages/Result/Result4/result4_7";
+import Result4_8 from "./pages/Result/Result4/result4_8";
+import Result4_9 from "./pages/Result/Result4/result4_9";
+import Result4_10 from "./pages/Result/Result4/result4_10";
+import Result4_11 from "./pages/Result/Result4/result4_11";
+import Result4_12 from "./pages/Result/Result4/result4_12";
+import Result4_13 from "./pages/Result/Result4/result4_13";
+import Result4_14 from "./pages/Result/Result4/result4_14";
+import Result4_15 from "./pages/Result/Result4/result4_15";
+import Result4_16 from "./pages/Result/Result4/result4_16";
+
+import Result5_1 from "./pages/Result/Result5/result5_1";
+import Result5_2 from "./pages/Result/Result5/result5_2";
+import Result5_3 from "./pages/Result/Result5/result5_3";
 
 import Axios from "axios";
 import customAxios from "./customAxios";
@@ -186,7 +217,38 @@ function App() {
                     <Route path="/question9_5" component={Question9_5} />
                     <Route path="/question9_6" component={Question9_6} />
 
-                    <Route path="/result" component={Result} />
+                    <Route path="/result1_1" component={Result1_1} />
+                    <Route path="/result1_2" component={Result1_2} />
+
+                    <Route path="/result2_1" component={Result2_1} />
+                    <Route path="/result2_2" component={Result2_2} />
+                    <Route path="/result2_3" component={Result2_3} />
+
+                    <Route path="/result3_1" component={Result3_1} />
+                    <Route path="/result3_2" component={Result3_2} />
+                    <Route path="/result3_3" component={Result3_3} />
+
+                    <Route path="/result4_1" component={Result4_1} />
+                    <Route path="/result4_2" component={Result4_2} />
+                    <Route path="/result4_3" component={Result4_3} />
+                    <Route path="/result4_4" component={Result4_4} />
+                    <Route path="/result4_5" component={Result4_5} />
+                    <Route path="/result4_6" component={Result4_6} />
+                    <Route path="/result4_7" component={Result4_7} />
+                    <Route path="/result4_8" component={Result4_8} />
+                    <Route path="/result4_9" component={Result4_9} />
+                    <Route path="/result4_10" component={Result4_10} />
+                    <Route path="/result4_11" component={Result4_11} />
+                    <Route path="/result4_12" component={Result4_12} />
+                    <Route path="/result4_13" component={Result4_13} />
+                    <Route path="/result4_14" component={Result4_14} />
+                    <Route path="/result4_15" component={Result4_15} />
+                    <Route path="/result4_16" component={Result4_16} />
+
+                    <Route path="/result5_1" component={Result5_1} />
+                    <Route path="/result5_2" component={Result5_2} />
+                    <Route path="/result5_3" component={Result5_3} />
+
                     <Route path="/collect" component={Collect} />
                     <Route
                         path="/developer_intro"

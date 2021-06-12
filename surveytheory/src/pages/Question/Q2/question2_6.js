@@ -15,7 +15,8 @@ function Question2_6() {
         number2.count2+=10;
         console.log(number2);
     };
-    const question_title = "Q6. 3일 남은 프로젝트, 2일 남은 수행평가.. <br/> 당신의 우선순위는?";
+    const question_title =
+        "Q6. 3일 남은 프로젝트, 2일 남은 수행평가.. <br/> 당신의 우선순위는?";
     const btn1 = "3일 남은 프로젝트!"; //20
     const btn2 = "2일 남은 수행평가!"; //10
     return (
