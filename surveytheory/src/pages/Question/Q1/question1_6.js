@@ -12,7 +12,7 @@ function Question1_6() {
     const onIncrease = () => {
         number1.count1++;
         console.log(number1);
-        if(number1>=number2){
+        if(number1>number2){
             history.push('./result1_1');
         }else{
             history.push('./result1_2');
