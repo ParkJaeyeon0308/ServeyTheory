@@ -51,13 +51,13 @@ class result5_3 extends React.Component {
         );
     }
 }
-result.defaultProps = {
-    type_name: "시니어",
+
+// 기본 props 값
+result5_3.defaultProps = {
+    subject_name: "나는 몇 년차 개발자의 마인드일까?",
+    main_context: "시니어",
     sub_context:
-        "당신은 시니어 개발자의 마인드를 가지고 있으시군요!" +
-        "프로그래밍 밈도 사랑하셔서 어디가서 찐개발자라는 소리 많이 들으시죠?" +
-        "당신의 개발라이프를 응원합니다!"
-        
+        "당신은 시니어 개발자의 마인드를 가지고 있으시군요!<br/> 프로그래밍 밈도 사랑하셔서 어디가서 찐 개발자라는 소리 많이 들으시죠? 당신의 개발 라이프를 응원합니다!"
 };
 
 export default result5_3;
