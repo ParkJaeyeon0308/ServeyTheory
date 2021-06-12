@@ -1,21 +1,51 @@
 import React from "react";
 import "../result.css";
 
-class result extends React.Component {
+class result6_1 extends React.Component {
     render() {
-        const type_name = this.props.type_name;
-        const imgUrl = "/images/" + type_name + ".png";
+        const subject_name = this.props.subject_name;
+        const imgUrl = "/images/" + subject_name + ".png";
+        const main_context = this.props.main_context;
         const sub_context = this.props.sub_context;
+
+        const saveBtn = "결과저장";
+        const mainBtn = "메인으로";
         return (
             <div className="result">
                 <div className="container">
-                    <div className="type">[ {type_name} ]</div>
-                    <img className="type-img" src={imgUrl} alt={type_name} />
+                    <div
+                        className="subject_name"
+                        // html 형태로 렌더링 허용
+                        dangerouslySetInnerHTML={{ __html: subject_name }}
+                    ></div>
+                    <img className="type-img" src={imgUrl} alt={subject_name} />
+                    <div
+                        className="main_context"
+                        // html 형태로 렌더링 허용
+                        dangerouslySetInnerHTML={{ __html: main_context }}
+                    ></div>
                     <div
                         className="sub_context"
                         // html 형태로 렌더링 허용
                         dangerouslySetInnerHTML={{ __html: sub_context }}
                     ></div>
+
+                    <div className="buttons">
+                        <button
+                            className="save_btn"
+                            onClick={() => this.props.history.push("/collect")}
+                        >
+                            {saveBtn}
+                        </button>
+                        <a href="#">
+                            <button
+                                className="main_btn"
+                                onClick={() => this.props.history.push("/")}
+                            >
+                                {mainBtn}
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         );
@@ -23,8 +53,9 @@ class result extends React.Component {
 }
 
 // 기본 props 값
-result.defaultProps = {
-    type_name: "뉴미디어소프트웨어과",
+result6_1.defaultProps = {
+    subject_name: "나와 어울리는 과는?",
+    main_context: "뉴미디어소프트웨어과",
     sub_context:
         "당신은 뉴미디어소프트웨어과랑 잘 어울려요!</br>" +
         "엥? 이란 생각을 하셨다면 다시 한번 생각해 보세요.</br>" +
@@ -34,4 +65,4 @@ result.defaultProps = {
         
 };
 
-export default result;
+export default result6_1;
