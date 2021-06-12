@@ -1,52 +1,46 @@
-import React from "react";
+import React, { useState, ReactDom } from "react";
 import "../question.css";
 import Button from "../../../component/Button";
+import { Link } from "react-router-dom"; 
+import "./Question5_1";
+import { number1, number2 } from "./Question5_1";
 
-class question extends React.Component {
-    render() {
-        const question_title = this.props.question_title;
-        const btn1 = this.props.btn1;
-        const btn2 = this.props.btn2;
-
-        return (
+function Question5_9(){
+    const onIncrease = () => {number1.count1+=10
+    console.log(number1)};
+    const onDecrease = () => {number2.count2+=30
+        console.log(number2)};
+        const question_title = "Q9. !테스트를 해주셔서 정말 감사하지 않습니다 ㅎㅎ?";
+        const btn1 ="뭐야? 왜 저래?"; //10
+        const btn2 = "당근이죠 ㅎㅎ"; //30
+        // 90 - 150 : 151 - 210 : 211 - 270
+    return (
             <div className="Question">
                 <div className="container">
-                    <progress id="progressbar" value="100" max="100"></progress>
+                    <progress id="progressbar" value="17" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용
-                        dangerouslySetInnerHTML={{ __html: question_title }}
-                    ></div>
-                    <div className="buttons">
-                        <Button onClick={() => this.props.history.push("/")}>
-                            <div
-                                className="btn1"
-                                // html 형태로 렌더링 허용
-                                dangerouslySetInnerHTML={{ __html: btn1 }}
-                            ></div>
-                        </Button>
-                        <br />
+                    >{question_title}</div>
 
-                        <Button onClick={() => this.props.history.push("/")}>
-                            <div
-                                className="btn2"
-                                // html 형태로 렌더링 허용
-                                dangerouslySetInnerHTML={{ __html: btn2 }}
-                            ></div>
+                    <div className="buttons">
+                        <Link to="/">
+                        <Button
+                            onClick={() =>onIncrease() }
+                        >
+                            {btn1}
+                        </Button></Link>
+                        <br />
+                        <Link to="/">
+                        <Button
+                            onClick={() =>onDecrease()}
+                        >
+                           {btn2}
                         </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
         );
-    }
-}
-
-// 기본 props 값
-question.defaultProps = {
-    question_title: "Q9. !테스트를 해주셔서 정말 감사하지 않습니다 ㅎㅎ?",
-    btn1: "뭐야? 왜 저래?", // 10
-    btn2: "당근이죠 ㅎㅎ" // 30
-    // 90 - 150 : 151 - 210 : 211 - 270
-};
-
-export default question;
+    };
+export default Question5_9;

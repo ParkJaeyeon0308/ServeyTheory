@@ -8,11 +8,11 @@ import { number1, number2 } from "./Question2_1";
 function Question2_6() {
     //0으로 초기값 설정
     const onIncrease = () => {
-        number1.count1+20;
+        number1.count1+=20;
         console.log(number1);
     };
     const onDecrease = () => {
-        number2.count2+10;
+        number2.count2+=10;
         console.log(number2);
     };
     const question_title = "Q6. 3일 남은 프로젝트, 2일 남은 수행평가.. <br/> 당신의 우선순위는?";

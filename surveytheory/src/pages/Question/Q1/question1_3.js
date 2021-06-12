@@ -30,11 +30,11 @@ function Question1_3() {
                 </div>
 
                 <div className="buttons">
-                    <Link to="./question1_4">
+                    <Link to="./Question1_4">
                         <Button onClick={() => onIncrease()}>{btn1}</Button>
                     </Link>
                     <br />
-                    <Link to="./question1_4">
+                    <Link to="./Question1_4">
                         <Button onClick={() => onDecrease()}>{btn2}</Button>
                     </Link>
                 </div>

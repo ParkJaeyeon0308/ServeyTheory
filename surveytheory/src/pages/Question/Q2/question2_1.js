@@ -6,10 +6,12 @@ import { Link } from "react-router-dom";
 export let number1 = {count1:0};
 export let number2 = {count2:0};
 function Question2_1(){
-    const onIncrease = () => {number1.count1+30
-    console.log(number1)};
-    const onDecrease = () => {number2.count2+10
-        console.log(number2)};
+    const onIncrease = () => {
+        number1.count1+=30
+    console.log(number1);
+    };
+    const onDecrease = () => {number2.count2+=10
+        console.log(number2);};
         const question_title = "Q1. 다음주까지인 과제...<br/> 당신이라면 어떻게 하시겠습니까?";
         const btn1 ="오늘 끝내버리고 쉬자! 오늘한다"; //30
         const btn2 = "과제는 원래 미룰 수 있을 때까지 미루는 거시여~<br/> 끝까지 미룬다"; //10
