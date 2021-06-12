@@ -2,7 +2,7 @@
 .navbar {
     background-color: rgb(113, 157, 138);
     width: 100%;
-    height: 18vh;
+    height: 14vh;
     display: flex;
     justify-content: start;
     /* align-items: center; */
@@ -22,7 +22,7 @@
 .menu-bars {
     position: relative;
     margin-left: 3vw;
-    font-size: 2rem;
+    font-size: 4rem;
     background: none;
 }
 
