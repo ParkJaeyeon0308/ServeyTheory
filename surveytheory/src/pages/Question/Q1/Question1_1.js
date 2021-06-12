@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 export let number1 = {count1:0};
 export let number2 = {count2:0};
 function Question1_1(){
-    const onIncrease = () => {number1.count1++
+    const onIncrease = () => {number1.count1++ //web
     console.log(number1)};
-    const onDecrease = () => {number2.count2++
+    const onDecrease = () => {number2.count2++ //app
         console.log(number2)};
         const question_title = "Q1. 나의 휴대폰은?";
         const btn1 ="예쁜 디자인의 아이폰";
@@ -23,14 +23,14 @@ function Question1_1(){
                     >{question_title}</div>
 
                     <div className="buttons">
-                        <Link to="./question1_2">
+                        <Link to="./Question1_2">
                         <Button
                             onClick={() =>onIncrease() }
                         >
                             {btn1}
                         </Button></Link>
                         <br />
-                        <Link to="./question1_2">
+                        <Link to="./Question1_2">
                         <Button
                             onClick={() =>onDecrease()}
                         >
