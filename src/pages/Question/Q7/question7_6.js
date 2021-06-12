@@ -1,71 +1,67 @@
-import React from "react";
+import React, { useState, ReactDom } from "react";
 import "../question.css";
 import Button from "../../../component/Button";
+import { Link } from "react-router-dom"; 
+import "./Question7_1";
+import { number1, number2, number3,number4 } from "./Question7_1";
 
-class question extends React.Component {
-    render() {
-        const question_title = this.props.question_title;
-        const btn1 = this.props.btn1;
-        const btn2 = this.props.btn2;
-        const btn3 = this.props.btn3;
-        const btn4 = this.props.btn4;
-
-        return (
+function Question7_6(){
+    const onPlus1 = () => {number1.count1++
+        console.log(number1)};
+    const onPlus2 = () => {number2.count2++
+        console.log(number2)};
+    const onPlus3 = () => {number2.count3++
+        console.log(number3)};
+    const onPlus4 = () => {number2.count4++
+        console.log(number4)};
+        const question_title = "Q6. 유지보수할때 나는?";
+        const btn1 ="기능적 발전에 주목한다"; //B
+        const btn2 = "어떻게 하면 더 한 눈에 볼 수 있을지 생각한다"; //F
+        const btn3 = "객관적인 관점들이 매우 중요하다고 생각한다"; //FB
+        const btn4 = "유지보수란 항상 가다듬는 것이라고 생각한다"; //BF
+    return (
             <div className="Question">
                 <div className="container">
-                    <progress id="progressbar" value="100" max="100"></progress>
+                    <progress id="progressbar" value="17" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용
-                        dangerouslySetInnerHTML={{ __html: question_title }}
-                    ></div>
-                    <div className="buttons">
-                        <Button onClick={() => this.props.history.push("/")}>
-                            <div
-                                className="btn1"
-                                // html 형태로 렌더링 허용
-                                dangerouslySetInnerHTML={{ __html: btn1 }}
-                            ></div>
-                        </Button>
-                        <br />
+                    >{question_title}</div>
 
-                        <Button onClick={() => this.props.history.push("/")}>
-                            <div
-                                className="btn2"
-                                // html 형태로 렌더링 허용
-                                dangerouslySetInnerHTML={{ __html: btn2 }}
-                            ></div>
-                        </Button>
+                    <div className="buttons">
+                        <Link to="/">
+                        <Button
+                            onClick={() =>onPlus1() }
+                        >
+                            {btn1}
+                        </Button></Link>
                         <br />
-                        <Button onClick={() => this.props.history.push("/")}>
-                            <div
-                                className="btn3"
-                                // html 형태로 렌더링 허용
-                                dangerouslySetInnerHTML={{ __html: btn3 }}
-                            ></div>
+                        <Link to="/">
+                        <Button
+                            onClick={() =>onPlus2()}
+                        >
+                           {btn2}
                         </Button>
+                        </Link>
                         <br />
-                        <Button onClick={() => this.props.history.push("/")}>
-                            <div
-                                className="btn4"
-                                // html 형태로 렌더링 허용
-                                dangerouslySetInnerHTML={{ __html: btn4 }}
-                            ></div>
+                        <Link to="/">
+                        <Button
+                            onClick={() =>onPlus3()}
+                        >
+                           {btn3}
                         </Button>
+                        </Link>
+                        <br />
+                        <Link to="/">
+                        <Button
+                            onClick={() =>onPlus4()}
+                        >
+                           {btn4}
+                        </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
         );
-    }
-}
-
-// 기본 props 값
-question.defaultProps = {
-    question_title: "Q6. 유지보수할때 나는?",
-    btn1: "기능적 발전에 주목한다",
-    btn2: "어떻게 하면 더 한 눈에 볼 수 있을지 생각한다",
-    btn3: "객관적인 관점들이 매우 중요하다고 생각한다",
-    btn4: "유지보수란 항상 가다듬는 것이라고 생각한다"
-};
-
-export default question;
+    };
+export default Question7_6;

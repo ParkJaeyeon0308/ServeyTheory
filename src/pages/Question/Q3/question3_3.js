@@ -1,59 +1,45 @@
-import React from "react";
+import React, { useState, ReactDom } from "react";
 import "../question.css";
 import Button from "../../../component/Button";
+import { Link } from "react-router-dom"; 
+import "./Question3_1";
+import { number1, number2 } from "./Question3_1";
 
-class question extends React.Component {
-    render() {
-        const question_title = this.props.question_title;
-        const btn1 = this.props.btn1;
-        const btn2 = this.props.btn2;
-
-        return (
+function Question3_3(){
+    const onIncrease = () => {number1.count1+=10
+    console.log(number1)};
+    const onDecrease = () => {number2.count2+=30
+        console.log(number2)};
+        const question_title = "Q3. 당신이 취업에 대해 가지고 있는 생각은?";
+        const btn1 ="미림은 취업률 90퍼센트 이상인데~<br/> 학교가 알아서 취업시켜주겠지~"; //10
+        const btn2 = "내가.. 회사에서... 일을...할.. 수.. 있을..,, 까..?"; //30
+    return (
             <div className="Question">
                 <div className="container">
-                    <progress id="progressbar" value="37.5" max="100"></progress>
+                    <progress id="progressbar" value="17" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용
-                        dangerouslySetInnerHTML={{ __html: question_title }}
-                    ></div>
-                    <div className="buttons">
-                        <Button
-                            onClick={() =>
-                                this.props.history.push("/question3_4")
-                            }
-                        >
-                            <div
-                                className="btn1"
-                                // html 형태로 렌더링 허용
-                                dangerouslySetInnerHTML={{ __html: btn1 }}
-                            ></div>
-                        </Button>
-                        <br />
+                    >{question_title}</div>
 
+                    <div className="buttons">
+                        <Link to="./Question3_4">
                         <Button
-                            onClick={() =>
-                                this.props.history.push("/question3_4")
-                            }
+                            onClick={() =>onIncrease() }
                         >
-                            <div
-                                className="btn2"
-                                // html 형태로 렌더링 허용
-                                dangerouslySetInnerHTML={{ __html: btn2 }}
-                            ></div>
+                            {btn1}
+                        </Button></Link>
+                        <br />
+                        <Link to="./Question3_4">
+                        <Button
+                            onClick={() =>onDecrease()}
+                        >
+                           {btn2}
                         </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
         );
-    }
-}
-
-// 기본 props 값
-question.defaultProps = {
-    question_title: "Q3. 당신이 취업에 대해 가지고 있는 생각은?",
-    btn1: "미림은 취업률 90퍼센트 이상인데~<br/> 학교가 알아서 취업시켜주겠지~", // 10
-    btn2: "내가.. 회사에서... 일을...할.. 수.. 있을..,, 까..?" // 30
-};
-
-export default question;
+    };
+export default Question3_3;

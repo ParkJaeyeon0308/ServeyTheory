@@ -8,11 +8,16 @@ import { number1, number2 } from "./Question2_1";
 function Question2_3() {
     //0으로 초기값 설정
     const onIncrease = () => {
-        number1.count1+10;
+        number1.count1+=10;
         console.log(number1);
     };
     const onDecrease = () => {
-        number2.count2+30;
+        number2.count2+=30;
+        number1.count1 + 10;
+        console.log(number1);
+    };
+    const onDecrease = () => {
+        number2.count2 + 30;
         console.log(number2);
     };
     const question_title = "Q3. 당신의 과제 제출은?";
