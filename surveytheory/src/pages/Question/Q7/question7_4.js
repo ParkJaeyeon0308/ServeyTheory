@@ -6,14 +6,14 @@ import "./Question7_1";
 import { number1, number2, number3,number4 } from "./Question7_1";
 
 function Question7_4(){
-    const onPlus1 = () => {number1.count1++
-        console.log(number1)};
-    const onPlus2 = () => {number2.count2++
-        console.log(number2)};
-    const onPlus3 = () => {number2.count3++
-        console.log(number3)};
-    const onPlus4 = () => {number2.count4++
+    const onPlus1 = () => {number4.count4++
         console.log(number4)};
+    const onPlus2 = () => {number3.count3++
+        console.log(number3)};
+    const onPlus3 = () => {number2.count2++
+        console.log(number2)};
+    const onPlus4 = () => {number1.count1++
+        console.log(number1)};
         const question_title = "Q4. 프로젝트 기획을 하면서 중요하게 생각하는 부분은?";
         const btn1 ="사용자의 접촉점을 먼저 생각한다"; //BF
         const btn2 ="문화와 관련된 것들이 가장 실용도가 높다"; //FB

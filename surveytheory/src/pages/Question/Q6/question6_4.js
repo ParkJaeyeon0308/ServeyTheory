@@ -8,10 +8,10 @@ import { number1, number2, number3 } from "./Question6_1";
 function Question6_4(){
     const onPlus1 = () => {number1.count1++
         console.log(number1)};
-    const onPlus2 = () => {number2.count2++
-        console.log(number2)};
-    const onPlus3 = () => {number3.count3++
+    const onPlus2 = () => {number3.count3++
         console.log(number3)};
+    const onPlus3 = () => {number2.count2++
+        console.log(number2)};
         const question_title = "Q4. 그림(or 디자인 센스)을 잘 그리는 편인가요?";
         const btn1 ="잘 그리는 편이다"; //
         const btn2 = "그림? 배워보긴 했다"; //

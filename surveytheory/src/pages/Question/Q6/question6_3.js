@@ -6,12 +6,12 @@ import "./Question6_1";
 import { number1, number2, number3 } from "./Question6_1";
 
 function Question6_3(){
-    const onPlus1 = () => {number1.count1++
-        console.log(number1)};
+    const onPlus1 = () => {number3.count3++
+        console.log(number3)};
     const onPlus2 = () => {number2.count2++
         console.log(number2)};
-    const onPlus3 = () => {number3.count3++
-        console.log(number3)};
+    const onPlus3 = () => {number1.count1++
+        console.log(number1)};
         const question_title = "Q3. 어떤걸 해보고 싶나요?";
         const btn1 ="간단하지만 중요한 역할은 부담스럽다"; //
         const btn2 = "배우고 외워서 하는게 제일 편하고 좋지"; //

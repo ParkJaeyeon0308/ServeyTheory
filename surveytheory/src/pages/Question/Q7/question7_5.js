@@ -6,14 +6,14 @@ import "./Question7_1";
 import { number1, number2, number3,number4 } from "./Question7_1";
 
 function Question7_5(){
-    const onPlus1 = () => {number1.count1++
-        console.log(number1)};
-    const onPlus2 = () => {number2.count2++
+    const onPlus1 = () => {number2.count2++
         console.log(number2)};
-    const onPlus3 = () => {number2.count3++
+    const onPlus2 = () => {number3.count3++
         console.log(number3)};
-    const onPlus4 = () => {number2.count4++
+    const onPlus3 = () => {number4.count4++
         console.log(number4)};
+    const onPlus4 = () => {number1.count1++
+        console.log(number1)};
         const question_title = "Q5. 전공수업을 배우면서 느끼는 감정은?";
         const btn1 ="이것 저것에 다 접목시켜 사용되는게 좋다"; //F
         const btn2 = "모든 언어들의 응용점이 있었음 좋겠다"; //FB
