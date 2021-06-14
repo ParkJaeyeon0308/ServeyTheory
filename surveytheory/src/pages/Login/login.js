@@ -5,6 +5,8 @@ import { GoogleLogin } from "react-google-login";
 import { Container, Row, Col } from "react-bootstrap";
 import "./login.css";
 
+export let user_id = {user_id: 'novalue'};
+
 // 커밋 테스트
 const clientId =
     "600385616873-9ibcau1rto6jhqmrk8he88hh9tslhhj0.apps.googleusercontent.com";
@@ -26,6 +28,7 @@ export default class Login extends React.Component {
             [e.target.name]: e.target.value,
           }); 
     };
+    
 
     onclick = () => {
         const textbox = { 
@@ -46,6 +49,8 @@ export default class Login extends React.Component {
                 this.setState({ // 아이디와 비밀번호가 같은 행이 1이상 존재하면 로그인 성공
                     data: '로그인 성공! (메인화면이동)', // 유효성 검사 메시지
                 })
+                user_id.user_id = textbox.inText;
+                console.log('user_id: ' + user_id.user_id);
                 this.props.history.push('./')
             } else { // 중복되는 행의 개수가 0이면
                 this.setState({

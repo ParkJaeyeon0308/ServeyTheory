@@ -23,11 +23,12 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.post("/text", (req, res) => { // 로그인 하는 메소드
+app.post("/text", (req, res) => { // 회원가입 하는 메소드
     const user_id = req.body.inText;
     const user_pw = req.body.inText1;
     const user_nick = req.body.inText2; 
     console.log( "user_id: " + user_id + " / user_pw: " +  user_pw + " / user_nick: " + user_nick);
+        // eslint-disable-next-line no-unused-expressions
     connection.query("INSERT INTO member_tb (user_id, user_pw, user_nick) values(?, ?, ?)", 
     [user_id, user_pw, user_nick]), // member_tb에 값 삽입
     function(err, rows, fields){
@@ -119,7 +120,6 @@ app.post("/withdraw", (req, res) => { // login과 동일하게 회원여부 확�
 
 app.post("/withdraw2", (req, res) => { // 회원정보를 삭제하는 메소드
     const user_id = req.body.inText;
-    const user_pw = req.body.inText1;
     console.log( "user_id: " + user_id);
     connection.query("DELETE FROM member_tb WHERE user_id = ?", [user_id], 
     function(err, rows, fields){ // user_id가 본인인 행을 삭제
@@ -127,6 +127,36 @@ app.post("/withdraw2", (req, res) => { // 회원정보를 삭제하는 메소드
             console.log("회원탈퇴 실패");
         } else {
             console.log("회원탈퇴 성공")
+        }
+    })
+})
+
+app.post("/save", (req, res) => { // 회원결과 저장하는 메소드 
+    const user_id = req.body.inText; // let user_id에서 가져옴
+    const subject_name = req.body.inText1; // const 직접 설정
+    const survey_url = req.body.inText2; // const 직접 설정
+    console.log("user_id: " + user_id + " / subject_name: "  + subject_name + " / result_url: " + survey_url);
+    // eslint-disable-next-line no-unused-expressions
+    connection.query("INSERT INTO result_tb (user_id, survey_title, result_url) VALUES (?, ?, ?) ",
+    [user_id, subject_name, survey_url]),
+    function(err, rows, fields){
+        if(err) {
+            console.log("DB 저장 실패");
+        } else {
+            console.log("DB 저장 성공")
+        }
+    }
+})
+
+app.post("/collect", (req, res) => { // 회원 결과를 구하는 메소드
+    const user_id = req.body.inText;
+    connection.query("SELECT survey_title, result_url, result_date  from result_tb where user_id = ?", [user_id],
+    function(err, rows, fields){
+        if (err){
+            console.log("결과 데이터 가져오기 실패");
+        } else {
+            console.log(rows[0])
+            res.send(rows[0])
         }
     })
 })

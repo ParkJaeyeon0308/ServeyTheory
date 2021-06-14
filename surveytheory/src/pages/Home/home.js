@@ -38,7 +38,7 @@ export default class Home extends Component {
                         />
                     </div>
                     <div
-                        onClick={() => this.props.history.push("/question2_1")}
+                        onClick={() => this.props.history.push("/Question2_1")}
                     >
                         <img
                             src="/images/slider-img/img1_2.png"
@@ -46,7 +46,7 @@ export default class Home extends Component {
                         />
                     </div>
                     <div
-                        onClick={() => this.props.history.push("/question3_1")}
+                        onClick={() => this.props.history.push("/Question3_1")}
                     >
                         <img
                             src="/images/slider-img/img1_3.png"
@@ -54,7 +54,7 @@ export default class Home extends Component {
                         />
                     </div>
                     <div
-                        onClick={() => this.props.history.push("/question4_1")}
+                        onClick={() => this.props.history.push("/Question4_1")}
                     >
                         <img
                             src="/images/slider-img/img1_4.png"
@@ -62,7 +62,7 @@ export default class Home extends Component {
                         />
                     </div>
                     <div
-                        onClick={() => this.props.history.push("/question5_1")}
+                        onClick={() => this.props.history.push("/Question5_1")}
                     >
                         <img
                             src="/images/slider-img/img1_5.png"
@@ -70,7 +70,7 @@ export default class Home extends Component {
                         />
                     </div>
                     <div
-                        onClick={() => this.props.history.push("/question6_1")}
+                        onClick={() => this.props.history.push("/Question6_1")}
                     >
                         <img
                             src="/images/slider-img/img1_6.png"
@@ -78,7 +78,7 @@ export default class Home extends Component {
                         />
                     </div>
                     <div
-                        onClick={() => this.props.history.push("/question7_1")}
+                        onClick={() => this.props.history.push("/Question7_1")}
                     >
                         <img
                             src="/images/slider-img/img1_7.png"
@@ -86,7 +86,7 @@ export default class Home extends Component {
                         />
                     </div>
                     <div
-                        onClick={() => this.props.history.push("/question8_1")}
+                        onClick={() => this.props.history.push("/Question8_1")}
                     >
                         <img
                             src="/images/slider-img/img1_8.png"
@@ -94,7 +94,7 @@ export default class Home extends Component {
                         />
                     </div>
                     <div
-                        onClick={() => this.props.history.push("/question9_1")}
+                        onClick={() => this.props.history.push("/Question9_1")}
                     >
                         <img
                             src="/images/slider-img/img1_9.png"
@@ -112,49 +112,49 @@ export default class Home extends Component {
                 </div>
                 <div
                     className="box"
-                    onClick={() => this.props.history.push("/question2_1")}
+                    onClick={() => this.props.history.push("/Question2_1")}
                 >
                     <img src="../images/box-img/img2_2.png" />
                 </div>
                 <div
                     className="box"
-                    onClick={() => this.props.history.push("/question3_1")}
+                    onClick={() => this.props.history.push("/Question3_1")}
                 >
                     <img src="../images/box-img/img2_3.png" />
                 </div>
                 <div
                     className="box"
-                    onClick={() => this.props.history.push("/question4_1")}
+                    onClick={() => this.props.history.push("/Question4_1")}
                 >
                     <img src="../images/box-img/img2_4.png" />
                 </div>
                 <div
                     className="box"
-                    onClick={() => this.props.history.push("/question5_1")}
+                    onClick={() => this.props.history.push("/Question5_1")}
                 >
                     <img src="../images/box-img/img2_5.png" />
                 </div>
                 <div
                     className="box"
-                    onClick={() => this.props.history.push("/question6_1")}
+                    onClick={() => this.props.history.push("/Question6_1")}
                 >
                     <img src="../images/box-img/img2_6.png" />
                 </div>
                 <div
                     className="box"
-                    onClick={() => this.props.history.push("/question7_1")}
+                    onClick={() => this.props.history.push("/Question7_1")}
                 >
                     <img src="../images/box-img/img2_7.png" />
                 </div>
                 <div
                     className="box"
-                    onClick={() => this.props.history.push("/question8_1")}
+                    onClick={() => this.props.history.push("/Question8_1")}
                 >
                     <img src="../images/box-img/img2_8.png" />
                 </div>
                 <div
                     className="box"
-                    onClick={() => this.props.history.push("/question9_1")}
+                    onClick={() => this.props.history.push("/Question9_1")}
                 >
                     <img src="../images/box-img/img2_9.png" />
                 </div>

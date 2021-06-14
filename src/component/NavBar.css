@@ -137,11 +137,11 @@
     align-items: center;
 }
 
-@media (max-width: 530px) {
+/* @media (max-width: 530px) {
     .logo {
         display: none;
     }
-}
+} */
 
 @media (min-width: 1920px) {
     .navbar {
@@ -151,8 +151,8 @@
         margin-left: 15px;
         font-size: 3rem;
     }
-    .logo {
+    /* .logo {
         width: 18rem;
         margin-right: 3rem;
-    }
+    } */
 }

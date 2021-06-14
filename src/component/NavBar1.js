@@ -8,8 +8,10 @@ import { IconContext } from 'react-icons';
 import { useHistory } from 'react-router-dom';
 import Login, {user_id} from "../pages/Login/login";
 
-// 로그인 하기 전
-function NavBar() {
+// 로그인 한 후
+export let collect1 = {surveytitle: '', result_url: '', result_date: ''};
+
+function NavBar1() {
 
   const [sidebar, setSidebar] = useState(false);
 
@@ -18,10 +20,10 @@ function NavBar() {
   const history = useHistory();
 
   const logout = () => {
-    console.log('logout 실행됨')
-    alert('정상적으로 로그아웃 되었습니다.')
-    user_id.user_id = 'novalue'
-}
+      console.log('logout 실행됨')
+      alert('정상적으로 로그아웃 되었습니다.')
+      user_id.user_id = 'novalue'
+  }
 
   const selectCollect = () => {
     console.log('collect에서 user_id: ' + user_id.user_id);
@@ -30,8 +32,8 @@ function NavBar() {
     };
 
     if(user_id.user_id == 'novalue'){
-        alert('먼저 로그인 하세요.')   
-        history.push('/login')      
+        alert('먼저 로그인 하세요.') 
+        history.push('/login')   
     } else {
         fetch("http://localhost:3001/collect", { // server.js의 collect 메소드 사용
         method: "post", //통신방법
@@ -43,9 +45,12 @@ function NavBar() {
         .then((res) => res.json())
         .then((json) => {
           history.push('/collect')
-          console.log('survey_title: ' + json.survey_title)
-          console.log('result_url:' + json.result_url)
-          console.log('result_date: ' + json.result_date)
+          collect1.survey_title = json.survey_title;
+          collect1.result_url = json.result_url;
+          collect1.result_date = json.result_date
+          console.log('navbar에서 survey_title: ' + json.survey_title)
+          console.log('navbar에서 result_url:' + json.result_url)
+          console.log('navbar에서 result_date: ' + json.result_date)
         });
     }
   };
@@ -76,12 +81,12 @@ function NavBar() {
                             </Link>
                         </li>     
                         <li className= 'nav-text'>
-                            <Link to= '/login'>
-                                <span>로그인 / 회원가입</span>
+                            <Link to= '/' onClick={logout}>
+                                <span>로그아웃</span>
                             </Link>
                         </li>          
                         <li className= 'nav-text' onClick={selectCollect}>
-                            <Link to='#'>
+                            <Link to= '#'>
                                 <span>내 결과 모아보기</span>
                             </Link>
                         </li>     
@@ -97,20 +102,20 @@ function NavBar() {
                         </li>     
                         <li className= 'mini-nav-text'>
                             <Link to= '/quit_account'>
-                                <span>회원탈톼</span>
+                                <span>회원탈퇴</span>
                             </Link>
                         </li>     
                         <li className= 'nav-text'>
                             <Link to= '/developer_intro'>
                                 <span>Developer Intro</span>
                             </Link>
-                        </li> 
+                        </li>  
 
                         <li className = 'nav-text'>
-                            <Link to='/' onClick={logout}>
+                            <Link to='/login'>
                                 <span>          </span>
                             </Link>    
-                        </li>             
+                        </li>          
                 </ul>
             </nav>
             </IconContext.Provider>
@@ -118,4 +123,4 @@ function NavBar() {
     );
 }
 
-export default NavBar
+export default NavBar1

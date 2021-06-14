@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SidebarData = [
+export const SidebarData1 = [
     {
         title: "홈",
         path: "/",
@@ -8,7 +8,7 @@ export const SidebarData = [
         cName: "nav-text"
     },
     {
-        title: "로그인 / 회원가입",
+        title: "로그아웃",
         path: "/login",
         // icon:<BiIcons.BiLogIn color="#ffffff"/>,
         cName: "nav-text"

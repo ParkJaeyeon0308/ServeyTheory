@@ -15,16 +15,16 @@ function Question1_6() {
         if(number1>number2){
             history.push('./result1_1');
         }else{
-            history.push('./result1_2');
+            history.push('./result1_1');
         }
     };
     const onDecrease = () => {
         number2.count2++;
         console.log(number2);
         if(number1>number2){
-            history.push('./result1_1');
-        }else{
             history.push('./result1_2');
+        }else{
+            history.push('./result1_1');
         }
     };
     const question_title =
