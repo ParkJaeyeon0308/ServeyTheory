@@ -1,6 +1,6 @@
 import React from "react";
 import "../result.css";
-import Login, {user_id} from "../pages/Login/login";
+import Login, {user_id} from "../../Login/login";
 
 export default class result1_1 extends React.Component {
 
