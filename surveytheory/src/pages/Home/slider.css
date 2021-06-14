@@ -30,16 +30,38 @@
     margin-top: 6rem;
 }
 
-.home .box {
-    width: 32rem;
-    height: 25rem;
-    background-color: black;
+.home .test_box {
+    position: relative;
+    width: 50vw;
+    height: 42vh;
+    /* background-color: black; */
+    border: 2rem solid;
+    border-radius: 20px;
+    border-image: linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
 
     margin-top: 4rem;
     margin-left: 1rem;
     margin-right: 1rem;
 
     cursor: pointer;
+}
+
+.boximg {
+    float: left;
+    margin-right: 1vw;
+}
+
+.home .box .boxtext_1 {
+    font-size: 0.45em;
+    margin-top: 2vh;
+    text-align: justify;
+}
+
+.hashtag {
+    position: absolute;
+    font-size: 0.5em;
+    top: 80%;
+    right: 1%;
 }
 
 @media (min-width: 1920px) {

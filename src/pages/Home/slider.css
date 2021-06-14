@@ -23,53 +23,49 @@
 /* 원하는 테스트를 골라 시작해보세요! */
 .home .text {
     width: 100%;
-    font-size: 0.7em;
+    font-size: 2em;
     color: rgb(24, 70, 83);
     text-align: center;
 
     margin-top: 6rem;
 }
 
-/* 각 박스별 질문 타이틀 */
-.home .test_title {
-    display: none;
-    text-align: center;
-    color: rgb(24, 70, 83);
-    font-size: 0.45em;
-    margin-top: 5.8rem;
-}
+.home .test_box {
+    position: relative;
+    width: 50vw;
+    height: 42vh;
+    /* background-color: black; */
+    border: 2rem solid;
+    border-radius: 20px 20px 20px 20px;
+    border-image: linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
 
-.home .box:hover .test_title {
-    display: block;
-}
-
-.home .box {
-    width: 32rem;
-    height: 25rem;
-    background-color: black;
-
-    margin-top: 2.5rem;
+    margin-top: 4rem;
     margin-left: 1rem;
     margin-right: 1rem;
 
     cursor: pointer;
 }
 
-.home .box:hover {
-    background-color: rgba(255, 215, 121, 0.5);
+.boximg {
+    float: left;
+    margin-right: 1vw;
+}
+
+.home .box .boxtext_1 {
+    font-size: 0.45em;
+    margin-top: 2vh;
+    text-align: justify;
+}
+
+.hashtag {
+    position: absolute;
+    font-size: 0.5em;
+    top: 80%;
+    right: 1%;
 }
 
 @media (min-width: 1920px) {
     .home .text {
         font-size: 0.9em;
-    }
-
-    /* .home .box {
-
-    } */
-
-    .test_title {
-        font-size: 0.6em;
-        margin-top: 9.5rem;
     }
 }
