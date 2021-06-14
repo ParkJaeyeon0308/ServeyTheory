@@ -9,40 +9,57 @@ function Question6_6(){
     const history = useHistory();
     const onPlus1 = () => {
         number1.count1++;
-        console.log(number1);
-        if(number1>number2){
-            if(number1>number3){
+        console.log(number1.count1);
+        if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
             history.push('./result6_3');
             }
-        }else if(number2>number1){
-            if(number2>number3){
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
             history.push('./result6_1');
             }
         }else{
             history.push('./result6_2');
         }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
     };
     const onPlus2 = () => {
         number2.count2++;
         console.log(number2);
-        if(number1>number2 && number1>number3){
-            history.push('./result6_1');
-        }else if(number2>number1 && number2>number3){
-            history.push('./result6_2');
-        }else{
+        if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
             history.push('./result6_3');
+            }
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
+            history.push('./result6_1');
+            }
+        }else{
+            history.push('./result6_2');
         }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
     };
     const onPlus3 = () => {
         number3.count3++;
         console.log(number3);
-        if(number1>number2 && number1>number3){
-            history.push('./result6_1');
-        }else if(number2>number1 && number2>number3){
-            history.push('./result6_2');
-        }else{
+        if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
             history.push('./result6_3');
+            }
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
+            history.push('./result6_1');
+            }
+        }else{
+            history.push('./result6_2');
         }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
     };
         const question_title = "Q6. 이런 과가 좋아 ~";
         const btn1 ="어떤 과랑 해도 상관없는 과가 좋아"; //
