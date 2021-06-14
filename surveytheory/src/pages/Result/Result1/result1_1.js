@@ -1,9 +1,10 @@
+/* eslint-disable no-sequences */
 import React from "react";
 import "../result.css";
 import Login, {user_id} from "../../Login/login";
+import { number1, number2 } from "../../Question/Q1/Question1_1";
 
 export default class result1_1 extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -11,7 +12,6 @@ export default class result1_1 extends React.Component {
             survey_url:"1_1"
         };
     }
-
     onclick = () => {
         const textbox = { 
             inText: user_id.user_id,

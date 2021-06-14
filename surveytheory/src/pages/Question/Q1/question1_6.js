@@ -11,21 +11,25 @@ function Question1_6() {
     const history = useHistory();
     const onIncrease = () => {
         number1.count1++;
-        console.log(number1);
-        if(number1>number2){
+        console.log(number1.count1);
+        if(number1.count1>number2.count2){
             history.push('./result1_1');
         }else{
-            history.push('./result1_1');
+            history.push('./result1_2');
         }
+        number1.count1-=number1.count1;
+        number2.count2-=number2.count2;
     };
     const onDecrease = () => {
         number2.count2++;
         console.log(number2);
-        if(number1>number2){
-            history.push('./result1_2');
-        }else{
+        if(number1.count1>number2.count2){
             history.push('./result1_1');
+        }else{
+            history.push('./result1_2');
         }
+        number1.count1-=number1.count1;
+        number2.count2-=number2.count2;
     };
     const question_title =
         "Q6. 다음중 더 뿌듯한 상황은? </br> 친구에게 내가 만든~";

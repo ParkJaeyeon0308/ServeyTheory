@@ -9,99 +9,115 @@ function Question7_6(){
     const history = useHistory();
     const onPlus1 = () => {number1.count1++;
         console.log(number1);
-        if(number1>number2){
-            if(number1>number3){
-                if(number1>number4){
+        if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
+                if(number1.count1>number4.count4){
                     history.push('./result7_4');
                 }
             }
-        }else if(number2>number1){
-            if(number2>number3){
-                if(number2>number4){
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
+                if(number2.count2>number4.count4){
                     history.push('./result7_1');
                 }
             }
-        }else if(number3>number1){
-            if(number3>number2){
-                if(number3>number4){
+        }else if(number3.count3>number1.count1){
+            if(number3.count3>number2.count2){
+                if(number3.count3>number4.count4){
                     history.push('./result7_2');
                 }
             }
         }else{
             history.push('./result7_3');
         }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
+        number4.count4 -=number4.count4;
     };
     const onPlus2 = () => {number2.count2++;
         console.log(number2);
-        if(number1>number2){
-            if(number1>number3){
-                if(number1>number4){
+        if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
+                if(number1.count1>number4.count4){
                     history.push('./result7_4');
                 }
             }
-        }else if(number2>number1){
-            if(number2>number3){
-                if(number2>number4){
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
+                if(number2.count2>number4.count4){
                     history.push('./result7_1');
                 }
             }
-        }else if(number3>number1){
-            if(number3>number2){
-                if(number3>number4){
+        }else if(number3.count3>number1.count1){
+            if(number3.count3>number2.count2){
+                if(number3.count3>number4.count4){
                     history.push('./result7_2');
                 }
             }
         }else{
             history.push('./result7_3');
         }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
+        number4.count4 -=number4.count4;
     };
     const onPlus3 = () => {number3.count3++;
         console.log(number3);
-        if(number1>number2){
-            if(number1>number3){
-                if(number1>number4){
+        if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
+                if(number1.count1>number4.count4){
                     history.push('./result7_4');
                 }
             }
-        }else if(number2>number1){
-            if(number2>number3){
-                if(number2>number4){
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
+                if(number2.count2>number4.count4){
                     history.push('./result7_1');
                 }
             }
-        }else if(number3>number1){
-            if(number3>number2){
-                if(number3>number4){
+        }else if(number3.count3>number1.count1){
+            if(number3.count3>number2.count2){
+                if(number3.count3>number4.count4){
                     history.push('./result7_2');
                 }
             }
         }else{
             history.push('./result7_3');
         }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
+        number4.count4 -=number4.count4;
     };
     const onPlus4 = () => {number4.count4++;
         console.log(number4);
-        if(number1>number2){
-            if(number1>number3){
-                if(number1>number4){
+                if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
+                if(number1.count1>number4.count4){
                     history.push('./result7_4');
                 }
             }
-        }else if(number2>number1){
-            if(number2>number3){
-                if(number2>number4){
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
+                if(number2.count2>number4.count4){
                     history.push('./result7_1');
                 }
             }
-        }else if(number3>number1){
-            if(number3>number2){
-                if(number3>number4){
+        }else if(number3.count3>number1.count1){
+            if(number3.count3>number2.count2){
+                if(number3.count3>number4.count4){
                     history.push('./result7_2');
                 }
             }
         }else{
             history.push('./result7_3');
         }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
+        number4.count4 -=number4.count4;
     };
         const question_title = "Q6. 유지보수할때 나는?";
         const btn1 ="기능적 발전에 주목한다"; //B
