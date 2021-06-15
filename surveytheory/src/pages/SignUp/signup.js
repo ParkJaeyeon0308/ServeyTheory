@@ -117,64 +117,71 @@ export default class SignUp extends React.Component {
     render() {
         return (
             <div className="signup">
-                <div className="join">회원가입</div>
-                <InputGroup className="mb-3" id="nick_input">
-                    <FormControl
-                        style={{ fontSize: "1.1em" }}
-                        placeholder="아이디"
-                        aria-label="아이디"
-                        aria-describedby="basic-addon2"
-                        name="text" // id -> text
-                        onChange={this.handleChange}
-                    />
-                    <InputGroup.Append>
-                        <Button
-                            variant="outline-secondary"
-                            id="btn1"
-                            onClick={this.onclick1}
-                        >
-                            중복확인
-                        </Button>
-                    </InputGroup.Append>
-                </InputGroup>
-                <h4>{this.state.data}</h4>
-                <input
-                    type="id"
-                    id="inputid"
-                    className="form-control"
-                    placeholder="닉네임 (미입력시 기본값: 익명)"
-                    name="nick" // id -> nick
-                    id="id_inputs"
-                    onChange={this.handleChange}
-                />
-                <input
-                    type="password"
-                    id="inputPW"
-                    className="form-control"
-                    placeholder="비밀번호"
-                    name="pw"
-                    id="pw_inputs"
-                    onChange={this.handleChange}
-                />
-                <input
-                    type="password"
-                    id="inputPWcheck"
-                    className="form-control"
-                    placeholder="비밀번호 확인"
-                    name="pw2"
-                    id="pw_inputs"
-                    onChange={this.handleChange}
-                />
-                <h4>{this.state.data2}</h4>
-                <button
-                    className="btn btn-lg btn-block"
-                    type="submit"
-                    id="btn2"
-                    onClick={this.onclick}
-                >
-                    회원가입
-                </button>
-                <h4>{this.state.data3}</h4>
+                <div className="join">Sign Up</div>
+                <div className="sign_box">
+                    <div className="left-box">ddsad</div>
+                    <div className="right-box">
+                        <center>
+                            <InputGroup className="mb-3" id="nick_input">
+                                <FormControl
+                                    style={{ fontSize: "1.1em" }}
+                                    placeholder="아이디"
+                                    aria-label="아이디"
+                                    aria-describedby="basic-addon2"
+                                    name="text" // id -> text
+                                    onChange={this.handleChange}
+                                />
+                                <InputGroup.Append>
+                                    <Button
+                                        variant="outline-secondary"
+                                        id="btn1"
+                                        onClick={this.onclick1}
+                                    >
+                                        중복확인
+                                    </Button>
+                                </InputGroup.Append>
+                            </InputGroup>
+                            <h4>{this.state.data}</h4>
+                            <input
+                                type="id"
+                                id="inputid"
+                                className="form-control"
+                                placeholder="닉네임 (미입력시 기본값: 익명)"
+                                name="nick" // id -> nick
+                                id="id_inputs"
+                                onChange={this.handleChange}
+                            />
+                            <input
+                                type="password"
+                                id="inputPW"
+                                className="form-control"
+                                placeholder="비밀번호"
+                                name="pw"
+                                id="pw_inputs"
+                                onChange={this.handleChange}
+                            />
+                            <input
+                                type="password"
+                                id="inputPWcheck"
+                                className="form-control"
+                                placeholder="비밀번호 확인"
+                                name="pw2"
+                                id="pw_inputs"
+                                onChange={this.handleChange}
+                            />
+                            <h4>{this.state.data2}</h4>
+                            <button
+                                className="btn btn-lg btn-block"
+                                type="submit"
+                                id="btn2"
+                                onClick={this.onclick}
+                            >
+                                회원가입
+                            </button>
+                            <h4>{this.state.data3}</h4>
+                        </center>
+                    </div>
+                </div>
             </div>
         );
     }

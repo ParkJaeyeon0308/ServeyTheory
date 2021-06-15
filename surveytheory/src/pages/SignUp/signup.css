@@ -1,13 +1,35 @@
 .signup {
     height: 100%;
-    margin-top: 5rem;
+    margin-top: 12vh;
 
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    align-self: center;
+    justify-content: center;
+}
+
+.sign_box {
+    background-color: rgb(24, 70, 83);
+    width: 60vw;
+    height: auto;
+
+    border-radius: 2vw 2vw 2vw 2vw;
+}
+.left-box {
+    height: 45vh;
+    float: left;
+    height: auto;
+
+    text-align: center;
+}
+
+.right-box {
+    height: 45vh;
+    float: right;
+    height: auto;
+    background-color: white;
+
+    padding: 10vh 3vw 10vh 2vw;
 }
 
 input[type="id"] {
@@ -43,9 +65,14 @@ input:focus {
 
 /* 회원가입 text */
 .join {
-    font-size: 1.8em;
+    font-size: 1.9em;
+    text-align: center;
+    font-family: "S-CoreDream-6Bold";
+    font-weight: 600;
+    letter-spacing: 0.1rem;
     color: rgb(24, 70, 83);
-    margin-bottom: 2rem;
+
+    margin-bottom: 1.5vh;
 }
 
 /* 닉네임 input */
@@ -94,7 +121,7 @@ input:focus {
     margin-top: 1.5rem;
 }
 
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
     .signup {
         margin-top: 13rem;
     }
@@ -102,4 +129,4 @@ input:focus {
     .join {
         font-size: 2em;
     }
-}
+} */
