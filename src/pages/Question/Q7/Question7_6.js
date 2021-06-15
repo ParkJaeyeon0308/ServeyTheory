@@ -1,19 +1,124 @@
 import React, { useState, ReactDom } from "react";
 import "../question.css";
 import Button from "../../../component/Button";
-import { Link } from "react-router-dom"; 
+import { Link, useHistory } from "react-router-dom"; 
 import "./Question7_1";
 import { number1, number2, number3,number4 } from "./Question7_1";
 
 function Question7_6(){
-    const onPlus1 = () => {number1.count1++
-        console.log(number1)};
-    const onPlus2 = () => {number2.count2++
-        console.log(number2)};
-    const onPlus3 = () => {number2.count3++
-        console.log(number3)};
-    const onPlus4 = () => {number2.count4++
-        console.log(number4)};
+    const history = useHistory();
+    const onPlus1 = () => {number1.count1++;
+        console.log(number1);
+        if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
+                if(number1.count1>number4.count4){
+                    history.push('./result7_4');
+                }
+            }
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
+                if(number2.count2>number4.count4){
+                    history.push('./result7_1');
+                }
+            }
+        }else if(number3.count3>number1.count1){
+            if(number3.count3>number2.count2){
+                if(number3.count3>number4.count4){
+                    history.push('./result7_2');
+                }
+            }
+        }else{
+            history.push('./result7_3');
+        }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
+        number4.count4 -=number4.count4;
+    };
+    const onPlus2 = () => {number2.count2++;
+        console.log(number2);
+        if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
+                if(number1.count1>number4.count4){
+                    history.push('./result7_4');
+                }
+            }
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
+                if(number2.count2>number4.count4){
+                    history.push('./result7_1');
+                }
+            }
+        }else if(number3.count3>number1.count1){
+            if(number3.count3>number2.count2){
+                if(number3.count3>number4.count4){
+                    history.push('./result7_2');
+                }
+            }
+        }else{
+            history.push('./result7_3');
+        }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
+        number4.count4 -=number4.count4;
+    };
+    const onPlus3 = () => {number3.count3++;
+        console.log(number3);
+        if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
+                if(number1.count1>number4.count4){
+                    history.push('./result7_4');
+                }
+            }
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
+                if(number2.count2>number4.count4){
+                    history.push('./result7_1');
+                }
+            }
+        }else if(number3.count3>number1.count1){
+            if(number3.count3>number2.count2){
+                if(number3.count3>number4.count4){
+                    history.push('./result7_2');
+                }
+            }
+        }else{
+            history.push('./result7_3');
+        }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
+        number4.count4 -=number4.count4;
+    };
+    const onPlus4 = () => {number4.count4++;
+        console.log(number4);
+                if(number1.count1>number2.count2){
+            if(number1.count1>number3.count3){
+                if(number1.count1>number4.count4){
+                    history.push('./result7_4');
+                }
+            }
+        }else if(number2.count2>number1.count1){
+            if(number2.count2>number3.count3){
+                if(number2.count2>number4.count4){
+                    history.push('./result7_1');
+                }
+            }
+        }else if(number3.count3>number1.count1){
+            if(number3.count3>number2.count2){
+                if(number3.count3>number4.count4){
+                    history.push('./result7_2');
+                }
+            }
+        }else{
+            history.push('./result7_3');
+        }
+        number1.count1 -=number1.count1;
+        number2.count2 -=number2.count2;
+        number3.count3 -=number3.count3;
+        number4.count4 -=number4.count4;
+    };
         const question_title = "Q6. 유지보수할때 나는?";
         const btn1 ="기능적 발전에 주목한다"; //B
         const btn2 = "어떻게 하면 더 한 눈에 볼 수 있을지 생각한다"; //F
@@ -29,36 +134,29 @@ function Question7_6(){
                     >{question_title}</div>
 
                     <div className="buttons">
-                        <Link to="/">
                         <Button
                             onClick={() =>onPlus1() }
                         >
                             {btn1}
-                        </Button></Link>
+                        </Button>
                         <br />
-                        <Link to="/">
                         <Button
                             onClick={() =>onPlus2()}
                         >
                            {btn2}
                         </Button>
-                        </Link>
                         <br />
-                        <Link to="/">
                         <Button
                             onClick={() =>onPlus3()}
                         >
                            {btn3}
                         </Button>
-                        </Link>
                         <br />
-                        <Link to="/">
                         <Button
                             onClick={() =>onPlus4()}
                         >
                            {btn4}
                         </Button>
-                        </Link>
                     </div>
                 </div>
             </div>

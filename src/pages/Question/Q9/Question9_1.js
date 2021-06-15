@@ -8,14 +8,14 @@ export let number2 = {count2:0};
 export let number3 = {count3:0};
 export let number4 = {count4:0};
 function Question9_1(){
-    const onPlus1 = () => {number4.count4++
-        console.log(number4)};
-    const onPlus2 = () => {number3.count3++
-        console.log(number3)};
-    const onPlus3 = () => {number2.count2++
-        console.log(number2)};
-    const onPlus4 = () => {number1.count1++
+    const onPlus1 = () => {number1.count1++
         console.log(number1)};
+    const onPlus2 = () => {number2.count2++
+        console.log(number2)};
+    const onPlus3 = () => {number3.count3++
+        console.log(number3)};
+    const onPlus4 = () => {number4.count4++
+        console.log(number4)};
         const question_title = "Q1. 당신은 팀끼리 프로젝트를 시작할때<br/> 어떤 스타일 인가요?";
         const btn1 ='"난 별로 아이디어가 없는 것 같다"'; //버스타기 장인
         const btn2 = '"실력이 없어도 잘 할 수 있을거야!"'; ////평범

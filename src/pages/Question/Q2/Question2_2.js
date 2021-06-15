@@ -3,7 +3,7 @@ import "../question.css";
 import Button from "../../../component/Button";
 import { Link } from "react-router-dom";
 import "./Question2_1";
-import { number1, number2 } from "./Question2_1";
+import { number1} from "./Question2_1";
 
 function Question2_2() {
     //0으로 초기값 설정
@@ -17,8 +17,8 @@ function Question2_2() {
     //     console.log(number1);
     // };
     const onDecrease = () => {
-        number2.count2 += 10; //10
-        console.log(number2);
+        number1.count1 += 10; //10
+        console.log(number1);
     };
     const question_title = "Q2. 나는 mbti 끝자리가...";
     const btn1 = "j이다"; //20

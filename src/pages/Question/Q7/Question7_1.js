@@ -8,19 +8,19 @@ export let number2 = {count2:0};
 export let number3 = {count3:0};
 export let number4 = {count4:0};
 function Question7_1(){
-    const onPlus1 = () => {number1.count1++
-        console.log(number1)};
-    const onPlus2 = () => {number2.count2++
+    const onPlus1 = () => {number2.count2++
         console.log(number2)};
-    const onPlus3 = () => {number2.count3++
+    const onPlus2 = () => {number3.count3++
         console.log(number3)};
-    const onPlus4 = () => {number2.count4++
+    const onPlus3 = () => {number4.count4++
         console.log(number4)};
+    const onPlus4 = () => {number1.count1++
+        console.log(number1)};
         const question_title = "Q1. 코딩할때 나는?";
         const btn1 ="별 것 아니여도 눈에 보이면 뿌듯하다"; //F
-        const btn2 = "중요한 코드를 제대로 보지 <br> 이외의 요소들은 신경쓰기 복잡하다"; //FB
+        const btn2 = "중요한 코드를 제대로 보지 "+  <br/>+  "이외의 요소들은 신경쓰기 복잡하다"; //FB
         const btn3 = "짧고 굵은 기능이 확실하고 머리에 쏙 들어온다"; //BF
-        const btn4 = "별 볼일 없어 보여도 <br> 실용성만 있다면 100점짜리 개발이라고 생각한다"; //B
+        const btn4 = "별 볼일 없어 보여도 "+  <br/>+  "실용성만 있다면 100점짜리 개발이라고 생각한다"; //B
     return (
             <div className="Question">
                 <div className="container">

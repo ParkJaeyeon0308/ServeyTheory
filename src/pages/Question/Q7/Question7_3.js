@@ -6,14 +6,14 @@ import "./Question7_1";
 import { number1, number2, number3,number4 } from "./Question7_1";
 
 function Question7_3(){
-    const onPlus1 = () => {number1.count1++
-        console.log(number1)};
-    const onPlus2 = () => {number2.count2++
+    const onPlus1 = () => {number2.count2++
         console.log(number2)};
-    const onPlus3 = () => {number2.count3++
-        console.log(number3)};
-    const onPlus4 = () => {number2.count4++
+    const onPlus2 = () => {number4.count4++
         console.log(number4)};
+    const onPlus3 = () => {number1.count1++
+        console.log(number1)};
+    const onPlus4 = () => {number3.count3++
+        console.log(number3)};
         const question_title = "Q3. 다른 사람이 만들어 높은 서비스를 사용하면서<br/> 어떤 부분을 생각하나요?";
         const btn1 ="프로그램을 볼 때 기능을 보려다가 <br>메뉴의 색깔이 신경쓰인다"; //F
         const btn2 = "버튼 크기가 뭐가 이상하다는건지 잘 모르겠다"; //BF

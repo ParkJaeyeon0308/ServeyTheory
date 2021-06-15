@@ -4,15 +4,14 @@ import Button from "../../../component/Button";
 import { Link } from "react-router-dom";
 
 export let number1 = { count1: 0 };
-export let number2 = { count2: 0 };
 function Question2_1() {
     const onIncrease = () => {
         number1.count1 += 30;
         console.log(number1);
     };
     const onDecrease = () => {
-        number2.count2 += 10;
-        console.log(number2);
+        number1.count1 += 10;
+        console.log(number1);
     };
     const question_title =
         "Q1. 다음주까지인 과제...<br/> 당신이라면 어떻게 하시겠습니까?";

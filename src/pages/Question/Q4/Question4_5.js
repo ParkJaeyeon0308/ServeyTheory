@@ -4,10 +4,8 @@ import Button from "../../../component/Button";
 import { Link } from "react-router-dom"; 
 import "./Question4_1";
 import { str1, str2 } from "./Question4_1";
-import { useHistory } from 'react-router-dom';
 
 function Question4_5(){
-    const history = useHistory();
     const onIncrease = () => {str1.mbti1+="a"
     console.log(str1)};
     const onDecrease = () => {str2.mbti2+="g"

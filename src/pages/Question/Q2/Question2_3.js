@@ -3,7 +3,7 @@ import "../question.css";
 import Button from "../../../component/Button";
 import "./Question2_1";
 import { Link } from "react-router-dom";
-import { number1, number2 } from "./Question2_1";
+import { number1} from "./Question2_1";
 
 function Question2_3() {
     //0으로 초기값 설정
@@ -17,8 +17,8 @@ function Question2_3() {
     //     console.log(number1);
     // };
     const onDecrease = () => {
-        number2.count2 += 30;
-        console.log(number2);
+        number1.count1 += 30;
+        console.log(number1);
     };
     const question_title = "Q3. 당신의 과제 제출은?";
     const btn1 = "과제를 늦게 제출해 본 적이 있다"; //10

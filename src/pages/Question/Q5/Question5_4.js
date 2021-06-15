@@ -3,13 +3,13 @@ import "../question.css";
 import Button from "../../../component/Button";
 import { Link } from "react-router-dom"; 
 import "./Question5_1";
-import { number1, number2 } from "./Question5_1";
+import { number1} from "./Question5_1";
 
 function Question5_4(){
     const onIncrease = () => {number1.count1+=10
     console.log(number1)};
-    const onDecrease = () => {number2.count2+=30
-        console.log(number2)};
+    const onDecrease = () => {number1.count1+=30
+        console.log(number1)};
         const question_title = "Q4. 나는 인터넷 익스플로러 브라우저를 자주 사용한다.";
         const btn1 ="YES"; //10
         const btn2 = "NO"; //30

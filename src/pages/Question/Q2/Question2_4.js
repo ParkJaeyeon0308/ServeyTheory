@@ -3,7 +3,7 @@ import "../question.css";
 import Button from "../../../component/Button";
 import "./Question2_1";
 import { Link } from "react-router-dom";
-import { number1, number2 } from "./Question2_1";
+import { number1} from "./Question2_1";
 
 function Question2_4() {
     //0으로 초기값 설정
@@ -17,8 +17,8 @@ function Question2_4() {
     //     console.log(number1);
     // };
     const onDecrease = () => {
-        number2.count2 += 30;
-        console.log(number2);
+        number1.count1 += 30;
+        console.log(number1);
     };
     const question_title =
         "Q4. 유튜브 알고리즘이 나를 이끈다...<br/> 하지만 과제 마감은 이틀 뒤! 당신은?";

@@ -6,12 +6,12 @@ import "./Question6_1";
 import { number1, number2, number3 } from "./Question6_1";
 
 function Question6_5(){
-    const onPlus1 = () => {number1.count1++
-        console.log(number1)};
-    const onPlus2 = () => {number2.count2++
-        console.log(number2)};
-    const onPlus3 = () => {number3.count3++
+    const onPlus1 = () => {number3.count3++
         console.log(number3)};
+    const onPlus2 = () => {number1.count1++
+        console.log(number1)};
+    const onPlus3 = () => {number2.count2++
+        console.log(number2)};
         const question_title = "Q5. 체크남방 어떻게 생각하시나요?";
         const btn1 ="괜찮다, 상관없다"; //
         const btn2 = "어떤 체크? 파란색? 무슨 톤? 빨간색?"; //
