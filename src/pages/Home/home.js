@@ -267,6 +267,14 @@ export default class Home extends Component {
                     <div className="hashtag-right">#열정 #성장 #협동</div>
                 </div>
                 <div className="text">계속 설문을 만드는 중 입니다!</div>
+                <a href="/#">
+                    <button
+                        className="up_to_main"
+                        onClick={() => this.props.history.push("/")}
+                    >
+                        UP
+                    </button>
+                </a>
             </div>
         );
     }
