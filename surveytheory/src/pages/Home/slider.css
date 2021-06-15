@@ -23,17 +23,20 @@
 /* 원하는 테스트를 골라 시작해보세요! */
 .home .text {
     width: 100%;
-    font-size: 2em;
+    font-size: 2.5em;
     color: rgb(24, 70, 83);
     text-align: center;
 
     margin-top: 6rem;
 }
 
-.home .box {
-    width: 32rem;
-    height: 25rem;
-    background-color: black;
+/* test별 img와 img 설명을 담을 box */
+.home .test_box {
+    position: relative;
+    width: 50vw;
+    height: auto;
+
+    box-shadow: 1rem 1rem 1rem rgba(160, 160, 160, 0.5);
 
     margin-top: 4rem;
     margin-left: 1rem;
@@ -42,8 +45,72 @@
     cursor: pointer;
 }
 
-@media (min-width: 1920px) {
-    .home .text {
-        font-size: 0.9em;
-    }
+/* left에 위치한 img */
+.home .test_box .boximg-left {
+    float: left;
+    margin-right: 2vw;
+}
+
+/* right 위치한 img */
+.home .test_box .boximg-right {
+    float: right;
+    margin-left: 2vw;
+}
+
+/* 이미지 옆에 위치한 text */
+.home .test_box .boxtext_1 {
+    font-family: "S-CoreDream-3Light";
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: justify;
+
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    margin-right: 2vw;
+}
+
+.home .test_box .boxtext_2 {
+    font-family: "S-CoreDream-3Light";
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: justify;
+
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    margin-left: 2vw;
+}
+
+/* text 하단에 위치한 hashtag */
+.hashtag-left {
+    position: absolute;
+    font-size: 1em;
+    top: 82%;
+    left: 2vw;
+    color: rgb(24, 70, 83);
+}
+
+.hashtag-right {
+    position: absolute;
+    font-size: 1em;
+    top: 82%;
+    right: 2vw;
+    color: rgb(24, 70, 83);
+}
+
+/* 하단에 위치한 Up 버튼 */
+.up_to_main {
+    width: 10vw;
+    height: 5vh;
+    background-color: rgb(24, 70, 83);
+    color: white;
+    font-size: 1.1em;
+
+    margin: 1vw;
+    border: none;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.up_to_main:hover {
+    background-color: rgb(255, 230, 171);
+    color: black;
 }
