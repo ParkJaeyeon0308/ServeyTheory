@@ -11,7 +11,6 @@
     flex-shrink: 0;
 
     margin-top: 3rem;
-    margin-bottom: 1.5rem;
 
     font-size: 2.5em;
     text-align: center;
@@ -19,23 +18,15 @@
 }
 
 .type-img {
-    width: 20rem;
-    height: 15rem;
+    width: 35vw;
+    height: 35vh;
     border-radius: 5rem;
-
-    margin-left: 50%;
-    margin-right: 50%;
-    margin-bottom: 2rem;
-}
-
-.main_context {
-    font-size: 1.6em;
-    margin-bottom: 1.5vw;
+    margin: 0 50vw 0 50vw;
 }
 
 /* 타입 설명 */
 .sub_context {
-    width: 25rem;
+    width: 35vw;
     height: auto;
 
     background-color: rgba(239, 234, 215, 0.3);
@@ -43,9 +34,16 @@
     margin-bottom: 3rem;
     border-radius: 0.5rem;
 
-    font-size: 1em;
+    font-size: 1.2em;
+    font-family: "S-CoreDream-3Light";
+    font-weight: 600;
     line-height: 2em;
     text-align: justify;
+}
+
+.buttons {
+    width: 70vw;
+    text-align: center;
 }
 
 .save_btn,
