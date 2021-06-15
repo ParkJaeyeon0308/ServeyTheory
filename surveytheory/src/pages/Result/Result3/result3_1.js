@@ -5,7 +5,6 @@ class result3_1 extends React.Component {
     render() {
         const subject_name = this.props.subject_name;
         const imgUrl = "/images/" + subject_name + ".png";
-        const main_context = this.props.main_context;
         const sub_context = this.props.sub_context;
 
         const saveBtn = "결과저장";
@@ -19,11 +18,6 @@ class result3_1 extends React.Component {
                         dangerouslySetInnerHTML={{ __html: subject_name }}
                     ></div>
                     <img className="type-img" src={imgUrl} alt={subject_name} />
-                    <div
-                        className="main_context"
-                        // html 형태로 렌더링 허용
-                        dangerouslySetInnerHTML={{ __html: main_context }}
-                    ></div>
                     <div
                         className="sub_context"
                         // html 형태로 렌더링 허용
@@ -55,7 +49,6 @@ class result3_1 extends React.Component {
 // 기본 props 값
 result3_1.defaultProps = {
     subject_name: "정신학년테스트",
-    main_context: "1학년",
     sub_context:
         "당신은 아직 완벽히 미림화 되진 않았군요. 혹시 1학년 인가요? <br/> 여러가지 프로젝트들과 개발을 하면서 생각이 조금씩 바뀔겁니다. 2, 3학년이 되었을때 테스트를 한 번 더 해보세요 ㅎㅎ"
 };

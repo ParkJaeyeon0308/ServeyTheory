@@ -10,6 +10,33 @@
     align-self: center;
 }
 
+input[type="id"] {
+    color: rgb(24, 70, 83);
+}
+
+/* password input 안 보이는 오류 -> 웹 폰트 지원 X */
+input[type="password"] {
+    font-family: "Malgun gothic", dotum, sans-serif;
+}
+
+/* placeholder로 보여지는 폰트 설정 */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: "Binggrae-Bold", sans-serif;
+    color: #888;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #888;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #888;
+}
+
 input:focus {
     outline: 1rem solid rgb(255, 230, 171);
 }
