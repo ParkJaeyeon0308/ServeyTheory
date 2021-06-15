@@ -37,7 +37,7 @@ class result6_2 extends React.Component {
                         >
                             {saveBtn}
                         </button>
-                        <a href="#">
+                        <a href="/#">
                             <button
                                 className="main_btn"
                                 onClick={() => this.props.history.push("/")}

@@ -37,7 +37,7 @@ class result1_2 extends React.Component {
                         >
                             {saveBtn}
                         </button>
-                        <a href="#">
+                        <a href="/#">
                             <button
                                 className="main_btn"
                                 onClick={() => this.props.history.push("/")}
@@ -57,7 +57,7 @@ result1_2.defaultProps = {
     subject_name: "웹, 앱 뭐가 더 잘 맞을까?",
     main_context: "당신은 앱과 더 잘 맞는 성향이시군요?",
     sub_context:
-        "앱이란? 애플리케이션의 준말로 설치하여 사용하는 프로그램이에요. 대표적으로 카카오톡과 같은 어플이 있고, 실행속도가 빠르며 접근성이 높은 편이에요.  </br> 앱을 더 많이 사용하고 휴대폰을 사랑하는 당신은 앱 개발을 할 때 더 흥미를 느낄 수 있을거예요!"
+        "앱이란? 애플리케이션의 준말로 설치하여 사용하는 프로그램이에요. 대표적으로 카카오톡과 같은 어플이 있고, 실행속도가 빠르며 접근성이 높은 편이에요.  <br/> 앱을 더 많이 사용하고 휴대폰을 사랑하는 당신은 앱 개발을 할 때 더 흥미를 느낄 수 있을거예요!"
 };
 
 export default result1_2;

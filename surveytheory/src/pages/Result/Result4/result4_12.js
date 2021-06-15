@@ -37,7 +37,7 @@ class result4_12 extends React.Component {
                         >
                             {saveBtn}
                         </button>
-                        <a href="#">
+                        <a href="/#">
                             <button
                                 className="main_btn"
                                 onClick={() => this.props.history.push("/")}
@@ -57,7 +57,7 @@ result4_12.defaultProps = {
     subject_name: "직장 mbti 테스트",
     main_context: "jyad 유형",
     sub_context:
-        "당신은 jyad 유형입니다! </br> 스타트업보다 중소기업이 어울리고 워라밸보다는 연봉을 중시하는 편입니다. 또, 개발을 제외한 운영, 사무 등 다른 직무와도 잘 어울리겠네요. 동기보다 선임 둘 중에 고르자면 동기가 좋은 회사를 선호할 것 같네요."
+        "당신은 jyad 유형입니다! <br/> 스타트업보다 중소기업이 어울리고 워라밸보다는 연봉을 중시하는 편입니다. 또, 개발을 제외한 운영, 사무 등 다른 직무와도 잘 어울리겠네요. 동기보다 선임 둘 중에 고르자면 동기가 좋은 회사를 선호할 것 같네요."
 };
 
 export default result4_12;

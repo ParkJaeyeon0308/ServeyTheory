@@ -37,7 +37,7 @@ class result3_1 extends React.Component {
                         >
                             {saveBtn}
                         </button>
-                        <a href="#">
+                        <a href="/#">
                             <button
                                 className="main_btn"
                                 onClick={() => this.props.history.push("/")}
@@ -57,7 +57,7 @@ result3_1.defaultProps = {
     subject_name: "정신학년테스트",
     main_context: "1학년",
     sub_context:
-        "당신은 아직 완벽히 미림화 되진 않았군요. 혹시 1학년 인가요? </br> 여러가지 프로젝트들과 개발을 하면서 생각이 조금씩 바뀔겁니다. 2, 3학년이 되었을때 테스트를 한 번 더 해보세요 ㅎㅎ"
+        "당신은 아직 완벽히 미림화 되진 않았군요. 혹시 1학년 인가요? <br/> 여러가지 프로젝트들과 개발을 하면서 생각이 조금씩 바뀔겁니다. 2, 3학년이 되었을때 테스트를 한 번 더 해보세요 ㅎㅎ"
 };
 
 export default result3_1;
