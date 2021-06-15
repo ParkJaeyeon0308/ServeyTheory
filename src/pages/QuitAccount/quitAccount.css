@@ -21,6 +21,25 @@ input:focus {
     margin-bottom: 2rem;
 }
 
+/* modal css*/
+.rodal-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+/*  modal text */
+.rodal-msg {
+    font-family: "S-CoreDream-3Light";
+    font-weight: 600;
+}
+
 @media (min-width: 1920px) {
     .quit_account {
         margin-top: 14rem;

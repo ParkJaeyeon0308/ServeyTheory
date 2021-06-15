@@ -16,9 +16,14 @@ input:focus {
 
 /* 회원가입 text */
 .join {
-    font-size: 1.8em;
+    font-size: 1.9em;
+    text-align: center;
+    font-family: "S-CoreDream-6Bold";
+    font-weight: 600;
+    letter-spacing: 0.1rem;
     color: rgb(24, 70, 83);
-    margin-bottom: 2rem;
+
+    margin-bottom: 1.5vh;
 }
 
 /* 닉네임 input */

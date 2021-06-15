@@ -61,23 +61,23 @@
 .home .test_box .boxtext_1 {
     font-family: "S-CoreDream-3Light";
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    text-align: justify;
 
     margin-top: 15vh;
     margin-bottom: 15vh;
     margin-right: 2vw;
-    text-align: justify;
 }
 
 .home .test_box .boxtext_2 {
     font-family: "S-CoreDream-3Light";
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    text-align: justify;
 
     margin-top: 10vh;
     margin-bottom: 15vh;
     margin-left: 2vw;
-    text-align: justify;
 }
 
 /* text 하단에 위치한 hashtag */
