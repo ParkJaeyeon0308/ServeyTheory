@@ -3,13 +3,13 @@ import "../question.css";
 import Button from "../../../component/Button";
 import { Link } from "react-router-dom"; 
 import "./Question3_1";
-import { number1, number2 } from "./Question3_1";
+import { number1} from "./Question3_1";
 
 function Question3_3(){
     const onIncrease = () => {number1.count1+=10
     console.log(number1)};
-    const onDecrease = () => {number2.count2+=30
-        console.log(number2)};
+    const onDecrease = () => {number1.count1+=30
+        console.log(number1)};
         const question_title = "Q3. 당신이 취업에 대해 가지고 있는 생각은?";
         const btn1 ="미림은 취업률 90퍼센트 이상인데~<br/> 학교가 알아서 취업시켜주겠지~"; //10
         const btn2 = "내가.. 회사에서... 일을...할.. 수.. 있을..,, 까..?"; //30
