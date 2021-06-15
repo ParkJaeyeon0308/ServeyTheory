@@ -3,13 +3,13 @@ import "../question.css";
 import Button from "../../../component/Button";
 import { Link } from "react-router-dom"; 
 import "./Question3_1";
-import { number1, number2 } from "./Question3_1";
+import { number1} from "./Question3_1";
 
 function Question3_2(){
     const onIncrease = () => {number1.count1+=10
     console.log(number1)};
-    const onDecrease = () => {number2.count2+=30
-        console.log(number2)};
+    const onDecrease = () => {number1.count1+=30
+        console.log(number1)};
         const question_title = "Q2. 당신이 체감하는 시간은?";
         const btn1 ="학교에만 있으면 시간이 너무 느리게 가..."; //10
         const btn2 = "눈 떠보니 벌써 여름..? 눈 떠보니 벌써 겨울....?"; //30

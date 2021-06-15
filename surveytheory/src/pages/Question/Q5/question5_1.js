@@ -4,12 +4,11 @@ import Button from "../../../component/Button";
 import { Link } from "react-router-dom"; 
 
 export let number1 = {count1:0};
-export let number2 = {count2:0};
 function Question5_1(){
     const onIncrease = () => {number1.count1+=30
     console.log(number1)};
-    const onDecrease = () => {number2.count2+=10
-        console.log(number2)};
+    const onDecrease = () => {number1.count1+=10
+        console.log(number1)};
         const question_title = "Q1. 1023이라는 숫자가 왠지 모르게 불편하다.";
         const btn1 ="YES"; //30
         const btn2 = "NO"; //10

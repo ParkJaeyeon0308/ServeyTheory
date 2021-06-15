@@ -3,13 +3,13 @@ import "../question.css";
 import Button from "../../../component/Button";
 import { Link } from "react-router-dom"; 
 import "./Question3_1";
-import { number1, number2 } from "./Question3_1";
+import { number1} from "./Question3_1";
 
 function Question3_5(){
     const onIncrease = () => {number1.count1+=10
     console.log(number1)};
-    const onDecrease = () => {number2.count2+=30
-        console.log(number2)};
+    const onDecrease = () => {number1.count1+=30
+        console.log(number1)};
         const question_title = "Q5. 지나가는 다른 학교 학생들을 보며...?";
         const btn1 ="나도 교복 편하게 입고싶다... ㅠㅠㅠ"; //10
         const btn2 = "히익 치마가 왜이렇게 짧지????"; //30

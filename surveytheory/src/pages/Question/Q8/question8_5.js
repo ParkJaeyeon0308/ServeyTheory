@@ -6,10 +6,10 @@ import "./Question8_1";
 import { number1, number2 } from "./Question8_1";
 
 function Question8_5(){
-    const onIncrease = () => {number1.count1++
-    console.log(number1)};
-    const onDecrease = () => {number2.count2++
-        console.log(number2)};
+    const onIncrease = () => {number2.count2++
+    console.log(number2)};
+    const onDecrease = () => {number1.count1++
+        console.log(number1)};
         const question_title = "Q5. 구글링할때 나는?";
         const btn1 ="자료가 한 번에 나오지 않으면 울고싶다"; //c
         const btn2 = "자료가 잘 안나오면 자극이 온다"; //i

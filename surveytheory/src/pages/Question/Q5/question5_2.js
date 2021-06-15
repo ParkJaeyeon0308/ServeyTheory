@@ -3,13 +3,13 @@ import "../question.css";
 import Button from "../../../component/Button";
 import { Link } from "react-router-dom"; 
 import "./Question5_1";
-import { number1, number2 } from "./Question5_1";
+import { number1} from "./Question5_1";
 
 function Question5_2(){
     const onIncrease = () => {number1.count1+=10
     console.log(number1)};
-    const onDecrease = () => {number2.count2+=30
-        console.log(number2)};
+    const onDecrease = () => {number1.count1+=30
+        console.log(number1)};
         const question_title = "Q2. 마트가서 우유사고 만약 아보카도 있으면 6개 사와 ~<br/> 아보카도가 있었을 때 당신은?";
         const btn1 ="우유와 아보카도 6개를 산다"; //10
         const btn2 = "우유를 6개 산다"; //30

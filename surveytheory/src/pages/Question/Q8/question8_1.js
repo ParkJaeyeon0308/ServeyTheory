@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 export let number1 = {count1:0};
 export let number2 = {count2:0};
 function Question8_1(){
-    const onIncrease = () => {number1.count1++
-    console.log(number1)};
-    const onDecrease = () => {number2.count2++
-        console.log(number2)};
+    const onIncrease = () => {number2.count2++
+    console.log(number2)};
+    const onDecrease = () => {number1.count1++
+        console.log(number1)};
         const question_title = "Q1. 어떤 것이 편리한가요?";
         const btn1 ="이런 기능, 저런 기능 가져와서 import하는게 편리해"; //c
         const btn2 = "한 번에 빨리 간단하게 쳐보자"; //i
