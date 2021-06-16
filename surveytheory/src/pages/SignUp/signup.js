@@ -129,11 +129,14 @@ export default class SignUp extends React.Component {
                         <center>
                             <InputGroup className="mb-3" id="nick_input">
                                 <FormControl
+                                    type="id"
+                                    id="id_inputs"
+                                    className="form-control"
                                     style={{ fontSize: "1.1em" }}
                                     placeholder="아이디"
                                     aria-label="아이디"
                                     aria-describedby="basic-addon2"
-                                    name="text" // id -> text
+                                    name="id"
                                     onChange={this.handleChange}
                                 />
                                 <InputGroup.Append>
@@ -149,14 +152,6 @@ export default class SignUp extends React.Component {
                             <div className="confirm-ment">
                                 {this.state.data}
                             </div>
-                            <input
-                                type="id"
-                                id="id_inputs"
-                                className="form-control"
-                                placeholder="닉네임 (미입력시 기본값: 익명)"
-                                name="nick" // id -> nick
-                                onChange={this.handleChange}
-                            />
                             <input
                                 type="password"
                                 id="pw_inputs"

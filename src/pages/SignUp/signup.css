@@ -89,13 +89,9 @@ input:focus {
     outline: 1rem solid rgb(255, 230, 171);
 }
 
-/* 닉네임 input */
-#nick_input {
-    width: 25vw;
-}
-
 /* 중복체크 버튼 */
 #btn1 {
+    position: absolute;
     background-color: rgb(255, 230, 171);
     color: rgb(24, 70, 83);
     font-size: 1em;
@@ -110,7 +106,8 @@ input:focus {
 
 /* ID input */
 #id_inputs {
-    width: 25vw;
+    position: relative;
+    width: 20vw;
     font-size: 1.1em;
 
     margin-bottom: 2.5vh;
