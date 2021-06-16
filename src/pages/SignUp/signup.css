@@ -1,17 +1,10 @@
 .signup {
-    height: 100%;
-    margin-top: 5rem;
+    margin-top: 11vh;
 
     display: flex;
-    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    align-self: center;
-}
-
-input:focus {
-    outline: 1rem solid rgb(255, 230, 171);
+    flex-flow: column wrap;
 }
 
 /* 회원가입 text */
@@ -20,15 +13,85 @@ input:focus {
     text-align: center;
     font-family: "S-CoreDream-6Bold";
     font-weight: 600;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2vw;
     color: rgb(24, 70, 83);
 
-    margin-bottom: 1.5vh;
+    margin-bottom: 2.5vh;
+}
+
+.mini-logo {
+    width: 8vw;
+    height: 14vh;
+    margin-top: 18vh;
+}
+
+.sign_box {
+    width: 58vw;
+    height: auto;
+
+    border-radius: 2vw 2vw 2vw 2vw;
+    border-top: 0.05rem solid rgba(113, 157, 138, 0.5);
+    border-left: 0.05rem solid rgba(113, 157, 138, 0.5);
+    border-bottom: 0.05rem solid rgba(113, 157, 138, 0.5);
+    box-shadow: 1.5rem 1.5rem rgba(113, 157, 138, 0.5);
+}
+
+/* 왼쪽에 위치한 박스 */
+.left-box {
+    background-color: white;
+    width: 50%;
+    height: 50vh;
+    float: left;
+
+    text-align: center;
+    border-radius: 2vw 0vw 0vw 2vw;
+}
+
+/* 오른쪽에 위치한 박스 */
+.right-box {
+    background-color: rgb(113, 157, 138);
+    width: 50%;
+    height: 50vh;
+    float: right;
+
+    border-radius: 0vw 2vw 2vw 0vw;
+    padding: 7% 3vw 10vh 2vw;
+}
+
+input[type="id"] {
+    color: rgb(24, 70, 83);
+}
+
+/* password input 안 보이는 오류 -> 웹 폰트 지원 X */
+input[type="password"] {
+    font-family: "Malgun gothic", dotum, sans-serif;
+}
+
+/* placeholder로 보여지는 폰트 설정 */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: "Binggrae-Bold", sans-serif;
+    color: #888;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #888;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #888;
+}
+
+input:focus {
+    outline: 1rem solid rgb(255, 230, 171);
 }
 
 /* 닉네임 input */
 #nick_input {
-    width: 30rem;
+    width: 25vw;
 }
 
 /* 중복체크 버튼 */
@@ -39,45 +102,35 @@ input:focus {
 
     border-color: rgb(255, 230, 171);
 
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    padding-bottom: 6%;
+    margin-bottom: 1.5vh;
 }
 
 /* ID input */
 #id_inputs {
-    width: 30rem;
+    width: 25vw;
     font-size: 1.1em;
 
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5vh;
 }
 
 /* PW input */
 #pw_inputs {
-    width: 30rem;
+    width: 25vw;
     font-size: 1.1em;
 
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5vh;
 }
 
 /* 회원가입 버튼 */
 #btn2 {
-    width: 30rem;
+    width: 25vw;
     background-color: rgb(255, 230, 171);
     color: rgb(24, 70, 83);
     font-size: 1.1em;
 
     border-color: rgb(255, 230, 171);
-    margin-top: 1.5rem;
-}
-
-@media (min-width: 1920px) {
-    .signup {
-        margin-top: 13rem;
-    }
-
-    .join {
-        font-size: 2em;
-    }
+    margin-top: 5.5vh;
 }
