@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
 import "./signup.css";
 import { json } from "body-parser";
@@ -34,7 +33,7 @@ export default class SignUp extends React.Component {
 
         // 중복이면 중복이라고 출력 ( 현재 회원 db에서 id가 존재하는 행이 1 이상이면 )
         if (
-            this.state.data ==
+            this.state.data ===
             "아이디가 중복되었습니다. 다른 아이디로 가입해주세요!"
         ) {
             this.setState({
@@ -42,13 +41,13 @@ export default class SignUp extends React.Component {
             });
         }
         // 비밀번호가 다르면 다르다고 출력 ( 비밀번호와 비밀번호 확인이 다르면 )
-        else if (this.state.pw != this.state.pw2) {
+        else if (this.state.pw !== this.state.pw2) {
             this.setState({
-                data2: "비밀번호와 비밀번호 확인란이 다릅니다." // 유효성 검사 메시지
+                data2: "비밀번호가 일치하지 않습니다." // 유효성 검사 메시지
             });
         }
         // 중복체크 안했으면 하라고 출력 ( 중복체크를 할 시에는 data에 값이 들어가있음 )
-        else if (this.state.data == " ") {
+        else if (this.state.data === " ") {
             this.setState({
                 data3: "아이디 중복확인을 해주세요." // 유효성 검사 메시지
             });
@@ -96,7 +95,7 @@ export default class SignUp extends React.Component {
             .then((res) => res.json())
             .then((json) => {
                 console.log(json);
-                if (json.count == "1") {
+                if (json.count === "1") {
                     // count는 db에서 select 했을 때 출력되는 컬럼명 ( 중복되는 행의 개수가 1이면 )
                     this.setState({
                         data: "아이디가 중복되었습니다. 다른 아이디로 가입해주세요!" // 유효성 검사 메시지
@@ -117,18 +116,27 @@ export default class SignUp extends React.Component {
     render() {
         return (
             <div className="signup">
-                <div className="join">Sign Up</div>
+                <div className="join">SIGN UP</div>
                 <div className="sign_box">
-                    <div className="left-box">ddsad</div>
+                    <div className="left-box">
+                        <img
+                            className="mini-logo"
+                            src="/images/mini-logo.png"
+                            alt="mini-logo"
+                        />
+                    </div>
                     <div className="right-box">
                         <center>
                             <InputGroup className="mb-3" id="nick_input">
                                 <FormControl
+                                    type="id"
+                                    id="id_inputs"
+                                    className="form-control"
                                     style={{ fontSize: "1.1em" }}
                                     placeholder="아이디"
                                     aria-label="아이디"
                                     aria-describedby="basic-addon2"
-                                    name="text" // id -> text
+                                    name="id"
                                     onChange={this.handleChange}
                                 />
                                 <InputGroup.Append>
@@ -141,35 +149,30 @@ export default class SignUp extends React.Component {
                                     </Button>
                                 </InputGroup.Append>
                             </InputGroup>
-                            <h4>{this.state.data}</h4>
-                            <input
-                                type="id"
-                                id="inputid"
-                                className="form-control"
-                                placeholder="닉네임 (미입력시 기본값: 익명)"
-                                name="nick" // id -> nick
-                                id="id_inputs"
-                                onChange={this.handleChange}
-                            />
+                            <div className="confirm-ment">
+                                {this.state.data}
+                            </div>
                             <input
                                 type="password"
-                                id="inputPW"
+                                id="pw_inputs"
                                 className="form-control"
                                 placeholder="비밀번호"
                                 name="pw"
-                                id="pw_inputs"
                                 onChange={this.handleChange}
                             />
                             <input
                                 type="password"
-                                id="inputPWcheck"
+                                id="pw_inputs"
                                 className="form-control"
                                 placeholder="비밀번호 확인"
                                 name="pw2"
-                                id="pw_inputs"
                                 onChange={this.handleChange}
                             />
-                            <h4>{this.state.data2}</h4>
+
+                            <div className="confirm-ment">
+                                {this.state.data2}
+                            </div>
+
                             <button
                                 className="btn btn-lg btn-block"
                                 type="submit"
@@ -178,7 +181,10 @@ export default class SignUp extends React.Component {
                             >
                                 회원가입
                             </button>
-                            <h4>{this.state.data3}</h4>
+
+                            <div className="confirm-ment">
+                                {this.state.data3}
+                            </div>
                         </center>
                     </div>
                 </div>
