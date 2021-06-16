@@ -130,39 +130,6 @@ import R9_4 from "./pages/Result/Result9/result9_4";
 import Collect from "./pages/Collect/collect";
 import Developer_intro from "./pages/Developer_intro/developer_intro";
 
-import Result1_1 from "./pages/Result/Result1/result1_1";
-import Result1_2 from "./pages/Result/Result1/result1_2";
-
-import Result2_1 from "./pages/Result/Result2/result2_1";
-import Result2_2 from "./pages/Result/Result2/result2_2";
-import Result2_3 from "./pages/Result/Result2/result2_3";
-
-import Result3_1 from "./pages/Result/Result3/result3_1";
-import Result3_2 from "./pages/Result/Result3/result3_2";
-import Result3_3 from "./pages/Result/Result3/result3_3";
-
-import Result4_1 from "./pages/Result/Result4/result4_1";
-import Result4_2 from "./pages/Result/Result4/result4_2";
-import Result4_3 from "./pages/Result/Result4/result4_3";
-import Result4_4 from "./pages/Result/Result4/result4_4";
-import Result4_5 from "./pages/Result/Result4/result4_5";
-import Result4_6 from "./pages/Result/Result4/result4_6";
-import Result4_7 from "./pages/Result/Result4/result4_7";
-import Result4_8 from "./pages/Result/Result4/result4_8";
-import Result4_9 from "./pages/Result/Result4/result4_9";
-import Result4_10 from "./pages/Result/Result4/result4_10";
-import Result4_11 from "./pages/Result/Result4/result4_11";
-import Result4_12 from "./pages/Result/Result4/result4_12";
-import Result4_13 from "./pages/Result/Result4/result4_13";
-import Result4_14 from "./pages/Result/Result4/result4_14";
-import Result4_15 from "./pages/Result/Result4/result4_15";
-import Result4_16 from "./pages/Result/Result4/result4_16";
-
-import Result5_1 from "./pages/Result/Result5/result5_1";
-import Result5_2 from "./pages/Result/Result5/result5_2";
-import Result5_3 from "./pages/Result/Result5/result5_3";
-
-import Axios from "axios";
 import customAxios from "./customAxios";
 
 // 여기서 페이지 이동을 담당
@@ -316,41 +283,6 @@ function App() {
                         <Route path="/result9_3" component={R9_3} />
                         <Route path="/result9_3" component={R9_4} />
 
-                        {/* ?? 이 부분 뭐야 */}
-
-                        <Route path="/result1_1" component={Result1_1} />
-                        <Route path="/result1_2" component={Result1_2} />
-
-                        <Route path="/result2_1" component={Result2_1} />
-                        <Route path="/result2_2" component={Result2_2} />
-                        <Route path="/result2_3" component={Result2_3} />
-
-                        <Route path="/result3_1" component={Result3_1} />
-                        <Route path="/result3_2" component={Result3_2} />
-                        <Route path="/result3_3" component={Result3_3} />
-
-                        <Route path="/result4_1" component={Result4_1} />
-                        <Route path="/result4_2" component={Result4_2} />
-                        <Route path="/result4_3" component={Result4_3} />
-                        <Route path="/result4_4" component={Result4_4} />
-                        <Route path="/result4_5" component={Result4_5} />
-                        <Route path="/result4_6" component={Result4_6} />
-                        <Route path="/result4_7" component={Result4_7} />
-                        <Route path="/result4_8" component={Result4_8} />
-                        <Route path="/result4_9" component={Result4_9} />
-                        <Route path="/result4_10" component={Result4_10} />
-                        <Route path="/result4_11" component={Result4_11} />
-                        <Route path="/result4_12" component={Result4_12} />
-                        <Route path="/result4_13" component={Result4_13} />
-                        <Route path="/result4_14" component={Result4_14} />
-                        <Route path="/result4_15" component={Result4_15} />
-                        <Route path="/result4_16" component={Result4_16} />
-
-                        <Route path="/result5_1" component={Result5_1} />
-                        <Route path="/result5_2" component={Result5_2} />
-                        <Route path="/result5_3" component={Result5_3} />
-                        {/*  */}
-
                         <Route path="/collect" component={Collect} />
                         <Route
                             path="/developer_intro"
@@ -363,11 +295,6 @@ function App() {
     } else {
         return (
             <>
-                {/* <div className="App">
-                        <header className="App-header">
-                        이 기기의 IP주소는 {ip}입니다.
-                        </header>
-                    </div> */}
                 <Router>
                     <NavBar1 />
                     <Switch>
@@ -377,74 +304,6 @@ function App() {
 
                         <Route path="/pass_change" component={PassChange} />
                         <Route path="/quit_account" component={QuitAccount} />
-
-                        {/* <Route path="/Question1_1" component={Q1_1} />
-                        <Route path="/Question1_2" component={Q1_2} />
-                        <Route path="/Question1_3" component={Q1_3} />
-                        <Route path="/Question1_4" component={Q1_4} />
-                        <Route path="/Question1_5" component={Q1_5} />
-                        <Route path="/Question1_6" component={Q1_6} />
-    
-                        <Route path="/Question2_1" component={Q2_1} />
-                        <Route path="/Question2_2" component={Q2_2} />
-                        <Route path="/Question2_3" component={Q2_3} />
-                        <Route path="/Question2_4" component={Q2_4} />
-                        <Route path="/Question2_5" component={Q2_5} />
-                        <Route path="/Question2_6" component={Q2_6} />
-                        <Route path="/Question2_7" component={Q2_7} />
-    
-                        <Route path="/Question3_1" component={Q3_1} />
-                        <Route path="/Question3_2" component={Q3_2} />
-                        <Route path="/Question3_3" component={Q3_3} />
-                        <Route path="/Question3_4" component={Q3_4} />
-                        <Route path="/Question3_5" component={Q3_5} />
-                        <Route path="/Question3_6" component={Q3_6} />
-                        <Route path="/Question3_7" component={Q3_7} />
-                        <Route path="/Question3_8" component={Q3_8} />
-    
-                        <Route path="/Question4_1" component={Q4_1} />
-                        <Route path="/Question4_2" component={Q4_2} />
-                        <Route path="/Question4_3" component={Q4_3} />
-                        <Route path="/Question4_4" component={Q4_4} />
-                        <Route path="/Question4_5" component={Q4_5} />
-    
-                        <Route path="/Question5_1" component={Q5_1} />
-                        <Route path="/Question5_2" component={Q5_2} />
-                        <Route path="/Question5_3" component={Q5_3} />
-                        <Route path="/Question5_4" component={Q5_4} />
-                        <Route path="/Question5_5" component={Q5_5} />
-                        <Route path="/Question5_6" component={Q5_6} />
-                        <Route path="/Question5_7" component={Q5_7} />
-                        <Route path="/Question5_8" component={Q5_8} />
-                        <Route path="/Question5_9" component={Q5_9} />
-    
-                        <Route path="/Question6_1" component={Q6_1} />
-                        <Route path="/Question6_2" component={Q6_2} />
-                        <Route path="/Question6_3" component={Q6_3} />
-                        <Route path="/Question6_4" component={Q6_4} />
-                        <Route path="/Question6_5" component={Q6_5} />
-                        <Route path="/Question6_6" component={Q6_6} />
-    
-                        <Route path="/Question7_1" component={Q7_1} />
-                        <Route path="/Question7_2" component={Q7_2} />
-                        <Route path="/Question7_3" component={Q7_3} />
-                        <Route path="/Question7_4" component={Q7_4} />
-                        <Route path="/Question7_5" component={Q7_5} />
-                        <Route path="/Question7_6" component={Q7_6} />
-    
-                        <Route path="/Question8_1" component={Q8_1} />
-                        <Route path="/Question8_2" component={Q8_2} />
-                        <Route path="/Question8_3" component={Q8_3} />
-                        <Route path="/Question8_4" component={Q8_4} />
-                        <Route path="/Question8_5" component={Q8_5} />
-                        <Route path="/Question8_6" component={Q8_6} />
-    
-                        <Route path="/Question9_1" component={Q9_1} />
-                        <Route path="/Question9_2" component={Q9_2} />
-                        <Route path="/Question9_3" component={Q9_3} />
-                        <Route path="/Question9_4" component={Q9_4} />
-                        <Route path="/Question9_5" component={Q9_5} />
-                        <Route path="/Question9_6" component={Q9_6} /> */}
 
                         <Route path="/result1_1" component={R1_1} />
                         <Route path="/result1_2" component={R1_2} />
@@ -494,41 +353,6 @@ function App() {
                         <Route path="/result9_3" component={R9_2} />
                         <Route path="/result9_3" component={R9_3} />
                         <Route path="/result9_3" component={R9_4} />
-
-                        {/* 이부분 수정좀 */}
-
-                        <Route path="/result1_1" component={Result1_1} />
-                        <Route path="/result1_2" component={Result1_2} />
-
-                        <Route path="/result2_1" component={Result2_1} />
-                        <Route path="/result2_2" component={Result2_2} />
-                        <Route path="/result2_3" component={Result2_3} />
-
-                        <Route path="/result3_1" component={Result3_1} />
-                        <Route path="/result3_2" component={Result3_2} />
-                        <Route path="/result3_3" component={Result3_3} />
-
-                        <Route path="/result4_1" component={Result4_1} />
-                        <Route path="/result4_2" component={Result4_2} />
-                        <Route path="/result4_3" component={Result4_3} />
-                        <Route path="/result4_4" component={Result4_4} />
-                        <Route path="/result4_5" component={Result4_5} />
-                        <Route path="/result4_6" component={Result4_6} />
-                        <Route path="/result4_7" component={Result4_7} />
-                        <Route path="/result4_8" component={Result4_8} />
-                        <Route path="/result4_9" component={Result4_9} />
-                        <Route path="/result4_10" component={Result4_10} />
-                        <Route path="/result4_11" component={Result4_11} />
-                        <Route path="/result4_12" component={Result4_12} />
-                        <Route path="/result4_13" component={Result4_13} />
-                        <Route path="/result4_14" component={Result4_14} />
-                        <Route path="/result4_15" component={Result4_15} />
-                        <Route path="/result4_16" component={Result4_16} />
-
-                        <Route path="/result5_1" component={Result5_1} />
-                        <Route path="/result5_2" component={Result5_2} />
-                        <Route path="/result5_3" component={Result5_3} />
-                        {/*  */}
 
                         <Route path="/collect" component={Collect} />
                         <Route
