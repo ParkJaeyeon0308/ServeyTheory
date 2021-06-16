@@ -305,6 +305,74 @@ function App() {
                         <Route path="/pass_change" component={PassChange} />
                         <Route path="/quit_account" component={QuitAccount} />
 
+                        {/* <Route path="/Question1_1" component={Q1_1} />
+                        <Route path="/Question1_2" component={Q1_2} />
+                        <Route path="/Question1_3" component={Q1_3} />
+                        <Route path="/Question1_4" component={Q1_4} />
+                        <Route path="/Question1_5" component={Q1_5} />
+                        <Route path="/Question1_6" component={Q1_6} />
+    
+                        <Route path="/Question2_1" component={Q2_1} />
+                        <Route path="/Question2_2" component={Q2_2} />
+                        <Route path="/Question2_3" component={Q2_3} />
+                        <Route path="/Question2_4" component={Q2_4} />
+                        <Route path="/Question2_5" component={Q2_5} />
+                        <Route path="/Question2_6" component={Q2_6} />
+                        <Route path="/Question2_7" component={Q2_7} />
+    
+                        <Route path="/Question3_1" component={Q3_1} />
+                        <Route path="/Question3_2" component={Q3_2} />
+                        <Route path="/Question3_3" component={Q3_3} />
+                        <Route path="/Question3_4" component={Q3_4} />
+                        <Route path="/Question3_5" component={Q3_5} />
+                        <Route path="/Question3_6" component={Q3_6} />
+                        <Route path="/Question3_7" component={Q3_7} />
+                        <Route path="/Question3_8" component={Q3_8} />
+    
+                        <Route path="/Question4_1" component={Q4_1} />
+                        <Route path="/Question4_2" component={Q4_2} />
+                        <Route path="/Question4_3" component={Q4_3} />
+                        <Route path="/Question4_4" component={Q4_4} />
+                        <Route path="/Question4_5" component={Q4_5} />
+    
+                        <Route path="/Question5_1" component={Q5_1} />
+                        <Route path="/Question5_2" component={Q5_2} />
+                        <Route path="/Question5_3" component={Q5_3} />
+                        <Route path="/Question5_4" component={Q5_4} />
+                        <Route path="/Question5_5" component={Q5_5} />
+                        <Route path="/Question5_6" component={Q5_6} />
+                        <Route path="/Question5_7" component={Q5_7} />
+                        <Route path="/Question5_8" component={Q5_8} />
+                        <Route path="/Question5_9" component={Q5_9} />
+    
+                        <Route path="/Question6_1" component={Q6_1} />
+                        <Route path="/Question6_2" component={Q6_2} />
+                        <Route path="/Question6_3" component={Q6_3} />
+                        <Route path="/Question6_4" component={Q6_4} />
+                        <Route path="/Question6_5" component={Q6_5} />
+                        <Route path="/Question6_6" component={Q6_6} />
+    
+                        <Route path="/Question7_1" component={Q7_1} />
+                        <Route path="/Question7_2" component={Q7_2} />
+                        <Route path="/Question7_3" component={Q7_3} />
+                        <Route path="/Question7_4" component={Q7_4} />
+                        <Route path="/Question7_5" component={Q7_5} />
+                        <Route path="/Question7_6" component={Q7_6} />
+    
+                        <Route path="/Question8_1" component={Q8_1} />
+                        <Route path="/Question8_2" component={Q8_2} />
+                        <Route path="/Question8_3" component={Q8_3} />
+                        <Route path="/Question8_4" component={Q8_4} />
+                        <Route path="/Question8_5" component={Q8_5} />
+                        <Route path="/Question8_6" component={Q8_6} />
+    
+                        <Route path="/Question9_1" component={Q9_1} />
+                        <Route path="/Question9_2" component={Q9_2} />
+                        <Route path="/Question9_3" component={Q9_3} />
+                        <Route path="/Question9_4" component={Q9_4} />
+                        <Route path="/Question9_5" component={Q9_5} />
+                        <Route path="/Question9_6" component={Q9_6} /> */}
+
                         <Route path="/result1_1" component={R1_1} />
                         <Route path="/result1_2" component={R1_2} />
 
