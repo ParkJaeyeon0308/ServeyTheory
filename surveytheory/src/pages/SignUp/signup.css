@@ -100,7 +100,7 @@ input:focus {
     color: rgb(24, 70, 83);
     font-size: 1em;
 
-    border-color: rgb(255, 230, 171);
+    border: none;
 
     padding-left: 2.5vw;
     padding-right: 2.5vw;
@@ -131,6 +131,18 @@ input:focus {
     color: rgb(24, 70, 83);
     font-size: 1.1em;
 
-    border-color: rgb(255, 230, 171);
-    margin-top: 5.5vh;
+    border: none;
+    margin-top: 2.5vh;
+}
+
+#btn1:hover,
+#btn2:hover {
+    background-color: rgb(24, 70, 83);
+    color: white;
+}
+
+/* 비밀번호와 비밀번호 확인란이 일치하지 않을 경우 */
+.confirm-ment {
+    font-size: 1.2em;
+    color: rgb(255, 240, 204);
 }
