@@ -6,9 +6,9 @@
 /* 왼쪽 화면 */
 .row1 {
     flex: auto;
-    margin-top: 5rem;
-    margin-left: 17rem;
-    margin-bottom: 2rem;
+    margin-top: 10vh;
+    margin-left: 20vw;
+    margin-bottom: 10vh;
 
     background-color: rgb(255, 255, 255);
     box-shadow: 1.5rem 1.5rem rgba(255, 230, 171, 0.5);
@@ -22,7 +22,7 @@
 
 /* LOGIN */
 .text1 {
-    margin-top: 3.2rem;
+    margin-top: 5vh;
     color: rgb(24, 70, 83);
 }
 
@@ -66,8 +66,8 @@ input:focus {
 .googleLogin {
     display: flex;
     flex: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
     width: 100%;
     size: 10rem;
 }
@@ -75,8 +75,8 @@ input:focus {
 .account_text {
     font-size: 1.2em;
     color: rgb(231, 194, 108);
-    margin-top: 0.8rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5vh;
+    margin-bottom: 2vh;
 }
 
 /* 계정이 없을 경우 - no have account? */
@@ -90,9 +90,9 @@ input:focus {
 /* 오른쪽 화면 */
 .row2 {
     flex: auto;
-    margin-top: 5rem;
-    margin-right: 17rem;
-    margin-bottom: 2rem;
+    margin-top: 10vh;
+    margin-right: 20vw;
+    margin-bottom: 10vh;
 
     background-color: rgb(255, 230, 171);
     box-shadow: 1.5rem 1.5rem rgba(255, 230, 171, 0.5);
@@ -104,15 +104,43 @@ input:focus {
 .texts {
     color: rgb(24, 70, 83);
     font-size: 1.15em;
-    line-height: 1.2rem;
+    line-height: 2.5vh;
 
-    margin-top: 9.5rem;
+    margin-top: 20vh;
+}
+
+/* 로그인 버튼 */
+#go_to_login {
+    padding: 1rem;
+    margin-top: 4vh;
+
+    background-color: rgb(255, 230, 171);
+    color: rgb(24, 70, 83);
+    font-size: 1.1em;
+}
+
+/* 회원가입 버튼 */
+#go_to_signup {
+    width: 20vw;
+    margin-top: 4vh;
+    padding: 1rem;
+
+    background-color: white;
+    color: rgb(24, 70, 83);
+    font-size: 1.1em;
+}
+
+/* 로그인, 회원가입 버튼에 마우스를 올렸을 때 */
+#go_to_login:hover,
+#go_to_signup:hover {
+    background-color: rgb(113, 157, 138);
+    color: white;
 }
 
 @media (min-width: 1920px) {
     .row1,
     .row2 {
-        margin-top: 12rem;
+        margin-top: 15vh;
     }
 
     .account_text,
@@ -121,9 +149,3 @@ input:focus {
         font-size: 1.4em;
     }
 }
-
-/* @media ( min-width: 481px ) {
-    .row2{
-        display: none;
-    }
-} */

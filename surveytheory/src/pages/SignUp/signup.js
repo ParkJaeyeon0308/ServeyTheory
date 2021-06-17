@@ -149,7 +149,7 @@ export default class SignUp extends React.Component {
                                     </Button>
                                 </InputGroup.Append>
                             </InputGroup>
-                            <div className="confirm-ment">
+                            <div className="confirm-ment-top">
                                 {this.state.data}
                             </div>
                             <input
@@ -169,7 +169,7 @@ export default class SignUp extends React.Component {
                                 onChange={this.handleChange}
                             />
 
-                            <div className="confirm-ment">
+                            <div className="confirm-ment-middle">
                                 {this.state.data2}
                             </div>
 
@@ -182,7 +182,7 @@ export default class SignUp extends React.Component {
                                 회원가입
                             </button>
 
-                            <div className="confirm-ment">
+                            <div className="confirm-ment-bottom">
                                 {this.state.data3}
                             </div>
                         </center>
