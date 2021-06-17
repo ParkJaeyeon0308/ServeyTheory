@@ -117,16 +117,9 @@ export default class Login extends React.Component {
                                     />
 
                                     <button
+                                        id="go_to_login"
                                         className="btn btn-lg btn-block"
                                         type="button"
-                                        style={{
-                                            backgroundColor:
-                                                "rgb(255, 230, 171)",
-                                            color: "rgb(24, 70, 83)",
-                                            fontSize: "1.1rem",
-                                            padding: "1rem",
-                                            marginTop: "2rem"
-                                        }}
                                         onClick={this.onclick}
                                     >
                                         {" "}
@@ -146,16 +139,9 @@ export default class Login extends React.Component {
                                 </div>
                                 <Link to="./SignUp">
                                     <button
+                                        id="go_to_signup"
                                         className="btn btn-lg btn-block"
                                         type="button"
-                                        style={{
-                                            backgroundColor: "white",
-                                            color: "rgb(24, 70, 83)",
-                                            fontSize: "1.1em",
-                                            marginTop: "2rem",
-                                            width: "20rem",
-                                            padding: "1rem"
-                                        }}
                                         onClick={this.handleOnClick}
                                     >
                                         {" "}

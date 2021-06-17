@@ -86,55 +86,67 @@ export default class QuitAccount extends React.Component {
     render() {
         return (
             <div className="quit_account">
-                <div className="account">회원탈퇴</div>
-                <input
-                    type="text"
-                    id="inputid"
-                    className="form-control"
-                    placeholder="ID"
-                    name="id"
-                    id="id_inputs"
-                    onChange={this.handleChange}
-                />
-                <input
-                    type="text"
-                    id="inputPW"
-                    className="form-control"
-                    placeholder="기존 비밀번호"
-                    name="pw"
-                    id="pw_inputs"
-                    onChange={this.handleChange}
-                />
+                <div className="account">DELETE ACCOUNT</div>
+                <div className="quitAccount_box">
+                    <div className="left-box">
+                        <img
+                            className="mini-logo"
+                            id="quit"
+                            src="/images/mini-logo.png"
+                            alt="mini-logo"
+                        />
+                    </div>
+                    <div className="right-box">
+                        <input
+                            type="id"
+                            className="form-control"
+                            placeholder="ID"
+                            name="id"
+                            id="id_inputs-quit"
+                            onChange={this.handleChange}
+                        />
+                        <input
+                            type="password"
+                            className="form-control"
+                            placeholder="기존 비밀번호"
+                            name="pw"
+                            id="pw_inputs"
+                            onChange={this.handleChange}
+                        />
 
-                <h4>{this.state.data}</h4>
-                <a href={() => false} onClick={this.onclick}>
-                    <button
-                        className="btn btn-lg btn-block"
-                        type="submit"
-                        id="btn2"
-                        onClick={this.show.bind(this)}
-                    >
-                        Confirm
-                    </button>
-                    <Rodal
-                        visible={this.state.visible}
-                        onClose={this.hide.bind(this)}
-                        className="rodal-slideDown-enter rodal-outermost"
-                        animation="slideDown"
-                        width="450"
-                        height="300"
-                        showCloseButton="false"
-                    >
-                        <div className="rodal-container">
-                            <div className="rodal-wrapper">
-                                <span className="rodal-msg">
-                                    정상적으로 회원 탈퇴 되었습니다. <br />
-                                    서비스를 이용해주셔서 감사합니다. :-)
-                                </span>
-                            </div>
-                        </div>
-                    </Rodal>
-                </a>
+                        <h4>{this.state.data}</h4>
+                        <a href={() => false} onClick={this.onclick}>
+                            <button
+                                className="btn btn-lg btn-block"
+                                type="submit"
+                                id="btn2"
+                                onClick={this.show.bind(this)}
+                            >
+                                Confirm
+                            </button>
+                            <Rodal
+                                visible={this.state.visible}
+                                onClose={this.hide.bind(this)}
+                                className="rodal-slideDown-enter rodal-outermost"
+                                animation="slideDown"
+                                width="450"
+                                height="300"
+                                showCloseButton="false"
+                            >
+                                <div className="rodal-container">
+                                    <div className="rodal-wrapper">
+                                        <span className="rodal-msg">
+                                            정상적으로 회원 탈퇴 되었습니다.{" "}
+                                            <br />
+                                            서비스를 이용해주셔서 감사합니다.
+                                            :-)
+                                        </span>
+                                    </div>
+                                </div>
+                            </Rodal>
+                        </a>
+                    </div>
+                </div>
             </div>
         );
     }
