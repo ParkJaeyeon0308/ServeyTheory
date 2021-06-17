@@ -1,24 +1,48 @@
 .quit_account {
-    height: 100%;
-    margin-top: 8rem;
+    margin-top: 9vh;
 
     display: flex;
-    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    align-self: center;
+    flex-flow: column wrap;
+}
+
+/* Delete account */
+.account {
+    font-size: 1.9em;
+    text-align: center;
+    letter-spacing: 0.07vw;
+    color: rgb(24, 70, 83);
+
+    margin-bottom: 4vh;
+}
+
+.quitAccount_box {
+    width: 58vw;
+    height: auto;
+
+    border-radius: 2vw 2vw 2vw 2vw;
+    border-top: 0.05rem solid rgba(113, 157, 138, 0.5);
+    border-left: 0.05rem solid rgba(113, 157, 138, 0.5);
+    border-bottom: 0.05rem solid rgba(113, 157, 138, 0.5);
+    box-shadow: 1.5rem 1.5rem rgba(113, 157, 138, 0.5);
+}
+
+#quit {
+    width: 8vw;
+    height: 14vh;
+    margin-top: 16vh;
 }
 
 input:focus {
     outline: 1rem solid rgb(255, 230, 171);
 }
 
-/* 회원탈퇴 */
-.account {
-    font-size: 1.8em;
-    color: rgb(24, 70, 83);
-    margin-bottom: 2rem;
+#id_inputs-quit {
+    width: 25vw;
+    font-size: 1.1em;
+
+    margin-bottom: 3vh;
 }
 
 /* modal css*/

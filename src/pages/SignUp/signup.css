@@ -1,5 +1,5 @@
 .signup {
-    margin-top: 11vh;
+    margin-top: 9vh;
 
     display: flex;
     justify-content: center;
@@ -11,12 +11,10 @@
 .join {
     font-size: 1.9em;
     text-align: center;
-    font-family: "S-CoreDream-6Bold";
-    font-weight: 600;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.05vw;
     color: rgb(24, 70, 83);
 
-    margin-bottom: 2.5vh;
+    margin-bottom: 4vh;
 }
 
 .mini-logo {
