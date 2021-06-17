@@ -2,16 +2,19 @@ import React from "react";
 import "../question.css";
 import Button from "../../../component/Button";
 import "./Question4_2";
-import { str1, str2 } from "./Question4_2";
+import { str1} from "./Question4_2";
 
 function Question4_7(){
     const onIncrease = () => {
         str1.mbti1+="Y"
         console.log(str1)
+        // if(str1.mbti1 == ""){
+        //     c
+        // }
 };
     const onDecrease = () => {
-        str2.mbti2+="W"
-        console.log(str2)
+        str1.mbti1+="W"
+        console.log(str1)
     };
         const question_title = "Q8. 둘 중 당신의 선택은?";
         const btn1 ="주말에 반 강제로 출근하고 경제적으로 여유로운 한달을 보낸다"; //Y
