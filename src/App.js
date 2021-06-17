@@ -39,6 +39,9 @@ import Q4_2 from "./pages/Question/Q4/Question4_2";
 import Q4_3 from "./pages/Question/Q4/Question4_3";
 import Q4_4 from "./pages/Question/Q4/Question4_4";
 import Q4_5 from "./pages/Question/Q4/Question4_5";
+import Q4_6 from "./pages/Question/Q4/Question4_6";
+import Q4_7 from "./pages/Question/Q4/Question4_7";
+import Q4_8 from "./pages/Question/Q4/Question4_8";
 
 import Q5_1 from "./pages/Question/Q5/Question5_1";
 import Q5_2 from "./pages/Question/Q5/Question5_2";
@@ -195,6 +198,9 @@ function App() {
                         <Route path="/Question4_3" component={Q4_3} />
                         <Route path="/Question4_4" component={Q4_4} />
                         <Route path="/Question4_5" component={Q4_5} />
+                        <Route path="/Question4_6" component={Q4_6} />
+                        <Route path="/Question4_7" component={Q4_7} />
+                        <Route path="/Question4_8" component={Q4_8} />
 
                         <Route path="/Question5_1" component={Q5_1} />
                         <Route path="/Question5_2" component={Q5_2} />
@@ -334,6 +340,9 @@ function App() {
                         <Route path="/Question4_3" component={Q4_3} />
                         <Route path="/Question4_4" component={Q4_4} />
                         <Route path="/Question4_5" component={Q4_5} />
+                        <Route path="/Question4_6" component={Q4_6} />
+                        <Route path="/Question4_7" component={Q4_7} />
+                        <Route path="/Question4_8" component={Q4_8} />
 
                         <Route path="/Question5_1" component={Q5_1} />
                         <Route path="/Question5_2" component={Q5_2} />

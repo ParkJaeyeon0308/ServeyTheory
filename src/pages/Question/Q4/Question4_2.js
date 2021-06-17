@@ -2,17 +2,17 @@ import React, { useState, ReactDom } from "react";
 import "../question.css";
 import Button from "../../../component/Button";
 import { Link } from "react-router-dom"; 
-import "./Question4_1";
-import { str1, str2 } from "./Question4_1";
 
+export let str1 = {mbti1:" "};
+export let str2 = {mbti2:" "};
 function Question4_2(){
-    const onIncrease = () => {str1.mbti1+="u"
+    const onIncrease = () => {str1.mbti1+="G"
     console.log(str1)};
-    const onDecrease = () => {str2.mbti2+="d"
+    const onDecrease = () => {str2.mbti2+="A"
         console.log(str2)};
-        const question_title = "Q2. 당신은 어떤 버튼을 누르실래요?";
-        const btn1 ="100 퍼센트로 30만원 받기!"; //u
-        const btn2 = "50 퍼센트로 100만원 받기!"; //d
+        const question_title = "Q2. 당신은 어느쪽에 더 소질이 있으세요?";
+        const btn1 ="나는 평생 개발하면서 일하고 싶어!"; //G
+        const btn2 = "나는야 OA 마스터~"; //A
     return (
             <div className="Question">
                 <div className="container">

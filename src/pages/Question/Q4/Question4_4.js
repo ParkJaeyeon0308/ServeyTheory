@@ -2,17 +2,17 @@ import React from "react";
 import "../question.css";
 import Button from "../../../component/Button";
 import { Link } from "react-router-dom"; 
-import "./Question4_1";
-import { str1, str2 } from "./Question4_1";
+import "./Question4_2";
+import { str1, str2 } from "./Question4_2";
 
 function Question4_4(){
-    const onIncrease = () => {str1.mbti1+="g"
+    const onIncrease = () => {str1.mbti1+="U"
     console.log(str1)};
-    const onDecrease = () => {str2.mbti2+="a"
+    const onDecrease = () => {str2.mbti2+="D"
         console.log(str2)};
-        const question_title = "Q4. 당신은 어느쪽에 더 소질이 있으세요?";
-        const btn1 ="나는 평생 개발로 일을 하고싶어!"; //g
-        const btn2 = "나는 OA 마스터~"; //a
+        const question_title = "Q4. 다음 중 더 기분이 안좋은 상황은?";
+        const btn1 ="학교에 지각을 해서 선생님께 꾸중을 들었다"; //U
+        const btn2 = "동아리 시간에 지각을 해서 친하지 않은 친구에게 짜증을 들었다."; //D
     return (
             <div className="Question">
                 <div className="container">
