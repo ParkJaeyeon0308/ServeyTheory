@@ -51,13 +51,12 @@ function NavBar() {
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="white">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <h1>
                     <Navbar.Brand componentClass={Link} href="/">
                         <img
                             className="logo"
                             src="/images/logo.png"
-                            style={{ width: 300, height: 50 }}
+                            style={{ width: 300, height: 115 }}
                             alt="logo"
                         />
                     </Navbar.Brand>
