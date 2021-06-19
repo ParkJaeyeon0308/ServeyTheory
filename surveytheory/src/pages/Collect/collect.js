@@ -1,38 +1,63 @@
 import React from "react";
 import "./collect.css";
 import Login, {user_id} from "../Login/login";
-import NavBar1, {collect1} from "../../component/NavBar1";
+import NavBar1, {collect1, collect2, collect3, collect4, collect5, collect6, collect7, collect8, collect9} from "../../component/NavBar1";
 
 class collect extends React.Component {
+
     render() {
-        console.log('collect 에서 survey_title: ' + collect1.survey_title)
-        console.log('collect 에서 result_url:' + collect1.result_url)
-        console.log('collect 에서 result_date: ' + collect1.result_date)
 
         const resultUrl1 = "/result" + collect1.result_url;
-        const imgUrl1 = "/images/box-img/img" + collect1.result_url + ".png"; // url  = 1_1 형식
+        const imgUrl1 = "/images/box-img/img2_" + collect1.result_url.substr(0,1) + ".png"; // url  = 1_1 형식
         const result1 =  collect1.survey_title;
         const date1 =  collect1.result_date;
+        console.log("resultUrl1: " + resultUrl1 + "  imgUrl1: " +  imgUrl1)
 
-        const imgUrl2 = "/images/img2.png";
-        const result2 = this.props.result2;
-        const date2 = this.props.date2;
+        const resultUrl2 = "/result" + collect2.result_url;
+        const imgUrl2 = "/images/box-img/img2_" + collect2.result_url.substr(0,1) + ".png"; // url  = 1_1 형식
+        const result2 =  collect2.survey_title;
+        const date2 =  collect2.result_date;
 
-        const imgUrl3 = "/images/img3.png";
-        const result3 = this.props.result3;
-        const date3 = this.props.date3;
+        const resultUrl3 = "/result" + collect3.result_url;
+        const imgUrl3 = "/images/box-img/img2_" + collect3.result_url.substr(0,1) + ".png"; // url  = 1_1 형식
+        const result3 =  collect3.survey_title;
+        const date3 =  collect3.result_date;
 
-        const imgUrl4 = "/images/img4.png";
-        const result4 = this.props.result4;
-        const date4 = this.props.date4;
+        const resultUrl4 = "/result" + collect4.result_url;
+        const imgUrl4 = "/images/box-img/img2_" + collect4.result_url.substr(0,1) + ".png"; // url  = 1_1 형식
+        const result4 =  collect4.survey_title;
+        const date4 =  collect4.result_date;
+
+        const resultUrl5 = "/result" + collect5.result_url;
+        const imgUrl5 ="/images/box-img/img2_" + collect5.result_url.substr(0,1) + ".png"; // url  = 1_1 형식
+        const result5 =  collect5.survey_title;
+        const date5 =  collect5.result_date;
+
+        const resultUrl6 = "/result" + collect6.result_url;
+        const imgUrl6 = "/images/box-img/img2_" + collect6.result_url.substr(0,1) + ".png"; // url  = 1_1 형식
+        const result6 =  collect6.survey_title;
+        const date6 =  collect6.result_date;
+
+        const resultUrl7 = "/result" + collect7.result_url;
+        const imgUrl7 = "/images/box-img/img2_" + collect7.result_url.substr(0,1) + ".png"; // url  = 1_1 형식
+        const result7 =  collect7.survey_title;
+        const date7 =  collect7.result_date;
+
+        const resultUrl8 = "/result" + collect8.result_url;
+        const imgUrl8 = "/images/box-img/img2_" + collect8.result_url.substr(0,1) + ".png"; // url  = 1_1 형식
+        const result8 =  collect8.survey_title;
+        const date8 =  collect8.result_date;
+
+        const resultUrl9 = "/result" + collect9.result_url;
+        const imgUrl9 = "/images/box-img/img2_" + collect9.result_url.substr(0,1) + ".png"; // url  = 1_1 형식
+        const result9 =  collect9.survey_title;
+        const date9 =  collect9.result_date;
 
         const img_style = {
             width: "4rem",
             height: "4rem",
             borderRadius: "40px 40px 40px 40px"
         };
-
-        console.log(user_id.user_id);
 
         return (
             <div className="collect">
@@ -43,7 +68,10 @@ class collect extends React.Component {
                             <table>
                                 <tr
                                     onClick={() =>
-                                        this.props.history.push("/result")
+                                        this.props.history.push({
+                                            pathname: resultUrl1
+                                            }         
+                                        ) 
                                     }
                                 >
                                     <th>
@@ -55,7 +83,10 @@ class collect extends React.Component {
 
                                 <tr
                                     onClick={() =>
-                                        this.props.history.push("/result")
+                                        this.props.history.push({
+                                            pathname: resultUrl2
+                                            }         
+                                        ) 
                                     }
                                 >
                                     <th>
@@ -67,7 +98,10 @@ class collect extends React.Component {
 
                                 <tr
                                     onClick={() =>
-                                        this.props.history.push("/result")
+                                        this.props.history.push({
+                                            pathname: resultUrl3
+                                            }         
+                                        ) 
                                     }
                                 >
                                     <th>
@@ -79,7 +113,10 @@ class collect extends React.Component {
 
                                 <tr
                                     onClick={() =>
-                                        this.props.history.push("/result")
+                                        this.props.history.push({
+                                            pathname: resultUrl4
+                                            }         
+                                        ) 
                                     }
                                 >
                                     <th>
@@ -88,6 +125,82 @@ class collect extends React.Component {
                                     <th>{result4}</th>
                                     <th>{date4}</th>
                                 </tr>
+
+                                <tr
+                                    onClick={() =>
+                                        this.props.history.push({
+                                            pathname: resultUrl5
+                                            }         
+                                        ) 
+                                    }
+                                >
+                                    <th>
+                                        <img src={imgUrl5} style={img_style} />
+                                    </th>
+                                    <th>{result5}</th>
+                                    <th>{date5}</th>
+                                </tr>
+
+                                <tr
+                                    onClick={() =>
+                                        this.props.history.push({
+                                            pathname: resultUrl6
+                                            }         
+                                        ) 
+                                    }
+                                >
+                                    <th>
+                                        <img src={imgUrl6} style={img_style} />
+                                    </th>
+                                    <th>{result6}</th>
+                                    <th>{date6}</th>
+                                </tr>
+
+                                <tr
+                                    onClick={() =>
+                                        this.props.history.push({
+                                            pathname: resultUrl7
+                                            }         
+                                        ) 
+                                    }
+                                >
+                                    <th>
+                                        <img src={imgUrl7} style={img_style} />
+                                    </th>
+                                    <th>{result7}</th>
+                                    <th>{date7}</th>
+                                </tr>
+
+                                <tr
+                                    onClick={() =>
+                                        this.props.history.push({
+                                            pathname: resultUrl8
+                                            }         
+                                        ) 
+                                    }
+                                >
+                                    <th>
+                                        <img src={imgUrl8} style={img_style} />
+                                    </th>
+                                    <th>{result8}</th>
+                                    <th>{date8}</th>
+                                </tr>
+
+                                <tr
+                                    onClick={() =>
+                                        this.props.history.push({
+                                            pathname: resultUrl9
+                                            }         
+                                        ) 
+                                    }
+                                >
+                                    <th>
+                                        <img src={imgUrl9} style={img_style} />
+                                    </th>
+                                    <th>{result9}</th>
+                                    <th>{date9}</th>
+                                </tr>
+
                             </table>
                         </article>
                     </center>
@@ -96,28 +209,5 @@ class collect extends React.Component {
         );
     }
 }
-
-// 기본 props 값
-collect.defaultProps = {
-    imgUrl1: "/images/img1.png",
-    // imgUrl: "/images/" + type_name + ".png",
-    result1: "웹, 앱 뭐가 더 잘맞을까?",
-    date1: "2021/06/24",
-
-    imgUrl2: "/images/img2.png",
-    // imgUrl: "/images/" + type_name + ".png",
-    result2: "3개월 프로젝트가 주어졌을때 내가 해낼 수 있는 기간은?",
-    date2: "2021/06/24",
-
-    imgUrl3: "/images/img3.png",
-    // imgUrl: "/images/" + type_name + ".png",
-    result3: "정신학년테스트!",
-    date3: "2021/06/25",
-
-    imgUrl4: "/images/img4.png",
-    // imgUrl: "/images/" + type_name + ".png",
-    result4: "직장 mbti 테스트!",
-    date4: "2021/06/26"
-};
 
 export default collect;

@@ -284,10 +284,10 @@ function App() {
                         <Route path="/result8_1" component={R8_1} />
                         <Route path="/result8_2" component={R8_2} />
 
-                        <Route path="/result9_3" component={R9_1} />
-                        <Route path="/result9_3" component={R9_2} />
+                        <Route path="/result9_1" component={R9_1} />
+                        <Route path="/result9_2" component={R9_2} />
                         <Route path="/result9_3" component={R9_3} />
-                        <Route path="/result9_3" component={R9_4} />
+                        <Route path="/result9_4" component={R9_4} />
 
                         <Route path="/collect" component={Collect} />
                         <Route
@@ -426,10 +426,10 @@ function App() {
                         <Route path="/result8_1" component={R8_1} />
                         <Route path="/result8_2" component={R8_2} />
 
-                        <Route path="/result9_3" component={R9_1} />
-                        <Route path="/result9_3" component={R9_2} />
+                        <Route path="/result9_1" component={R9_1} />
+                        <Route path="/result9_2" component={R9_2} />
                         <Route path="/result9_3" component={R9_3} />
-                        <Route path="/result9_3" component={R9_4} />
+                        <Route path="/result9_4" component={R9_4} />
 
                         <Route path="/collect" component={Collect} />
                         <Route

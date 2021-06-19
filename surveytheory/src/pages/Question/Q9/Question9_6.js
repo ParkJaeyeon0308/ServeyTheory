@@ -1,4 +1,4 @@
-import React, { useState, ReactDom } from "react";
+import React from "react";
 import "../question.css";
 import Button from "../../../component/Button";
 import "./Question9_1";
@@ -10,26 +10,26 @@ function Question9_6(){
     const onPlus1 = () => {
         number1.count1++;
         console.log(number1);
-        if(number1.count1>number2.count2){
-            if(number1.count1>number3.count3){
-                if(number1.count1>number4.count4){
-                    history.push("./result9_1");
+        if(number1.count1>=number2.count2){
+            if(number1.count1>=number3.count3){
+                if(number1.count1>=number4.count4){
+                    history.push('./result9_1');
                 }
             }
-        }else if(number2.count2>number1.count1){
-            if(number2.count2>number3.count3){
-                if(number2.count2>number4.count4){
-                    history.push("./result9_2");
+        }else if(number2.count2>=number1.count1){
+            if(number2.count2>=number3.count3){
+                if(number2.count2>=number4.count4){
+                    history.push('./result9_2');
                 }
             }
-        }else if(number3.count3>number1.count1){
-            if(number3.count3>number2.count2){
-                if(number3.count3>number4.count4){
-                    history.push("./result9_3");
+        }else if(number3.count3>=number1.count1){
+            if(number3.count3>=number2.count2){
+                if(number3.count3>=number4.count4){
+                    history.push('./result9_3');
                 }
             }
         }else{
-            history.push("./result9_4");
+            history.push('./result9_4');
         }
         number1.count1 -=number1.count1;
         number2.count2 -=number2.count2;
@@ -39,26 +39,26 @@ function Question9_6(){
     const onPlus2 = () => {
         number2.count2++;
         console.log(number2);
-        if(number1.count1>number2.count2){
-            if(number1.count1>number3.count3){
-                if(number1.count1>number4.count4){
-                    history.push("./result9_1");
+        if(number1.count1>=number2.count2){
+            if(number1.count1>=number3.count3){
+                if(number1.count1>=number4.count4){
+                    history.push('./result9_1');
                 }
             }
-        }else if(number2.count2>number1.count1){
-            if(number2.count2>number3.count3){
-                if(number2.count2>number4.count4){
-                    history.push("./result9_2");
+        }else if(number2.count2>=number1.count1){
+            if(number2.count2>=number3.count3){
+                if(number2.count2>=number4.count4){
+                    history.push('./result9_2');
                 }
             }
-        }else if(number3.count3>number1.count1){
-            if(number3.count3>number2.count2){
-                if(number3.count3>number4.count4){
-                    history.push("./result9_3");
+        }else if(number3.count3>=number1.count1){
+            if(number3.count3>=number2.count2){
+                if(number3.count3>=number4.count4){
+                    history.push('./result9_3');
                 }
             }
         }else{
-            history.push("./result9_4");
+            history.push('./result9_4');
         }
         number1.count1 -=number1.count1;
         number2.count2 -=number2.count2;
@@ -68,26 +68,26 @@ function Question9_6(){
     const onPlus3 = () => {
         number3.count3++;
         console.log(number3);
-        if(number1.count1>number2.count2){
-            if(number1.count1>number3.count3){
-                if(number1.count1>number4.count4){
-                    history.push("./result9_1");
+        if(number1.count1>=number2.count2){
+            if(number1.count1>=number3.count3){
+                if(number1.count1>=number4.count4){
+                    history.push('./result9_1');
                 }
             }
-        }else if(number2.count2>number1.count1){
-            if(number2.count2>number3.count3){
-                if(number2.count2>number4.count4){
-                    history.push("./result9_2");
+        }else if(number2.count2>=number1.count1){
+            if(number2.count2>=number3.count3){
+                if(number2.count2>=number4.count4){
+                    history.push('./result9_2');
                 }
             }
-        }else if(number3.count3>number1.count1){
-            if(number3.count3>number2.count2){
-                if(number3.count3>number4.count4){
-                    history.push("./result9_3");
+        }else if(number3.count3>=number1.count1){
+            if(number3.count3>=number2.count2){
+                if(number3.count3>=number4.count4){
+                    history.push('./result9_3');
                 }
             }
         }else{
-            history.push("./result9_4");
+            history.push('./result9_4');
         }
         number1.count1 -=number1.count1;
         number2.count2 -=number2.count2;
@@ -97,26 +97,26 @@ function Question9_6(){
     const onPlus4 = () => {
         number4.count4++;
         console.log(number4);
-        if(number1.count1>number2.count2){
-            if(number1.count1>number3.count3){
-                if(number1.count1>number4.count4){
-                    history.push("./result9_1");
+        if(number1.count1>=number2.count2){
+            if(number1.count1>=number3.count3){
+                if(number1.count1>=number4.count4){
+                    history.push('./result9_1');
                 }
             }
-        }else if(number2.count2>number1.count1){
-            if(number2.count2>number3.count3){
-                if(number2.count2>number4.count4){
-                    history.push("./result9_2");
+        }else if(number2.count2>=number1.count1){
+            if(number2.count2>=number3.count3){
+                if(number2.count2>=number4.count4){
+                    history.push('./result9_2');
                 }
             }
-        }else if(number3.count3>number1.count1){
-            if(number3.count3>number2.count2){
-                if(number3.count3>number4.count4){
-                    history.push("./result9_3");
+        }else if(number3.count3>=number1.count1){
+            if(number3.count3>=number2.count2){
+                if(number3.count3>=number4.count4){
+                    history.push('./result9_3');
                 }
             }
         }else{
-            history.push("./result9_4");
+            history.push('./result9_4');
         }
         number1.count1 -=number1.count1;
         number2.count2 -=number2.count2;
