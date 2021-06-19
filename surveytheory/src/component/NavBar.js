@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { SidebarData } from "./SidebarData";
+// import { SidebarData } from "./SidebarData";
 import "./NavBar.css";
-import { IconContext } from "react-icons";
+import { Navbar,Nav, NavDropdown } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import Login, { user_id } from "../pages/Login/login";
 
@@ -52,22 +50,46 @@ function NavBar() {
 
     return (
         <>
-            <IconContext.Provider value={{ color: "#fff" }}>
+<Navbar collapseOnSelect expand="lg" bg="white">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <h1><Navbar.Brand componentClass={Link} href="/" color="dark">
+            <img
+              className="logo"
+              src="/images/logo.png"
+              style={{width:300, height:115}}
+              alt="logo"/>
+              </Navbar.Brand></h1>
+         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+         <Nav className="mr-auto">
+      </Nav>
+     <Nav>
+      <h3><Nav.Link href="/">홈</Nav.Link></h3>&nbsp;&nbsp;&nbsp;
+      <h3><Nav.Link href="/login">로그인</Nav.Link></h3>&nbsp;&nbsp;&nbsp;
+      <h3><Nav.Link href="/collect">설문결과</Nav.Link></h3>&nbsp;&nbsp;&nbsp;
+      <h3><NavDropdown title="계정설정" bg="light" id="collasible-nav-dropdown">
+      <h3><NavDropdown.Item componentClass={Link} class="dropdown" href="/pass_change" to="/pass_change">암호변경</NavDropdown.Item></h3>
+        <h3><NavDropdown.Item  componentClass={Link} class="dropdown" href="/quit_account" to="/quit_account">회원탈퇴</NavDropdown.Item></h3>
+  </NavDropdown></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+            {/* <IconContext.Provider value={{ color: "#fff" }}>
                 <div className="navbar">
                     <Link to="#" className="menu-bars">
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>
                     <div className="navbar-img">
                         {/* <Link to='#' className='GoHome'> */}
-                        <img
+                        {/* <img
                             className="logo"
                             src="/images/logo.png"
                             alt="logo"
                         />
                         {/* </Link> */}
-                    </div>
-                </div>
-                <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+                    {/* </div> */}
+                {/* </div> */} 
+                {/* <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className="nav-menu-items" onClick={showSidebar}>
                         <li className="navbar-toggle">
                             <Link to="#" className="menu-bars">
@@ -117,7 +139,7 @@ function NavBar() {
                         </li>
                     </ul>
                 </nav>
-            </IconContext.Provider>
+            </IconContext.Provider> */}
         </>
     );
 }
