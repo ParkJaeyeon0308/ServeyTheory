@@ -15,6 +15,7 @@ function Question4_6(){
         const question_title = 'Q6. 나는 "꼰대"라는 소리를 들어본 적이 있다';
         const btn1 ="YES"; 
         const btn2 = "NO"; 
+        
     return (
             <div className="Question">
                 <div className="container">
