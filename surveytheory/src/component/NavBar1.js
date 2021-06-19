@@ -290,7 +290,7 @@ function NavBar1() {
     <>
       <Navbar collapseOnSelect expand="lg" bg="white">
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <h1><Navbar.Brand componentClass={Link} href="/" color="dark">
+      <h1><Navbar.Brand componentClass={Link} href="/">
             <img
               className="logo"
               src="/images/logo.png"
@@ -302,13 +302,17 @@ function NavBar1() {
          <Nav className="mr-auto">
       </Nav>
      <Nav>
-      <h3><Nav.Link href="/" class="Navbar">홈</Nav.Link></h3>&nbsp;&nbsp;&nbsp;
-      <h3><Nav.Link href="/login">로그인</Nav.Link></h3>&nbsp;&nbsp;&nbsp;
-      <h3><Nav.Link href="/collect">설문결과</Nav.Link></h3>&nbsp;&nbsp;&nbsp;
-      <h3><NavDropdown title="계정설정" bg="light" id="collasible-nav-dropdown">
-      <h3><NavDropdown.Item componentClass={Link} class="dropdown" href="/pass_change" to="/pass_change">암호변경</NavDropdown.Item></h3>
-        <h3><NavDropdown.Item  componentClass={Link} class="dropdown" href="/quit_account" to="/quit_account">회원탈퇴</NavDropdown.Item></h3>
-  </NavDropdown></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <h3><Nav.Link href="/" style={{color: "rgb(88, 88, 88)"}}>홈</Nav.Link></h3>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <h3><Nav.Link href="/login" style={{color: "rgb(88, 88, 88)"}}>로그인</Nav.Link></h3>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <h3><Nav.Link href="/collect" style={{color: "rgb(88, 88, 88)"}}>설문결과</Nav.Link></h3>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <h3><NavDropdown title="계정설정" id="collasible-nav-dropdown">
+      <h3><NavDropdown.Item componentClass={Link} class="dropdown" href="/pass_change" to="/pass_change" style={{color: "rgb(88, 88, 88)"}}>암호변경</NavDropdown.Item></h3>
+        <h3><NavDropdown.Item  componentClass={Link}  style={{color: "rgb(88, 88, 88)"}} class="dropdown" href="/quit_account" to="/quit_account">회원탈퇴</NavDropdown.Item></h3>
+  </NavDropdown></h3>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </Nav>
   </Navbar.Collapse>
 </Navbar>

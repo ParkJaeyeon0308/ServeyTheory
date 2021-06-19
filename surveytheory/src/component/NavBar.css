@@ -13,9 +13,9 @@
 .navbar-img {
 }
 
-.Navbar{
-    font-family: "S-CoreDream-3Light";
-}
+.navItem {
+    color: rgb(88, 88, 88);
+  }
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -67,12 +67,14 @@
     align-items: center;
     padding: 8px 0px 8px 16px;
     list-style: none;
+    font-family: "S-CoreDream-3Light";
     height: 6vh;
 }
 
 .nav-text a {
     text-decoration: none;
     /* 링크 밑줄 지워주는거 */
+    font-family: "S-CoreDream-3Light";
     color: #f5f5f5;
     margin-left: 10%;
     font-size: 1.5em;
