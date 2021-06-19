@@ -120,7 +120,7 @@ import R6_3 from "./pages/Result/Result6/result6_3";
 import R7_1 from "./pages/Result/Result7/result7_1";
 import R7_2 from "./pages/Result/Result7/result7_2";
 import R7_3 from "./pages/Result/Result7/result7_3";
-import R7_4 from "./pages/Result/Result7/result7_3";
+import R7_4 from "./pages/Result/Result7/result7_4";
 
 import R8_1 from "./pages/Result/Result8/result8_1";
 import R8_2 from "./pages/Result/Result8/result8_2";
