@@ -280,13 +280,16 @@ function NavBar1() {
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="white">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <h1>
                     <Navbar.Brand componentClass={Link} href="/">
                         <img
                             className="logo"
                             src="/images/logo.png"
-                            style={{ width: 300, height: 50 }}
+                            style={{
+                                width: 300,
+                                height: 115,
+                                marginLeft: "2vw"
+                            }}
                             alt="logo"
                         />
                     </Navbar.Brand>
@@ -320,6 +323,14 @@ function NavBar1() {
                             </Nav.Link>
                         </h3>
                         <h3>
+                            <Nav.Link
+                                href="/developer_intro"
+                                style={{ color: "rgb(88, 88, 88)" }}
+                            >
+                                개발자
+                            </Nav.Link>
+                        </h3>
+                        <h3>
                             <NavDropdown
                                 title="계정설정"
                                 id="collasible-nav-dropdown"
@@ -330,7 +341,10 @@ function NavBar1() {
                                         class="dropdown"
                                         href="/pass_change"
                                         to="/pass_change"
-                                        style={{ color: "rgb(88, 88, 88)" }}
+                                        style={{
+                                            color: "rgb(88, 88, 88)",
+                                            marginBottom: "2vh"
+                                        }}
                                     >
                                         암호변경
                                     </NavDropdown.Item>

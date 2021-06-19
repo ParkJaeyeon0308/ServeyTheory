@@ -56,7 +56,11 @@ function NavBar() {
                         <img
                             className="logo"
                             src="/images/logo.png"
-                            style={{ width: 300, height: 115 }}
+                            style={{
+                                width: 300,
+                                height: 115,
+                                marginLeft: "2vw"
+                            }}
                             alt="logo"
                         />
                     </Navbar.Brand>
@@ -87,6 +91,14 @@ function NavBar() {
                                 style={{ color: "rgb(88, 88, 88)" }}
                             >
                                 설문결과
+                            </Nav.Link>
+                        </h3>
+                        <h3>
+                            <Nav.Link
+                                href="/developer_intro"
+                                style={{ color: "rgb(88, 88, 88)" }}
+                            >
+                                개발자
                             </Nav.Link>
                         </h3>
                         <h3>
