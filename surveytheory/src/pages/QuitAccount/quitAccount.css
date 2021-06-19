@@ -1,5 +1,5 @@
 .quit_account {
-    margin-top: 9vh;
+    margin-top: 11vh;
 
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
 #quit {
     width: 8vw;
     height: 14vh;
-    margin-top: 16vh;
+    margin-top: 11vh;
 }
 
 input:focus {
@@ -62,14 +62,4 @@ input:focus {
 .rodal-msg {
     font-family: "S-CoreDream-3Light";
     font-weight: 600;
-}
-
-@media (min-width: 1920px) {
-    .quit_account {
-        margin-top: 14rem;
-    }
-
-    .account {
-        font-size: 2em;
-    }
 }

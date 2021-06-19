@@ -118,14 +118,14 @@ export default class SignUp extends React.Component {
             <div className="signup">
                 <div className="join">SIGN UP</div>
                 <div className="sign_box">
-                    <div className="left-box">
+                    <div className="left-box-sign">
                         <img
                             className="mini-logo"
                             src="/images/mini-logo.png"
                             alt="mini-logo"
                         />
                     </div>
-                    <div className="right-box">
+                    <div className="right-box-sign">
                         <center>
                             <InputGroup className="mb-3" id="nick_input">
                                 <FormControl

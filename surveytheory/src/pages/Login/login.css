@@ -6,9 +6,9 @@
 /* 왼쪽 화면 */
 .row1 {
     flex: auto;
-    margin-top: 10vh;
-    margin-left: 20vw;
-    margin-bottom: 10vh;
+    margin-top: 5rem;
+    margin-left: 17rem;
+    margin-bottom: 2rem;
 
     background-color: rgb(255, 255, 255);
     box-shadow: 1.5rem 1.5rem rgba(255, 230, 171, 0.5);
@@ -90,9 +90,9 @@ input:focus {
 /* 오른쪽 화면 */
 .row2 {
     flex: auto;
-    margin-top: 10vh;
-    margin-right: 20vw;
-    margin-bottom: 10vh;
+    margin-top: 5rem;
+    margin-right: 17rem;
+    margin-bottom: 2rem;
 
     background-color: rgb(255, 230, 171);
     box-shadow: 1.5rem 1.5rem rgba(255, 230, 171, 0.5);
@@ -106,7 +106,7 @@ input:focus {
     font-size: 1.15em;
     line-height: 2.5vh;
 
-    margin-top: 20vh;
+    margin-top: 9.5rem;
 }
 
 /* 로그인 버튼 */

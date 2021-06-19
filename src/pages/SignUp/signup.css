@@ -35,7 +35,7 @@
 }
 
 /* 왼쪽에 위치한 박스 */
-.left-box {
+.left-box-sign {
     background-color: white;
     width: 50%;
     height: auto; /* 50vh -> auto */
@@ -46,7 +46,7 @@
 }
 
 /* 오른쪽에 위치한 박스 */
-.right-box {
+.right-box-sign {
     background-color: rgb(113, 157, 138);
     width: 50%;
     height: auto; /* 50vh -> auto */
