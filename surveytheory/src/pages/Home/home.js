@@ -12,22 +12,29 @@ export default class Home extends Component {
         // img style settings
         const img_style = {
             width: "100vw",
-            height: "90vh",
-            cursor: "pointer"
+            height: "90vh"
         };
 
         // slider settings
         const settings = {
-            // dots: true, //넘겨지는 점 보여지게
-            arrows: true,
             infinite: true, //계속 활용할 수 있는걸로
             autoplay: true,
             autoplaySpeed: 3000,
-            slidesToShow: 1, // 장수
-            slidesToScroll: 1 //1장씩 넘기는거
+            slidesToShow: 1,
+            pauseOnHover: false // 마우스 hover시에도 멈춤 X
         };
         return (
             <div className="home">
+                <div className="main-content">
+                    <img
+                        className="content-logo"
+                        src="/images/logo.png"
+                        alt="logo"
+                    />
+                    <div className="main-content-text">
+                        ddasdasddasdasddasdasddasdasddasdasd
+                    </div>
+                </div>
                 <Slider {...settings} className="slide">
                     <div
                         onClick={() => this.props.history.push("/Question1_1")}
@@ -111,7 +118,7 @@ export default class Home extends Component {
                         />
                     </div>
                 </Slider>
-                <div className="text">원하는 테스트를 골라 시작해보세요!</div>
+                {/* <div className="text">원하는 테스트를 골라 시작해보세요!</div>
                 <div class="box2"></div>
                 <div
                     className="test_box"
@@ -275,7 +282,7 @@ export default class Home extends Component {
                     >
                         UP
                     </button>
-                </a>
+                </a> */}
             </div>
         );
     }
