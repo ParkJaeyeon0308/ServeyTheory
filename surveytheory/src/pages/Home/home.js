@@ -12,7 +12,7 @@ export default class Home extends Component {
         // img style settings
         const img_style = {
             width: "100vw",
-            height: "82vh",
+            height: "90vh",
             cursor: "pointer"
         };
 
