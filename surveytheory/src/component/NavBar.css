@@ -2,31 +2,28 @@
 .navbar {
     /* background-color: rgb(113, 157, 138); */
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: start;
     text-decoration: none;
     border-bottom: solid 0.1px rgb(206, 204, 204);
     color: rgb(88, 88, 88);
-    font-family: "S-CoreDream-3Light";
 }
 .navbar-img {
 }
 
 .navItem {
     color: rgb(88, 88, 88);
-  }
+}
 
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
     color: rgb(88, 88, 88);
-    font-family: "S-CoreDream-3Light";
 }
 
-.dropdown-menu:hover{
+.dropdown-menu:hover {
     color: rgb(80, 117, 101);
-    font-family: "S-CoreDream-3Light";
 }
 /* 설문학개론 로고 */
 .logo {
@@ -67,14 +64,12 @@
     align-items: center;
     padding: 8px 0px 8px 16px;
     list-style: none;
-    font-family: "S-CoreDream-3Light";
     height: 6vh;
 }
 
 .nav-text a {
     text-decoration: none;
     /* 링크 밑줄 지워주는거 */
-    font-family: "S-CoreDream-3Light";
     color: #f5f5f5;
     margin-left: 10%;
     font-size: 1.5em;
@@ -115,6 +110,19 @@
 .nav-menu-items {
     width: 100%;
 }
+
+.menu-bar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+h3 a {
+    font-family: "S-CoreDream-3Light";
+    font-weight: 600;
+    font-size: 0.8em;
+    margin: 0 1.5vw 0 1.5vw;
+}
+
 .fixnav-text {
     display: flex;
     justify-content: start;

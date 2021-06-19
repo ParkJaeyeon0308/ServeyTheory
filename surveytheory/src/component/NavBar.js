@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import { SidebarData } from "./SidebarData";
 import "./NavBar.css";
-import { Navbar,Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import Login, { user_id } from "../pages/Login/login";
 
@@ -50,34 +50,89 @@ function NavBar() {
 
     return (
         <>
-<Navbar collapseOnSelect expand="lg" bg="white">
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <h1><Navbar.Brand componentClass={Link} href="/">
-            <img
-              className="logo"
-              src="/images/logo.png"
-              style={{width:300, height:115}}
-              alt="logo"/>
-              </Navbar.Brand></h1>
-         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-         <Nav className="mr-auto">
-      </Nav>
-     <Nav>
-      <h3><Nav.Link href="/" style={{color: "rgb(88, 88, 88)"}}>홈</Nav.Link></h3>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <h3><Nav.Link href="/login" style={{color: "rgb(88, 88, 88)"}}>로그인</Nav.Link></h3>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <h3><Nav.Link href="/collect" style={{color: "rgb(88, 88, 88)"}}>설문결과</Nav.Link></h3>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <h3><NavDropdown title="계정설정" id="collasible-nav-dropdown">
-      <h3><NavDropdown.Item componentClass={Link} class="dropdown" href="/pass_change" to="/pass_change" style={{color: "rgb(88, 88, 88)"}}>암호변경</NavDropdown.Item></h3>
-        <h3><NavDropdown.Item  componentClass={Link}  style={{color: "rgb(88, 88, 88)"}} class="dropdown" href="/quit_account" to="/quit_account">회원탈퇴</NavDropdown.Item></h3>
-  </NavDropdown></h3>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>
+            <Navbar collapseOnSelect expand="lg" bg="white">
+                <h1>
+                    <Navbar.Brand componentClass={Link} href="/">
+                        <img
+                            className="logo"
+                            src="/images/logo.png"
+                            style={{
+                                width: 300,
+                                height: 115,
+                                marginLeft: "2vw"
+                            }}
+                            alt="logo"
+                        />
+                    </Navbar.Brand>
+                </h1>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto"></Nav>
+                    <Nav className="menu-bar">
+                        <h3>
+                            <Nav.Link
+                                href="/"
+                                style={{ color: "rgb(88, 88, 88)" }}
+                            >
+                                홈
+                            </Nav.Link>
+                        </h3>
+                        <h3>
+                            <Nav.Link
+                                href="/login"
+                                style={{ color: "rgb(88, 88, 88)" }}
+                            >
+                                로그인
+                            </Nav.Link>
+                        </h3>
+                        <h3>
+                            <Nav.Link
+                                href="/collect"
+                                style={{ color: "rgb(88, 88, 88)" }}
+                            >
+                                설문결과
+                            </Nav.Link>
+                        </h3>
+                        <h3>
+                            <Nav.Link
+                                href="/developer_intro"
+                                style={{ color: "rgb(88, 88, 88)" }}
+                            >
+                                개발자
+                            </Nav.Link>
+                        </h3>
+                        <h3>
+                            <NavDropdown
+                                title="계정설정"
+                                id="collasible-nav-dropdown"
+                            >
+                                <h3>
+                                    <NavDropdown.Item
+                                        componentClass={Link}
+                                        class="dropdown"
+                                        href="/pass_change"
+                                        to="/pass_change"
+                                        style={{ color: "rgb(88, 88, 88)" }}
+                                    >
+                                        암호변경
+                                    </NavDropdown.Item>
+                                </h3>
+                                <h3>
+                                    <NavDropdown.Item
+                                        componentClass={Link}
+                                        style={{ color: "rgb(88, 88, 88)" }}
+                                        class="dropdown"
+                                        href="/quit_account"
+                                        to="/quit_account"
+                                    >
+                                        회원탈퇴
+                                    </NavDropdown.Item>
+                                </h3>
+                            </NavDropdown>
+                        </h3>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
             {/* <IconContext.Provider value={{ color: "#fff" }}>
                 <div className="navbar">
                     <Link to="#" className="menu-bars">
@@ -85,15 +140,15 @@ function NavBar() {
                     </Link>
                     <div className="navbar-img">
                         {/* <Link to='#' className='GoHome'> */}
-                        {/* <img
+            {/* <img
                             className="logo"
                             src="/images/logo.png"
                             alt="logo"
                         />
                         {/* </Link> */}
-                    {/* </div> */}
-                {/* </div> */} 
-                {/* <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+            {/* </div> */}
+            {/* </div> */}
+            {/* <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className="nav-menu-items" onClick={showSidebar}>
                         <li className="navbar-toggle">
                             <Link to="#" className="menu-bars">

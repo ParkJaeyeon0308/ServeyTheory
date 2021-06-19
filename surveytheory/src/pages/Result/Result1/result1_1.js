@@ -47,7 +47,7 @@ export default class result1_1 extends React.Component {
 
     render() {
         const subject_name = this.props.subject_name;
-        const imgUrl = "/images/" + subject_name + ".png";
+        const imgUrl = "/images/result/type1/web.png";
         const sub_context = this.props.sub_context;
 
         const saveBtn = "결과저장";
