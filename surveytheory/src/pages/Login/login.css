@@ -6,9 +6,10 @@
 /* 왼쪽 화면 */
 .row1 {
     flex: auto;
-    margin-top: 5rem;
-    margin-left: 17rem;
-    margin-bottom: 2rem;
+    height: 55vh;
+    margin-top: 15vh;
+    margin-left: 16vw;
+    margin-bottom: 5rem;
 
     background-color: rgb(255, 255, 255);
     box-shadow: 1.5rem 1.5rem rgba(255, 230, 171, 0.5);
@@ -21,8 +22,10 @@
 }
 
 /* LOGIN */
-.text1 {
+.login-text {
     margin-top: 5vh;
+    margin-bottom: 1vh;
+    font-size: 1.6em;
     color: rgb(24, 70, 83);
 }
 
@@ -90,8 +93,9 @@ input:focus {
 /* 오른쪽 화면 */
 .row2 {
     flex: auto;
-    margin-top: 5rem;
-    margin-right: 17rem;
+    height: 55vh;
+    margin-top: 15vh;
+    margin-right: 16vw;
     margin-bottom: 2rem;
 
     background-color: rgb(255, 230, 171);
@@ -103,10 +107,10 @@ input:focus {
 /* 오른쪽 화면 텍스트 */
 .texts {
     color: rgb(24, 70, 83);
-    font-size: 1.15em;
-    line-height: 2.5vh;
+    font-size: 1.4em;
+    line-height: 2.2vh;
 
-    margin-top: 9.5rem;
+    margin-top: 18vh;
 }
 
 /* 로그인 버튼 */
@@ -115,8 +119,8 @@ input:focus {
     margin-top: 4vh;
 
     background-color: rgb(255, 230, 171);
-    color: rgb(24, 70, 83);
-    font-size: 1.1em;
+    color: rgb(113, 157, 138);
+    font-size: 1.2em;
 }
 
 /* 회원가입 버튼 */
@@ -126,8 +130,8 @@ input:focus {
     padding: 1rem;
 
     background-color: white;
-    color: rgb(24, 70, 83);
-    font-size: 1.1em;
+    color: rgb(113, 157, 138);
+    font-size: 1.2em;
 }
 
 /* 로그인, 회원가입 버튼에 마우스를 올렸을 때 */
@@ -135,17 +139,4 @@ input:focus {
 #go_to_signup:hover {
     background-color: rgb(113, 157, 138);
     color: white;
-}
-
-@media (min-width: 1920px) {
-    .row1,
-    .row2 {
-        margin-top: 15vh;
-    }
-
-    .account_text,
-    .no_have_account,
-    .texts {
-        font-size: 1.4em;
-    }
 }

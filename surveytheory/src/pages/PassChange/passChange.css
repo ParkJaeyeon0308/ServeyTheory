@@ -1,20 +1,70 @@
 .pass_change {
-    height: 100%;
-    margin-top: 5rem;
+    margin-top: 40vh;
 
     display: flex;
-    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    align-self: center;
+    flex-flow: column wrap;
 }
 
 /* 비밀번호 변경 */
-.account {
-    font-size: 1.8em;
-    color: rgb(24, 70, 83);
-    margin-bottom: 2rem;
+.pass_change-text {
+    width: 100%;
+    font-size: 1.9em;
+    text-align: center;
+    color: white;
+
+    margin-bottom: 4vh;
+}
+
+#box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.passChange_box {
+    width: 58vw;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 2vw 2vw 2vw 2vw;
+    border-top: 0.05rem solid rgba(113, 157, 138, 0.5);
+    border-left: 0.05rem solid rgba(113, 157, 138, 0.5);
+    border-bottom: 0.05rem solid rgba(113, 157, 138, 0.5);
+    box-shadow: 1.5rem 1.5rem rgba(113, 157, 138, 0.5);
+}
+
+.mini-logo-change {
+    width: 9vw;
+    height: 15vh;
+    margin-top: 22vh;
+    margin-bottom: 22vh;
+}
+
+/* 왼쪽에 위치한 박스 */
+.left-box-change {
+    background-color: white;
+    width: 50%;
+    height: 60vh;
+    float: left;
+
+    text-align: center;
+    border-radius: 2vw 0vw 0vw 2vw;
+}
+
+/* 오른쪽에 위치한 박스 */
+.right-box-change {
+    background-color: rgb(113, 157, 138);
+    width: 50%;
+    height: 60vh;
+    float: right;
+
+    border-radius: 0vw 2vw 2vw 0vw;
+    padding: 7% 3vw 10vh 2vw;
 }
 
 input[type="id"] {
@@ -48,12 +98,30 @@ input:focus {
     outline: 1rem solid rgb(255, 230, 171);
 }
 
-@media (min-width: 1920px) {
-    .pass_change {
-        margin-top: 13rem;
-    }
+/* ID input */
+#id_inputs-change {
+    width: 25vw;
+    font-size: 1.1em;
 
-    .account {
-        font-size: 2em;
-    }
+    margin-bottom: 2vh;
+}
+
+/* PW input */
+#pw_inputs-change {
+    width: 25vw;
+    font-size: 1.1em;
+
+    margin-bottom: 2.5vh;
+}
+
+#change-btn {
+    width: 25vw;
+    background-color: white;
+    color: rgb(113, 157, 138);
+
+    margin-top: 5vh;
+}
+
+#change-btn:hover {
+    background-color: rgb(255, 230, 171);
 }

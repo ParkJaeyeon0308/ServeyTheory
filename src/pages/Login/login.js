@@ -45,7 +45,7 @@ export default class Login extends React.Component {
             .then((res) => res.json())
             .then((json) => {
                 console.log(json);
-                if (json.count == "1") {
+                if (json.count === "1") {
                     // count는 db에서 출력되는 컬럼명
                     this.setState({
                         // 아이디와 비밀번호가 같은 행이 1이상 존재하면 로그인 성공
@@ -84,7 +84,7 @@ export default class Login extends React.Component {
                         <Row>
                             <Col className="row1">
                                 <div className="input">
-                                    <h4 className="text1"> LOGIN </h4>
+                                    <div className="login-text"> 로그인 </div>
                                     <GoogleLogin
                                         className="googleLogin"
                                         clientId={clientId}
@@ -108,7 +108,7 @@ export default class Login extends React.Component {
                                         type="password"
                                         id="inputPw"
                                         className="form-control"
-                                        placeholder="비밀번호"
+                                        placeholder="PW"
                                         name="pw"
                                         style={{
                                             marginBottom: 20
@@ -137,7 +137,10 @@ export default class Login extends React.Component {
                                     <p>계정이 없으신가요?</p>
                                     <p>지금 바로 회원가입 하세요!</p>
                                 </div>
-                                <Link to="./SignUp">
+                                <Link
+                                    to="./SignUp"
+                                    style={{ textDecoration: "none" }}
+                                >
                                     <button
                                         id="go_to_signup"
                                         className="btn btn-lg btn-block"
