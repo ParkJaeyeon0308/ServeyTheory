@@ -9,106 +9,22 @@
     border-bottom: solid 0.1px rgb(206, 204, 204);
     color: rgb(88, 88, 88);
 }
-.navbar-img {
-}
 
-.navItem {
-    color: rgb(88, 88, 88);
-}
-
-.dropdown:hover .dropdown-menu {
+.dropdown:hover,
+.dropdown-menu {
     display: block;
     margin-top: 0;
     color: rgb(88, 88, 88);
 }
 
-.dropdown-menu:hover {
-    color: rgb(80, 117, 101);
+.dropdown-menu h3 a:hover {
+    background-color: rgb(241, 241, 241);
+    width: 65%;
 }
 /* 설문학개론 로고 */
 .logo {
     width: 20vw;
     margin-right: 1vw;
-}
-
-/* 햄버거 버튼 위치 */
-.menu-bars {
-    position: relative;
-    margin-left: 3vw;
-    font-size: 2rem;
-    background: none;
-}
-
-/* 햄버거 버튼 누르면 나오는 메뉴바 */
-.nav-menu {
-    background-color: rgb(113, 157, 138);
-    width: 25vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    transition: 850ms;
-    text-decoration: none;
-    z-index: 1;
-    font-size: 1em;
-}
-.nav-menu.active {
-    left: 0;
-    transition: 350ms;
-}
-.nav-text {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 8px 0px 8px 16px;
-    list-style: none;
-    height: 6vh;
-}
-
-.nav-text a {
-    text-decoration: none;
-    /* 링크 밑줄 지워주는거 */
-    color: #f5f5f5;
-    margin-left: 10%;
-    font-size: 1.5em;
-    line-height: 1.3em;
-    width: 75%;
-    margin-top: 25%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 5px;
-}
-.nav-text a:hover {
-    color: #f5f5f5;
-    text-decoration: none;
-    background-color: rgb(80, 117, 101);
-}
-.mini-nav-text a {
-    text-decoration: none;
-    /* 링크 밑줄 지워주는거 */
-    color: #f5f5f5;
-    font-size: 1.2em;
-    margin-top: 5%;
-    width: 55%;
-    margin-left: 10%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
-    border-radius: 5px;
-}
-.mini-nav-text a:hover {
-    color: #f5f5f5;
-    text-decoration: none;
-    margin-left: 10%;
-    background-color: rgb(80, 117, 101);
-}
-.nav-menu-items {
-    width: 100%;
 }
 
 .menu-bar {
@@ -119,50 +35,6 @@
 h3 a {
     font-family: "S-CoreDream-3Light";
     font-weight: 600;
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin: 0 1.5vw 0 1.5vw;
-}
-
-.fixnav-text {
-    display: flex;
-    justify-content: start;
-    margin-left: 10%;
-    align-items: center;
-    padding: 0px 0px 0px 16px;
-    margin-top: 16%;
-    list-style: none;
-    height: 3vh;
-}
-.fixnav-text a {
-    text-decoration: none;
-    /* 링크 밑줄 지워주는거 */
-    color: #f5f5f5;
-    font-size: 1.4em;
-    width: 75%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 5px;
-}
-.fixnav-text a:hover {
-    color: #f5f5f5;
-    text-decoration: none;
-    background: none;
-}
-/* x버튼 누르는 곳 배경 색깔 */
-.navbar-toggle {
-    background-color: rgb(113, 157, 138);
-    margin-left: 1rem;
-    width: 20vw;
-    height: 10vh;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-@media (min-width: 1920px) {
-    .menu-bars {
-        font-size: 2.5rem;
-    }
 }

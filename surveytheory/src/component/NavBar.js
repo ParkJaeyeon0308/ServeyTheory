@@ -105,6 +105,7 @@ function NavBar() {
                             <NavDropdown
                                 title="계정설정"
                                 id="collasible-nav-dropdown"
+                                style={{ marginRight: "0.5vw" }}
                             >
                                 <h3>
                                     <NavDropdown.Item
@@ -112,7 +113,11 @@ function NavBar() {
                                         class="dropdown"
                                         href="/pass_change"
                                         to="/pass_change"
-                                        style={{ color: "rgb(88, 88, 88)" }}
+                                        style={{
+                                            color: "rgb(88, 88, 88)",
+                                            fontSize: "0.65em",
+                                            marginBottom: "2vh"
+                                        }}
                                     >
                                         암호변경
                                     </NavDropdown.Item>
@@ -120,7 +125,10 @@ function NavBar() {
                                 <h3>
                                     <NavDropdown.Item
                                         componentClass={Link}
-                                        style={{ color: "rgb(88, 88, 88)" }}
+                                        style={{
+                                            color: "rgb(88, 88, 88)",
+                                            fontSize: "0.65em"
+                                        }}
                                         class="dropdown"
                                         href="/quit_account"
                                         to="/quit_account"
