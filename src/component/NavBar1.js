@@ -334,7 +334,7 @@ function NavBar1() {
                             <NavDropdown
                                 title="계정설정"
                                 id="collasible-nav-dropdown"
-                                style={{ marginRight: "0.5vw" }}
+                                style={{ marginRight: "2vw" }}
                             >
                                 <h3>
                                     <NavDropdown.Item
