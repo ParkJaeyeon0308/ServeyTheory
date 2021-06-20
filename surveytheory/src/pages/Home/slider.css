@@ -25,9 +25,9 @@ img {
 .main-content {
     display: block;
     position: absolute;
-    transform: translateX(50%);
+    /* transform: translateX(50%); */
 
-    width: 50vw;
+    width: 100vw;
     height: 90vh;
     z-index: 1;
 

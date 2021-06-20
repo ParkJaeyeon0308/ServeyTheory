@@ -25,7 +25,7 @@ export default class Home extends Component {
                 <div className="main-content">
                     <img
                         className="content-logo"
-                        src="/images/logo.png"
+                        src="/images/logo/logo.png"
                         alt="logo"
                     />
                     <div className="main-content-text">

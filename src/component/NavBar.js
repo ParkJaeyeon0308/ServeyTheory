@@ -55,7 +55,7 @@ function NavBar() {
                     <Navbar.Brand componentClass={Link} href="/">
                         <img
                             className="logo"
-                            src="/images/logo.png"
+                            src="/images/logo/logo.png"
                             style={{
                                 width: 300,
                                 height: 115,

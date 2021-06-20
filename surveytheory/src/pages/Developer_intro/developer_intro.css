@@ -1,79 +1,82 @@
 .developer_intro {
+    margin-top: 7vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
     /* 세로 scroll bar 제거*/
     overflow-y: hidden;
 }
 
 /* 상단 Developer Intro. 문구 */
 .developer_intro_text {
+    width: 100%;
+
     text-align: center;
     font-weight: bold;
-    font-size: 2em;
-    margin-top: 2.5rem;
+    font-size: 2.5em;
+    color: rgb(24, 70, 83);
 }
 
 .developer_intro_text_subtext {
+    width: 100%;
+
     text-align: center;
     font-weight: lighter;
-    font-size: 0.9em;
+    font-size: 1.2em;
     color: rgb(82, 82, 82);
-}
 
-/* img, text가 들어갈 상자들 */
-.container {
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    margin-top: 1rem;
+    margin-top: 0.2vh;
+    margin-bottom: 1.5vh;
 }
 
 /* member css */
 .member {
-    float: left;
-    width: 18rem;
-    height: 25rem;
+    width: 18vw;
+    height: 55vh;
 
-    background-color: rgb(250, 245, 233);
-    border-radius: 40px 40px 40px 40px;
+    background-color: rgba(113, 157, 138, 0.1);
+    border-radius: 1.5rem;
     margin: 1.2rem;
 }
 
 .member img {
-    width: 100%;
-    height: auto;
-    padding: 1.5rem;
-    border-radius: 40px 40px 40px 40px;
+    width: 70%;
+    border-radius: 10%;
 }
 
 .member .info {
+    position: relative;
     width: 100%;
-    height: 40%;
-    margin-top: 1.5rem;
+
+    margin-top: 4.5vh;
     text-align: center;
 }
 
 .member .info span {
-    font-weight: bold;
-    font-size: 1em;
+    font-family: "S-CoreDream-3Light";
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.7rem;
     color: black;
 }
 
-@media (min-width: 1920px) {
-    .developer_intro_text {
-        margin-top: 7rem;
-        font-size: 2.5em;
-    }
+.github-logo {
+    float: left;
+    width: 3.5vw;
+    height: 3.5vh;
 
-    .developer_intro_text_subtext {
-        font-size: 1.2em;
-    }
+    margin-left: 9vw;
+    margin-top: 7.5vh;
+}
 
-    .member {
-        width: 20rem;
-        height: 28rem;
-        margin-top: 3rem;
-    }
+.facebook-logo {
+    float: right;
+    width: 3.5vw;
+    height: 3.5vh;
+
+    margin-right: 2vw;
+    margin-top: 7.5vh;
 }

@@ -121,7 +121,7 @@ export default class SignUp extends React.Component {
                         <div className="left-box-sign">
                             <img
                                 className="mini-logo-sign"
-                                src="/images/mini-logo.png"
+                                src="/images/logo/mini-logo.png"
                                 alt="mini-logo"
                             />
                         </div>

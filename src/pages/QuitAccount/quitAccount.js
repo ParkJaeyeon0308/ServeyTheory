@@ -91,7 +91,7 @@ export default class QuitAccount extends React.Component {
                         <div className="left-box-quit">
                             <img
                                 className="mini-logo-quit"
-                                src="/images/mini-logo.png"
+                                src="/images/logo/mini-logo.png"
                                 alt="mini-logo"
                             />
                         </div>
