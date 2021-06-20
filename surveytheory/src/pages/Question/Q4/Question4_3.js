@@ -10,7 +10,7 @@ function Question4_3(){
     return (
             <div className="Question">
                 <div className="container">
-                    <progress id="progressbar" value="17" max="100"></progress>
+                    <progress id="progressbar" value="37.5" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용

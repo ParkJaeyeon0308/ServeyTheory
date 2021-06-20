@@ -16,7 +16,7 @@ function Question1_4() {
         console.log(number2);
     };
     const question_title =
-        "Q4. 붕어빵이 먹고싶어서 사러나가려고 한다.<br/> 당신이 선택한 가게는?";
+        "Q4. 붕어빵이 먹고싶어서 사러나가려고 한다. 당신이 선택한 가게는?";
     const btn1 = "집이랑 가까운 곳";
     const btn2 = "내가 좋아하는 슈크림 붕어빵이 있는 곳";
     return (

@@ -12,11 +12,11 @@ function Question8_4(){
         console.log(number2)};
         const question_title = "Q4. 더 짜릿한 순간은?";
         const btn1 ="코드로 눈에 보이는 효과를 짜고 싶다"; //i
-        const btn2 = "모든 코드를 잡고 조종하는 쾌감이 좋다!<br>처음부터 에러까지 내가 모든 코드를 잡고 만져볼래"; //c
+        const btn2 = <>모든 코드를 잡고 조종하는 쾌감이 좋다!<br/>처음부터 에러까지 내가 모든 코드를 잡고 만져볼래</> //c
     return (
             <div className="Question">
                 <div className="container">
-                    <progress id="progressbar" value="17" max="100"></progress>
+                    <progress id="progressbar" value="68" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용

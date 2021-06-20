@@ -18,9 +18,9 @@ function Question7_1(){
         console.log(number1)};
         const question_title = "Q1. 코딩할때 나는?";
         const btn1 ="별 것 아니여도 눈에 보이면 뿌듯하다"; //F
-        const btn2 = "중요한 코드를 제대로 보지 "+  <br/>+  "이외의 요소들은 신경쓰기 복잡하다"; //FB
+        const btn2 = <>중요한 코드를 제대로 보지 <br/>이외의 요소들은 신경쓰기 복잡하다</> //FB
         const btn3 = "짧고 굵은 기능이 확실하고 머리에 쏙 들어온다"; //BF
-        const btn4 = "별 볼일 없어 보여도 "+  <br/>+  "실용성만 있다면 100점짜리 개발이라고 생각한다"; //B
+        const btn4 = <>별 볼일 없어 보여도 <br/>실용성만 있다면 100점짜리 개발이라고 생각한다</> //B
     return (
             <div className="Question">
                 <div className="container">

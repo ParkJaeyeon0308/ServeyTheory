@@ -84,8 +84,8 @@ function Question4_8(){
         str1.mbti1-=str1.mbti1;
 };
         const question_title = "Q8. 둘 중 당신의 선택은?";
-        const btn1 ="주말에 반 강제로 출근하고 경제적으로 여유로운 한달을 보낸다"; //Y
-        const btn2 = "토요일에 오후 3시까지 늦잠자고 일어나서 심적으로 여유로운 한달을 보낸다"; //W
+        const btn1 =<>주말에 반 강제로 출근하고<br/> 경제적으로 여유로운 한달을 보낸다</> //Y
+        const btn2 = <>토요일에 오후 3시까지 늦잠자고<br/> 일어나서 심적으로 여유로운 한달을 보낸다</> //W
     return (
             <div className="Question">
                 <div className="container">

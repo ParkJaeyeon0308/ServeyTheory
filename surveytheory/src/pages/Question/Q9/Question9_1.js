@@ -16,10 +16,10 @@ function Question9_1(){
         console.log(number2)};
     const onPlus4 = () => {number1.count1++
         console.log(number1)};
-        const question_title = "Q1. 당신은 팀끼리 프로젝트를 시작할때<br/> 어떤 스타일 인가요?";
+        const question_title = <>Q1. 당신은 팀끼리 프로젝트를 시작할때<br/> 어떤 스타일 인가요?</>
         const btn1 ='"난 별로 아이디어가 없는 것 같다"'; //버스타기 장인
         const btn2 = '"실력이 없어도 잘 할 수 있을거야!"'; ////평범
-        const btn3 = '"분명 망하진 않았는데 잘 돌아가지 않는 것<br/> 같은 느낌이 드는건 기분탓일까"'; //부회장
+        const btn3 = <>"분명 망하진 않았는데 잘 돌아가지 않는 것<br/> 같은 느낌이 드는건 기분탓일까"</> //부회장
         const btn4 = '"아 답답해 차라리 나 혼자 할까"'; //리더
     return (
             <div className="Question">
