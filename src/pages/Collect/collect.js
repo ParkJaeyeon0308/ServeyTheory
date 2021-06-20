@@ -1,7 +1,7 @@
 import React from "react";
 import "./collect.css";
 import Login, {user_id} from "../Login/login";
-import NavBar1, {collect1, collect2, collect3, collect4, collect5, collect6, collect7, collect8, collect9} from "../../component/NavBar1";
+import NavBar, {collect1, collect2, collect3, collect4, collect5, collect6, collect7, collect8, collect9} from "../../component/NavBar";
 
 class collect extends React.Component {
 

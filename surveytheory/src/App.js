@@ -130,7 +130,6 @@ import R9_2 from "./pages/Result/Result9/result9_2";
 import R9_3 from "./pages/Result/Result9/result9_3";
 import R9_4 from "./pages/Result/Result9/result9_4";
 
-import Survey from "./pages/Survey/survey";
 import Collect from "./pages/Collect/collect";
 import Developer_intro from "./pages/Developer_intro/developer_intro";
 
@@ -290,7 +289,6 @@ function App() {
                         <Route path="/result9_3" component={R9_3} />
                         <Route path="/result9_4" component={R9_4} />
 
-                        <Route path="/survey" component={Survey} />
                         <Route path="/collect" component={Collect} />
                         <Route
                             path="/developer_intro"
@@ -304,7 +302,7 @@ function App() {
         return (
             <>
                 <Router>
-                    <NavBar1 />
+                    <NavBar />
                     <Switch>
                         <Route path="/" exact component={Home} />
                         <Route path="/login" exact component={Login} />
@@ -433,7 +431,6 @@ function App() {
                         <Route path="/result9_3" component={R9_3} />
                         <Route path="/result9_4" component={R9_4} />
 
-                        <Route path="/survey" component={Survey} />
                         <Route path="/collect" component={Collect} />
                         <Route
                             path="/developer_intro"
