@@ -1,5 +1,5 @@
 .signup {
-    margin-top: 9vh;
+    margin-top: 40vh;
 
     display: flex;
     justify-content: center;
@@ -11,21 +11,24 @@
 .join {
     font-size: 1.9em;
     text-align: center;
-    letter-spacing: 0.05vw;
-    color: rgb(24, 70, 83);
+    color: white;
 
     margin-bottom: 4vh;
 }
 
-.mini-logo {
-    width: 8vw;
-    height: 14vh;
-    margin-top: 18vh;
+#box {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .sign_box {
     width: 58vw;
     height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     border-radius: 2vw 2vw 2vw 2vw;
     border-top: 0.05rem solid rgba(113, 157, 138, 0.5);
@@ -38,7 +41,7 @@
 .left-box-sign {
     background-color: white;
     width: 50%;
-    height: auto; /* 50vh -> auto */
+    height: 60vh;
     float: left;
 
     text-align: center;
@@ -49,11 +52,18 @@
 .right-box-sign {
     background-color: rgb(113, 157, 138);
     width: 50%;
-    height: auto; /* 50vh -> auto */
+    height: 60vh;
     float: right;
 
     border-radius: 0vw 2vw 2vw 0vw;
     padding: 7% 3vw 10vh 2vw;
+}
+
+.mini-logo-sign {
+    width: 9vw;
+    height: 15vh;
+    margin-top: 22vh;
+    margin-bottom: 22vh;
 }
 
 input[type="id"] {
@@ -113,24 +123,24 @@ input:focus {
     width: 25vw;
     font-size: 1.1em;
 
-    margin-bottom: 2.5vh;
+    margin-bottom: 3vh;
 }
 
 /* 회원가입 버튼 */
 #btn2 {
     width: 25vw;
-    background-color: rgb(255, 230, 171);
-    color: rgb(24, 70, 83);
-    font-size: 1.1em;
+    background-color: white;
+    color: rgb(113, 157, 138);
+    font-size: 1.4em;
 
     border: none;
-    margin-top: 5vh;
+    margin-top: 4vh;
 }
 
 #btn1:hover,
 #btn2:hover {
-    background-color: rgb(24, 70, 83);
-    color: white;
+    background-color: rgb(255, 230, 171);
+    color: rgb(113, 157, 138);
 }
 
 .confirm-ment-top,
@@ -147,6 +157,7 @@ input:focus {
 
 /* "아이디 중복확인을 다시해주세요." / "비밀번호가 일치하지 않습니다." */
 .confirm-ment-middle {
+    margin-bottom: 1vh;
 }
 
 /* "아이디 중복확인을 해주세요." / "회원가입 성공!"  */

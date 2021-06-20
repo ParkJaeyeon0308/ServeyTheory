@@ -116,76 +116,78 @@ export default class SignUp extends React.Component {
     render() {
         return (
             <div className="signup">
-                <div className="join">SIGN UP</div>
-                <div className="sign_box">
-                    <div className="left-box-sign">
-                        <img
-                            className="mini-logo"
-                            src="/images/mini-logo.png"
-                            alt="mini-logo"
-                        />
-                    </div>
-                    <div className="right-box-sign">
-                        <center>
-                            <InputGroup className="mb-3" id="nick_input">
-                                <FormControl
-                                    type="id"
-                                    id="id_inputs"
+                <div id="box">
+                    <div className="sign_box">
+                        <div className="left-box-sign">
+                            <img
+                                className="mini-logo-sign"
+                                src="/images/mini-logo.png"
+                                alt="mini-logo"
+                            />
+                        </div>
+                        <div className="right-box-sign">
+                            <div className="join">회원가입</div>
+                            <center>
+                                <InputGroup className="mb-3" id="nick_input">
+                                    <FormControl
+                                        type="id"
+                                        id="id_inputs"
+                                        className="form-control"
+                                        style={{ fontSize: "1.1em" }}
+                                        placeholder="아이디"
+                                        aria-label="아이디"
+                                        aria-describedby="basic-addon2"
+                                        name="id"
+                                        onChange={this.handleChange}
+                                    />
+                                    <InputGroup.Append>
+                                        <Button
+                                            variant="outline-secondary"
+                                            id="btn1"
+                                            onClick={this.onclick1}
+                                        >
+                                            중복확인
+                                        </Button>
+                                    </InputGroup.Append>
+                                </InputGroup>
+                                <div className="confirm-ment-top">
+                                    {this.state.data}
+                                </div>
+                                <input
+                                    type="password"
+                                    id="pw_inputs"
                                     className="form-control"
-                                    style={{ fontSize: "1.1em" }}
-                                    placeholder="아이디"
-                                    aria-label="아이디"
-                                    aria-describedby="basic-addon2"
-                                    name="id"
+                                    placeholder="비밀번호"
+                                    name="pw"
                                     onChange={this.handleChange}
                                 />
-                                <InputGroup.Append>
-                                    <Button
-                                        variant="outline-secondary"
-                                        id="btn1"
-                                        onClick={this.onclick1}
-                                    >
-                                        중복확인
-                                    </Button>
-                                </InputGroup.Append>
-                            </InputGroup>
-                            <div className="confirm-ment-top">
-                                {this.state.data}
-                            </div>
-                            <input
-                                type="password"
-                                id="pw_inputs"
-                                className="form-control"
-                                placeholder="비밀번호"
-                                name="pw"
-                                onChange={this.handleChange}
-                            />
-                            <input
-                                type="password"
-                                id="pw_inputs"
-                                className="form-control"
-                                placeholder="비밀번호 확인"
-                                name="pw2"
-                                onChange={this.handleChange}
-                            />
+                                <input
+                                    type="password"
+                                    id="pw_inputs"
+                                    className="form-control"
+                                    placeholder="비밀번호 확인"
+                                    name="pw2"
+                                    onChange={this.handleChange}
+                                />
 
-                            <div className="confirm-ment-middle">
-                                {this.state.data2}
-                            </div>
+                                <div className="confirm-ment-middle">
+                                    {this.state.data2}
+                                </div>
 
-                            <button
-                                className="btn btn-lg btn-block"
-                                type="submit"
-                                id="btn2"
-                                onClick={this.onclick}
-                            >
-                                회원가입
-                            </button>
+                                <button
+                                    className="btn btn-lg btn-block"
+                                    type="submit"
+                                    id="btn2"
+                                    onClick={this.onclick}
+                                >
+                                    확인
+                                </button>
 
-                            <div className="confirm-ment-bottom">
-                                {this.state.data3}
-                            </div>
-                        </center>
+                                <div className="confirm-ment-bottom">
+                                    {this.state.data3}
+                                </div>
+                            </center>
+                        </div>
                     </div>
                 </div>
             </div>

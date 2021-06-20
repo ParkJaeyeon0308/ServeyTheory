@@ -1,0 +1,111 @@
+.survey {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+    overflow: hidden;
+}
+
+/* 원하시는 테스트를 선택해주세요 */
+.survey .text {
+    width: 100%;
+    font-size: 2em;
+    font-family: "S-CoreDream-6Bold";
+    color: rgb(24, 70, 83);
+    text-align: center;
+
+    margin-top: 5vh;
+}
+
+/* 박스를 클릭하면 해당 테스트 화면으로 이동합니다. */
+.survey .subtext {
+    width: 100%;
+    font-size: 1.4em;
+    font-family: "S-CoreDream-3Light";
+    font-weight: 600;
+    color: rgb(24, 70, 83);
+    text-align: center;
+}
+
+/* test별 img와 img 설명을 담을 box */
+.survey .test_box {
+    position: relative;
+    width: 53vw;
+    height: auto;
+
+    box-shadow: 1rem 1rem 1rem rgba(160, 160, 160, 0.5);
+
+    margin: 3vh 3vw 5vh 3vw;
+
+    cursor: pointer;
+}
+
+/* left에 위치한 img */
+.survey .test_box .boximg-left {
+    float: left;
+    margin-right: 1vw;
+    box-shadow: -1.5rem 1rem 1rem rgba(160, 160, 160, 0.5);
+}
+
+/* right에 위치한 img */
+.survey .test_box .boximg-right {
+    float: right;
+    margin-left: 1vw;
+    box-shadow: 1.5rem 1rem 1rem rgba(160, 160, 160, 0.5);
+}
+
+/* 이미지 옆에 위치한 text */
+.survey .test_box .boxtext_1 {
+    font-family: "S-CoreDream-3Light";
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: justify;
+
+    margin-top: 15vh;
+    /* margin-bottom: 15vh; */
+    margin-right: 2vw;
+}
+
+.survey .test_box .boxtext_2 {
+    font-family: "S-CoreDream-3Light";
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: justify;
+
+    margin-top: 10vh;
+    /* margin-bottom: 15vh; */
+    margin-left: 2vw;
+}
+
+/* text 하단에 위치한 hashtag */
+.hashtag-left {
+    position: absolute;
+    font-size: 1em;
+    top: 82%;
+    left: 2vw;
+    color: rgb(24, 70, 83);
+}
+
+.hashtag-right {
+    position: absolute;
+    font-size: 1em;
+    top: 82%;
+    right: 2vw;
+    color: rgb(24, 70, 83);
+}
+
+/*  up button */
+.btn_gotop {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 999;
+    outline: none;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
