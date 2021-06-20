@@ -15,7 +15,7 @@ function Question6_1(){
         console.log(number3)};
         const question_title = "Q1. 전공수업을 배우면서 느끼는 감정은?";
         const btn1 ="배워서 써먹느라 바쁜것 같다"; //D
-        const btn2 = "한 가지 분야로 제대로 실력을 쌓아야지.<br/> 이 길이 내 길이다!"; //S
+        const btn2 = <>한 가지 분야로 제대로 실력을 쌓아야지.<br/> 이 길이 내 길이다!</> //S
         const btn3 = "다른 분야에도 관심이 있어 재밌을 것 같다"; //W
     return (
             <div className="Question">

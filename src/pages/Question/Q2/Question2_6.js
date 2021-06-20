@@ -16,13 +16,13 @@ function Question2_6() {
         console.log(number1);
     };
     const question_title =
-        "Q6. 3일 남은 프로젝트, 2일 남은 수행평가.. <br/> 당신의 우선순위는?";
+        <>Q6. 3일 남은 프로젝트, 2일 남은 수행평가.. <br/> 당신의 우선순위는?</>
     const btn1 = "3일 남은 프로젝트!"; //20
     const btn2 = "2일 남은 수행평가!"; //10
     return (
         <div className="Question">
             <div className="container">
-                <progress id="progressbar" value="35" max="100"></progress>
+                <progress id="progressbar" value="84" max="100"></progress>
                 <div
                     className="question_title"
                     // html 형태로 렌더링 허용

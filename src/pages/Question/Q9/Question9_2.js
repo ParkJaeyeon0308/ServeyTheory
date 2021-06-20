@@ -14,7 +14,7 @@ function Question9_2(){
         console.log(number1)};
     const onPlus4 = () => {number4.count4++
         console.log(number4)};
-        const question_title = "Q2. 밤새고 다음날 또 새벽 3시<br/> 당신은 어떤 모습인가요?";
+        const question_title = <>Q2. 밤새고 다음날 또 새벽 3시<br/> 당신은 어떤 모습인가요?</>
         const btn1 ='"너무 졸려서 죽을 것 같아 죽기 싫어!"'; //평범
         const btn2 =  '"죽을거 같긴 한데 오늘 못 하면 내일 죽는다"'; //부회장
         const btn3 = '"하나님은 버티지 못 할 시련을 주시지 않는다"'; //리더
@@ -22,7 +22,7 @@ function Question9_2(){
     return (
             <div className="Question">
                 <div className="container">
-                    <progress id="progressbar" value="17" max="100"></progress>
+                    <progress id="progressbar" value="34" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용

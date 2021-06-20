@@ -12,11 +12,11 @@ function Question4_4(){
         console.log(str1)};
         const question_title = "Q4. 다음 중 더 기분이 안좋은 상황은?";
         const btn1 ="학교에 지각을 해서 선생님께 꾸중을 들었다"; //U
-        const btn2 = "동아리 시간에 지각을 해서 친하지 않은 친구에게 짜증을 들었다."; //D
+        const btn2 = <>동아리 시간에 지각을 해서 <br/>친하지 않은 친구에게 짜증을 들었다.</> //D
     return (
             <div className="Question">
                 <div className="container">
-                    <progress id="progressbar" value="17" max="100"></progress>
+                    <progress id="progressbar" value="50" max="100"></progress>
                     <div
                         className="question_title"
                         // html 형태로 렌더링 허용

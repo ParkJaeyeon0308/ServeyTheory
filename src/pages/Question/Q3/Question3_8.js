@@ -32,7 +32,7 @@ function Question3_8(){
         }
         number1.count1-=number1.count1;
     };
-        const question_title = "Q8. 인문계 고등학교 친구가 정보 과목을 얘기하며<br/> 프로그래밍이 재밌다고 한다.";
+        const question_title = <>Q8. 인문계 고등학교 친구가 정보 과목을 얘기하며<br/> 프로그래밍이 재밌다고 한다.</>
         const btn1 ="Hello World는 출력해봤니?ㅋ 코딩 별거 아니다~"; //10
         const btn2 = "너는... 그런거... 하지마라..."; //30
         // 80 - 130 : 131 - 180 : 181 - 230

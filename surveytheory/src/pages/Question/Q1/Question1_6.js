@@ -32,7 +32,7 @@ function Question1_6() {
         number2.count2-=number2.count2;
     };
     const question_title =
-        "Q6. 다음중 더 뿌듯한 상황은? </br> 친구에게 내가 만든~";
+        "Q6. 다음중 더 뿌듯한 상황은?  친구에게 내가 만든~";
     const btn1 = "웹사이트 링크를 주고 자랑했다";
     const btn2 = "앱스토어 링크를 주고 자랑했다";
     return (
