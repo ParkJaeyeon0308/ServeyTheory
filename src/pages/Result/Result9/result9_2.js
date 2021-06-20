@@ -4,8 +4,7 @@ import "../result.css";
 class result9_2 extends React.Component {
     render() {
         const subject_name = this.props.subject_name;
-        const imgUrl = "/images/" + subject_name + ".png";
-        const main_context = this.props.main_context;
+        const imgUrl = "/images/result/type9/aid.png";
         const sub_context = this.props.sub_context;
 
         const saveBtn = "결과저장";
