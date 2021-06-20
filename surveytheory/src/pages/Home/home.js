@@ -25,7 +25,7 @@ export default class Home extends Component {
                 <div className="main-content">
                     <img
                         className="content-logo"
-                        src="/images/logo.png"
+                        src="/images/logo/logo.png"
                         alt="logo"
                     />
                     <div className="main-content-text">
@@ -35,7 +35,7 @@ export default class Home extends Component {
                         className="go_to_test"
                         onClick={() => this.props.history.push("/survey")}
                     >
-                        start
+                        START
                     </button>
                 </div>
                 <Slider {...settings} className="slide">

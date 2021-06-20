@@ -93,7 +93,7 @@ export default class PassChange extends React.Component {
                         <div className="left-box-change">
                             <img
                                 className="mini-logo-change"
-                                src="/images/mini-logo.png"
+                                src="/images/logo/mini-logo.png"
                                 alt="mini-logo"
                             />
                         </div>
