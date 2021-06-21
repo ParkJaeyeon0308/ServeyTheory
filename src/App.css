@@ -29,7 +29,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
 
 /*  loading page */
-@import "./component/Loading.css";
+@import "./pages/Loading/loading.css";
 
 * {
     margin: 0;

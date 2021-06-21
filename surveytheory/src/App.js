@@ -135,6 +135,7 @@ import Collect from "./pages/Collect/collect";
 import Developer_intro from "./pages/Developer_intro/developer_intro";
 
 import NotFound from "./error/NotFound";
+import Loading from "./pages/Loading/loading";
 
 import customAxios from "./customAxios";
 
@@ -300,6 +301,7 @@ function App() {
                         />
 
                         <Route path={"*"} component={NotFound} />
+                        <Route path="/loading" component={Loading} />
                     </Switch>
                 </Router>
             </>
@@ -445,6 +447,7 @@ function App() {
                         />
 
                         <Route path={"*"} component={NotFound} />
+                        <Route path="/loading" component={Loading} />
                     </Switch>
                 </Router>
             </>

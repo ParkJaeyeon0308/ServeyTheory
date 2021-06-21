@@ -87,13 +87,26 @@ class collect extends React.Component {
 
         return (
             <div className="collect">
+                <div class="loader">
+                    <div id="container">
+                        <img
+                            className="loading-logo"
+                            src="/images/logo/mini-logo.png"
+                            alt="mini-logo"
+                        />
+                        <div id="one"></div>
+                        <div id="two"></div>
+                        <div id="three"></div>
+                        <span id="loading-text">LOADING</span>
+                    </div>
+                </div>
                 <div className="collect-text">설문결과</div>
                 <div className="collect-subtext">
                     지금까지 테스트한 결과를 모아놓은 공간입니다.
                 </div>
                 <div className="collect-box">
                     <div className="collect-type-name">
-                        {result1}프론트엔드75% 백엔드25%
+                        {result1}웹, 앱 뭐가 더 잘 맞을까?
                     </div>
                     <div className="collect-date">{date1}2021-09-08</div>
                     <button
