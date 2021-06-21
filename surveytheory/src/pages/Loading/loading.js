@@ -5,7 +5,7 @@ window.$ = $;
 export default function Loading() {
     $(document).ready(function () {
         setTimeout(function () {
-            $(".loader").delay(2500).fadeOut(1500);
+            $(".loader").delay(1500).fadeOut(1500);
         });
     });
 
