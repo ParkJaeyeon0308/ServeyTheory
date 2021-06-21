@@ -50,7 +50,7 @@ class result5_1 extends React.Component {
 result5_1.defaultProps = {
     subject_name: "나는 몇 년차 개발자의 마인드일까?",
     sub_context:
-        "당신은 비기너 개발자의 마인드를 가지고 있습니다! <br/> 개발을 시작한지 얼마 되지 않으셨나요? 주니어, 시니어 개발자가 되려면 얼마 남지 않았습니다. 화이팅!"
+        "당신은 <span>비기너 개발자</span>의 마인드를 가지고 있습니다. <br/> 개발을 시작한지 얼마 되지 않으셨나요? 주니어, 시니어 개발자까지 멀다고 느껴지겠지만, 그렇게 멀리 있지 않아요. 열심히해서 지금보다 더 성장하는 개발자가 되어보아요. :-)"
 };
 
 export default result5_1;

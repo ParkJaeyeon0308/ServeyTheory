@@ -50,7 +50,7 @@ class result8_1 extends React.Component {
 result8_1.defaultProps = {
     subject_name: "내가 잘할 것 같은 프로그래밍 언어는?",
     sub_context:
-        "당신은 간단하면서도 확실한 언어를 선호하시는군요! 이쪽에 재능이 있으신거 같은데요? <br/> 이 분야는 프론트엔드의 경험을 쌓는데도 도움을 줄 수 있습니다.  <br/> Python, JavaScript를 대표로 인터프리터 언어를 배워보시면 좋을거 같네요.  </br> "
+        "당신은 간단하면서도 확실한 언어를 선호하시는군요! 이쪽에 재능이 있으신거 같은데요? 이 분야는 프론트엔드의 경험을 쌓는데도 도움을 줄 수 있습니다.  <br/> Python, JavaScript가 있는 <span>인터프리터 언어</span>를 배워보시면 좋을 거 같네요. :-)  </br> "
 };
 
 export default result8_1;

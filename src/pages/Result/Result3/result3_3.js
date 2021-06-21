@@ -50,7 +50,7 @@ class result3_3 extends React.Component {
 result3_3.defaultProps = {
     subject_name: "정신학년테스트",
     sub_context:
-        "당신은 진정한 미림인입니다. 혹시 3학년 인가요? <br/> 프로젝트와 개발 경험들로 취업까지 하셨을 지 모르겠네요. 당신의 앞길을 응원합니다!"
+        "당신은 진정한 미림인입니다. 혹시 <span>3학년</span>이신가요? <br/> 여러 프로젝트와 개발 경험들로 인해 얻은 지식이 많으시네요. 취업을 준비하는 당신의 앞길을 응원합니다 :-)"
 };
 
 export default result3_3;

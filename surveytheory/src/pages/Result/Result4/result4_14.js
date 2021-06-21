@@ -50,7 +50,7 @@ class result4_14 extends React.Component {
 result4_14.defaultProps = {
     subject_name: "직장 mbti 테스트",
     sub_context:
-        "당신은 jwau 유형입니다! <br/> 스타트업보다 중소기업이 어울리고 연봉보다는 워라밸을 중시하는 편입니다. 또, 개발을 제외한 운영, 사무 등 다른 직무와도 잘 어울리겠네요. 동기보다 선임 둘 중에 고르자면 선임이 좋은 회사를 선호할 것 같네요."
+        "당신은 <span>jwau 유형</span> 입니다! <br/> 이 타입은 스타트업보다 <span>중소기업</span>을 선호하고, 연봉보다는 워라밸을 중시하는 편입니다. 또, 개발을 제외한 운영, 사무 등 다른 직무와도 잘 어울리겠네요. 그리고, 동기보다 선임 둘 중에 고르자면 <span>선임</span>이 좋은 회사를 선호하는 특징이 있습니다. :-)"
 };
 
 export default result4_14;
