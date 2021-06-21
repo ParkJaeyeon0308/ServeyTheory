@@ -31,11 +31,11 @@ function Question1_4() {
                 </div>
 
                 <div className="buttons">
-                    <Link to="./Question1_5">
+                    <Link to="./Question1_5" style={{ textDecoration: "none" }}>
                         <Button onClick={() => onIncrease()}>{btn1}</Button>
                     </Link>
                     <br />
-                    <Link to="./Question1_5">
+                    <Link to="./Question1_5" style={{ textDecoration: "none" }}>
                         <Button onClick={() => onDecrease()}>{btn2}</Button>
                     </Link>
                 </div>

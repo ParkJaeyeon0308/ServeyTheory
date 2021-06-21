@@ -16,7 +16,7 @@ function Question1_5() {
         console.log(number2);
     };
     const question_title = "Q5. 당신의 선택은?";
-    const btn1 = '"나는 인터넷 없으면 저얼대 하루도 못 버텨!"';
+    const btn1 = '"나는 인터넷 없으면 절대 하루도 못 버텨!"';
     const btn2 = '"난 하루정도는 잠자고 딩가딩가하면서 가능할듯 ㅎㅎ"';
     return (
         <div className="Question">
@@ -30,11 +30,11 @@ function Question1_5() {
                 </div>
 
                 <div className="buttons">
-                    <Link to="./Question1_6">
+                    <Link to="./Question1_6" style={{ textDecoration: "none" }}>
                         <Button onClick={() => onIncrease()}>{btn1}</Button>
                     </Link>
                     <br />
-                    <Link to="./Question1_6">
+                    <Link to="./Question1_6" style={{ textDecoration: "none" }}>
                         <Button onClick={() => onDecrease()}>{btn2}</Button>
                     </Link>
                 </div>

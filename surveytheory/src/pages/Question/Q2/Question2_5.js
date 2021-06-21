@@ -3,7 +3,7 @@ import "../question.css";
 import Button from "../../../component/Button";
 import "./Question2_1";
 import { Link } from "react-router-dom";
-import { number1} from "./Question2_1";
+import { number1 } from "./Question2_1";
 
 function Question2_5() {
     //0으로 초기값 설정
@@ -15,8 +15,12 @@ function Question2_5() {
         number1.count1 += 10;
         console.log(number1);
     };
-    const question_title =
-        <>Q5. 나 내일이 과제 마감인데 놀고싶어... <br/>나랑 놀쟈.. 라고 하는 친구에게 당신은?</>
+    const question_title = (
+        <>
+            Q5. 나 내일이 과제 마감인데 놀고싶어... <br />
+            나랑 놀쟈.. 라고 하는 친구에게 당신은?
+        </>
+    );
     const btn1 = "내일이 제출이다 이 친구야!!! 빨리해!!!"; //20
     const btn2 = "내일의 너에게 맡겨ㅎ.... 같이 논다"; //10
     return (
@@ -31,11 +35,11 @@ function Question2_5() {
                 </div>
 
                 <div className="buttons">
-                    <Link to="./Question2_6">
+                    <Link to="./Question2_6" style={{ textDecoration: "none" }}>
                         <Button onClick={() => onIncrease()}>{btn1}</Button>
                     </Link>
                     <br />
-                    <Link to="./Question2_6">
+                    <Link to="./Question2_6" style={{ textDecoration: "none" }}>
                         <Button onClick={() => onDecrease()}>{btn2}</Button>
                     </Link>
                 </div>

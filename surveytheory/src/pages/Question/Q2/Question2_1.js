@@ -15,9 +15,14 @@ function Question2_1() {
     };
     const question_title =
         "Q1. 다음주까지인 과제... 당신이라면 어떻게 하시겠습니까?";
-    const btn1 = "오늘 끝내버리고 쉬자! 오늘한다"; //30
-    const btn2 =
-        <>과제는 원래 미룰 수 있을 때까지 미루는 거시여~<br/>끝까지 미룬다</> //10
+    const btn1 = "오늘 끝내버리고 쉬자! 오늘 한다"; //30
+    const btn2 = (
+        <>
+            과제는 원래 미룰 수 있을 때까지 미루는 거시여~
+            <br />
+            끝까지 미룬다
+        </>
+    ); //10
     return (
         <div className="Question">
             <div className="container">
@@ -30,11 +35,11 @@ function Question2_1() {
                 </div>
 
                 <div className="buttons">
-                    <Link to="./Question2_2">
+                    <Link to="./Question2_2" style={{ textDecoration: "none" }}>
                         <Button onClick={() => onIncrease()}>{btn1}</Button>
                     </Link>
                     <br />
-                    <Link to="./Question2_2">
+                    <Link to="./Question2_2" style={{ textDecoration: "none" }}>
                         <Button onClick={() => onDecrease()}>{btn2}</Button>
                     </Link>
                 </div>
@@ -42,4 +47,4 @@ function Question2_1() {
         </div>
     );
 }
-export default Question2_1; 
+export default Question2_1;

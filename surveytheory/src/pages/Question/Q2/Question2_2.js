@@ -3,12 +3,12 @@ import "../question.css";
 import Button from "../../../component/Button";
 import { Link } from "react-router-dom";
 import "./Question2_1";
-import { number1} from "./Question2_1";
+import { number1 } from "./Question2_1";
 
 function Question2_2() {
     //0으로 초기값 설정
     const onIncrease = () => {
-        number1.count1+=20; //20
+        number1.count1 += 20; //20
         console.log(number1);
     };
     // const onDecrease = () => {
@@ -35,11 +35,11 @@ function Question2_2() {
                 </div>
 
                 <div className="buttons">
-                    <Link to="./Question2_3">
+                    <Link to="./Question2_3" style={{ textDecoration: "none" }}>
                         <Button onClick={() => onIncrease()}>{btn1}</Button>
                     </Link>
                     <br />
-                    <Link to="./Question2_3">
+                    <Link to="./Question2_3" style={{ textDecoration: "none" }}>
                         <Button onClick={() => onDecrease()}>{btn2}</Button>
                     </Link>
                 </div>
