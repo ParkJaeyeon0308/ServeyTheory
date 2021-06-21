@@ -98,7 +98,7 @@ function NavBar() {
                                 href="/developer_intro"
                                 style={{ color: "rgb(88, 88, 88)" }}
                             >
-                                개발자
+                                DEVELOPER
                             </Nav.Link>
                         </h3>
                         <h3>
