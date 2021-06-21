@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./passChange.css";
 
@@ -39,11 +39,11 @@ export default class PassChange extends React.Component {
             .then((res) => res.json())
             .then((json) => {
                 console.log(json);
-                if (json.count == "1") {
+                if (json.count === "1") {
                     // 아이디 비밀번호가 일치하고
                     if (
-                        this.state.pw1 != " " &&
-                        this.state.pw1 == this.state.pw2
+                        this.state.pw1 !== " " &&
+                        this.state.pw1 === this.state.pw2
                     ) {
                         // 변경후 비밀번호와 비밀번호 확인이 같으면 변경
                         fetch("http://localhost:3001/change2", {
@@ -66,7 +66,7 @@ export default class PassChange extends React.Component {
                         });
                         alert("비밀번호를 성공적으로 변경했습니다.");
                         this.props.history.push("./");
-                    } else if (this.state.pw1 == " ") {
+                    } else if (this.state.pw1 === " ") {
                         this.setState({
                             data: "비밀번호 변경 칸은 비워둘 수 없습니다."
                         });

@@ -152,7 +152,7 @@ function App() {
         customAxios("/ip", callback);
     }, []);
 
-    if (user_id.userid == "novalue") {
+    if (user_id.userid === "novalue") {
         return (
             <>
                 {/* <div className="App">

@@ -1,5 +1,5 @@
 // 세션
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom"; //****
 import { GoogleLogin } from "react-google-login";
 import { Container, Row, Col } from "react-bootstrap";

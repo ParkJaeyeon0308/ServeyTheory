@@ -26,7 +26,7 @@ function NavBar() {
             inText: user_id.user_id
         };
 
-        if (user_id.user_id == "novalue") {
+        if (user_id.user_id === "novalue") {
             alert("먼저 로그인 하세요.");
             history.push("/login");
         } else {
