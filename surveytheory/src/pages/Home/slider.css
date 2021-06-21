@@ -31,30 +31,43 @@ img {
     height: 90vh;
     z-index: 1;
 
-    background-color: rgba(160, 160, 160, 0.5);
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.5),
+        rgba(112, 112, 112, 0.5)
+    );
 }
 
-.content-logo {
+/* .content-logo {
     margin: 5vh 0 0 3vw;
-}
+} */
 
 .main-content-text {
-    margin: 1vh 0 0 4.2vw;
-    text-align: left;
-    font-size: 1.5em;
+    float: right;
+    width: 20vw;
+    margin: 30vh 15vw 0 0;
+    z-index: 2;
+    /*     
+    background-color: white;
+    padding: 50px;
+    border-radius: 1rem; */
+
+    text-align: justify;
+    font-size: 1.3em;
     font-family: "S-CoreDream-3Light";
     font-weight: 600;
 }
 
 .go_to_test {
     float: right;
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: rgb(113, 157, 138);
+    z-index: 2;
 
     border: none;
     border-radius: 5rem 5rem 5rem 5rem;
-    padding: 2vh 4.5vw 2vh 4.5vw;
-    margin: 50vh 4.5vw 0 0;
+    padding: 1.5vh 4vw 1.5vh 4vw;
+    margin: 50vh -12.4vw 0 0;
     box-shadow: rgba(160, 160, 160, 0.5);
 }
 
