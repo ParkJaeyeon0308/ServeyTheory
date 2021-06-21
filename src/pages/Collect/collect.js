@@ -417,7 +417,7 @@ class collect extends React.Component {
                 <a href="/collect/#" class="btn_gotop">
                     <img
                         src="/images/up-arrow.png"
-                        style={{ width: "3vw", height: "5vh" }}
+                        style={{ width: "2.7vw", height: "5vh" }}
                         alt="go to top"
                     />
                 </a>
