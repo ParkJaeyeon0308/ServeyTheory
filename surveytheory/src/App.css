@@ -1,3 +1,4 @@
+/*  header font */
 @font-face {
     font-family: "Binggrae-Bold";
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff")
@@ -6,6 +7,7 @@
     font-style: normal;
 }
 
+/* context font */
 @font-face {
     font-family: "S-CoreDream-3Light";
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
@@ -21,7 +23,12 @@
     font-weight: normal;
     font-style: normal;
 }
+/*  */
 
+/* 404 page font */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
+
+/*  loading page */
 @import "./component/Loading.css";
 
 * {
