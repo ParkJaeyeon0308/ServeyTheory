@@ -11,7 +11,7 @@ import NavBar1, {
     collect7,
     collect8,
     collect9
-} from "../../component/NavBar1";
+} from "../../component/NavBar1"; // NavBar1 -> NavBar
 
 import $ from "jquery";
 window.$ = $;
@@ -85,18 +85,171 @@ class collect extends React.Component {
         const result9 = collect9.survey_title;
         const date9 = collect9.result_date;
 
-        const img_style = {
-            width: "4rem",
-            height: "4rem",
-            borderRadius: "40px 40px 40px 40px"
-        };
-
         return (
             <div className="collect">
-                <div className="test_result">설문 결과</div>
-                <div className="container">
-                    <center>
-                        <article>
+                <div className="result-text">설문결과</div>
+                <div className="result-subtext">
+                    지금까지 테스트한 결과를 모아놓은 공간입니다.
+                </div>
+                <div className="result-box">
+                    <div className="type-name">
+                        {result1}프론트엔드75% 백엔드25%
+                    </div>
+                    <div className="date">{date1}2021-09-08</div>
+                    <button
+                        className="result-more"
+                        onClick={() =>
+                            this.props.history.push({ pathname: resultUrl1 })
+                        }
+                    >
+                        more
+                    </button>
+                    <img
+                        className="result-img"
+                        // src={imgUrl1} 테스트용으로 이미지랑, 타입이름, 날짜 넣은거니 그 부분만 지워서 쓰세용
+                        src="/images/result/type1/web.png"
+                        alt="result-img"
+                    />
+                </div>
+                <div className="result-box">
+                    <div className="type-name">{result2}</div>
+                    <div className="date">{date2}</div>
+                    <button
+                        className="result-more"
+                        onClick={() =>
+                            this.props.history.push({ pathname: resultUrl2 })
+                        }
+                    >
+                        more
+                    </button>
+                    <img
+                        className="result-img"
+                        src={imgUrl2}
+                        alt="result-img"
+                    />
+                </div>
+                <div className="result-box">
+                    <div className="type-name">{result3}</div>
+                    <div className="date">{date3}</div>
+                    <button
+                        className="result-more"
+                        onClick={() =>
+                            this.props.history.push({ pathname: resultUrl3 })
+                        }
+                    >
+                        more
+                    </button>
+                    <img
+                        className="result-img"
+                        src={imgUrl3}
+                        alt="result-img"
+                    />
+                </div>
+                <div className="result-box">
+                    <div className="type-name">{result4}</div>
+                    <div className="date">{date4}</div>
+                    <button
+                        className="result-more"
+                        onClick={() =>
+                            this.props.history.push({ pathname: resultUrl4 })
+                        }
+                    >
+                        more
+                    </button>
+                    <img
+                        className="result-img"
+                        src={imgUrl4}
+                        alt="result-img"
+                    />
+                </div>
+                <div className="result-box">
+                    <div className="type-name">{result5}</div>
+                    <div className="date">{date5}</div>
+                    <button
+                        className="result-more"
+                        onClick={() =>
+                            this.props.history.push({ pathname: resultUrl5 })
+                        }
+                    >
+                        more
+                    </button>
+                    <img
+                        className="result-img"
+                        src={imgUrl5}
+                        alt="result-img"
+                    />
+                </div>
+                <div className="result-box">
+                    <div className="type-name">{result6}</div>
+                    <div className="date">{date6}</div>
+                    <button
+                        className="result-more"
+                        onClick={() =>
+                            this.props.history.push({ pathname: resultUrl6 })
+                        }
+                    >
+                        more
+                    </button>
+                    <img
+                        className="result-img"
+                        src={imgUrl6}
+                        alt="result-img"
+                    />
+                </div>
+                <div className="result-box">
+                    <div className="type-name">{result7}</div>
+                    <div className="date">{date7}</div>
+                    <button
+                        className="result-more"
+                        onClick={() =>
+                            this.props.history.push({ pathname: resultUrl7 })
+                        }
+                    >
+                        more
+                    </button>
+                    <img
+                        className="result-img"
+                        src={imgUrl7}
+                        alt="result-img"
+                    />
+                </div>
+                <div className="result-box">
+                    <div className="type-name">{result8}</div>
+                    <div className="date">{date8}</div>
+                    <button
+                        className="result-more"
+                        onClick={() =>
+                            this.props.history.push({ pathname: resultUrl8 })
+                        }
+                    >
+                        more
+                    </button>
+                    <img
+                        className="result-img"
+                        src={imgUrl8}
+                        alt="result-img"
+                    />
+                </div>
+                <div className="result-box">
+                    <div className="type-name">{result9}</div>
+                    <div className="date">{date9}</div>
+                    <button
+                        className="result-more"
+                        onClick={() =>
+                            this.props.history.push({ pathname: resultUrl9 })
+                        }
+                    >
+                        more
+                    </button>
+                    <img
+                        className="result-img"
+                        src={imgUrl9}
+                        alt="result-img"
+                    />
+                </div>
+
+                {/* 예전 코드야 로직 헷갈릴까봐 남기는거고, 필요없으면 지워두 돼 */}
+                {/* <article>
                             <table>
                                 <tr
                                     onClick={() =>
@@ -106,7 +259,11 @@ class collect extends React.Component {
                                     }
                                 >
                                     <th>
-                                        <img src={imgUrl1} style={img_style} />
+                                        <img
+                                            src={imgUrl1}
+                                            style={img_style}
+                                            alt="result-img"
+                                        />
                                     </th>
                                     <th>{result1}</th>
                                     <th>{date1}</th>
@@ -120,7 +277,11 @@ class collect extends React.Component {
                                     }
                                 >
                                     <th>
-                                        <img src={imgUrl2} style={img_style} />
+                                        <img
+                                            src={imgUrl2}
+                                            style={img_style}
+                                            alt="result-img"
+                                        />
                                     </th>
                                     <th>{result2}</th>
                                     <th>{date2}</th>
@@ -134,7 +295,11 @@ class collect extends React.Component {
                                     }
                                 >
                                     <th>
-                                        <img src={imgUrl3} style={img_style} />
+                                        <img
+                                            src={imgUrl3}
+                                            style={img_style}
+                                            alt="result-img"
+                                        />
                                     </th>
                                     <th>{result3}</th>
                                     <th>{date3}</th>
@@ -148,7 +313,11 @@ class collect extends React.Component {
                                     }
                                 >
                                     <th>
-                                        <img src={imgUrl4} style={img_style} />
+                                        <img
+                                            src={imgUrl4}
+                                            style={img_style}
+                                            alt="result-img"
+                                        />
                                     </th>
                                     <th>{result4}</th>
                                     <th>{date4}</th>
@@ -162,7 +331,11 @@ class collect extends React.Component {
                                     }
                                 >
                                     <th>
-                                        <img src={imgUrl5} style={img_style} />
+                                        <img
+                                            src={imgUrl5}
+                                            style={img_style}
+                                            alt="result-img"
+                                        />
                                     </th>
                                     <th>{result5}</th>
                                     <th>{date5}</th>
@@ -176,7 +349,11 @@ class collect extends React.Component {
                                     }
                                 >
                                     <th>
-                                        <img src={imgUrl6} style={img_style} />
+                                        <img
+                                            src={imgUrl6}
+                                            style={img_style}
+                                            alt="result-img"
+                                        />
                                     </th>
                                     <th>{result6}</th>
                                     <th>{date6}</th>
@@ -190,7 +367,11 @@ class collect extends React.Component {
                                     }
                                 >
                                     <th>
-                                        <img src={imgUrl7} style={img_style} />
+                                        <img
+                                            src={imgUrl7}
+                                            style={img_style}
+                                            alt="result-img"
+                                        />
                                     </th>
                                     <th>{result7}</th>
                                     <th>{date7}</th>
@@ -204,7 +385,11 @@ class collect extends React.Component {
                                     }
                                 >
                                     <th>
-                                        <img src={imgUrl8} style={img_style} />
+                                        <img
+                                            src={imgUrl8}
+                                            style={img_style}
+                                            alt="result-img"
+                                        />
                                     </th>
                                     <th>{result8}</th>
                                     <th>{date8}</th>
@@ -218,19 +403,21 @@ class collect extends React.Component {
                                     }
                                 >
                                     <th>
-                                        <img src={imgUrl9} style={img_style} />
+                                        <img
+                                            src={imgUrl9}
+                                            style={img_style}
+                                            alt="result-img"
+                                        />
                                     </th>
                                     <th>{result9}</th>
                                     <th>{date9}</th>
                                 </tr>
                             </table>
-                        </article>
-                    </center>
-                </div>
+                        </article> */}
                 <a href="/collect/#" class="btn_gotop">
                     <img
-                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDkwLjU0NCA0OTAuNTQ0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNTQ0IDQ5MC41NDQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM2MDdEOEI7IiBkPSJNMTguMDk4LDI3NC4xNTFMMjQ1LjIxMyw0Ny4wMTVsMjI3LjExNSwyMjcuMTM2YzQuMjM3LDQuMDkzLDEwLjk5LDMuOTc1LDE1LjA4My0wLjI2Mg0KCQljMy45OTMtNC4xMzQsMy45OTMtMTAuNjg3LDAtMTQuODIxTDI1Mi43NDQsMjQuNDAxYy00LjE2NS00LjE2NC0xMC45MTctNC4xNjQtMTUuMDgzLDBMMi45OTQsMjU5LjA2OA0KCQljLTQuMDkzLDQuMjM3LTMuOTc1LDEwLjk5LDAuMjYyLDE1LjA4M2M0LjEzNCwzLjk5MiwxMC42ODcsMy45OTIsMTQuODIsMEgxOC4wOTh6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzYwN0Q4QjsiIGQ9Ik0yNTIuNzY1LDIxNi4zOGMtNC4xNjUtNC4xNjQtMTAuOTE3LTQuMTY0LTE1LjA4MywwTDMuMDE2LDQ1MS4wNDcNCgkJYy00LjA5Myw0LjIzNy0zLjk3NiwxMC45OSwwLjI2MiwxNS4wODNjNC4xMzQsMy45OTMsMTAuNjg3LDMuOTkzLDE0LjgyMSwwbDIyNy4xMTUtMjI3LjExNWwyMjcuMTE1LDIyNy4xMzYNCgkJYzQuMjM3LDQuMDkzLDEwLjk5LDMuOTc2LDE1LjA4My0wLjI2MWMzLjk5My00LjEzNCwzLjk5My0xMC42ODgsMC0xNC44MjFMMjUyLjc2NSwyMTYuMzh6Ii8+DQo8L2c+DQo8cGF0aCBkPSJNNDc5Ljg4LDI3Ny4yNjZjLTIuODMxLDAuMDA1LTUuNTQ4LTEuMTE1LTcuNTUyLTMuMTE1TDI0NS4yMTMsNDcuMDE1TDE4LjA5OCwyNzQuMTUxDQoJYy00LjIzNyw0LjA5My0xMC45OSwzLjk3NS0xNS4wODMtMC4yNjJjLTMuOTkyLTQuMTM0LTMuOTkyLTEwLjY4NywwLTE0LjgyTDIzNy42ODIsMjQuNDAxYzQuMTY1LTQuMTY0LDEwLjkxNy00LjE2NCwxNS4wODMsMA0KCWwyMzQuNjY3LDIzNC42NjdjNC4xNTksNC4xNzIsNC4xNDgsMTAuOTI2LTAuMDI0LDE1LjA4NUM0ODUuNDA5LDI3Ni4xNDYsNDgyLjcwMiwyNzcuMjY1LDQ3OS44OCwyNzcuMjY2eiIvPg0KPHBhdGggZD0iTTQ3OS44OCw0NjkuMjY2Yy0yLjgzMSwwLjAwNS01LjU0OC0xLjExNS03LjU1Mi0zLjExNUwyNDUuMjEzLDIzOS4wMTVMMTguMDk4LDQ2Ni4xNTENCgljLTQuMjM3LDQuMDkzLTEwLjk5LDMuOTc2LTE1LjA4My0wLjI2MmMtMy45OTMtNC4xMzQtMy45OTMtMTAuNjg3LDAtMTQuODIxbDIzNC42NjctMjM0LjY2N2M0LjE2NS00LjE2NCwxMC45MTctNC4xNjQsMTUuMDgzLDANCglsMjM0LjY2NywyMzQuNjY3YzQuMTU5LDQuMTcyLDQuMTQ4LDEwLjkyNi0wLjAyNCwxNS4wODVDNDg1LjQwOSw0NjguMTQ2LDQ4Mi43MDIsNDY5LjI2NSw0NzkuODgsNDY5LjI2NnoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"
-                        style={{ width: "5vw", height: "5vh" }}
+                        src="/images/up-arrow.png"
+                        style={{ width: "3vw", height: "5vh" }}
                         alt="go to top"
                     />
                 </a>
