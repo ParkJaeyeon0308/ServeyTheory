@@ -25,7 +25,6 @@ img {
 .main-content {
     display: block;
     position: absolute;
-    /* transform: translateX(50%); */
 
     width: 100vw;
     height: 90vh;
@@ -40,8 +39,8 @@ img {
 
 .main-content-text {
     float: right;
-    width: 30%;
-    margin: 26vh 10vw 0 0;
+    width: 28%;
+    margin: 23vh 8vw 0 0;
     z-index: 2;
 
     background-color: rgba(255, 255, 255, 0.5);
@@ -49,14 +48,15 @@ img {
     border-radius: 1rem;
 
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 1.25em;
     font-family: "S-CoreDream-3Light";
     font-weight: 600;
+    line-height: 1.6em;
 }
 
 .go_to_test {
     float: left;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-family: "S-CoreDream-6Bold";
     font-weight: 600;
     color: rgb(113, 157, 138);
@@ -65,8 +65,7 @@ img {
     border: none;
     border-radius: 0.5rem;
     padding: 1.5vh 4vw 1.5vh 4vw;
-    margin: 10vh 0 0 0;
-    /* margin: 50vh -12.4vw 0 0; */
+    margin: 8vh 0 0 0;
     box-shadow: 0.5rem 0.5rem rgba(113, 157, 138, 0.5);
 }
 
@@ -74,14 +73,4 @@ img {
     color: rgb(255, 230, 171);
     background-color: rgb(113, 157, 138);
     box-shadow: -0.5rem -0.5rem rgba(113, 157, 138, 0.5);
-}
-
-@media (min-width: 1360px) {
-    .main-content-text {
-        font-size: 1em;
-    }
-
-    .go_to_test {
-        font-size: 0.9em;
-    }
 }
