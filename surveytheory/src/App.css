@@ -33,12 +33,14 @@
 html {
     scroll-behavior: smooth;
 
+    /*  페이지 로드 시 fadein */
     animation: fadein 1s;
     -moz-animation: fadein 1s; /* Firefox */
     -webkit-animation: fadein 1s; /* Safari and Chrome */
     -o-animation: fadein 1s; /* Opera */
 }
 
+/*  fadein css */
 @keyframes fadein {
     from {
         opacity: 0;
@@ -74,3 +76,4 @@ html {
         opacity: 1;
     }
 }
+/*  */
