@@ -43,6 +43,11 @@ function Question2_1() {
                         <Button onClick={() => onDecrease()}>{btn2}</Button>
                     </Link>
                 </div>
+                <img
+                    className="mini-logo-question"
+                    src="/images/logo/mini-logo.png"
+                    alt="mini-logo"
+                />
             </div>
         </div>
     );

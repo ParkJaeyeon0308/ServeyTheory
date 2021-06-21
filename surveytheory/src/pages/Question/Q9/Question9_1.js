@@ -67,6 +67,11 @@ function Question9_1() {
                         <Button onClick={() => onPlus4()}>{btn4}</Button>
                     </Link>
                 </div>
+                <img
+                    className="mini-logo-question"
+                    src="/images/logo/mini-logo.png"
+                    alt="mini-logo"
+                />
             </div>
         </div>
     );

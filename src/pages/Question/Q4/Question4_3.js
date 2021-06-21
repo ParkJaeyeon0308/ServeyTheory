@@ -27,6 +27,11 @@ function Question4_3() {
                         <Button>{btn2}</Button>
                     </Link>
                 </div>
+                <img
+                    className="mini-logo-question"
+                    src="/images/logo/mini-logo.png"
+                    alt="mini-logo"
+                />
             </div>
         </div>
     );

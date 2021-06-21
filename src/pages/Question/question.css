@@ -48,3 +48,14 @@ progress::-moz-progress-bar {
     margin-top: 13vh;
     margin-bottom: 7vh;
 }
+
+.mini-logo-question {
+    position: absolute;
+    width: 5vw;
+    height: 8.5vh;
+    bottom: 6vh;
+    right: 3.5vw;
+
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* IE8 및 그 이하 버전용 */
+}
