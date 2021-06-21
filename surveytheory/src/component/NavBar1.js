@@ -286,8 +286,8 @@ function NavBar1() {
                             className="logo"
                             src="/images/logo/logo.png"
                             style={{
-                                width: 300,
-                                height: 115,
+                                width: 245,
+                                height: 90,
                                 marginLeft: "2vw"
                             }}
                             alt="logo"
