@@ -87,17 +87,17 @@ class collect extends React.Component {
 
         return (
             <div className="collect">
-                <div className="result-text">설문결과</div>
-                <div className="result-subtext">
+                <div className="collect-text">설문결과</div>
+                <div className="collect-subtext">
                     지금까지 테스트한 결과를 모아놓은 공간입니다.
                 </div>
-                <div className="result-box">
-                    <div className="type-name">
+                <div className="collect-box">
+                    <div className="collect-type-name">
                         {result1}프론트엔드75% 백엔드25%
                     </div>
-                    <div className="date">{date1}2021-09-08</div>
+                    <div className="collect-date">{date1}2021-09-08</div>
                     <button
-                        className="result-more"
+                        className="collect-result-more"
                         onClick={() =>
                             this.props.history.push({ pathname: resultUrl1 })
                         }
@@ -105,17 +105,17 @@ class collect extends React.Component {
                         more
                     </button>
                     <img
-                        className="result-img"
+                        className="collect-result-img"
                         // src={imgUrl1} 테스트용으로 이미지랑, 타입이름, 날짜 넣은거니 그 부분만 지워서 쓰세용
                         src="/images/result/type1/web.png"
-                        alt="result-img"
+                        alt="collect-result-img"
                     />
                 </div>
-                <div className="result-box">
-                    <div className="type-name">{result2}</div>
-                    <div className="date">{date2}</div>
+                <div className="collect-box">
+                    <div className="collect-type-name">{result2}</div>
+                    <div className="collect-date">{date2}</div>
                     <button
-                        className="result-more"
+                        className="collect-result-more"
                         onClick={() =>
                             this.props.history.push({ pathname: resultUrl2 })
                         }
@@ -123,16 +123,16 @@ class collect extends React.Component {
                         more
                     </button>
                     <img
-                        className="result-img"
+                        className="collect-result-img"
                         src={imgUrl2}
-                        alt="result-img"
+                        alt="collect-result-img"
                     />
                 </div>
-                <div className="result-box">
-                    <div className="type-name">{result3}</div>
-                    <div className="date">{date3}</div>
+                <div className="collect-box">
+                    <div className="collect-type-name">{result3}</div>
+                    <div className="collect-date">{date3}</div>
                     <button
-                        className="result-more"
+                        className="collect-result-more"
                         onClick={() =>
                             this.props.history.push({ pathname: resultUrl3 })
                         }
@@ -140,16 +140,16 @@ class collect extends React.Component {
                         more
                     </button>
                     <img
-                        className="result-img"
+                        className="collect-result-img"
                         src={imgUrl3}
-                        alt="result-img"
+                        alt="collect-result-img"
                     />
                 </div>
-                <div className="result-box">
-                    <div className="type-name">{result4}</div>
-                    <div className="date">{date4}</div>
+                <div className="collect-box">
+                    <div className="collect-type-name">{result4}</div>
+                    <div className="collect-date">{date4}</div>
                     <button
-                        className="result-more"
+                        className="collect-result-more"
                         onClick={() =>
                             this.props.history.push({ pathname: resultUrl4 })
                         }
@@ -157,16 +157,16 @@ class collect extends React.Component {
                         more
                     </button>
                     <img
-                        className="result-img"
+                        className="collect-result-img"
                         src={imgUrl4}
-                        alt="result-img"
+                        alt="collect-result-img"
                     />
                 </div>
-                <div className="result-box">
-                    <div className="type-name">{result5}</div>
-                    <div className="date">{date5}</div>
+                <div className="collect-box">
+                    <div className="collect-type-name">{result5}</div>
+                    <div className="collect-date">{date5}</div>
                     <button
-                        className="result-more"
+                        className="collect-result-more"
                         onClick={() =>
                             this.props.history.push({ pathname: resultUrl5 })
                         }
@@ -174,16 +174,16 @@ class collect extends React.Component {
                         more
                     </button>
                     <img
-                        className="result-img"
+                        className="collect-result-img"
                         src={imgUrl5}
-                        alt="result-img"
+                        alt="collect-result-img"
                     />
                 </div>
-                <div className="result-box">
-                    <div className="type-name">{result6}</div>
-                    <div className="date">{date6}</div>
+                <div className="collect-box">
+                    <div className="collect-type-name">{result6}</div>
+                    <div className="collect-date">{date6}</div>
                     <button
-                        className="result-more"
+                        className="collect-result-more"
                         onClick={() =>
                             this.props.history.push({ pathname: resultUrl6 })
                         }
@@ -191,16 +191,16 @@ class collect extends React.Component {
                         more
                     </button>
                     <img
-                        className="result-img"
+                        className="collect-result-img"
                         src={imgUrl6}
-                        alt="result-img"
+                        alt="collect-result-img"
                     />
                 </div>
-                <div className="result-box">
-                    <div className="type-name">{result7}</div>
-                    <div className="date">{date7}</div>
+                <div className="collect-box">
+                    <div className="collect-type-name">{result7}</div>
+                    <div className="collect-date">{date7}</div>
                     <button
-                        className="result-more"
+                        className="collect-result-more"
                         onClick={() =>
                             this.props.history.push({ pathname: resultUrl7 })
                         }
@@ -208,16 +208,16 @@ class collect extends React.Component {
                         more
                     </button>
                     <img
-                        className="result-img"
+                        className="collect-result-img"
                         src={imgUrl7}
-                        alt="result-img"
+                        alt="collect-result-img"
                     />
                 </div>
-                <div className="result-box">
-                    <div className="type-name">{result8}</div>
-                    <div className="date">{date8}</div>
+                <div className="collect-box">
+                    <div className="collect-type-name">{result8}</div>
+                    <div className="collect-date">{date8}</div>
                     <button
-                        className="result-more"
+                        className="collect-result-more"
                         onClick={() =>
                             this.props.history.push({ pathname: resultUrl8 })
                         }
@@ -225,16 +225,16 @@ class collect extends React.Component {
                         more
                     </button>
                     <img
-                        className="result-img"
+                        className="collect-result-img"
                         src={imgUrl8}
-                        alt="result-img"
+                        alt="collect-result-img"
                     />
                 </div>
-                <div className="result-box">
-                    <div className="type-name">{result9}</div>
-                    <div className="date">{date9}</div>
+                <div className="collect-box">
+                    <div className="collect-type-name">{result9}</div>
+                    <div className="collect-date">{date9}</div>
                     <button
-                        className="result-more"
+                        className="collect-result-more"
                         onClick={() =>
                             this.props.history.push({ pathname: resultUrl9 })
                         }
@@ -242,9 +242,9 @@ class collect extends React.Component {
                         more
                     </button>
                     <img
-                        className="result-img"
+                        className="collect-result-img"
                         src={imgUrl9}
-                        alt="result-img"
+                        alt="collect-result-img"
                     />
                 </div>
 
@@ -262,7 +262,7 @@ class collect extends React.Component {
                                         <img
                                             src={imgUrl1}
                                             style={img_style}
-                                            alt="result-img"
+                                            alt="collect-result-img"
                                         />
                                     </th>
                                     <th>{result1}</th>
@@ -280,7 +280,7 @@ class collect extends React.Component {
                                         <img
                                             src={imgUrl2}
                                             style={img_style}
-                                            alt="result-img"
+                                            alt="collect-result-img"
                                         />
                                     </th>
                                     <th>{result2}</th>
@@ -298,7 +298,7 @@ class collect extends React.Component {
                                         <img
                                             src={imgUrl3}
                                             style={img_style}
-                                            alt="result-img"
+                                            alt="collect-result-img"
                                         />
                                     </th>
                                     <th>{result3}</th>
@@ -316,7 +316,7 @@ class collect extends React.Component {
                                         <img
                                             src={imgUrl4}
                                             style={img_style}
-                                            alt="result-img"
+                                            alt="collect-result-img"
                                         />
                                     </th>
                                     <th>{result4}</th>
@@ -334,7 +334,7 @@ class collect extends React.Component {
                                         <img
                                             src={imgUrl5}
                                             style={img_style}
-                                            alt="result-img"
+                                            alt="collect-result-img"
                                         />
                                     </th>
                                     <th>{result5}</th>
@@ -352,7 +352,7 @@ class collect extends React.Component {
                                         <img
                                             src={imgUrl6}
                                             style={img_style}
-                                            alt="result-img"
+                                            alt="collect-result-img"
                                         />
                                     </th>
                                     <th>{result6}</th>
@@ -370,7 +370,7 @@ class collect extends React.Component {
                                         <img
                                             src={imgUrl7}
                                             style={img_style}
-                                            alt="result-img"
+                                            alt="collect-result-img"
                                         />
                                     </th>
                                     <th>{result7}</th>
@@ -388,7 +388,7 @@ class collect extends React.Component {
                                         <img
                                             src={imgUrl8}
                                             style={img_style}
-                                            alt="result-img"
+                                            alt="collect-result-img"
                                         />
                                     </th>
                                     <th>{result8}</th>
@@ -406,7 +406,7 @@ class collect extends React.Component {
                                         <img
                                             src={imgUrl9}
                                             style={img_style}
-                                            alt="result-img"
+                                            alt="collect-result-img"
                                         />
                                     </th>
                                     <th>{result9}</th>
