@@ -1,8 +1,17 @@
 import React from "react";
 import "../result.css";
 
+import $ from "jquery";
+window.$ = $;
+
 class result2_2 extends React.Component {
     render() {
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".loader").delay(3000).fadeOut(1500);
+            });
+        });
+
         const subject_name = this.props.subject_name;
         const imgUrl = "/images/result/type2/3month.png";
         const sub_context = this.props.sub_context;
@@ -11,6 +20,20 @@ class result2_2 extends React.Component {
         const mainBtn = "메인으로";
         return (
             <div className="result">
+                {" "}
+                <div class="loader">
+                    <div id="container">
+                        <img
+                            className="loading-logo"
+                            src="/images/logo/mini-logo.png"
+                            alt="mini-logo"
+                        />
+                        <div id="one"></div>
+                        <div id="two"></div>
+                        <div id="three"></div>
+                        <span id="loading-text">LOADING</span>
+                    </div>
+                </div>
                 <div className="container">
                     <div
                         className="subject_name"

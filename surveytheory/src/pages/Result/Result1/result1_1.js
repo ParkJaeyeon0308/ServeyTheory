@@ -4,6 +4,9 @@ import "../result.css";
 import Login, { user_id } from "../../Login/login";
 import { number1, number2 } from "../../Question/Q1/Question1_1";
 
+import $ from "jquery";
+window.$ = $;
+
 export default class result1_1 extends React.Component {
     constructor(props) {
         super(props);
@@ -46,6 +49,12 @@ export default class result1_1 extends React.Component {
     };
 
     render() {
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".loader").delay(3000).fadeOut(1500);
+            });
+        });
+
         const subject_name = this.props.subject_name;
         const imgUrl = "/images/result/type1/web.png";
         const sub_context = this.props.sub_context;
@@ -54,6 +63,19 @@ export default class result1_1 extends React.Component {
         const mainBtn = "메인으로";
         return (
             <div className="result">
+                <div class="loader">
+                    <div id="container">
+                        <img
+                            className="loading-logo"
+                            src="/images/logo/mini-logo.png"
+                            alt="mini-logo"
+                        />
+                        <div id="one"></div>
+                        <div id="two"></div>
+                        <div id="three"></div>
+                        <span id="loading-text">LOADING</span>
+                    </div>
+                </div>
                 <div className="container">
                     <div
                         className="subject_name"
