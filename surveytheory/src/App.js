@@ -134,6 +134,8 @@ import Survey from "./pages/Survey/survey";
 import Collect from "./pages/Collect/collect";
 import Developer_intro from "./pages/Developer_intro/developer_intro";
 
+import NotFound from "./error/NotFound";
+
 import customAxios from "./customAxios";
 
 // 여기서 페이지 이동을 담당
@@ -296,6 +298,8 @@ function App() {
                             path="/developer_intro"
                             component={Developer_intro}
                         />
+
+                        <Route path={"*"} component={NotFound} />
                     </Switch>
                 </Router>
             </>
@@ -439,6 +443,8 @@ function App() {
                             path="/developer_intro"
                             component={Developer_intro}
                         />
+
+                        <Route path={"*"} component={NotFound} />
                     </Switch>
                 </Router>
             </>

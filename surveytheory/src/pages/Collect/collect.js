@@ -93,7 +93,7 @@ class collect extends React.Component {
 
         return (
             <div className="collect">
-                <div className="test_result">테스트 결과</div>
+                <div className="test_result">설문 결과</div>
                 <div className="container">
                     <center>
                         <article>
