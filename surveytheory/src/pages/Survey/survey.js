@@ -209,8 +209,8 @@ function Survey() {
             </div>
             <a href="/survey/" class="btn_gotop">
                 <img
-                    src="/images/up_arrow.png"
-                    style={{ width: "5vw", height: "5vh" }}
+                    src="/images/up-arrow.png"
+                    style={{ width: "2.7vw", height: "5vh" }}
                     alt="go to top"
                 />
             </a>
