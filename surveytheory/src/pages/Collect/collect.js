@@ -30,6 +30,10 @@ class collect extends React.Component {
             return false;
         });
 
+        const handleImgError = (e) => {
+            e.target.src = "/images/default.jpg";
+        };
+
         const resultUrl1 = "/result" + collect1.result_url;
         const imgUrl1 =
             "/images/box-img/img2_" + collect1.result_url.substr(0, 1) + ".png"; // url  = 1_1 형식
@@ -87,19 +91,6 @@ class collect extends React.Component {
 
         return (
             <div className="collect">
-                <div class="loader">
-                    <div id="container">
-                        <img
-                            className="loading-logo"
-                            src="/images/logo/mini-logo.png"
-                            alt="mini-logo"
-                        />
-                        <div id="one"></div>
-                        <div id="two"></div>
-                        <div id="three"></div>
-                        <span id="loading-text">LOADING</span>
-                    </div>
-                </div>
                 <div className="collect-text">설문결과</div>
                 <div className="collect-subtext">
                     지금까지 테스트한 결과를 모아놓은 공간입니다.
@@ -122,6 +113,7 @@ class collect extends React.Component {
                         // src={imgUrl1} 테스트용으로 이미지랑, 타입이름, 날짜 넣은거니 그 부분만 지워서 쓰세용
                         src="/images/result/type1/web.png"
                         alt="collect-result-img"
+                        onError={handleImgError}
                     />
                 </div>
                 <div className="collect-box">
@@ -139,6 +131,7 @@ class collect extends React.Component {
                         className="collect-result-img"
                         src={imgUrl2}
                         alt="collect-result-img"
+                        onError={handleImgError}
                     />
                 </div>
                 <div className="collect-box">
@@ -156,6 +149,7 @@ class collect extends React.Component {
                         className="collect-result-img"
                         src={imgUrl3}
                         alt="collect-result-img"
+                        onError={handleImgError}
                     />
                 </div>
                 <div className="collect-box">
@@ -173,6 +167,7 @@ class collect extends React.Component {
                         className="collect-result-img"
                         src={imgUrl4}
                         alt="collect-result-img"
+                        onError={handleImgError}
                     />
                 </div>
                 <div className="collect-box">
@@ -190,6 +185,7 @@ class collect extends React.Component {
                         className="collect-result-img"
                         src={imgUrl5}
                         alt="collect-result-img"
+                        onError={handleImgError}
                     />
                 </div>
                 <div className="collect-box">
@@ -207,6 +203,7 @@ class collect extends React.Component {
                         className="collect-result-img"
                         src={imgUrl6}
                         alt="collect-result-img"
+                        onError={handleImgError}
                     />
                 </div>
                 <div className="collect-box">
@@ -224,6 +221,7 @@ class collect extends React.Component {
                         className="collect-result-img"
                         src={imgUrl7}
                         alt="collect-result-img"
+                        onError={handleImgError}
                     />
                 </div>
                 <div className="collect-box">
@@ -241,6 +239,7 @@ class collect extends React.Component {
                         className="collect-result-img"
                         src={imgUrl8}
                         alt="collect-result-img"
+                        onError={handleImgError}
                     />
                 </div>
                 <div className="collect-box">
@@ -258,6 +257,7 @@ class collect extends React.Component {
                         className="collect-result-img"
                         src={imgUrl9}
                         alt="collect-result-img"
+                        onError={handleImgError}
                     />
                 </div>
 
