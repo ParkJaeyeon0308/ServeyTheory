@@ -294,6 +294,7 @@ function App() {
                         <Route path="/result9_4" component={R9_4} />
 
                         <Route path="/survey" component={Survey} />
+                        <Route path="/result" component={Collect} />
                         <Route path="/collect" component={Collect} />
                         <Route
                             path="/developer_intro"
@@ -310,7 +311,7 @@ function App() {
         return (
             <>
                 <Router>
-                    <NavBar1 />
+                    <NavBar />
                     <Switch>
                         <Route path="/" exact component={Home} />
                         <Route path="/login" exact component={Login} />
@@ -440,6 +441,7 @@ function App() {
                         <Route path="/result9_4" component={R9_4} />
 
                         <Route path="/survey" component={Survey} />
+                        <Route path="/result" component={Collect} />
                         <Route path="/collect" component={Collect} />
                         <Route
                             path="/developer_intro"
