@@ -1,49 +1,48 @@
 import React from "react";
 import "../result.css";
-import Login, {user_id} from "../../Login/login";
+import Login, { user_id } from "../../Login/login";
 
 class result1_2 extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
-            subject_name:"웹, 앱 뭐가 더 잘 맞을까?",
-            survey_url:"1_2"
+            subject_name: "웹, 앱 뭐가 더 잘 맞을까?",
+            survey_url: "1_2"
         };
     }
 
     onclick = () => {
-        const textbox = { 
+        const textbox = {
             inText: user_id.user_id,
             inText1: this.state.subject_name,
             inText2: this.state.survey_url
-          };
+        };
 
-        if(user_id.user_id != 'novalue'){ // id 값이 있으면
-            fetch("http://localhost:3001/save", { // server.js의 login 메소드 사용
-            method: "post", //통신방법
-            headers: {
-              "content-type": "application/json",
-            },
-            body: JSON.stringify(textbox) // 위에 정의한 textbox
-          })
-            .then((res) => res.json())
-            .then((json) => {
-              console.log(json);
-              this.setState({
-                  user_id: json.user_id,
-                  subject_name: json.subject_name,
-                  survey_url: json.survey_url
-              });
-            });
-            alert('결과가 저장되었습니다.')
+        if (user_id.user_id != "novalue") {
+            // id 값이 있으면
+            fetch("http://localhost:3001/save", {
+                // server.js의 login 메소드 사용
+                method: "post", //통신방법
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(textbox) // 위에 정의한 textbox
+            })
+                .then((res) => res.json())
+                .then((json) => {
+                    console.log(json);
+                    this.setState({
+                        user_id: json.user_id,
+                        subject_name: json.subject_name,
+                        survey_url: json.survey_url
+                    });
+                });
+            alert("결과가 저장되었습니다.");
         } else {
-            alert('먼저 로그인하세요.')
-            this.props.history.push('./login')
+            alert("먼저 로그인하세요.");
+            this.props.history.push("./login");
         }
-
-        
-      };
+    };
 
     render() {
         const subject_name = this.props.subject_name;
@@ -68,10 +67,7 @@ class result1_2 extends React.Component {
                     ></div>
 
                     <div className="buttons">
-                        <button
-                            className="save_btn"
-                            onClick={this.onclick}
-                        >
+                        <button className="save_btn" onClick={this.onclick}>
                             {saveBtn}
                         </button>
                         <a href="/#">
@@ -93,7 +89,7 @@ class result1_2 extends React.Component {
 result1_2.defaultProps = {
     subject_name: "웹, 앱 뭐가 더 잘 맞을까?",
     sub_context:
-        "앱이란? 애플리케이션의 준말로 설치하여 사용하는 프로그램이에요. 대표적으로 카카오톡과 같은 어플이 있고, 실행속도가 빠르며 접근성이 높은 편이에요.  </br> 앱을 더 많이 사용하고 휴대폰을 사랑하는 당신은 앱 개발을 할 때 더 흥미를 느낄 수 있을거예요!"
+        "앱이란? <span>애플리케이션</span>의 준말로 설치하여 사용하는 프로그램이에요. 대표적으로 카카오톡과 같은 어플이 있고, 실행속도가 빠르며 접근성이 높은 편이에요. </br> 앱을 더 많이 사용하고 휴대폰을 사랑하는 당신은 앱 개발을 할 때 더 흥미를 느낄 수 있을거예요!"
 };
 
 export default result1_2;
