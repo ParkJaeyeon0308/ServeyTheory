@@ -1,5 +1,5 @@
 // 세션
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom"; //****
 import { GoogleLogin } from "react-google-login";
 import { Container, Row, Col } from "react-bootstrap";
@@ -84,7 +84,7 @@ export default class Login extends React.Component {
                         <Row>
                             <Col className="row1">
                                 <div className="input">
-                                    <h4 className="text1"> LOGIN </h4>
+                                    <div className="login-text"> 로그인 </div>
                                     <GoogleLogin
                                         className="googleLogin"
                                         clientId={clientId}
@@ -108,7 +108,7 @@ export default class Login extends React.Component {
                                         type="password"
                                         id="inputPw"
                                         className="form-control"
-                                        placeholder="비밀번호"
+                                        placeholder="PW"
                                         name="pw"
                                         style={{
                                             marginBottom: 20
@@ -117,16 +117,9 @@ export default class Login extends React.Component {
                                     />
 
                                     <button
+                                        id="go_to_login"
                                         className="btn btn-lg btn-block"
                                         type="button"
-                                        style={{
-                                            backgroundColor:
-                                                "rgb(255, 230, 171)",
-                                            color: "rgb(24, 70, 83)",
-                                            fontSize: "1.1rem",
-                                            padding: "1rem",
-                                            marginTop: "2rem"
-                                        }}
                                         onClick={this.onclick}
                                     >
                                         {" "}
@@ -144,18 +137,14 @@ export default class Login extends React.Component {
                                     <p>계정이 없으신가요?</p>
                                     <p>지금 바로 회원가입 하세요!</p>
                                 </div>
-                                <Link to="./SignUp">
+                                <Link
+                                    to="./SignUp"
+                                    style={{ textDecoration: "none" }}
+                                >
                                     <button
+                                        id="go_to_signup"
                                         className="btn btn-lg btn-block"
                                         type="button"
-                                        style={{
-                                            backgroundColor: "white",
-                                            color: "rgb(24, 70, 83)",
-                                            fontSize: "1.1em",
-                                            marginTop: "2rem",
-                                            width: "20rem",
-                                            padding: "1rem"
-                                        }}
                                         onClick={this.handleOnClick}
                                     >
                                         {" "}

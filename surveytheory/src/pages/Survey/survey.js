@@ -6,6 +6,10 @@ import $ from "jquery";
 window.$ = $;
 
 function Survey() {
+    function handleClick(e) {
+        window.scrollTo(0, 0);
+    }
+
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $(".btn_gotop").show();
@@ -207,13 +211,13 @@ function Survey() {
                     <div className="hashtag-right">#열정 #성장 #협동</div>
                 </Link>
             </div>
-            <a href="/survey" class="btn_gotop">
+            <div class="btn_gotop" onClick={handleClick}>
                 <img
                     src="/images/up-arrow.png"
                     style={{ width: "2.7vw", height: "5vh" }}
                     alt="go to top"
                 />
-            </a>
+            </div>
         </div>
     );
 }

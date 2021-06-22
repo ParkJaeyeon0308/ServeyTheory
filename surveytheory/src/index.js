@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// import Loading from "./pages/Loading/loading";
+import Loading from "./pages/Loading/loading";
 
 ReactDOM.render(
     <div>
         <App />
-        {/* <Loading /> */}
+        <Loading />
     </div>,
     document.getElementById("root")
 );

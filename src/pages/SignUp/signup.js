@@ -33,7 +33,7 @@ export default class SignUp extends React.Component {
 
         // 중복이면 중복이라고 출력 ( 현재 회원 db에서 id가 존재하는 행이 1 이상이면 )
         if (
-            this.state.data ===
+            this.state.data ==
             "아이디가 중복되었습니다. 다른 아이디로 가입해주세요!"
         ) {
             this.setState({
@@ -41,13 +41,13 @@ export default class SignUp extends React.Component {
             });
         }
         // 비밀번호가 다르면 다르다고 출력 ( 비밀번호와 비밀번호 확인이 다르면 )
-        else if (this.state.pw !== this.state.pw2) {
+        else if (this.state.pw != this.state.pw2) {
             this.setState({
-                data2: "비밀번호와 비밀번호 확인란이 다릅니다." // 유효성 검사 메시지
+                data2: "비밀번호가 일치하지 않습니다." // 유효성 검사 메시지
             });
         }
         // 중복체크 안했으면 하라고 출력 ( 중복체크를 할 시에는 data에 값이 들어가있음 )
-        else if (this.state.data === " ") {
+        else if (this.state.data == " ") {
             this.setState({
                 data3: "아이디 중복확인을 해주세요." // 유효성 검사 메시지
             });

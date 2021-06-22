@@ -11,7 +11,7 @@ export default function Loading() {
 
     return (
         <div>
-            <div class="loader">
+            <div className="loader">
                 <div id="container">
                     <img
                         className="loading-logo"
