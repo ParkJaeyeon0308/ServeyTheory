@@ -24,9 +24,9 @@ export default class Home extends Component {
             <div className="home">
                 <div className="main-content">
                     <div className="main-content-text">
-                        설문학개론은 다양한 주제를 기반으로 한 총 9개의
-                        심리테스트가 있고, 테스트를 통해 맞춤 통계를 분석해주는
-                        웹 사이트입니다 :-)
+                        <span>설문학개론</span>은 다양한 주제를 기반으로 한 총
+                        9개의 심리테스트가 있고, 테스트를 통해 맞춤 통계를
+                        분석해주는 웹 사이트입니다 :-)
                         <button
                             className="go_to_test"
                             onClick={() => this.props.history.push("/survey")}
