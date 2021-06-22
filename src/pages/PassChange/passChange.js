@@ -103,41 +103,45 @@ export default class PassChange extends React.Component {
                             </div>
                             <input
                                 type="id"
+                                // id="inputid"
                                 className="form-control"
                                 placeholder="ID"
                                 name="id"
-                                id="id_inputs-change"
+                                id="id_inputs-change" // id_inputs -> id_inputs-change
                                 onChange={this.handleChange}
                             />
                             <input
                                 type="password"
+                                // id="inputPW"
                                 className="form-control"
                                 placeholder="기존 비밀번호"
                                 name="pw"
-                                id="pw_inputs-change"
+                                id="pw_inputs-change" // pw_inputs -> pw_inputs-change
                                 onChange={this.handleChange}
                             />
                             <input
                                 type="password"
+                                // id="inputNewPW"
                                 className="form-control"
                                 placeholder="새 비밀번호"
                                 name="pw1"
-                                id="pw_inputs-change"
+                                id="pw_inputs-change" // pw_inputs -> pw_inputs-change
                                 onChange={this.handleChange}
                             />
                             <input
                                 type="password"
+                                // id="inputPWcheck"
                                 className="form-control"
                                 placeholder="비밀번호 확인"
                                 name="pw2"
-                                id="pw_inputs-change"
+                                id="pw_inputs-change" // pw_inputs -> pw_inputs-change
                                 onChange={this.handleChange}
                             />
                             <h4>{this.state.data}</h4>
                             <button
                                 className="btn btn-lg btn-block"
                                 type="submit"
-                                id="change-btn"
+                                id="change-btn" // btn2 -> change-btn
                                 onClick={this.onclick}
                             >
                                 확인

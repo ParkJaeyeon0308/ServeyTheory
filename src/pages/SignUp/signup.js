@@ -43,7 +43,7 @@ export default class SignUp extends React.Component {
         // 비밀번호가 다르면 다르다고 출력 ( 비밀번호와 비밀번호 확인이 다르면 )
         else if (this.state.pw !== this.state.pw2) {
             this.setState({
-                data2: "비밀번호가 일치하지 않습니다." // 유효성 검사 메시지
+                data2: "비밀번호와 비밀번호 확인란이 다릅니다." // 유효성 검사 메시지
             });
         }
         // 중복체크 안했으면 하라고 출력 ( 중복체크를 할 시에는 data에 값이 들어가있음 )
@@ -137,7 +137,7 @@ export default class SignUp extends React.Component {
                                         placeholder="아이디"
                                         aria-label="아이디"
                                         aria-describedby="basic-addon2"
-                                        name="id"
+                                        name="text" // id -> text
                                         onChange={this.handleChange}
                                     />
                                     <InputGroup.Append>
@@ -154,22 +154,23 @@ export default class SignUp extends React.Component {
                                     {this.state.data}
                                 </div>
                                 <input
-                                    type="password"
+                                    type="text" // password -> text
                                     id="pw_inputs"
                                     className="form-control"
                                     placeholder="비밀번호"
                                     name="pw"
+                                    // id="inputPW"
                                     onChange={this.handleChange}
                                 />
                                 <input
-                                    type="password"
+                                    type="text" // password -> text
                                     id="pw_inputs"
                                     className="form-control"
                                     placeholder="비밀번호 확인"
                                     name="pw2"
+                                    // id="inputPWcheck"
                                     onChange={this.handleChange}
                                 />
-
                                 <div className="confirm-ment-middle">
                                     {this.state.data2}
                                 </div>
@@ -182,7 +183,6 @@ export default class SignUp extends React.Component {
                                 >
                                     확인
                                 </button>
-
                                 <div className="confirm-ment-bottom">
                                     {this.state.data3}
                                 </div>

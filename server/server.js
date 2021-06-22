@@ -150,13 +150,13 @@ app.post("/save", (req, res) => { // 회원결과 저장하는 메소드
 
 app.post("/collect", (req, res) => { // 회원 결과를 구하는 메소드
     const user_id = req.body.inText;
-    connection.query("SELECT survey_title, result_url, result_date  from result_tb where user_id = ?", [user_id],
-    function(err, rows, fields){
+    connection.query("SELECT survey_title, result_url, substring(result_date, 1, 10) as result_date  from result_tb where user_id = ? order by result_date desc", [user_id],
+    function(err, result, fields){
         if (err){
             console.log("결과 데이터 가져오기 실패");
         } else {
-            console.log(rows[0])
-            res.send(rows[0])
+            console.log(result)
+            res.send(result)
         }
     })
 })
