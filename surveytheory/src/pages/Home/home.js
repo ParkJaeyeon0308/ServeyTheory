@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./slider.css";
+import { Link } from "react-router-dom";
 
 export default class Home extends Component {
     render() {
@@ -27,90 +28,69 @@ export default class Home extends Component {
                         <span>설문학개론</span>은 다양한 주제를 기반으로 한 총
                         9개의 심리테스트가 있고, 테스트를 통해 맞춤 통계를
                         분석해주는 웹 사이트입니다 :-)
-                        <button
-                            className="go_to_test"
-                            onClick={() => this.props.history.push("/survey")}
-                        >
-                            START
-                        </button>
+                        <Link to="/survey" style={{ textDecoration: "none" }}>
+                            <div className="go_to_test">START</div>
+                        </Link>
                     </div>
                 </div>
                 <Slider {...settings} className="slide">
-                    <div
-                        onClick={() => this.props.history.push("/Question1_1")}
-                    >
+                    <div>
                         <img
                             src="/images/slider-img/img1_1.png"
                             alt="app vs web"
                             style={img_style}
                         />
                     </div>
-                    <div
-                        onClick={() => this.props.history.push("/Question2_1")}
-                    >
+                    <div>
                         <img
                             src="/images/slider-img/img1_2.png"
                             alt="3 month project"
                             style={img_style}
                         />
                     </div>
-                    <div
-                        onClick={() => this.props.history.push("/Question3_1")}
-                    >
+                    <div>
                         <img
                             src="/images/slider-img/img1_3.png"
                             alt="mental grade"
                             style={img_style}
                         />
                     </div>
-                    <div
-                        onClick={() => this.props.history.push("/Question4_1")}
-                    >
+                    <div>
                         <img
                             src="/images/slider-img/img1_4.png"
                             alt="rectal mbti"
                             style={img_style}
                         />
                     </div>
-                    <div
-                        onClick={() => this.props.history.push("/Question5_1")}
-                    >
+                    <div>
                         <img
                             src="/images/slider-img/img1_5.png"
                             alt="a few years developer mined"
                             style={img_style}
                         />
                     </div>
-                    <div
-                        onClick={() => this.props.history.push("/Question6_1")}
-                    >
+                    <div>
                         <img
                             src="/images/slider-img/img1_6.png"
                             alt="software? solution? design?"
                             style={img_style}
                         />
                     </div>
-                    <div
-                        onClick={() => this.props.history.push("/Question7_1")}
-                    >
+                    <div>
                         <img
                             src="/images/slider-img/img1_7.png"
                             alt="server dev vs front dev"
                             style={img_style}
                         />
                     </div>
-                    <div
-                        onClick={() => this.props.history.push("/Question8_1")}
-                    >
+                    <div>
                         <img
                             src="/images/slider-img/img1_8.png"
                             alt="programming languages"
                             style={img_style}
                         />
                     </div>
-                    <div
-                        onClick={() => this.props.history.push("/Question9_1")}
-                    >
+                    <div>
                         <img
                             src="/images/slider-img/img1_9.png"
                             alt="leader vs follower"
