@@ -17,6 +17,10 @@ import $ from "jquery";
 window.$ = $;
 
 class collect extends React.Component {
+    handleClick(e) {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {
@@ -427,13 +431,13 @@ class collect extends React.Component {
                                 </tr>
                             </table>
                         </article> */}
-                <a href="/collect" class="btn_gotop">
+                <div class="btn_gotop" onClick={this.handleClick}>
                     <img
                         src="/images/up-arrow.png"
                         style={{ width: "2.7vw", height: "5vh" }}
                         alt="go to top"
                     />
-                </a>
+                </div>
             </div>
         );
     }
