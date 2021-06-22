@@ -5,7 +5,7 @@ import { GoogleLogin } from "react-google-login";
 import { Container, Row, Col } from "react-bootstrap";
 import "./login.css";
 
-export let user_id = { user_id: "novalue" };
+export let user_id = { user_id: "mirim" };
 
 // 커밋 테스트
 const clientId =
