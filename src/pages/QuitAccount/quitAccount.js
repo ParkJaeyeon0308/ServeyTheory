@@ -49,7 +49,7 @@ export default class QuitAccount extends React.Component {
             .then((res) => res.json())
             .then((json) => {
                 console.log(json);
-                if (json.count === "1") {
+                if (json.count == "1") {
                     // 아이디 비밀번호가 일치하면 ( 일치하는 행이 1개이면 )
                     fetch("http://localhost:3001/withdraw2", {
                         // withdraw2 메소드 ( 회원정보 삭제 )

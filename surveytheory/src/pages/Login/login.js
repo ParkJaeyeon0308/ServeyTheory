@@ -45,7 +45,7 @@ export default class Login extends React.Component {
             .then((res) => res.json())
             .then((json) => {
                 console.log(json);
-                if (json.count === "1") {
+                if (json.count == "1") {
                     // count는 db에서 출력되는 컬럼명
                     this.setState({
                         // 아이디와 비밀번호가 같은 행이 1이상 존재하면 로그인 성공
