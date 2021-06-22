@@ -427,7 +427,7 @@ class collect extends React.Component {
                                 </tr>
                             </table>
                         </article> */}
-                <a href="/collect/#" class="btn_gotop">
+                <a href="/collect" class="btn_gotop">
                     <img
                         src="/images/up-arrow.png"
                         style={{ width: "2.7vw", height: "5vh" }}
