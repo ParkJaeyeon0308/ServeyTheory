@@ -43,7 +43,7 @@ export default class SignUp extends React.Component {
         // 비밀번호가 다르면 다르다고 출력 ( 비밀번호와 비밀번호 확인이 다르면 )
         else if (this.state.pw !== this.state.pw2) {
             this.setState({
-                data2: "비밀번호와 비밀번호 확인란이 다릅니다." // 유효성 검사 메시지
+                data2: "비밀번호가 일치하지 않습니다." // 유효성 검사 메시지
             });
         }
         // 중복체크 안했으면 하라고 출력 ( 중복체크를 할 시에는 data에 값이 들어가있음 )
