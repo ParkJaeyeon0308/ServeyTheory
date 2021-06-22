@@ -38,7 +38,7 @@ function Survey() {
             <div class="box2"></div>
             <div className="test_box">
                 <Link
-                    to="./Question1_1"
+                    to="/Question1_1"
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
                     <img
@@ -57,7 +57,7 @@ function Survey() {
             </div>
             <div className="test_box">
                 <Link
-                    to="./Question2_1"
+                    to="/Question2_1"
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
                     <img
@@ -78,7 +78,7 @@ function Survey() {
             </div>
             <div className="test_box">
                 <Link
-                    to="./Question3_1"
+                    to="/Question3_1"
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
                     <img
@@ -95,7 +95,7 @@ function Survey() {
             </div>
             <div className="test_box">
                 <Link
-                    to="./Question4_1"
+                    to="/Question4_1"
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
                     <img
@@ -115,7 +115,7 @@ function Survey() {
             </div>
             <div className="test_box">
                 <Link
-                    to="./Question5_1"
+                    to="/Question5_1"
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
                     <img
@@ -135,7 +135,7 @@ function Survey() {
             </div>
             <div className="test_box">
                 <Link
-                    to="./Question6_1"
+                    to="/Question6_1"
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
                     <img
@@ -153,7 +153,7 @@ function Survey() {
             </div>
             <div className="test_box">
                 <Link
-                    to="./Question7_1"
+                    to="/Question7_1"
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
                     <img
@@ -173,7 +173,7 @@ function Survey() {
             </div>
             <div className="test_box">
                 <Link
-                    to="./Question8_1"
+                    to="/Question8_1"
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
                     <img
@@ -192,7 +192,7 @@ function Survey() {
             </div>
             <div className="test_box">
                 <Link
-                    to="./Question9_1"
+                    to="/Question9_1"
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
                     <img
@@ -207,7 +207,7 @@ function Survey() {
                     <div className="hashtag-right">#열정 #성장 #협동</div>
                 </Link>
             </div>
-            <a href="/survey/" class="btn_gotop">
+            <a href="/survey" class="btn_gotop">
                 <img
                     src="/images/up-arrow.png"
                     style={{ width: "2.7vw", height: "5vh" }}
