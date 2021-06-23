@@ -5,16 +5,26 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const mysql = require("mysql"); // << 새로 추가된 부분
 
+
 var connection = mysql.createConnection({
   /// 새로 추가된 부분
   host: "localhost",
-  user: "root", // mysql의 아이디를 넣는다.
-  password: "mysql", // mysql의 비밀번호를 넣는다.
-  database: "survey", //위에서 만든 데이터베이스의 이름을 넣는다.
+  user: "", // mysql의 아이디를 넣는다.
+  password: "", // mysql의 비밀번호를 넣는다.
+  database: "", //위에서 만든 데이터베이스의 이름을 넣는다.
 });
 
 connection.connect();
+/*
+connection.query('show databases;', function(error, results, fields){
+	        if(error){
+			                console.log(error);
+			        }
+	        console.log(results);
+});
 
+
+*/
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 app.use(bodyParser.json());
