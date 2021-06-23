@@ -1,16 +1,32 @@
 const express = require("express");
 const app = express();
-const port = 3001; // <- 3000에서 다른 숫자로 변경
+// const port = 3001; // <- 3000에서 다른 숫자로 변경
 const cors = require("cors");
+require("dotenv/config");
+const port = process.env.PORT || 5000;
+const path = require('path');
 const bodyParser = require("body-parser");
 const mysql = require("mysql"); // << 새로 추가된 부분
 
+// /client/build 폴더를 static 파일로 사용할 수 있도록 함
+app.use(express.static(path.join(__dirname, "../surveytheory/build")));
+
+// / 요청
+app.get("/", (req, res) => {
+  console.log(__dirname);
+  // index.html 파일 응답
+  res.sendFile(path.join(__dirname, "../surveytheory/build", "index.html"));
+});
+
+// ...
+
+app.listen(port, () => console.log(`port ${port}`));
 var connection = mysql.createConnection({
   /// 새로 추가된 부분
-  host: "localhost",
-  user: "root", // mysql의 아이디를 넣는다.
-  password: "mysql", // mysql의 비밀번호를 넣는다.
-  database: "survey", //위에서 만든 데이터베이스의 이름을 넣는다.
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER, // mysql의 아이디를 넣는다.
+  password: process.env.DB_PW, // mysql의 비밀번호를 넣는다.
+  database: process.env.DB_NAME, //위에서 만든 데이터베이스의 이름을 넣는다.
 });
 
 connection.connect();
