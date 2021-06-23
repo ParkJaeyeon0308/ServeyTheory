@@ -75,7 +75,7 @@ function NavBar1() {
             alert("먼저 로그인 하세요.");
             history.push("/login");
         } else {
-            fetch("http://localhost:3001/collect", {
+            fetch("/collect", {
                 // server.js의 collect 메소드 사용
                 method: "post", //통신방법
                 headers: {
