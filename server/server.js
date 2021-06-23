@@ -12,7 +12,7 @@ const mysql = require("mysql"); // << 새로 추가된 부분
 app.use(express.static(path.join(__dirname, "../surveytheory/build")));
 
 // / 요청
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   console.log(__dirname);
   // index.html 파일 응답
   res.sendFile(path.join(__dirname, "../surveytheory/build", "index.html"));
