@@ -17,7 +17,7 @@
     "eslint-plugin-react": "^7.24.0",
     "express": "^4.17.1",
     "jquery": "^3.6.0",
-    "mysql": "^2.18.1",
+    "mysql": "github:mysqljs/mysql",
     "mysql-upgrade": "^0.1.2",
     "next": "^10.2.3",
     "node-sass": "^4.14.1",
