@@ -154,7 +154,7 @@ export default class SignUp extends React.Component {
                                     {this.state.data}
                                 </div>
                                 <input
-                                    type="text" // password -> text
+                                    type="password"
                                     id="pw_inputs"
                                     className="form-control"
                                     placeholder="비밀번호"
@@ -163,7 +163,7 @@ export default class SignUp extends React.Component {
                                     onChange={this.handleChange}
                                 />
                                 <input
-                                    type="text" // password -> text
+                                    type="password"
                                     id="pw_inputs"
                                     className="form-control"
                                     placeholder="비밀번호 확인"
