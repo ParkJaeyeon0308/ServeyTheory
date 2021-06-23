@@ -1,48 +1,48 @@
 import React from "react";
 import "../result.css";
-import Login, {user_id} from "../../Login/login";
+import Login, { user_id } from "../../Login/login";
 
 class result7_4 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            subject_name:"나와 어울리는 개발자 포지션은?",
-            survey_url:"7_4"
+            subject_name: "나와 어울리는 개발자 포지션은?",
+            survey_url: "7_4"
         };
     }
 
     onclick = () => {
-        const textbox = { 
+        const textbox = {
             inText: user_id.user_id,
             inText1: this.state.subject_name,
             inText2: this.state.survey_url
-          };
+        };
 
-        if(user_id.user_id != 'novalue'){ // id 값이 있으면
-            fetch("http://localhost:3001/save", { // server.js의 login 메소드 사용
-            method: "post", //통신방법
-            headers: {
-              "content-type": "application/json",
-            },
-            body: JSON.stringify(textbox) // 위에 정의한 textbox
-          })
-            .then((res) => res.json())
-            .then((json) => {
-              console.log(json);
-              this.setState({
-                  user_id: json.user_id,
-                  subject_name: json.subject_name,
-                  survey_url: json.survey_url
-              });
-            });
-            alert('결과가 저장되었습니다.')
+        if (user_id.user_id != "novalue") {
+            // id 값이 있으면
+            fetch("http://localhost:3001/save", {
+                // server.js의 login 메소드 사용
+                method: "post", //통신방법
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(textbox) // 위에 정의한 textbox
+            })
+                .then((res) => res.json())
+                .then((json) => {
+                    console.log(json);
+                    this.setState({
+                        user_id: json.user_id,
+                        subject_name: json.subject_name,
+                        survey_url: json.survey_url
+                    });
+                });
+            alert("결과가 저장되었습니다.");
         } else {
-            alert('먼저 로그인하세요.')
-            this.props.history.push('./login')
+            alert("먼저 로그인하세요.");
+            this.props.history.push("./login");
         }
-
-        
-      };
+    };
     render() {
         const subject_name = this.props.subject_name;
         const imgUrl = "/images/result/type7/backend.png";
@@ -66,10 +66,7 @@ class result7_4 extends React.Component {
                     ></div>
 
                     <div className="buttons">
-                        <button
-                            className="save_btn"
-                            onClick={this.onclick}
-                        >
+                        <button className="save_btn" onClick={this.onclick}>
                             {saveBtn}
                         </button>
                         <a href="/#">
@@ -91,7 +88,7 @@ class result7_4 extends React.Component {
 result7_4.defaultProps = {
     subject_name: "나와 어울리는 개발자 포지션은?",
     sub_context:
-        "백엔드 개발자란? 구성요소들이 작동할 수 있게 하는 기술을 만들고 유지하는 개발을 하는 개발자입니다. <br/> 당신은 순도 100%의 백엔드 개발자! 디자인이나 화면 구조 설정은 영 아닌 당신 ! <br/> 이참에 백엔드 전문가로 깊게 파고 들어가보세요~ <br/> 어디든 당신을 환영 합니다! 당신이 만든 기능을 사용하며 삶의 질이 올라갈 사용자들이 있습니다 ! <br/> 이 분야로 더욱 성장하실거예요! 화이팅~"
+        "당신은 <span>순도 100%의 백엔드 개발자!</span> 디자인이나 화면 구조 설정은 영 아닌 당신 ! <br/> 이참에 백엔드 전문가로 깊게 파고 들어가보세요~ <br/><br/> 백엔드 개발자란? <span>구성요소들이 작동할 수 있게 하는 기술을 만들고 유지하는 개발</span>을 하는 개발자입니다. 어디든 당신을 환영해 제작한 기능을 사용하며 삶의 질이 올라갈 사용자들이 많아질 것 같네요 :-) 이 분야로 더욱 성장하실거예요! 화이팅~"
 };
 
 export default result7_4;

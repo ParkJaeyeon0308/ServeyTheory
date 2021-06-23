@@ -1,48 +1,49 @@
 import React from "react";
 import "../result.css";
-import Login, {user_id} from "../../Login/login";
+import Login, { user_id } from "../../Login/login";
 
 class result2_3 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            subject_name:"3개월 프로젝트가 주어졌을 때 내가 해낼 수 있는 기간은?",
-            survey_url:"2_3"
+            subject_name:
+                "3개월 프로젝트가 주어졌을 때 내가 해낼 수 있는 기간은?",
+            survey_url: "2_3"
         };
     }
 
     onclick = () => {
-        const textbox = { 
+        const textbox = {
             inText: user_id.user_id,
             inText1: this.state.subject_name,
             inText2: this.state.survey_url
-          };
+        };
 
-        if(user_id.user_id != 'novalue'){ // id 값이 있으면
-            fetch("http://localhost:3001/save", { // server.js의 login 메소드 사용
-            method: "post", //통신방법
-            headers: {
-              "content-type": "application/json",
-            },
-            body: JSON.stringify(textbox) // 위에 정의한 textbox
-          })
-            .then((res) => res.json())
-            .then((json) => {
-              console.log(json);
-              this.setState({
-                  user_id: json.user_id,
-                  subject_name: json.subject_name,
-                  survey_url: json.survey_url
-              });
-            });
-            alert('결과가 저장되었습니다.')
+        if (user_id.user_id != "novalue") {
+            // id 값이 있으면
+            fetch("http://localhost:3001/save", {
+                // server.js의 login 메소드 사용
+                method: "post", //통신방법
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(textbox) // 위에 정의한 textbox
+            })
+                .then((res) => res.json())
+                .then((json) => {
+                    console.log(json);
+                    this.setState({
+                        user_id: json.user_id,
+                        subject_name: json.subject_name,
+                        survey_url: json.survey_url
+                    });
+                });
+            alert("결과가 저장되었습니다.");
         } else {
-            alert('먼저 로그인하세요.')
-            this.props.history.push('./login')
+            alert("먼저 로그인하세요.");
+            this.props.history.push("./login");
         }
-
-        
-      };
+    };
 
     render() {
         const subject_name = this.props.subject_name;
@@ -67,10 +68,7 @@ class result2_3 extends React.Component {
                     ></div>
 
                     <div className="buttons">
-                        <button
-                            className="save_btn"
-                            onClick={this.onclick}
-                        >
+                        <button className="save_btn" onClick={this.onclick}>
                             {saveBtn}
                         </button>
                         <a href="/#">
@@ -92,7 +90,7 @@ class result2_3 extends React.Component {
 result2_3.defaultProps = {
     subject_name: "3개월 프로젝트가 주어졌을 때<br/> 내가 해낼 수 있는 기간은?",
     sub_context:
-        "괜찮아요! 전체 타입의 60%가 이 타입이거든요. <br/> 그래도 당신은 3개월 프로젝트가 주어졌을 때, 3개월 하고 하루만 더 있으면 마칠 수 있을거예요!"
+        "당신은 <span>조금 게으른 타입</span>이네요. <br/> 그렇지만 괜찮아요! 전체 타입의 60%가 이 타입이거든요. 그래도 당신은 3개월 프로젝트가 주어졌을 때, <span>3개월 하고 하루만 더</span> 있으면 완성해 낼 수 있어요!"
 };
 
 export default result2_3;

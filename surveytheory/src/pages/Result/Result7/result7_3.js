@@ -1,48 +1,48 @@
 import React from "react";
 import "../result.css";
-import Login, {user_id} from "../../Login/login";
+import Login, { user_id } from "../../Login/login";
 
 class result7_3 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            subject_name:"나와 어울리는 개발자 포지션은?",
-            survey_url:"7_3"
+            subject_name: "나와 어울리는 개발자 포지션은?",
+            survey_url: "7_3"
         };
     }
 
     onclick = () => {
-        const textbox = { 
+        const textbox = {
             inText: user_id.user_id,
             inText1: this.state.subject_name,
             inText2: this.state.survey_url
-          };
+        };
 
-        if(user_id.user_id != 'novalue'){ // id 값이 있으면
-            fetch("http://localhost:3001/save", { // server.js의 login 메소드 사용
-            method: "post", //통신방법
-            headers: {
-              "content-type": "application/json",
-            },
-            body: JSON.stringify(textbox) // 위에 정의한 textbox
-          })
-            .then((res) => res.json())
-            .then((json) => {
-              console.log(json);
-              this.setState({
-                  user_id: json.user_id,
-                  subject_name: json.subject_name,
-                  survey_url: json.survey_url
-              });
-            });
-            alert('결과가 저장되었습니다.')
+        if (user_id.user_id != "novalue") {
+            // id 값이 있으면
+            fetch("http://localhost:3001/save", {
+                // server.js의 login 메소드 사용
+                method: "post", //통신방법
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(textbox) // 위에 정의한 textbox
+            })
+                .then((res) => res.json())
+                .then((json) => {
+                    console.log(json);
+                    this.setState({
+                        user_id: json.user_id,
+                        subject_name: json.subject_name,
+                        survey_url: json.survey_url
+                    });
+                });
+            alert("결과가 저장되었습니다.");
         } else {
-            alert('먼저 로그인하세요.')
-            this.props.history.push('./login')
+            alert("먼저 로그인하세요.");
+            this.props.history.push("./login");
         }
-
-        
-      };
+    };
 
     render() {
         const subject_name = this.props.subject_name;
@@ -67,10 +67,7 @@ class result7_3 extends React.Component {
                     ></div>
 
                     <div className="buttons">
-                        <button
-                            className="save_btn"
-                            onClick={this.onclick}
-                        >
+                        <button className="save_btn" onClick={this.onclick}>
                             {saveBtn}
                         </button>
                         <a href="/#">
@@ -92,7 +89,7 @@ class result7_3 extends React.Component {
 result7_3.defaultProps = {
     subject_name: "나와 어울리는 개발자 포지션은?",
     sub_context:
-        "프론트엔드 개발자란? 사용자 (Client; 클라이언트)가 직접 사용하는 화면을 개발하는 사람이에요. <br/> 그리고 백엔드 개발자는 구성요소들이 작동할 수 있게 하는 기술을 만들고 유지하는 개발을 하는 개발자입니다. <br/> 당신은 백엔드 개발자에 더욱 가깝지만 프로젝트를 진행할 때 프론트엔드 개발자가 부족하다면 당신이 직접 개발 할 수도 있어요! <br/> 프론트엔드에 대해 조금 더 공부하고 백엔드를 보충한다면 풀스텍 개발자가 될 수 있어요! <br/> 매 프로젝트마다 성장하는 개발자가 되시겠네요. :-) <br/> 당신의 성장을 응원합니다~"
+        "당신은 <span>백엔드 개발자</span>에 더욱 가깝지만 프로젝트를 진행할 때 프론트엔드 개발자가 부족하다면 당신이 직접 개발 할 수도 있어요! 더 나아가 프론트엔드에 대해 조금 더 공부하고 백엔드를 보충한다면 풀스텍 개발자가 될 수 있어요! <br/><br/> 프론트엔드 개발자란? 사용자 (Client; 클라이언트)가 <span>직접 사용하는 화면을 개발하는 사람</span>이에요. 그리고 백엔드 개발자는 <span>구성요소들이 작동할 수 있게 하는 기술을 만들고 유지하는 개발</span>을 하는 개발자입니다. <br/><br/> 당신은 매 프로젝트마다 성장하는 개발자가 되시겠네요. :-) <br/> 당신의 성장을 응원합니다~!"
 };
 
 export default result7_3;

@@ -1,22 +1,17 @@
 .container {
-    height: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 }
-
 .subject_name {
     width: 50vw;
     flex-shrink: 0;
-
     margin-top: 3rem;
-
     font-size: 2.5em;
     text-align: center;
     color: rgb(24, 70, 83);
 }
-
 .type-img {
     width: 35vw;
     height: 35vh;
@@ -26,18 +21,18 @@
 
 /* 타입 설명 */
 .sub_context {
-    width: 35vw;
+    width: 37vw;
     height: auto;
 
-    background-color: rgba(239, 234, 215, 0.3);
+    background-color: rgba(113, 157, 138, 0.1);
     padding: 2.5rem;
     margin-bottom: 3rem;
     border-radius: 0.5rem;
 
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: "S-CoreDream-3Light";
     font-weight: 600;
-    line-height: 2em;
+    line-height: 2.1em;
     text-align: justify;
 }
 
@@ -45,12 +40,11 @@
     width: 70vw;
     text-align: center;
 }
-
 .save_btn,
 .main_btn {
     width: 10vw;
     height: 5vh;
-    background-color: rgb(24, 70, 83);
+    background-color: rgb(113, 157, 138);
     color: white;
     font-size: 1.1em;
 
@@ -58,9 +52,15 @@
     border: none;
     border-radius: 1rem 1rem 1rem 1rem;
 }
-
 .save_btn:hover,
 .main_btn:hover {
     background-color: rgb(255, 230, 171);
-    color: black;
+    color: rgb(113, 157, 138);
+}
+
+span {
+    color: rgb(113, 157, 138);
+    font-size: 1.05em;
+    font-family: "S-CoreDream-6Bold";
+    font-weight: 700;
 }
