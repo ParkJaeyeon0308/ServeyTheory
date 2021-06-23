@@ -15,9 +15,9 @@ class collect extends React.Component{
         // })
         
         render(){
-        $(window).on('load', function(){
-            this.props.history.push({pathname: resultUrl0})
-        });
+        // $(window).on('load', function(){
+        //     this.props.history.push({pathname: resultUrl0})
+        // });
         $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {
                 $(".btn_gotop").show();
@@ -84,17 +84,19 @@ class collect extends React.Component{
         return (
             <div className="collect">
                 <div className="collect-text">설문결과</div>
-                <div className="collect-subtext">
-                    지금까지 테스트한 결과를 모아놓은 공간입니다.
+                <div className="collect-subtext-btn">
+                    <div className="collect-subtext">
+                        지금까지 테스트한 결과를 모아놓은 공간입니다.
+                    </div>
+                    <button className="collect-btn" onClick={() =>
+                                            this.props.history.push({
+                                                pathname: resultUrl0
+                                                }         
+                                            ) 
+                                        }>
+                                    결과보기
+                                </button>
                 </div>
-                <button onClick={() =>
-                                        this.props.history.push({
-                                            pathname: resultUrl0
-                                            }         
-                                        ) 
-                                    }>
-                                나의 결과는...? 클릭
-                            </button>
                 <div className="collect-box">
                     <div className="collect-type-name">
                         {result1}

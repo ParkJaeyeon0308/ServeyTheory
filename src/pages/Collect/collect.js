@@ -6,8 +6,18 @@ import NavBar, {collect1, collect2, collect3, collect4, collect5, collect6, coll
 import $ from "jquery";
 window.$ = $;
 
-class collect extends React.Component {
-    render() {
+class collect extends React.Component{
+        // $(window).show(function() {
+        //     history.push({
+        //         pathname: resultUrl0
+        //         }         
+        //     ) 
+        // })
+        
+        render(){
+        // $(window).on('load', function(){
+        //     this.props.history.push({pathname: resultUrl0})
+        // });
         $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {
                 $(".btn_gotop").show();
@@ -74,22 +84,24 @@ class collect extends React.Component {
         return (
             <div className="collect">
                 <div className="collect-text">설문결과</div>
-                <div className="collect-subtext">
-                    지금까지 테스트한 결과를 모아놓은 공간입니다.
+                <div className="collect-subtext-btn">
+                    <div className="collect-subtext">
+                        지금까지 테스트한 결과를 모아놓은 공간입니다.
+                    </div>
+                    <button className="collect-btn" onClick={() =>
+                                            this.props.history.push({
+                                                pathname: resultUrl0
+                                                }         
+                                            ) 
+                                        }>
+                                    결과보기
+                                </button>
                 </div>
-                <button onClick={() =>
-                                        this.props.history.push({
-                                            pathname: resultUrl0
-                                            }         
-                                        ) 
-                                    }>
-                                나의 결과는...? 클릭
-                            </button>
                 <div className="collect-box">
                     <div className="collect-type-name">
-                        {result1}웹, 앱 뭐가 더 잘 맞을까?
+                        {result1}
                     </div>
-                    <div className="collect-date">{date1}2021-09-08</div>
+                    <div className="collect-date">{date1}</div>
                     <button
                         className="collect-result-more"
                         onClick={() =>
