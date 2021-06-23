@@ -20,7 +20,6 @@ app.get("/", (req, res) => {
 
 // ...
 
-app.listen(port, () => console.log(`port ${port}`));
 var connection = mysql.createConnection({
   /// 새로 추가된 부분
   host: process.env.DB_HOST,
