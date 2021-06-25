@@ -38,7 +38,7 @@ export default class QuitAccount extends React.Component {
             inText2: this.state.data
         };
 
-        fetch("http://localhost:3001/withdraw", {
+        fetch("http://surveytheory.emirim.kr:3001/withdraw", {
             // server.js의 withdraw 메소드 ( 회원여부 확인 )
             method: "post", //통신방법
             headers: {
@@ -51,7 +51,7 @@ export default class QuitAccount extends React.Component {
                 console.log(json);
                 if (json.count == "1") {
                     // 아이디 비밀번호가 일치하면 ( 일치하는 행이 1개이면 )
-                    fetch("http://localhost:3001/withdraw2", {
+                    fetch("http://surveytheory.emirim.kr:3001/withdraw2", {
                         // withdraw2 메소드 ( 회원정보 삭제 )
                         method: "post", //통신방법
                         headers: {

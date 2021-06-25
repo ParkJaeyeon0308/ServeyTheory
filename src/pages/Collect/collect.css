@@ -63,7 +63,7 @@
 }
 
 .collect-box .collect-type-name {
-    width: 100%;
+    width: 50%;
 
     color: rgb(113, 157, 138);
     font-size: 1.2em;
@@ -93,7 +93,7 @@
     height: 80%;
 
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 20rem;
+    border-radius: 25rem;
 
     margin-top: 3vh;
     margin-right: 1.5vw;

@@ -20,7 +20,7 @@ class result8_1 extends React.Component {
 
         if (user_id.user_id != "novalue") {
             // id 값이 있으면
-            fetch("http://localhost:3001/save", {
+            fetch("http://surveytheory.emirim.kr:3001/save", {
                 // server.js의 login 메소드 사용
                 method: "post", //통신방법
                 headers: {

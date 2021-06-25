@@ -76,7 +76,7 @@ function NavBar() {
             alert("먼저 로그인 하세요.");
             history.push("/login");
         } else {
-            fetch("/collect", {
+            fetch("http://surveytheory.emirim.kr:3001/collect", {
                 // server.js의 collect 메소드 사용
                 method: "post", //통신방법
                 headers: {

@@ -5,7 +5,7 @@ import { GoogleLogin } from "react-google-login";
 import { Container, Row, Col } from "react-bootstrap";
 import "./login.css";
 
-export let user_id = { user_id: "mirim" };
+export let user_id = { user_id: "mirim1" };
 
 // 커밋 테스트
 const clientId =
@@ -34,7 +34,7 @@ export default class Login extends React.Component {
             inText: this.state.id,
             inText1: this.state.pw
         };
-        fetch("http://localhost:3001/login", {
+        fetch("http://surveytheory.emirim.kr:3001/login", {
             // server.js의 login 메소드 사용
             method: "post", //통신방법
             headers: {

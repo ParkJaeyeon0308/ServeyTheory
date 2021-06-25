@@ -29,7 +29,7 @@ export default class PassChange extends React.Component {
             inText3: this.state.pw2
         };
 
-        fetch("http://localhost:3001/change1", {
+        fetch("http://surveytheory.emirim.kr:3001/change1", {
             method: "post", //통신방법
             headers: {
                 "content-type": "application/json"
@@ -46,7 +46,7 @@ export default class PassChange extends React.Component {
                         this.state.pw1 == this.state.pw2
                     ) {
                         // 변경후 비밀번호와 비밀번호 확인이 같으면 변경
-                        fetch("http://localhost:3001/change2", {
+                        fetch("http://surveytheory.emirim.kr:3001/change2", {
                             method: "post", //통신방법
                             headers: {
                                 "content-type": "application/json"

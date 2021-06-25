@@ -5,6 +5,8 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const mysql = require("mysql"); // << 새로 추가된 부분
 
+
+
 var connection = mysql.createConnection({
   /// 새로 추가된 부분
   host: "localhost",
@@ -12,7 +14,6 @@ var connection = mysql.createConnection({
   password: "alflarhkgkrrhSurvey20@!", // mysql의 비밀번호를 넣는다.
   database: "survey", //위에서 만든 데이터베이스의 이름을 넣는다.
 });
-
 connection.connect();
 /*
 connection.query('show databases;', function(error, results, fields){
@@ -21,9 +22,9 @@ connection.query('show databases;', function(error, results, fields){
 			        }
 	        console.log(results);
 });
-
-
 */
+
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 app.use(bodyParser.json());
@@ -65,8 +66,8 @@ app.post("/data", (req, res) => { // user_id를 이용하여 회원이 존재하
 })
 
 app.post("/login", (req, res) => { // user_id와 user_pw를 이용하여 아이디 비번이 맞는지 확인하는 메소드
-    const user_id = req.body.inText;
-    const user_pw = req.body.inText1; 
+    const user_id = 'mirim';//req.body.inText;
+    const user_pw = 'mirim';//req.body.inText1; 
     console.log("user_id: " + user_id + " / user_pw: " + user_pw)
     connection.query("SELECT count(*) as count FROM member_tb WHERE user_id = ? and user_pw = ?", [user_id, user_pw],
     function(err, rows, fields){ // user_id와 user_pw가 일치하는 행의 개수를 구함 (0 or 1 )

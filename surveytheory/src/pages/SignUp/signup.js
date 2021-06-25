@@ -54,7 +54,7 @@ export default class SignUp extends React.Component {
         }
         // 비밀번호끼리 같고 data가 중복이 아니면 넘김 + alert창 ( 위의 유효성 검사를 다 통과했으면 )
         else {
-            fetch("http://localhost:3001/text", {
+            fetch("http://surveytheory.emirim.kr:3001/text", {
                 // server.js의 text 메소드 ( 정보 insert )
                 method: "post", //통신방법
                 headers: {
@@ -84,7 +84,7 @@ export default class SignUp extends React.Component {
         const textbox = {
             inText3: this.state.text
         };
-        fetch("http://localhost:3001/data", {
+        fetch("http://surveytheory.emirim.kr:3001/data", {
             // server.js의 data 메소드 ( user_id가 중복되는 행의 개수 )
             method: "post", //통신방법
             headers: {
